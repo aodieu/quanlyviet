@@ -1,4 +1,27 @@
-# Quản Lý Việt
-Phần mềm kế toán, erp nguồn mở nền tảng web viết bằng PHP Mysql  
-Phiên bản quốc tế đã ra mắt, tham khảo tại [NotrinosERP](https://github.com/notrinos/NotrinosERP)  
-Phiên bản riêng cho người dùng Việt Nam đang hoàn thiện và sẽ ra mắt trong năm 2021 tại đây  
+![Quản Lý Việt](./themes/default/images/quanlyviet.jpg  "Quản Lý Việt")
+====================
+
+Quản Lý Việt là một hệ thống quản trị doanh nghiệp tổng thể mã nguồn mở được viết bằng PHP và Mysql. Quản Lý Việt bao gồm các modules cần thiết để vận hành các doanh nghiệp nhỏ và vừa. Hệ thống hỗ trợ đa người dùng, đa tiền tệ, đã ngôn ngữ.
+## [DEMO](http://demo.quanlyviet.com/)
+
+![ScreenShot](https://a.fsdn.com/con/app/proj/notrinos-erp/screenshots/Untitled.png)
+![ScreenShot](https://a.fsdn.com/con/app/proj/notrinos-erp/screenshots/gl_dashboard.png)
+
+## Yêu Cầu Hệ Thống
+- Máy chủ HTTP như Apache, Nginx, IIS
+- PHP phiên bản 5.0 trở lên (khuyên dùng bản 5.6 hoặc 7.x)
+- Mysql phiên bản 4.1 trở lên với Innodb tables, hoặc MariaDB
+- Trình duyệt người dùng hỗ trợ HTML5 và đọc được file PDF để in báo cáo...
+
+## Cài Đặt
+### Cài Mới
+1. [Tải về Quản Lý Việt bản mới nhất.](https://github.com/aodieu/quanlyviet/archive/master.zip)
+2. Giải nén file vừa tải về.
+3. Tải tất cả các files giải nén được từ bước 2 lên thư mục gốc web server của bạn, thông thường thư mục của web server sẽ là `public_html` hoặc `www` hoặc `html` hoặc `htdocs` (các thư mục này đã có sẵn trên server).
+4. Trên trình duyệt người dùng nhập đường dẫn đến web server, ví dụ http://tencongty.com (hoặc nếu bạn tải các tệp lên thư mục con ví dụ tên là ERP thì đường dẫn sẽ là http://tencongty.com/ERP)
+5. Làm theo các hướng dấn cài đặt xuất hiện trên trình duyệt web.
+6. Sau khi cài đặt hãy xóa thư mục `install` vì lý do an ninh, hệ thống sẽ không cần thư mục này nữa.
+
+## Giải Đáp Thắc Mắc
+Nếu bạn gặp vấn đề trong quá trình cài đặt, sử dụng hãy tham khảo [WIKI (English)](http://support.notrinos.com/ERP/index.php?n=Help.Help).
+Hoặc đăng các phản hồi của bạn lên [mục thảo luận](https://github.com/aodieu/quanlyviet/discussions).
