@@ -1,0 +1,759 @@
+# Frontaccounting ERP Installer
+# Copyright (C) 2017 FrontAccounting LLC
+# This file is distributed under the same license as the FrontAccounting package.
+# Tuấn Anh <tuananh88c25@gmail.com>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: QuanlyViet Install Wizard\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-22 12:37+0700\n"
+"PO-Revision-Date: 2021-01-23 14:48+0700\n"
+"Last-Translator: Ap.Muthu <apmuthu@usa.net>, 2017\n"
+"Language-Team: Vietnamese\n"
+"Language: vi_VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ../../../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: install\n"
+"X-Poedit-SearchPath-1: includes/system_tests.inc\n"
+
+#: includes/system_tests.inc:16
+msgid "Info"
+msgstr "Thông tin"
+
+#: includes/system_tests.inc:17
+msgid "Optional"
+msgstr "Tùy chọn"
+
+#: includes/system_tests.inc:18
+msgid "Recommended"
+msgstr "Khuyên dùng"
+
+#: includes/system_tests.inc:19
+msgid "Required "
+msgstr "Bắt buộc "
+
+#: includes/system_tests.inc:24
+msgid "MySQL version"
+msgstr "Phiên bản MySQL"
+
+#: includes/system_tests.inc:31
+msgid "Upgrade MySQL server to version at least 4.1"
+msgstr "Nâng cấp MySQL lên phiên bản 4.1 hoặc cao hơn"
+
+#: includes/system_tests.inc:37
+msgid "PHP MySQL extension"
+msgstr "Phần mở rộng MySQL của PHP"
+
+#: includes/system_tests.inc:40 includes/system_tests.inc:108
+#: includes/system_tests.inc:120 install/index.php:349
+msgid "Yes"
+msgstr "Yes"
+
+#: includes/system_tests.inc:40 includes/system_tests.inc:108
+#: includes/system_tests.inc:120 install/index.php:349
+msgid "No"
+msgstr "No"
+
+#: includes/system_tests.inc:42
+msgid "Your PHP has to have MySQL extension enabled."
+msgstr "PHP của bạn đã kích hoạt phần mở rộng MySQL."
+
+#: includes/system_tests.inc:47
+msgid "PHP version"
+msgstr "Phiên bản PHP"
+
+#: includes/system_tests.inc:51
+msgid "Upgrade PHP to version at least 5.0.0"
+msgstr "Nâng cấp PHP lên phiên bản 5.0.0 hoặc cao hơn"
+
+#: includes/system_tests.inc:57
+msgid "Server system"
+msgstr "Loại máy chủ"
+
+#: includes/system_tests.inc:66
+msgid "Session save path"
+msgstr "Đường dẫn lưu phiên làm việc"
+
+#: includes/system_tests.inc:77
+msgid "Removed install wizard folder"
+msgstr "Xóa thư mục cài đặt"
+
+#: includes/system_tests.inc:80
+msgid "Not removed"
+msgstr "Chưa xóa"
+
+#: includes/system_tests.inc:81
+msgid "Remove or rename install wizard folder for security reasons."
+msgstr "Xóa hoặc đổi tên thư mục cài đặt vì lý do an ninh."
+
+#: includes/system_tests.inc:87
+msgid "Browser type"
+msgstr "Kiểu trình duyệt"
+
+#: includes/system_tests.inc:91
+msgid "Any browser is supported"
+msgstr "Bất kỳ trình duyệt được hỗ trợ"
+
+#: includes/system_tests.inc:97
+msgid "Http server type"
+msgstr "Loại máy chủ http"
+
+#: includes/system_tests.inc:101
+msgid "Any server is supported"
+msgstr "Bất kỳ máy chủ được hỗ trợ"
+
+#: includes/system_tests.inc:107
+msgid "Native gettext"
+msgstr "Native gettext"
+
+#: includes/system_tests.inc:111
+msgid "In case of no gettext support, php emulation is used"
+msgstr "Trong trường hợp không có hỗ trợ gettext, php emulation được sử dụng"
+
+#: includes/system_tests.inc:118
+msgid "Debugging mode"
+msgstr "Chế độ kiểm lỗi"
+
+#: includes/system_tests.inc:122
+msgid "To switch debugging on set $go_debug > 0 in config.php file"
+msgstr "Để bật chế độ kiểm lỗi, đặt giá trị $go_debug > 0 trong tệp config.php"
+
+#: includes/system_tests.inc:131
+msgid "Error logging"
+msgstr "Nhật ký lỗi"
+
+#: includes/system_tests.inc:137
+msgid "Disabled"
+msgstr "Bị tắt"
+
+#: includes/system_tests.inc:140
+msgid "To switch error logging set $error_logging in config.php file"
+msgstr ""
+"Để bật nhật ký lỗi hay đặt giá trị biến $error_logging trong file config.php"
+
+#: includes/system_tests.inc:143
+msgid "Log file is not writeable"
+msgstr "Tệp nhật ký không thể ghi"
+
+#: includes/system_tests.inc:152
+msgid "Current database version"
+msgstr "Phiên bản cơ sở dữ liệu hiện thời"
+
+#: includes/system_tests.inc:156
+msgid "Database structure seems to be not upgraded to current version"
+msgstr ""
+"Cấu trúc cơ sở dữ liệu có vẻ là chưa được nâng cấp lên phiên bản hiện tại"
+
+#: includes/system_tests.inc:169
+msgid "Company subdirectories consistency"
+msgstr "Các thư mục con cần thiết"
+
+#: includes/system_tests.inc:182 includes/system_tests.inc:189
+#: includes/system_tests.inc:198 includes/system_tests.inc:214
+#: includes/system_tests.inc:326 includes/system_tests.inc:335
+#: includes/system_tests.inc:344 includes/system_tests.inc:351
+#, php-format
+msgid "'%s' is not writeable"
+msgstr "'%s' không ghi được"
+
+#: includes/system_tests.inc:210
+msgid "Temporary directory"
+msgstr "Thư mục tạm thời"
+
+#: includes/system_tests.inc:221
+msgid "Language configuration consistency"
+msgstr "Cấu hình ngôn ngữ hệ thống"
+
+#: includes/system_tests.inc:230
+msgid "Languages folder should be writeable."
+msgstr "Các thư mục ngôn ngữ cần được cấp phép có thể ghi."
+
+#: includes/system_tests.inc:239
+msgid "Languages configuration file should be writeable."
+msgstr "Tệp cấu hình ngôn ngữ cần được cấp phép có thể ghi."
+
+#: includes/system_tests.inc:258
+#, php-format
+msgid "Missing %s translation file."
+msgstr "Thiếu tập tin dịch %s."
+
+#: includes/system_tests.inc:262
+#, php-format
+msgid "Missing system locale: %s"
+msgstr "Thiếu ngôn ngữ hệ thống: %s"
+
+#: includes/system_tests.inc:274
+msgid "Main config file"
+msgstr "Tệp cấu hình chính"
+
+#: includes/system_tests.inc:281 includes/system_tests.inc:303
+#, php-format
+msgid "Can't write '%s' file. Check Quanlyviet directory write permissions."
+msgstr ""
+"Không thể ghi tệp ' %s '. Kiểm tra quyền ghi của thư mục gốc Quản Lý Việt."
+
+#: includes/system_tests.inc:282 includes/system_tests.inc:304
+#, php-format
+msgid "'%s' file exists."
+msgstr "tệp '%s' tồn tại."
+
+#: includes/system_tests.inc:287
+#, php-format
+msgid "'%s' file should be read-only"
+msgstr "tệp '%s' nên được cấp phép là chỉ đọc"
+
+#: includes/system_tests.inc:295
+msgid "Database auth file"
+msgstr "Tệp cấu hình cơ sở dữ liệu"
+
+#: includes/system_tests.inc:309
+#, php-format
+msgid ""
+"'%s' file should be read-only if you do not plan to add or change companies"
+msgstr ""
+"tệp '%s' nên được cấp phép chỉ đọc nếu bạn không có kế hoạch thêm hoặc thay "
+"đổi các công ty"
+
+#: includes/system_tests.inc:319
+msgid "Extensions system"
+msgstr "Các thư mục mở rộng"
+
+#: includes/system_tests.inc:355
+msgid "Extensions configuration files and directories should be writeable"
+msgstr ""
+"Các tệp và thư mục cấu hình cho phần mở rộng cần được cấp phép có thể ghi"
+
+#: includes/system_tests.inc:364
+#, php-format
+msgid "Non-standard theme directory '%s' is not writable"
+msgstr "Thư mục giao diện '%s' không cho phép ghi"
+
+#: includes/system_tests.inc:374
+msgid ""
+"OpenSSL PHP extension have to be enabled to use extension repository system."
+msgstr ""
+"OpenSSL PHP mở rộng phải được kích hoạt để sử dụng hệ thống kho lưu trữ mở "
+"rộng."
+
+#: includes/system_tests.inc:378
+msgid ""
+"OpenSSL have to be available on your server to use extension repository "
+"system."
+msgstr ""
+"OpenSSL phải có sẵn trên máy chủ của bạn để sử dụng hệ thống kho lưu trữ mở "
+"rộng."
+
+#: includes/system_tests.inc:400
+msgid "Test"
+msgstr "Kiểm tra"
+
+#: includes/system_tests.inc:400
+msgid "Test type"
+msgstr "Kiểu"
+
+#: includes/system_tests.inc:400
+msgid "Value"
+msgstr "Giá trị"
+
+#: includes/system_tests.inc:400
+msgid "Comments"
+msgstr "Duyệt"
+
+#: includes/system_tests.inc:418
+msgid "Ok"
+msgstr "OK"
+
+#: install/index.php:21 install/index.php:42
+msgid "Quanlyviet Installation Wizard"
+msgstr "Cài Đặt Quản Lý Việt"
+
+#: install/index.php:43
+#, php-format
+msgid "Step %d: %s"
+msgstr "Bước %d: %s"
+
+#: install/index.php:49
+msgid "Chart of accounts"
+msgstr "Hệ thống tài khoản"
+
+#: install/index.php:49 install/index.php:73
+msgid "Encoding"
+msgstr "Mã hóa"
+
+#: install/index.php:49 install/index.php:73
+msgid "Description"
+msgstr "Mô tả"
+
+#: install/index.php:49 install/index.php:73 install/index.php:397
+msgid "Install"
+msgstr "Cài đặt"
+
+#: install/index.php:64 install/index.php:89
+msgid "Installed"
+msgstr "Đã cài"
+
+#: install/index.php:73
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+#: install/index.php:117
+msgid ""
+"Cannot connect to database. User or password is invalid or you have no "
+"permittions to create database."
+msgstr ""
+"Không thể kết nối với cơ sở dữ liệu. Người dùng hoặc mật khẩu không hợp lệ "
+"hoặc bạn không có quyền tạo cơ sở dữ liệu."
+
+#: install/index.php:157
+msgid "Cannot save system configuration file 'config.php'."
+msgstr "Không thể lưu tập tin cấu hình hệ thống 'config.php'."
+
+#: install/index.php:164
+msgid "Cannot open 'config_db.php' configuration file."
+msgstr "Không thể mở tập tin cấu hình 'config_db.php'."
+
+#: install/index.php:168
+msgid "Cannot write to the 'config_db.php' configuration file."
+msgstr "Không thể ghi vào tập tin cấu hình 'config_db.php'."
+
+#: install/index.php:172
+msgid ""
+"Configuration file 'config_db.php' is not writable. Change its permissions "
+"so it is, then re-run installation step."
+msgstr ""
+"Tệp cấu hình 'config_db.php' không thể ghi. Cấp quyền có thể ghi cho tệp "
+"này, sau đó chạy lại bước cài đặt."
+
+#: install/index.php:212
+msgid "Host name cannot be empty."
+msgstr "Tên Host không thể để trống."
+
+#: install/index.php:216
+msgid "Database port have to be numeric or empty."
+msgstr "Database Port phải là số hoặc để trống."
+
+#: install/index.php:220
+msgid "Database user name cannot be empty."
+msgstr "Database user không được để trống."
+
+#: install/index.php:224
+msgid "Database name cannot be empty."
+msgstr "Tên cơ sở dữ liệu không thể để trống."
+
+#: install/index.php:275
+msgid "Company name cannot be empty."
+msgstr "Tên công ty không thể để trống."
+
+#: install/index.php:279
+msgid "Company admin name cannot be empty."
+msgstr "Tên admin của công ty không được trống."
+
+#: install/index.php:283
+msgid "Company admin password cannot be empty."
+msgstr "Mật khẩu admin của công ty không được trống."
+
+#: install/index.php:287
+msgid "Company admin passwords differ."
+msgstr "Mật khẩu không khớp."
+
+#: install/index.php:319
+msgid "System Diagnostics"
+msgstr "Chẩn đoán hệ thống"
+
+#: install/index.php:321
+msgid "Select install wizard language:"
+msgstr "Chọn ngôn ngữ:"
+
+#: install/index.php:326
+msgid "All application requirements seems to be correct. Press Continue."
+msgstr ""
+"Hệ thống của bạn đã đáp ứng đầy đủ các yêu cầu ban đầu. Nhấn nút Tiếp Theo "
+"để bắt đầu cài đặt."
+
+#: install/index.php:327 install/index.php:359 install/index.php:366
+#: install/index.php:373
+msgid "Continue >>"
+msgstr "Tiếp theo >>"
+
+#: install/index.php:330
+msgid "Application cannot be installed, fix problems listed then press Refresh"
+msgstr ""
+"Không thể cài đặt ứng dụng. Hãy khắc phục các vấn đề được đánh dấu màu đỏ và "
+"nhấn nút Refresh"
+
+#: install/index.php:331
+msgid "Refresh"
+msgstr "Refresh"
+
+#: install/index.php:341
+msgid "Database Server Settings"
+msgstr "Thiết lập cơ sở dữ liệu"
+
+#: install/index.php:343
+msgid "Server Host:"
+msgstr "Server Host:"
+
+#: install/index.php:344
+msgid "Server Port:"
+msgstr "Server Port:"
+
+#: install/index.php:345
+msgid "Database Name:"
+msgstr "Database Name:"
+
+#: install/index.php:346
+msgid "Database User:"
+msgstr "Database User:"
+
+#: install/index.php:347
+msgid "Database Password:"
+msgstr "Database Password:"
+
+#: install/index.php:348
+msgid "Database Collation:"
+msgstr "Database Collation:"
+
+#: install/index.php:349
+msgid "Use '0_' Table Prefix:"
+msgstr "Sử dụng tiền tố bảng '0_':"
+
+#: install/index.php:350
+msgid "Install Additional Language Packs from Quanlyviet Repository:"
+msgstr "Cài thêm các gói ngôn ngữ bổ sung từ kho Quản Lý Việt:"
+
+#: install/index.php:351
+msgid "Install Additional COAs from Quanlyviet Repository:"
+msgstr "Cài thêm các hệ thống tài khoản từ kho Quản Lý Việt:"
+
+#: install/index.php:353
+msgid "Use database user/password with permissions to create new database,"
+msgstr ""
+"Sử dung thông tin đăng nhập cơ sở dữ liệu với quyền tạo cơ sở dữ liệu mới,"
+
+#: install/index.php:353
+msgid " or use proper credentials for previously created empty database."
+msgstr ""
+" hoặc sử dụng thông tin đăng nhập cho một cơ sở dữ liệu trống đã tạo trước "
+"đó."
+
+#: install/index.php:354
+msgid "Select collation you want to use."
+msgstr "Chọn mã hóa bạn muốn sử dụng."
+
+#: install/index.php:354
+msgid " If you are unsure or you will use various languages,"
+msgstr " Nếu bạn không chắc chắn hoặc bạn sẽ sử dụng nhiều ngôn ngữ khác nhau,"
+
+#: install/index.php:354
+msgid " select unicode collation."
+msgstr " hãy chọn unicode."
+
+#: install/index.php:355
+msgid "Use table prefix if you share selected database for"
+msgstr "Sử dụng tiền tố của bảng nếu bạn cài đặt"
+
+#: install/index.php:355
+msgid " more than one company using the same collation."
+msgstr ""
+" nhiều công ty trên cùng một cơ sở dữ liệu, các tiền tố sẽ phân biệt dữ liệu "
+"của từng công ty."
+
+#: install/index.php:356
+msgid "Do not select additional langs nor COAs"
+msgstr "Không chọn cài thêm các gói ngôn ngữ và hệ thống tài khoản"
+
+#: install/index.php:356
+msgid " if you have no working internet connection right now."
+msgstr " nếu bạn không có kết nối internet lúc này."
+
+#: install/index.php:356
+msgid " You can install them later."
+msgstr " Bạn có thể cài đặt chúng sau."
+
+#: install/index.php:357
+msgid "Set Only Port value if you cannot use the default port 3306."
+msgstr "Chỉ đặt giá trị Port nếu bạn không thể sử dụng cổng mặc định 3306."
+
+#: install/index.php:358 install/index.php:365 install/index.php:372
+#: install/index.php:396
+msgid "<< Back"
+msgstr "<< Quay Lại"
+
+#: install/index.php:363
+msgid "User Interface Languages Selection"
+msgstr "Lựa chọn ngôn ngữ giao diện người dùng"
+
+#: install/index.php:370
+msgid "Charts of Accounts Selection"
+msgstr "Chọn hệ thống tài khoản"
+
+#: install/index.php:387
+msgid "Company Settings"
+msgstr "Thiết lập Công ty"
+
+#: install/index.php:389
+msgid "Company Name:"
+msgstr "Tên công ty:"
+
+#: install/index.php:390
+msgid "Admin Login:"
+msgstr "Admin Login:"
+
+#: install/index.php:391
+msgid "Admin Password:"
+msgstr "Mật khẩu Admin:"
+
+#: install/index.php:392
+msgid "Reenter Password:"
+msgstr "Nhập lại Mật khẩu:"
+
+#: install/index.php:393
+msgid "Select Chart of Accounts:"
+msgstr "Hệ thống tài khoản:"
+
+#: install/index.php:394
+msgid "Select Default Language:"
+msgstr "Ngôn ngữ sử dụng:"
+
+#: install/index.php:397
+msgid "Start installation process"
+msgstr "Bắt đầu quá trình cài đặt"
+
+#: install/index.php:401
+msgid "Quanlyviet has been installed successsfully."
+msgstr "Quản Lý Việt đã được cài đặt thành công."
+
+#: install/index.php:402
+msgid "Please do not forget to remove install wizard folder."
+msgstr ""
+"Hãy xóa bỏ thư mục install vì lý do bảo mật, bạn không cần đến nó nữa sau "
+"khi cài đặt."
+
+#: install/index.php:405
+msgid "Click here to start."
+msgstr "Nhấn vào đây bắt đầu."
+
+#~ msgid "Quản Lý Việt Installation Wizard"
+#~ msgstr "Cài Đặt Quản Lý Việt"
+
+#~ msgid "Install Additional Language Packs from Quản Lý Việt Repository:"
+#~ msgstr "Cài thêm các gói ngôn ngữ từ kho Quản Lý Việt:"
+
+#~ msgid "Install Additional COAs from Quản Lý Việt Repository:"
+#~ msgstr "Cài thêm các hệ thống tài khoản từ kho Quản Lý Việt:"
+
+#~ msgid "Quản Lý Việt has been installed successsfully."
+#~ msgstr "Quản Lý Việt đã được cài đặt thành công."
+
+#~ msgid ""
+#~ "Do not select additional langs nor COAs if you have no working internet "
+#~ "connection right now."
+#~ msgstr ""
+#~ "Không chọn cài thêm các gói ngôn ngữ và hệ thống tài khoản nếu bạn không "
+#~ "có kết nối internet lúc này."
+
+#~ msgid ""
+#~ " If you are unsure or you will use various languages, select unicode "
+#~ "collation."
+#~ msgstr ""
+#~ " Nếu bạn không chắc chắn hoặc bạn sẽ sử dụng nhiều ngôn ngữ khác nhau, "
+#~ "hãy chọn unicode."
+
+#~ msgid ""
+#~ "Use table prefix if you share selected database for more than one company "
+#~ "using the same collation."
+#~ msgstr ""
+#~ "Sử dụng tiền tố của bảng nếu bạn cài đặt nhiều công ty trên cùng một cơ "
+#~ "sở dữ lieu, các tiền tố sẽ phân biệt dữ lieu của từng công ty."
+
+#~ msgid ""
+#~ "Do not select additional langs nor COAs if you have no working internet "
+#~ "connection right now. You can install them later."
+#~ msgstr ""
+#~ "Không chọn cài thêm các gói ngôn ngữ và hệ thống tài khoản nếu bạn không "
+#~ "có kết nối internet lúc này. Bạn có thể cài đặt chúng sau."
+
+#~ msgid ""
+#~ "Select collation you want to use. If you are unsure or you will use "
+#~ "various languages, select unicode collation."
+#~ msgstr ""
+#~ "Chọn mã hóa bạn muốn sử dụng. Nếu bạn không chắc chắn hoặc bạn sẽ sử dụng "
+#~ "nhiều ngôn ngữ khác nhau, hãy chọn unicode."
+
+#~ msgid ""
+#~ "Use database user/password with permissions to create new database, or "
+#~ "use proper credentials for previously created empty database."
+#~ msgstr ""
+#~ "Sử dung thông tin đăng nhập cơ sở dữ liệu với quyền tạo cơ sở dữ liệu "
+#~ "mới, hoặc sử dụng thông tin đăng nhập cho một cơ sở dữ liệu trống đã tạo "
+#~ "trước đó."
+
+#~ msgid ""
+#~ "Application cannot be installed, fix problems listed then press Refresh."
+#~ msgstr ""
+#~ "Không thể cài đặt ứng dụng. Hãy khắc phục các vấn đề được đánh dấu màu đỏ "
+#~ "và nhấn nút Refresh."
+
+#~ msgid ""
+#~ "Application cannot be installed, fix problems listed in red then press "
+#~ "Refresh"
+#~ msgstr ""
+#~ "Không thể cài đặt ứng dụng. Hãy khắc phục các vấn đề được đánh dấu màu đỏ "
+#~ "và nhấn nút Làm mới"
+
+#~ msgid ""
+#~ "Application cannot be installed please fix problems listed then press "
+#~ "Refresh"
+#~ msgstr ""
+#~ "Không thể cài đặt ứng dụng. Hãy khắc phục các vấn đề được đánh dấu màu đỏ "
+#~ "và nhấn nút Làm mới"
+
+#~ msgid ""
+#~ "Application cannot be installed please fix problems listed below then "
+#~ "press Refresh"
+#~ msgstr ""
+#~ "Không thể cài đặt ứng dụng. Hãy khắc phục các vấn đề được đánh dấu màu đỏ "
+#~ "và nhấn nút Làm mới."
+
+#~ msgid ""
+#~ "Application cannot be installed please fix problems listed below in red "
+#~ "then press Refresh"
+#~ msgstr ""
+#~ "Không thể cài đặt ứng dụng. Hãy khắc phục các vấn đề được đánh dấu màu đỏ "
+#~ "và nhấn nút Làm mới."
+
+#~ msgid ""
+#~ "Application cannot be installed please fix problems listed below in red"
+#~ msgstr ""
+#~ "Không thể cài đặt ứng dụng. Hãy khắc phục sự cố được liệt kê dưới đây "
+#~ "bằng màu đỏ và nhấn nút Refresh"
+
+#~ msgid ""
+#~ "Application cannot be installed please fix problems listed below in red "
+#~ "then press Refresh button."
+#~ msgstr ""
+#~ "Không thể cài đặt ứng dụng. Hãy khắc phục sự cố được liệt kê dưới đây "
+#~ "bằng màu đỏ và nhấn nút Làm mới."
+
+#~ msgid ""
+#~ "Application cannot be installed. Please fix problems listed below in red, "
+#~ "and press Refresh button."
+#~ msgstr ""
+#~ "Không thể cài đặt ứng dụng. Hãy khắc phục sự cố được liệt kê dưới đây "
+#~ "bằng màu đỏ và nhấn nút Làm mới."
+
+#, php-format
+#~ msgid "Can't write '%s' file. Check FA directory write permissions."
+#~ msgstr "Không thể ghi ' %s file'. Kiểm tra thư mục FA quyền ghi."
+
+#~ msgid ""
+#~ "Use table prefix if you share selected database for more than one FA "
+#~ "company using the same collation."
+#~ msgstr ""
+#~ "Sử dụng tiền tố của bảng nếu bạn cài đặt nhiều công ty trên cùng một cơ "
+#~ "sở dữ lieu, các tiền tố sẽ phân biệt dữ lieu của từng công ty."
+
+#~ msgid "All application requirements seems to be correct."
+#~ msgstr ""
+#~ "Hệ thống của bạn đã đáp ứng đầy đủ các yêu cầu ban đầu. Nhấn nút Tiếp "
+#~ "Theo để bắt đầu cài đặt."
+
+#~ msgid "All application requirements seems to be correct"
+#~ msgstr ""
+#~ "Hệ thống của bạn đã đáp ứng đầy đủ các yêu cầu ban đầu. Nhấn nút Tiếp "
+#~ "Theo để bắt đầu cài đặt"
+
+#~ msgid ""
+#~ "All application requirements seems to be correct, press Continue button "
+#~ "below."
+#~ msgstr ""
+#~ "Hệ thống của bạn đã đáp ứng đầy đủ các yêu cầu ban đầu, nhấn nút Tiếp "
+#~ "Theo để bắt đầu cài đặt"
+
+#~ msgid ""
+#~ "All application requirements seems to be correct. Press Continue button "
+#~ "below."
+#~ msgstr ""
+#~ "Hệ thống của bạn đã đáp ứng đầy đủ các yêu cầu ban đầu. Nhấn nút Tiếp "
+#~ "Theo để bắt đầu cài đặt"
+
+#~ msgid ""
+#~ "All application preliminary requirements seems to be correct. Press "
+#~ "Continue button below."
+#~ msgstr ""
+#~ "Hệ thống của bạn đã đáp ứng đầy đủ các yêu cầu ban đầu. Nhấn nút Tiếp "
+#~ "Theo để bắt đầu cài đặt"
+
+#~ msgid "All application preliminary requirements seems to be correct."
+#~ msgstr "Hệ thống của bạn đã đáp ứng đầy đủ các yêu cầu ban đầu."
+
+#~ msgid ""
+#~ "All application preliminary requirements seems to be correct. Please "
+#~ "press Continue button below."
+#~ msgstr ""
+#~ "Hệ thống của bạn đã đáp ứng đầy đủ các yêu cầu ban đầu. Nhấn nút Tiếp "
+#~ "Theo để bắt đầu cài đặt."
+
+#~ msgid "FrontAccouting ERP Installation Wizard"
+#~ msgstr "Thuật sĩ cài đặt FrontAccouting ERP"
+
+#~ msgid "Install Additional Language Packs from FA Repository:"
+#~ msgstr "Cài đặt gói ngôn ngữ bổ sung từ FA Repository:"
+
+#~ msgid "Install Additional COAs from FA Repository:"
+#~ msgstr "Cài đặt Hệ thống kế toán bổ sung từ FA Repository:"
+
+#~ msgid "FrontAccounting ERP has been installed successsfully."
+#~ msgstr "FrontAccounting ERP đã được cài đặt thành công."
+
+#~ msgid "To switch debugging on set $go_debug>0 in config.php file"
+#~ msgstr "Để chuyển đổi gỡ lỗi trên bộ $ go_debug> 0 trong tập tin config.php"
+
+#, php-format
+#~ msgid "No key field '%s' in file '%s'"
+#~ msgstr "Không có lĩnh vực quan trọng '%s' trong tập tin '%s'"
+
+#~ msgid "Cannot download repo index file."
+#~ msgstr "Không thể tải xuống tệp tin repo index."
+
+#, php-format
+#~ msgid "Cannot delete outdated '%s' file."
+#~ msgstr "Không thể xóa lỗi thời ' %s file'."
+
+#~ msgid "Release file in repository is invalid, or public key is outdated."
+#~ msgstr ""
+#~ "tập tin phát hành trong kho là không hợp lệ, hoặc khóa công khai là lỗi "
+#~ "thời."
+
+#~ msgid "Repository version does not match application version."
+#~ msgstr "phiên bản kho không phù hợp với phiên bản ứng dụng."
+
+#, php-format
+#~ msgid "Cannot download '%s' file."
+#~ msgstr "Không thể tải xuống tệp '%s'."
+
+#, php-format
+#~ msgid ""
+#~ "Security alert: broken index file in repository '%s'. Please inform "
+#~ "repository administrator about this issue."
+#~ msgstr ""
+#~ "Thông báo bảo mật: chia tập tin chỉ mục trong kho '%s'. Hãy thông báo cho "
+#~ "quản trị kho về vấn đề này."
+
+#, php-format
+#~ msgid ""
+#~ "Security alert: broken package '%s' in repository. Please inform "
+#~ "repository administrator about this issue."
+#~ msgstr ""
+#~ "Thông báo bảo mật: chia gói '%s' trong kho. Hãy thông báo cho quản trị "
+#~ "kho về vấn đề này."
+
+#, php-format
+#~ msgid "Package '%s' not found."
+#~ msgstr "Gói '%s' không tìm thấy."

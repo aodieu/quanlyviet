@@ -1,0 +1,58 @@
+<?php
+/************************************************************************
+	Bản quyền (C) 2021 thuộc về Trần Anh Phương <http://aodieu.com>
+	Chương trình được phát hành theo các điều khoản của giấy phép phần 
+	mềm tự do GNU GPL được xuất bản bởi Quỹ Phần Mềm Tự Do (Free 
+	Software Foundation), phiên bản thứ 3 của giấy phép, hoặc bất kỳ 
+	phiên bản nào mới hơn (theo tùy chọn của bạn).
+	Chương trình này được phân phối với kỳ vọng rằng nó sẽ có ích, nhưng 
+	KHÔNG CÓ BẤT KỲ BẢO HÀNH NÀO, thậm chí KHÔNG CÓ BẢO ĐẢM NGỤ Ý VỀ KHẢ 
+	NĂNG KHAI THÁC THƯƠNG MẠI HAY PHÙ HỢP VỚI MỤC ĐÍCH SỬ DỤNG CỤ THỂ NÀO.
+	Chi tiết về giấy phép <http://www.gnu.org/licenses/gpl-3.0.html>.
+*************************************************************************/
+/*
+	This file contains templates for all country specific functions.
+	If your locale needs special functionality provided by hook functions
+	copy this file to respective lang/xx_XX directory and edit templates below.
+	You can safely remove not used function templates.
+	
+	Name it after language code e.g. hooks_en_US
+*/
+class hooks_xx_XX extends hooks {
+/*
+	//
+	// Price in words. $doc_type is set to document type and can be used to suppress 
+	// price in words printing for selected document types.
+	// Used instead of built in simple english price_in_words() function.
+	//
+	//	Returns: amount in words as string.
+	
+	function price_in_words($amount, $doc_type)
+	{
+	}
+*/
+/*
+	//
+	// Exchange rate currency $curr as on date $date.
+	// Keep in mind FA has internally implemented 3 exrate providers
+	// If any of them supports your currency, you can simply use function below
+	// with apprioprate provider set, otherwise implement your own.
+	// Returns: $curr value in home currency units as a real number.
+	
+	function retrieve_ex_rate($curr, $date)
+	{
+	 	$provider = 'ECB'; // 'ECB', 'YAHOO' or 'GOOGLE'
+		return get_extern_rate($curr, $provider, $date);
+	}
+*/
+/*
+	// Generic function called at the end of Tax Report (report 709)
+	// Can be used e.g. for special database updates on every report printing
+	// or to print special tax report footer 
+	//
+	// Returns: nothing
+	function tax_report_done()
+	{
+	}
+*/
+}
