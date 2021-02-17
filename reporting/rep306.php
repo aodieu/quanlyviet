@@ -11,7 +11,7 @@
 	Chi tiết về giấy phép <http://www.gnu.org/licenses/gpl-3.0.html>.
 *************************************************************************/
 $page_security = 'SA_SALESANALYTIC';
-$path_to_root='..';
+$path_to_root = '..';
 
 include_once($path_to_root . '/includes/session.inc');
 include_once($path_to_root . '/includes/date_functions.inc');
@@ -246,7 +246,7 @@ function print_inventory_purchase() {
 			$rep->NewLine();
 			$rep->NewLine();
 			$total_supp = $total_qty = 0.0;
-			$supplier_name = $trans['supplier_name'];
+			$supplier_name = isset($trans['supplier_name']) ? $trans['supplier_name'] : '';
 		}	
 	}
 	if ($supplier_name != '') {
