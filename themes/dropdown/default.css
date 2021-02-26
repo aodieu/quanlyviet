@@ -1,3 +1,4 @@
+
 body {
 	background-color: #eee;
 	margin: 0;
@@ -351,9 +352,7 @@ input.amount {
 }
 
 .navibutton[disabled] {
-	color:#ccc;
-	text-decoration:none;
-	cursor: auto;
+	display: none;
 }
 
 button.navibutton {
@@ -369,6 +368,10 @@ button.navibutton {
 
 .navibutton span {
 	text-decoration:underline;
+}
+
+tr.navibar .navibutton span {
+	text-decoration: none;
 }
 
 .navibar {
