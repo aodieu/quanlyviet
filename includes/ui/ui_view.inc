@@ -344,8 +344,8 @@ function get_comments_string($type, $type_no) {
 	$result = get_comments($type, $type_no);
 	while ($comment = db_fetch($result)) {
 		if (strlen($str_return))
-			$str_return = $str_return . " \n";
-		$str_return = $str_return . $comment['memo_'];
+			$str_return = $str_return." \n";
+		$str_return = $str_return.$comment['memo_'];
 	}
 	return $str_return;
 }
@@ -435,7 +435,7 @@ function display_edit_tax_items($taxes, $columns, $tax_included, $rightspan=0, $
 
 	foreach ($taxes as $taxitem) {
 		$amount = isset($taxitem['Override']) ? $taxitem['Override'] : $taxitem['Value'];
-		if ($taxitem['Value'] != 0){
+		if ($taxitem['Value'] != 0) {
 			if ($editable) {
 				if (!isset($_POST['mantax['.$taxitem['tax_type_id'].']']))
 					$_POST['mantax['.$taxitem['tax_type_id'].']'] = price_format($amount);
@@ -878,7 +878,7 @@ function get_js_set_combo_item() {
   If $form<0 $name is element id.
 */
 function set_focus($name, $form_no=0) {
-  global $Ajax;
+	global $Ajax;
 	$Ajax->addFocus(true, $name);
 	$_POST['_focus'] = $name;
 }
@@ -891,7 +891,7 @@ function default_focus($name=null, $form_no=0) {
 	if ($name==null) 
 		$name = uniqid('_el',true);
 	if (!isset($_POST['_focus']))
-	  set_focus($name);
+		set_focus($name);
 
 	return $name;
 }
@@ -917,7 +917,7 @@ function get_js_date_picker() {
 		$months = array(_('January'),_('February'),_('March'),_('April'),_('May'),_('June'),_('July'),_('August'),_('September'),_('October'),_('November'),_('December'));
 		$wdays = array(_('Su'),_('Mo'),_('Tu'),_('We'),_('Th'),_('Fr'),_('Sa'));
 		$wno = _('W'); // week no
-		
+
 		if ($date_system == 1)
 			list($cyear, $cmon, $cday) = gregorian_to_jalali(date('Y'), date('n'), date('j'));
 		elseif ($date_system == 2)
@@ -1426,7 +1426,7 @@ if (!function_exists('_vd')) {
 }
 
 function _vl($mixed, $title = '', $exit = false) {
-	error_log((!empty($title) ? ($title .':') : '') . print_r($mixed, true));
+	error_log((!empty($title) ? ($title.':') : '') . print_r($mixed, true));
 	if ($exit)
 		exit;
 }
