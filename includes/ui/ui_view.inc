@@ -15,9 +15,7 @@ include_once($path_to_root . '/includes/types.inc');
 
 //--------------------------------------------------------------------------------------
 
-function get_supplier_trans_view_str($type, $trans_no, $label='', $icon=false, 
-	$class='', $id='')
-{
+function get_supplier_trans_view_str($type, $trans_no, $label='', $icon=false, $class='', $id='') {
 	$viewer = 'purchasing/view/';
 	if ($type == ST_PURCHORDER)
 		$viewer .= 'view_po.php';
@@ -357,7 +355,7 @@ function get_comments_string($type, $type_no) {
 function view_stock_status($stock_id, $description=null, $echo=true) {
 	global $path_to_root;
 	if ($description)
-		$preview_str = "<a target='_blank' href='$path_to_root/inventory/inquiry/stock_status.php?stock_id=$stock_id&popup=1' onclick=\"javascript:openWindow(this.href,this.target); return false;\" >". (user_show_codes()?$stock_id . " - ":"") . $description."</a>";
+		$preview_str = "<a target='_blank' href='$path_to_root/inventory/inquiry/stock_status.php?stock_id=$stock_id&popup=1' onclick=\"javascript:openWindow(this.href,this.target); return false;\" >".(user_show_codes() ? $stock_id.' - ' : '').$description."</a>";
 	else
 		$preview_str = "<a target='_blank' href='$path_to_root/inventory/inquiry/stock_status.php?stock_id=$stock_id&popup=1' onclick=\"javascript:openWindow(this.href,this.target); return false;\" >$stock_id</a>";
 	if($echo)
@@ -589,15 +587,13 @@ function display_quick_entries(&$cart, $id, $base, $type, $descr='') {
 			return 0;
 		}
 		foreach($qe_lines as $qe_line) {
-			if ($descr != '') $qe_line['descr'] .= ': '.$descr;
+			if ($descr != '')
+				$qe_line['descr'] .= ': '.$descr;
 			if ($type != QE_SUPPINV)
-				$cart->add_gl_item($qe_line['code'], $qe_line['dim1'],
-					$qe_line['dim2'], $qe_line['amount'], $qe_line['descr']);
+				$cart->add_gl_item($qe_line['code'], $qe_line['dim1'], $qe_line['dim2'], $qe_line['amount'], $qe_line['descr']);
 			else {
 				$acc_name = get_gl_account_name($qe_line['code']);
-				$cart->add_gl_codes_to_trans($qe_line['code'], 
-					$acc_name, $qe_line['dim1'], 
-					$qe_line['dim2'], $qe_line['amount'], $qe_line['descr']);
+				$cart->add_gl_codes_to_trans($qe_line['code'], $acc_name, $qe_line['dim1'], $qe_line['dim2'], $qe_line['amount'], $qe_line['descr']);
 			}
 		}
 	}
@@ -921,7 +917,7 @@ function get_js_date_picker() {
 		$months = array(_('January'),_('February'),_('March'),_('April'),_('May'),_('June'),_('July'),_('August'),_('September'),_('October'),_('November'),_('December'));
 		$wdays = array(_('Su'),_('Mo'),_('Tu'),_('We'),_('Th'),_('Fr'),_('Sa'));
 		$wno = _('W'); // week no
-		$back = _('Back');
+		
 		if ($date_system == 1)
 			list($cyear, $cmon, $cday) = gregorian_to_jalali(date('Y'), date('n'), date('j'));
 		elseif ($date_system == 2)
@@ -1197,14 +1193,22 @@ function get_js_date_picker() {
 				var startDayOfWeek = getDayOfWeek(currentYear, currentMonth, dayOfMonth);
 				var daysInMonth = getDaysInMonth(currentYear, currentMonth);
 				var css_class = null; //CSS class for each day
+				var months_list = \"<select class = 'cc_months_list' onchange='javascript:changeCCMonth(parseInt(this.value));'>\";
+					months.forEach(function(item, index){
+						if(index == currentMonth-1)
+							months_list += \"<option selected value=\" + (index - currentMonth + 1) + \">\" + item + \"</option>\";
+						else
+							months_list += \"<option value=\" + (index - currentMonth + 1) + \">\" + item + \"</option>\";
+					});
+					months_list += \"</select>\";
 				var table = \"<table cellspacing='0' cellpadding='0' border='0'>\";
 				table += \"<tr class='header'>\";
-				table += \"  <td colspan='2' class='previous'><a href='javascript:changeCCMonth(-1);'>&lt;</a><br><a href='javascript:changeCCYear(-1);'>&laquo;</a></td>\";
-				table += \"  <td colspan='4' class='title'>\" + months[currentMonth-1] + \"<br>\" + currentYear + \"</td>\";
-				table += \"  <td colspan='2' class='next'><a href='javascript:changeCCMonth(1);'>&gt;</a><br><a href='javascript:changeCCYear(1);'>&raquo;</a></td>\";
+				table += \"  <td colspan='2' class='previous'><a href='javascript:changeCCMonth(-1);'>&#9664;</a><br><a href='javascript:changeCCYear(-1);'>&#9664;</a></td>\";
+				table += \"  <td colspan='4' class='title'>\" + months_list + \"<br>\" + currentYear + \"</td>\";
+				table += \"  <td colspan='2' class='next'><a href='javascript:changeCCMonth(1);'>&#9654;</a><br><a href='javascript:changeCCYear(1);'>&#9654;</a></td>\";
 				table += \"</tr>\";
 				table += \"<tr>\";
-				table += \"<th class='weekno'>\"+wno+\"</th>\";
+				table += \"<th class='weekno' title='"._('Week')."'>\"+wno+\"</th>\";
 				for (var n=0; n<7; n++)
 					table += \"<th>\" + wdays[(wstart+n)%7]+\"</th>\";
 				table += \"</tr>\";
@@ -1252,7 +1256,7 @@ function get_js_date_picker() {
 					}
 					table += \"</tr>\";
 				}
-				table += \"<tr class='header'><th colspan='8' style='padding: 3px;text-align:center;'><a href='javascript:hideCC();'>$back</a></td></tr>\";
+				
 				table += \"</table>\";
 				return table;
 			}
