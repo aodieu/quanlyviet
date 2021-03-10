@@ -9,7 +9,7 @@ Quản Lý Việt là một hệ thống quản trị doanh nghiệp tổng th�
 
 ## Yêu Cầu Hệ Thống
 - Máy chủ HTTP như Apache, Nginx, IIS
-- PHP phiên bản 5.0 trở lên (khuyên dùng bản 5.6 hoặc 7.x)
+- PHP phiên bản 5.0 trở lên đến 7.3 (khuyên dùng bản 5.6 hoặc 7.3)
 - Mysql phiên bản 4.1 trở lên với Innodb tables, hoặc MariaDB
 - Trình duyệt người dùng hỗ trợ HTML5 và đọc được file PDF để in báo cáo...
 
