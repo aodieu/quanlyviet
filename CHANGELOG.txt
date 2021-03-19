@@ -1,0 +1,915 @@
+2021-03-10 20:32 +0700 Trần Anh Phương
+Function get_magic_quotes_gpc() is deprecated php7.4. /install/isession.inc. Fixed.
+M	install/isession.inc
+
+2021-03-10 14:49 +0700 Trần Anh Phương
+Update installation requirements
+M	README.md
+
+2021-03-07 07:47 +0700 Trần Anh Phương
+theme improvement
+M	themes/default/local_style/gl_setup.css
+
+2021-03-06 09:54 +0700 Trần Anh Phương
+Continue of redesigning date input
+M	reporting/includes/reports_classes.inc
+M	themes/canvas/default.css
+M	themes/default/default.css
+M	themes/dropdown/default.css
+
+2021-03-05 08:51 +0700 Trần Anh Phương
+Syntax error from last commit, fixed
+M	js/behaviour.js
+
+2021-03-01 07:47 +0700 Trần Anh Phương
+Wrong Permission for Inventory Purchasing Report (rep306.php). Fixed.
+M	reporting/rep306.php
+
+2021-02-28 22:05 +0700 Trần Anh Phương
+Fixed javascript error appearing on themes using SVGElements
+M	js/behaviour.js
+
+2021-02-28 19:57 +0700 Trần Anh Phương
+use datepicker by default
+M	sql/vi_VN-tt133-new.sql
+M	sql/vi_VN-tt200-new.sql
+
+2021-02-14 20:48 +0700 Trần Anh Phương
+Date input redesigned
+M	includes/ui/ui_input.inc
+M	themes/canvas/default.css
+M	themes/default/default.css
+M	themes/dropdown/default.css
+
+2021-02-28 14:18 +0700 Trần Anh Phương
+Datepicker ui improvement
+M	includes/ui/ui_view.inc
+M	themes/canvas/default.css
+M	themes/default/default.css
+M	themes/dropdown/default.css
+
+2021-02-28 08:07 +0700 Trần Anh Phương
+Added months selector for datepicker
+M	includes/ui/ui_view.inc
+
+2021-02-26 22:52 +0700 Trần Anh Phương
+db_pager improvement: added page selector
+M	includes/db_pager.inc
+M	includes/ui/db_pager_view.inc
+M	themes/canvas/default.css
+M	themes/default/default.css
+M	themes/dropdown/default.css
+
+2021-02-26 18:01 +0700 Trần Anh Phương
+ui_lists.inc improvement
+M	includes/ui/ui_lists.inc
+
+2021-02-24 22:02 +0700 Trần Anh Phương
+Update user last visit
+M	sql/vi_VN-tt133-new.sql
+M	sql/vi_VN-tt200-new.sql
+
+2021-02-24 14:30 +0700 Trần Anh Phương
+Updated extensions repository
+M	qlv.pem
+
+2021-02-20 15:50 +0700 Trần Anh Phương
+Wrong enclosure in gl_trans_view.php. fixed
+M	gl/view/gl_trans_view.php
+
+2021-02-19 17:38 +0700 Trần Anh Phương
+Bug 5360: Spelling mistake in ../sales/allocations/customer_allocate.php. Fixed.
+M	sales/allocations/customer_allocate.php
+
+2021-02-17 07:51 +0700 Trần Anh Phương
+PHP 7.4 Bugs in some reports.
+M	reporting/rep101.php
+M	reporting/rep115.php
+M	reporting/rep201.php
+M	reporting/rep206.php
+M	reporting/rep306.php
+M	reporting/rep710.php
+
+2021-02-16 08:01 +0700 Trần Anh Phương
+Bug 5352: missing global declaration in reset_form() in attachments.php. Fixed.
+M	admin/attachments.php
+M	purchasing/includes/db/invoice_db.inc
+
+2021-02-15 15:36 +0700 Trần Anh Phương
+Bug 5351: dim dim2 not defined of purchasing/includes/db/invoice_db.inc. Fixed.
+M	purchasing/includes/db/invoice_db.inc
+
+2021-02-12 17:52 +0700 Trần Anh Phương
+Bug 5332: Rep709, Tax Report, Multiple entries for a sinle tax line. Fixed.
+M	reporting/rep709.php
+
+2021-02-12 12:53 +0700 Trần Anh Phương
+Bug 5310: DB error when on bank payment/transfer edit if current fiscal year is missing. Fixed
+M	gl/includes/db/gl_db_banking.inc
+
+2021-02-04 14:27 +0700 Trần Anh Phương
+Bug in Customer/Supplier Payments Recording. Fixed.
+M	includes/ui/allocation_cart.inc
+
+2021-01-31 22:34 +0700 Trần Anh Phương
+Bug 5326 needs reversion for PHP < 5.5. Fixed
+M	includes/archive.inc
+
+2021-01-29 17:46 +0700 Trần Anh Phương
+Thiếu font utf8. Đã thêm
+A	reporting/fonts/FreeSans.ttf
+
+2021-01-26 13:39 +0700 Trần Anh Phương
+Thiếu font utf-8. Đã thêm.
+A	reporting/fonts/dejavu.ctg.z
+A	reporting/fonts/dejavu.php
+A	reporting/fonts/dejavu.z
+
+2021-01-23 23:00 +0700 Trần Anh Phương
+Update hướng dẫn
+M	README.md
+
+2021-01-23 22:32 +0700 Trần Anh Phương
+Upload files
+A	.htaccess
+A	CHANGELOG.txt
+A	LICENSE
+A	Quanlyviet.php
+A	access/index.php
+A	access/login.php
+A	access/logout.php
+A	access/password_reset.php
+A	access/timeout.php
+A	admin/attachments.php
+A	admin/backups.php
+A	admin/change_current_user_password.php
+A	admin/company_preferences.php
+A	admin/create_coy.php
+A	admin/crm_categories.php
+A	admin/dashboard.php
+A	admin/db/attachments_db.inc
+A	admin/db/company_db.inc
+A	admin/db/fiscalyears_db.inc
+A	admin/db/index.php
+A	admin/db/maintenance_db.inc
+A	admin/db/printers_db.inc
+A	admin/db/security_db.inc
+A	admin/db/shipping_db.inc
+A	admin/db/tags_db.inc
+A	admin/db/transactions_db.inc
+A	admin/db/users_db.inc
+A	admin/db/voiding_db.inc
+A	admin/display_prefs.php
+A	admin/fiscalyears.php
+A	admin/forms_setup.php
+A	admin/gl_setup.php
+A	admin/includes/fa_patch.class.inc
+A	admin/includes/index.php
+A	admin/index.php
+A	admin/inst_chart.php
+A	admin/inst_lang.php
+A	admin/inst_module.php
+A	admin/inst_theme.php
+A	admin/inst_upgrade.php
+A	admin/payment_terms.php
+A	admin/print_profiles.php
+A	admin/printers.php
+A	admin/security_roles.php
+A	admin/shipping_companies.php
+A	admin/system_diagnostics.php
+A	admin/tags.php
+A	admin/users.php
+A	admin/view/view_package.php
+A	admin/view/view_upgrade_log.php
+A	admin/view_print_transaction.php
+A	admin/void_transaction.php
+A	applications/application.php
+A	applications/customers.php
+A	applications/dimensions.php
+A	applications/fixed_assets.php
+A	applications/generalledger.php
+A	applications/index.php
+A	applications/inventory.php
+A	applications/manufacturing.php
+A	applications/setup.php
+A	applications/suppliers.php
+A	company/0/backup/index.php
+A	company/0/images/102.jpg
+A	company/0/images/103.jpg
+A	company/0/images/104.jpg
+A	company/0/images/index.php
+A	company/0/images/logo_frontaccounting.jpg
+A	company/0/index.php
+A	company/0/js_cache/index.php
+A	company/0/pdf_files/index.php
+A	company/0/reporting/index.php
+A	company/index.php
+A	config.default.php
+A	dashboard/includes/dashboard_classes.inc
+A	dashboard/includes/index.php
+A	dashboard/index.php
+A	dashboard/widget101.php
+A	dashboard/widget102.php
+A	dashboard/widget103.php
+A	dashboard/widget104.php
+A	dashboard/widget201.php
+A	dashboard/widget202.php
+A	dashboard/widget203.php
+A	dashboard/widget301.php
+A	dashboard/widget302.php
+A	dashboard/widget401.php
+A	dashboard/widget402.php
+A	dashboard/widget501.php
+A	dashboard/widget502.php
+A	dashboard/widget601.php
+A	dashboard/widget602.php
+A	dashboard/widget701.php
+A	dashboard/widget702.php
+A	dashboard/widget703.php
+A	dashboard/widget704.php
+A	dashboard/widget801.php
+A	dashboard/widget802.php
+A	dashboard/widget803.php
+A	dashboard/widget804.php
+A	dashboard/widget805.php
+A	dashboard/widget806.php
+A	dashboard/widget807.php
+A	dashboard/widget808.php
+A	dashboard/widget809.php
+A	dashboard/widget810.php
+A	dashboard/widget811.php
+A	dimensions/dimension_entry.php
+A	dimensions/includes/dimensions_db.inc
+A	dimensions/includes/dimensions_ui.inc
+A	dimensions/includes/index.php
+A	dimensions/index.php
+A	dimensions/inquiry/index.php
+A	dimensions/inquiry/search_dimensions.php
+A	dimensions/view/index.php
+A	dimensions/view/view_dimension.php
+A	doc/index.php
+A	doc/license.txt
+A	fixed_assets/fixed_asset_classes.php
+A	fixed_assets/includes/depreciation.inc
+A	fixed_assets/includes/fa_classes_db.inc
+A	fixed_assets/includes/fixed_assets_db.inc
+A	fixed_assets/inquiry/stock_inquiry.php
+A	fixed_assets/process_depreciation.php
+A	gl/accruals.php
+A	gl/bank_account_reconcile.php
+A	gl/bank_transfer.php
+A	gl/gl_bank.php
+A	gl/gl_budget.php
+A	gl/gl_journal.php
+A	gl/includes/db/gl_db_account_types.inc
+A	gl/includes/db/gl_db_accounts.inc
+A	gl/includes/db/gl_db_bank_accounts.inc
+A	gl/includes/db/gl_db_bank_trans.inc
+A	gl/includes/db/gl_db_banking.inc
+A	gl/includes/db/gl_db_currencies.inc
+A	gl/includes/db/gl_db_rates.inc
+A	gl/includes/db/gl_db_trans.inc
+A	gl/includes/db/gl_journal.inc
+A	gl/includes/db/index.php
+A	gl/includes/gl_db.inc
+A	gl/includes/gl_ui.inc
+A	gl/includes/index.php
+A	gl/includes/ui/gl_bank_ui.inc
+A	gl/includes/ui/gl_journal_ui.inc
+A	gl/includes/ui/index.php
+A	gl/index.php
+A	gl/inquiry/accounts_list.php
+A	gl/inquiry/balance_sheet.php
+A	gl/inquiry/bank_inquiry.php
+A	gl/inquiry/gl_account_inquiry.php
+A	gl/inquiry/gl_trial_balance.php
+A	gl/inquiry/index.php
+A	gl/inquiry/journal_inquiry.php
+A	gl/inquiry/profit_loss.php
+A	gl/inquiry/tax_inquiry.php
+A	gl/manage/bank_accounts.php
+A	gl/manage/close_period.php
+A	gl/manage/currencies.php
+A	gl/manage/exchange_rates.php
+A	gl/manage/gl_account_classes.php
+A	gl/manage/gl_account_types.php
+A	gl/manage/gl_accounts.php
+A	gl/manage/gl_quick_entries.php
+A	gl/manage/index.php
+A	gl/manage/revaluate_currencies.php
+A	gl/view/accrual_trans.php
+A	gl/view/bank_transfer_view.php
+A	gl/view/gl_deposit_view.php
+A	gl/view/gl_payment_view.php
+A	gl/view/gl_trans_view.php
+A	gl/view/index.php
+A	includes/JsHttpRequest.php
+A	includes/access_levels.inc
+A	includes/ajax.inc
+A	includes/app_entries.inc
+A	includes/archive.inc
+A	includes/banking.inc
+A	includes/current_user.inc
+A	includes/data_checks.inc
+A	includes/date_functions.inc
+A	includes/db/allocations_db.inc
+A	includes/db/audit_trail_db.inc
+A	includes/db/class.data_set.inc
+A	includes/db/class.reflines_db.inc
+A	includes/db/comments_db.inc
+A	includes/db/connect_db.inc
+A	includes/db/connect_db_mysql.inc
+A	includes/db/connect_db_mysqli.inc
+A	includes/db/crm_contacts_db.inc
+A	includes/db/index.php
+A	includes/db/inventory_db.inc
+A	includes/db/manufacturing_db.inc
+A	includes/db/sql_functions.inc
+A	includes/db_pager.inc
+A	includes/errors.inc
+A	includes/hooks.inc
+A	includes/index.php
+A	includes/inventory.inc
+A	includes/lang/gettext.inc
+A	includes/lang/index.php
+A	includes/lang/language.inc
+A	includes/main.inc
+A	includes/packages.inc
+A	includes/page/footer.inc
+A	includes/page/header.inc
+A	includes/page/index.php
+A	includes/prefs/index.php
+A	includes/prefs/sysprefs.inc
+A	includes/prefs/userprefs.inc
+A	includes/references.inc
+A	includes/remote_url.inc
+A	includes/session.inc
+A	includes/sysnames.inc
+A	includes/system_tests.inc
+A	includes/types.inc
+A	includes/ui.inc
+A	includes/ui/allocation_cart.inc
+A	includes/ui/attachment.inc
+A	includes/ui/class.crud_view.inc
+A	includes/ui/class.reflines_crud.inc
+A	includes/ui/contacts_view.inc
+A	includes/ui/db_pager_view.inc
+A	includes/ui/index.php
+A	includes/ui/items_cart.inc
+A	includes/ui/simple_crud_class.inc
+A	includes/ui/ui_controls.inc
+A	includes/ui/ui_globals.inc
+A	includes/ui/ui_input.inc
+A	includes/ui/ui_lists.inc
+A	includes/ui/ui_msgs.inc
+A	includes/ui/ui_view.inc
+A	index.php
+A	install/index.php
+A	install/isession.inc
+A	install/lang/new_language_template/LC_MESSAGES/empty.po
+A	install/lang/vi_VN/LC_MESSAGES/vi_VN.mo
+A	install/lang/vi_VN/LC_MESSAGES/vi_VN.php
+A	install/lang/vi_VN/LC_MESSAGES/vi_VN.po
+A	install/stylesheet.css
+A	inventory/adjustments.php
+A	inventory/cost_update.php
+A	inventory/includes/db/index.php
+A	inventory/includes/db/items_adjust_db.inc
+A	inventory/includes/db/items_category_db.inc
+A	inventory/includes/db/items_codes_db.inc
+A	inventory/includes/db/items_db.inc
+A	inventory/includes/db/items_locations_db.inc
+A	inventory/includes/db/items_prices_db.inc
+A	inventory/includes/db/items_purchases_db.inc
+A	inventory/includes/db/items_trans_db.inc
+A	inventory/includes/db/items_transfer_db.inc
+A	inventory/includes/db/items_units_db.inc
+A	inventory/includes/index.php
+A	inventory/includes/inventory_db.inc
+A	inventory/includes/item_adjustments_ui.inc
+A	inventory/includes/stock_transfers_ui.inc
+A	inventory/index.php
+A	inventory/inquiry/index.php
+A	inventory/inquiry/stock_list.php
+A	inventory/inquiry/stock_movements.php
+A	inventory/inquiry/stock_status.php
+A	inventory/manage/index.php
+A	inventory/manage/item_categories.php
+A	inventory/manage/item_codes.php
+A	inventory/manage/item_units.php
+A	inventory/manage/items.php
+A	inventory/manage/locations.php
+A	inventory/manage/sales_kits.php
+A	inventory/prices.php
+A	inventory/purchasing_data.php
+A	inventory/reorder_level.php
+A	inventory/transfers.php
+A	inventory/view/index.php
+A	inventory/view/view_adjustment.php
+A	inventory/view/view_transfer.php
+A	js/JsHttpRequest.js
+A	js/allocate.js
+A	js/behaviour.js
+A	js/budget.js
+A	js/index.php
+A	js/inserts.js
+A	js/login.js
+A	js/payalloc.js
+A	js/reconcile.js
+A	js/reports.js
+A	js/utils.js
+A	lang/en_US/LC_MESSAGES/en_US.mo
+A	lang/index.php
+A	lang/new_language_template/LC_MESSAGES/empty.po
+A	lang/new_language_template/locale.inc
+A	lang/vi_VN/LC_MESSAGES/vi_VN.mo
+A	lang/vi_VN/LC_MESSAGES/vi_VN.po
+A	manufacturing/includes/db/index.php
+A	manufacturing/includes/db/work_centres_db.inc
+A	manufacturing/includes/db/work_order_costing_db.inc
+A	manufacturing/includes/db/work_order_issues_db.inc
+A	manufacturing/includes/db/work_order_produce_items_db.inc
+A	manufacturing/includes/db/work_order_requirements_db.inc
+A	manufacturing/includes/db/work_orders_db.inc
+A	manufacturing/includes/index.php
+A	manufacturing/includes/manufacturing_db.inc
+A	manufacturing/includes/manufacturing_ui.inc
+A	manufacturing/includes/work_order_issue_ui.inc
+A	manufacturing/index.php
+A	manufacturing/inquiry/bom_cost_inquiry.php
+A	manufacturing/inquiry/index.php
+A	manufacturing/inquiry/where_used_inquiry.php
+A	manufacturing/manage/bom_edit.php
+A	manufacturing/manage/index.php
+A	manufacturing/manage/work_centres.php
+A	manufacturing/search_work_orders.php
+A	manufacturing/view/index.php
+A	manufacturing/view/wo_costs_view.php
+A	manufacturing/view/wo_issue_view.php
+A	manufacturing/view/wo_production_view.php
+A	manufacturing/view/work_order_view.php
+A	manufacturing/work_order_add_finished.php
+A	manufacturing/work_order_costs.php
+A	manufacturing/work_order_entry.php
+A	manufacturing/work_order_issue.php
+A	manufacturing/work_order_release.php
+A	modules/_cache/index.php
+A	modules/index.php
+A	purchasing/allocations/index.php
+A	purchasing/allocations/supplier_allocate.php
+A	purchasing/allocations/supplier_allocation_main.php
+A	purchasing/includes/db/grn_db.inc
+A	purchasing/includes/db/index.php
+A	purchasing/includes/db/invoice_db.inc
+A	purchasing/includes/db/invoice_items_db.inc
+A	purchasing/includes/db/po_db.inc
+A	purchasing/includes/db/supp_payment_db.inc
+A	purchasing/includes/db/supp_trans_db.inc
+A	purchasing/includes/db/suppalloc_db.inc
+A	purchasing/includes/db/suppliers_db.inc
+A	purchasing/includes/index.php
+A	purchasing/includes/po_class.inc
+A	purchasing/includes/purchasing_db.inc
+A	purchasing/includes/purchasing_ui.inc
+A	purchasing/includes/supp_trans_class.inc
+A	purchasing/includes/ui/grn_ui.inc
+A	purchasing/includes/ui/index.php
+A	purchasing/includes/ui/invoice_ui.inc
+A	purchasing/includes/ui/po_ui.inc
+A	purchasing/index.php
+A	purchasing/inquiry/index.php
+A	purchasing/inquiry/po_search.php
+A	purchasing/inquiry/po_search_completed.php
+A	purchasing/inquiry/supplier_allocation_inquiry.php
+A	purchasing/inquiry/supplier_inquiry.php
+A	purchasing/inquiry/suppliers_list.php
+A	purchasing/manage/index.php
+A	purchasing/manage/suppliers.php
+A	purchasing/po_entry_items.php
+A	purchasing/po_receive_items.php
+A	purchasing/supplier_credit.php
+A	purchasing/supplier_invoice.php
+A	purchasing/supplier_payment.php
+A	purchasing/view/index.php
+A	purchasing/view/view_grn.php
+A	purchasing/view/view_po.php
+A	purchasing/view/view_supp_credit.php
+A	purchasing/view/view_supp_invoice.php
+A	purchasing/view/view_supp_payment.php
+A	qlv.pem
+A	reporting/fonts/LiberationSans-Regular.ttf
+A	reporting/fonts/courier.php
+A	reporting/fonts/helvetica.php
+A	reporting/fonts/helveticab.php
+A	reporting/fonts/helveticabi.php
+A	reporting/fonts/helveticai.php
+A	reporting/fonts/symbol.php
+A	reporting/fonts/times.php
+A	reporting/fonts/timesb.php
+A	reporting/fonts/timesbi.php
+A	reporting/fonts/timesi.php
+A	reporting/fonts/zapfdingbats.php
+A	reporting/fonts/zarnormal.ttf
+A	reporting/forms/index.php
+A	reporting/includes/Workbook.php
+A	reporting/includes/barcodes.php
+A	reporting/includes/class.graphic.inc
+A	reporting/includes/class.mail.inc
+A	reporting/includes/class.pdf.inc
+A	reporting/includes/doctext.inc
+A	reporting/includes/excel_report.inc
+A	reporting/includes/fpdi/decoders/ASCII85Decode.php
+A	reporting/includes/fpdi/decoders/LZWDecode.php
+A	reporting/includes/fpdi/fpdf_tpl.php
+A	reporting/includes/fpdi/fpdi.php
+A	reporting/includes/fpdi/fpdi2tcpdf_bridge.php
+A	reporting/includes/fpdi/fpdi_pdf_parser.php
+A	reporting/includes/fpdi/pdf_context.php
+A	reporting/includes/fpdi/pdf_parser.php
+A	reporting/includes/fpdi/wrapper_functions.php
+A	reporting/includes/header2.inc
+A	reporting/includes/html_entity_decode_php4.php
+A	reporting/includes/htmlcolors.php
+A	reporting/includes/index.php
+A	reporting/includes/pdf_report.inc
+A	reporting/includes/printer_class.inc
+A	reporting/includes/reporting.inc
+A	reporting/includes/reports_classes.inc
+A	reporting/includes/tcpdf.php
+A	reporting/includes/unicode_data2.php
+A	reporting/index.php
+A	reporting/prn_redirect.php
+A	reporting/rep101.php
+A	reporting/rep102.php
+A	reporting/rep103.php
+A	reporting/rep104.php
+A	reporting/rep105.php
+A	reporting/rep106.php
+A	reporting/rep107.php
+A	reporting/rep108.php
+A	reporting/rep109.php
+A	reporting/rep110.php
+A	reporting/rep111.php
+A	reporting/rep112.php
+A	reporting/rep113.php
+A	reporting/rep114.php
+A	reporting/rep115.php
+A	reporting/rep201.php
+A	reporting/rep202.php
+A	reporting/rep203.php
+A	reporting/rep204.php
+A	reporting/rep205.php
+A	reporting/rep206.php
+A	reporting/rep209.php
+A	reporting/rep210.php
+A	reporting/rep301.php
+A	reporting/rep302.php
+A	reporting/rep303.php
+A	reporting/rep304.php
+A	reporting/rep305.php
+A	reporting/rep306.php
+A	reporting/rep307.php
+A	reporting/rep308.php
+A	reporting/rep309.php
+A	reporting/rep310.php
+A	reporting/rep401.php
+A	reporting/rep402.php
+A	reporting/rep409.php
+A	reporting/rep451.php
+A	reporting/rep501.php
+A	reporting/rep601.php
+A	reporting/rep602.php
+A	reporting/rep701.php
+A	reporting/rep702.php
+A	reporting/rep704.php
+A	reporting/rep705.php
+A	reporting/rep706.php
+A	reporting/rep707.php
+A	reporting/rep708.php
+A	reporting/rep709.php
+A	reporting/rep710.php
+A	reporting/reports_main.php
+A	sales/allocations/customer_allocate.php
+A	sales/allocations/customer_allocation_main.php
+A	sales/allocations/index.php
+A	sales/create_recurrent_invoices.php
+A	sales/credit_note_entry.php
+A	sales/customer_credit_invoice.php
+A	sales/customer_delivery.php
+A	sales/customer_invoice.php
+A	sales/customer_payments.php
+A	sales/includes/cart_class.inc
+A	sales/includes/db/branches_db.inc
+A	sales/includes/db/credit_status_db.inc
+A	sales/includes/db/cust_trans_db.inc
+A	sales/includes/db/cust_trans_details_db.inc
+A	sales/includes/db/custalloc_db.inc
+A	sales/includes/db/customers_db.inc
+A	sales/includes/db/index.php
+A	sales/includes/db/payment_db.inc
+A	sales/includes/db/recurrent_invoices_db.inc
+A	sales/includes/db/sales_credit_db.inc
+A	sales/includes/db/sales_delivery_db.inc
+A	sales/includes/db/sales_groups_db.inc
+A	sales/includes/db/sales_invoice_db.inc
+A	sales/includes/db/sales_order_db.inc
+A	sales/includes/db/sales_points_db.inc
+A	sales/includes/db/sales_types_db.inc
+A	sales/includes/index.php
+A	sales/includes/sales_db.inc
+A	sales/includes/sales_ui.inc
+A	sales/includes/ui/sales_credit_ui.inc
+A	sales/includes/ui/sales_order_ui.inc
+A	sales/index.php
+A	sales/inquiry/customer_allocation_inquiry.php
+A	sales/inquiry/customer_branches_list.php
+A	sales/inquiry/customer_inquiry.php
+A	sales/inquiry/customers_list.php
+A	sales/inquiry/index.php
+A	sales/inquiry/sales_deliveries_view.php
+A	sales/inquiry/sales_orders_view.php
+A	sales/manage/credit_status.php
+A	sales/manage/customer_branches.php
+A	sales/manage/customers.php
+A	sales/manage/index.php
+A	sales/manage/recurrent_invoices.php
+A	sales/manage/sales_areas.php
+A	sales/manage/sales_groups.php
+A	sales/manage/sales_people.php
+A	sales/manage/sales_points.php
+A	sales/manage/sales_types.php
+A	sales/sales_order_entry.php
+A	sales/view/index.php
+A	sales/view/view_credit.php
+A	sales/view/view_dispatch.php
+A	sales/view/view_invoice.php
+A	sales/view/view_receipt.php
+A	sales/view/view_sales_order.php
+A	sql/index.php
+A	sql/vi_VN-tt133-new.sql
+A	sql/vi_VN-tt200-new.sql
+A	taxes/db/index.php
+A	taxes/db/item_tax_types_db.inc
+A	taxes/db/tax_groups_db.inc
+A	taxes/db/tax_types_db.inc
+A	taxes/index.php
+A	taxes/item_tax_types.php
+A	taxes/tax_calc.inc
+A	taxes/tax_groups.php
+A	taxes/tax_types.php
+A	themes/canvas/default.css
+A	themes/canvas/images/add.png
+A	themes/canvas/images/ajax-loader.gif
+A	themes/canvas/images/ajax-loader2.gif
+A	themes/canvas/images/alloc.png
+A	themes/canvas/images/arrow_12.gif
+A	themes/canvas/images/body_bg.png
+A	themes/canvas/images/button_ok.png
+A	themes/canvas/images/cal.gif
+A	themes/canvas/images/cancel.png
+A	themes/canvas/images/closed.png
+A	themes/canvas/images/content_bg.png
+A	themes/canvas/images/credit.gif
+A	themes/canvas/images/delete.gif
+A	themes/canvas/images/delete.svg
+A	themes/canvas/images/download.gif
+A	themes/canvas/images/download.svg
+A	themes/canvas/images/edit.gif
+A	themes/canvas/images/edit.svg
+A	themes/canvas/images/enter.png
+A	themes/canvas/images/escape.png
+A	themes/canvas/images/folder.gif
+A	themes/canvas/images/footer_bg.png
+A	themes/canvas/images/gl.png
+A	themes/canvas/images/gl.svg
+A	themes/canvas/images/help.gif
+A	themes/canvas/images/index.php
+A	themes/canvas/images/invoice.gif
+A	themes/canvas/images/link_bg.png
+A	themes/canvas/images/locate.png
+A	themes/canvas/images/lock.gif
+A	themes/canvas/images/login.gif
+A	themes/canvas/images/logo_frontaccounting.jpg
+A	themes/canvas/images/logo_frontaccounting.png
+A	themes/canvas/images/menu_break.png
+A	themes/canvas/images/money.png
+A	themes/canvas/images/news.gif
+A	themes/canvas/images/notrinos_erp.png
+A	themes/canvas/images/ok.gif
+A	themes/canvas/images/ok.svg
+A	themes/canvas/images/page_edit.png
+A	themes/canvas/images/pdf.gif
+A	themes/canvas/images/preferences.gif
+A	themes/canvas/images/print.png
+A	themes/canvas/images/progressbar.gif
+A	themes/canvas/images/receive.gif
+A	themes/canvas/images/remove.png
+A	themes/canvas/images/report.png
+A	themes/canvas/images/sort_asc.gif
+A	themes/canvas/images/sort_asc2.gif
+A	themes/canvas/images/sort_desc.gif
+A	themes/canvas/images/sort_desc2.gif
+A	themes/canvas/images/sort_none.gif
+A	themes/canvas/images/spacer.png
+A	themes/canvas/images/view.gif
+A	themes/canvas/images/view.svg
+A	themes/canvas/images/warning.png
+A	themes/canvas/index.php
+A	themes/canvas/renderer.php
+A	themes/default/default.css
+A	themes/default/images/add.png
+A	themes/default/images/ajax-loader.gif
+A	themes/default/images/ajax-loader2.gif
+A	themes/default/images/alloc.png
+A	themes/default/images/button_ok.png
+A	themes/default/images/cal.gif
+A	themes/default/images/cal.svg
+A	themes/default/images/cancel.png
+A	themes/default/images/closed.png
+A	themes/default/images/credit.gif
+A	themes/default/images/dashboard.svg
+A	themes/default/images/delete.gif
+A	themes/default/images/delete.svg
+A	themes/default/images/download.gif
+A	themes/default/images/download.svg
+A	themes/default/images/edit.gif
+A	themes/default/images/edit.svg
+A	themes/default/images/escape.png
+A	themes/default/images/favicon.ico
+A	themes/default/images/gl.png
+A	themes/default/images/gl.svg
+A	themes/default/images/help.gif
+A	themes/default/images/help.svg
+A	themes/default/images/index.php
+A	themes/default/images/invoice.gif
+A	themes/default/images/key.svg
+A	themes/default/images/locate.png
+A	themes/default/images/lock.gif
+A	themes/default/images/log.png
+A	themes/default/images/login.gif
+A	themes/default/images/logout.svg
+A	themes/default/images/menu_entry.png
+A	themes/default/images/menu_entry.svg
+A	themes/default/images/menu_inquiry.png
+A	themes/default/images/menu_inquiry.svg
+A	themes/default/images/menu_maintenance.png
+A	themes/default/images/menu_maintenance.svg
+A	themes/default/images/menu_report.png
+A	themes/default/images/menu_report.svg
+A	themes/default/images/menu_settings.png
+A	themes/default/images/menu_settings.svg
+A	themes/default/images/menu_system.png
+A	themes/default/images/menu_system.svg
+A	themes/default/images/menu_transaction.png
+A	themes/default/images/menu_transaction.svg
+A	themes/default/images/menu_update.png
+A	themes/default/images/menu_update.svg
+A	themes/default/images/money.png
+A	themes/default/images/ok.gif
+A	themes/default/images/ok.svg
+A	themes/default/images/pdf.gif
+A	themes/default/images/preferences.gif
+A	themes/default/images/preferences.svg
+A	themes/default/images/print.png
+A	themes/default/images/progressbar.gif
+A	themes/default/images/quanlyviet.jpg
+A	themes/default/images/quanlyviet.png
+A	themes/default/images/receive.gif
+A	themes/default/images/remove.png
+A	themes/default/images/report.png
+A	themes/default/images/right.gif
+A	themes/default/images/sort_asc.gif
+A	themes/default/images/sort_desc.gif
+A	themes/default/images/sort_none.gif
+A	themes/default/images/spacer.png
+A	themes/default/images/view.gif
+A	themes/default/images/view.svg
+A	themes/default/images/warning.png
+A	themes/default/index.php
+A	themes/default/local_style/accruals.css
+A	themes/default/local_style/attachments.css
+A	themes/default/local_style/bank_accounts.css
+A	themes/default/local_style/bank_transfer.css
+A	themes/default/local_style/company_preferences.css
+A	themes/default/local_style/create_coy.css
+A	themes/default/local_style/crm_categories.css
+A	themes/default/local_style/currencies.css
+A	themes/default/local_style/customer_branches.css
+A	themes/default/local_style/customers.css
+A	themes/default/local_style/dashboard.css
+A	themes/default/local_style/dimension_entry.css
+A	themes/default/local_style/display_prefs.css
+A	themes/default/local_style/gl_account_classes.css
+A	themes/default/local_style/gl_account_types.css
+A	themes/default/local_style/gl_accounts.css
+A	themes/default/local_style/gl_quick_entries.css
+A	themes/default/local_style/gl_setup.css
+A	themes/default/local_style/index.php
+A	themes/default/local_style/item_categories.css
+A	themes/default/local_style/item_codes.css
+A	themes/default/local_style/items.css
+A	themes/default/local_style/locations.css
+A	themes/default/local_style/printers.css
+A	themes/default/local_style/purchasing_data.css
+A	themes/default/local_style/recurrent_invoices.css
+A	themes/default/local_style/sales_kits.css
+A	themes/default/local_style/sales_people.css
+A	themes/default/local_style/sales_points.css
+A	themes/default/local_style/sales_types.css
+A	themes/default/local_style/shipping_companies.css
+A	themes/default/local_style/suppliers.css
+A	themes/default/local_style/tags.css
+A	themes/default/local_style/tax_types.css
+A	themes/default/local_style/users.css
+A	themes/default/local_style/work_centres.css
+A	themes/default/local_style/work_order_entry.css
+A	themes/default/renderer.php
+A	themes/dropdown/default.css
+A	themes/dropdown/images/add.png
+A	themes/dropdown/images/ajax-loader.gif
+A	themes/dropdown/images/ajax-loader2.gif
+A	themes/dropdown/images/arrow_12.gif
+A	themes/dropdown/images/basket.png
+A	themes/dropdown/images/body_bg.png
+A	themes/dropdown/images/breadcrumb.gif
+A	themes/dropdown/images/button_ok.png
+A	themes/dropdown/images/cal.gif
+A	themes/dropdown/images/cancel.png
+A	themes/dropdown/images/closed.png
+A	themes/dropdown/images/cog.png
+A	themes/dropdown/images/content_bg.png
+A	themes/dropdown/images/controller.png
+A	themes/dropdown/images/credit.gif
+A	themes/dropdown/images/delete.gif
+A	themes/dropdown/images/delete.svg
+A	themes/dropdown/images/download.gif
+A	themes/dropdown/images/download.svg
+A	themes/dropdown/images/edit.gif
+A	themes/dropdown/images/edit.svg
+A	themes/dropdown/images/enter.png
+A	themes/dropdown/images/escape.png
+A	themes/dropdown/images/folder.gif
+A	themes/dropdown/images/footer_bg.png
+A	themes/dropdown/images/gl.png
+A	themes/dropdown/images/gl.svg
+A	themes/dropdown/images/help.gif
+A	themes/dropdown/images/index.php
+A	themes/dropdown/images/invoice.gif
+A	themes/dropdown/images/link_bg.png
+A	themes/dropdown/images/locate.png
+A	themes/dropdown/images/lock.gif
+A	themes/dropdown/images/login.gif
+A	themes/dropdown/images/logo_frontaccounting.jpg
+A	themes/dropdown/images/logo_frontaccounting.png
+A	themes/dropdown/images/menu_break.png
+A	themes/dropdown/images/money.png
+A	themes/dropdown/images/news.gif
+A	themes/dropdown/images/notrinos_erp.png
+A	themes/dropdown/images/ok.gif
+A	themes/dropdown/images/ok.svg
+A	themes/dropdown/images/on_off.png
+A	themes/dropdown/images/page_edit.png
+A	themes/dropdown/images/pdf.gif
+A	themes/dropdown/images/preferences.gif
+A	themes/dropdown/images/print.png
+A	themes/dropdown/images/progressbar.gif
+A	themes/dropdown/images/receive.gif
+A	themes/dropdown/images/remove.png
+A	themes/dropdown/images/report.png
+A	themes/dropdown/images/sort_asc.gif
+A	themes/dropdown/images/sort_asc2.gif
+A	themes/dropdown/images/sort_desc.gif
+A	themes/dropdown/images/sort_desc2.gif
+A	themes/dropdown/images/sort_none.gif
+A	themes/dropdown/images/spacer.png
+A	themes/dropdown/images/test.png
+A	themes/dropdown/images/test_stock.png
+A	themes/dropdown/images/time.png
+A	themes/dropdown/images/transparent.gif
+A	themes/dropdown/images/view.gif
+A	themes/dropdown/images/view.svg
+A	themes/dropdown/images/warning.png
+A	themes/dropdown/index.php
+A	themes/dropdown/renderer.php
+A	tmp/index.php
+A	version.php
+
+2021-01-19 17:38 +0700 Trần Anh Phương
+Cập nhật tên gọi
+M	README.md
+
+2021-01-14 20:55 +0700 Trần Anh Phương
+Update thông báo
+M	README.md
+
+2021-01-14 20:49 +0700 Trần Anh Phương
+Update README.md
+M	README.md
+
+2021-01-14 20:48 +0700 Trần Anh Phương
+Cập nhật thông báo
+M	README.md
+
+2020-12-27 19:52 +0700 Trần Anh Phương
+Create README.md
+A	README.md

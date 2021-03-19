@@ -15,7 +15,7 @@ Quản Lý Việt là một hệ thống quản trị doanh nghiệp tổng th�
 
 ## Cài Đặt
 ### Cài Mới
-1. [Tải về Quản Lý Việt bản mới nhất.](https://github.com/aodieu/quanlyviet/archive/master.zip)
+1. [Tải về Quản Lý Việt bản mới nhất.](https://gitlab.com/aodieu/quanlyviet/-/archive/master/quanlyviet-master.zip)
 2. Giải nén file vừa tải về.
 3. Tải tất cả các files giải nén được từ bước 2 lên thư mục gốc web server của bạn, thông thường thư mục của web server sẽ là `public_html` hoặc `www` hoặc `html` hoặc `htdocs` (các thư mục này đã có sẵn trên server).
 4. Trên trình duyệt người dùng nhập đường dẫn đến web server, ví dụ http://tencongty.com (hoặc nếu bạn tải các tệp lên thư mục con ví dụ tên là ERP thì đường dẫn sẽ là http://tencongty.com/ERP)
