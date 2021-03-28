@@ -1,8 +1,10 @@
-![Quản Lý Việt](./themes/default/images/quanlyviet.jpg  "Quản Lý Việt")
+[<img src="https://github.com/aodieu/quanlyviet/raw/master/themes/default/images/quanlyviet.jpg" width="350" />](http://quanlyviet.com)
 ====================
 
 Quản Lý Việt là một hệ thống quản trị doanh nghiệp tổng thể mã nguồn mở được viết bằng PHP và Mysql. Quản Lý Việt bao gồm các modules cần thiết để vận hành các doanh nghiệp nhỏ và vừa. Hệ thống hỗ trợ đa người dùng, đa tiền tệ, đã ngôn ngữ.
 ## [DEMO](http://demo.quanlyviet.com/)
+
+## [FORUMS](http://forums.quanlyviet.com/)
 
 ![ScreenShot](https://a.fsdn.com/con/app/proj/notrinos-erp/screenshots/Untitled.png)
 ![ScreenShot](https://a.fsdn.com/con/app/proj/notrinos-erp/screenshots/gl_dashboard.png)
