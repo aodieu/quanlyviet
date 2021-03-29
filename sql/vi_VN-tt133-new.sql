@@ -1750,6 +1750,7 @@ INSERT INTO `0_sys_prefs` VALUES
 ('default_loss_on_asset_disposal_act', 'glsetup.items', 'varchar', '15', '2141'),
 ('depreciation_period', 'glsetup.company', 'tinyint', '1', '1'),
 ('use_manufacturing','setup.company', 'tinyint', 1, '1'),
+('max_days_in_docs','setup.company', 'smallint', 5, '180'),
 ('use_fixed_assets','setup.company', 'tinyint', 1, '1');
 
 -- Structure of table `0_tag_associations` --
