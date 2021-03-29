@@ -26,4 +26,4 @@ Quản Lý Việt là một hệ thống quản trị doanh nghiệp tổng th�
 
 ## Giải Đáp Thắc Mắc
 Nếu bạn gặp vấn đề trong quá trình cài đặt, sử dụng hãy tham khảo [WIKI (English)](http://support.notrinos.com/ERP/index.php?n=Help.Help).
-Hoặc đăng các phản hồi của bạn lên [mục thảo luận](https://github.com/aodieu/quanlyviet/discussions).
+Hoặc đăng các phản hồi của bạn lên [mục thảo luận](http://forums.quanlyviet.com).
