@@ -16,8 +16,7 @@ include_once($path_to_root.'/includes/ui.inc');
 include_once($path_to_root.'/includes/page/header.inc');
 
 $js = "<script language='JavaScript' type='text/javascript'>
-function defaultCompany()
-{
+function defaultCompany() {
 	document.forms[0].company_login_name.options[".user_company()."].selected = true;
 }
 </script>";
@@ -34,11 +33,11 @@ $encoding = isset($_SESSION['language']->encoding) ? $_SESSION['language']->enco
 $rtl = isset($_SESSION['language']->dir) ? $_SESSION['language']->dir : 'ltr';
 $onload = !$login_timeout ? "onload='defaultCompany()'" : '';
 
-echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n";
+echo "<!DOCTYPE html>\n";
 echo "<html dir='".$rtl."' >\n";
 echo "<head profile=\"http://www.w3.org/2005/10/profile\"><title>".$title."</title>\n";
-echo "<meta http-equiv='Content-type' content='text/html; charset=".$encoding."' >\n";
-echo "<link href='".$path_to_root."/themes/".$def_theme."/default.css' rel='stylesheet' type='text/css'> \n";
+echo "<meta charset='".$encoding."' >\n";
+echo "<link href='".$path_to_root.'/themes/'.$def_theme."/default.css' rel='stylesheet' type='text/css'> \n";
 echo "<link href='".$path_to_root."/themes/default/images/favicon.ico' rel='icon' type='image/x-icon'> \n";
 send_scripts();
 echo $js;
@@ -54,12 +53,12 @@ start_form(false, false, @$_SESSION['timeout']['uri'], 'resetform');
 start_table(false, "class='login'");
 start_row();
 echo "<td align='center' colspan=2>";
-echo "<a target='_blank' href='".$SysPrefs->power_url."'><img src='".$path_to_root."/themes/".$def_theme."/images/quanlyviet.png' alt='Quản Lý Việt' height='50' onload='fixPNG(this)' border='0' ></a>";
+echo "<a target='_blank' href='".$SysPrefs->power_url."'><img src='".$path_to_root.'/themes/'.$def_theme."/images/quanlyviet.png' alt='Quản Lý Việt' height='50' onload='fixPNG(this)' border='0' ></a>";
 echo "</td>\n";
 end_row();
 
 echo "<input type='hidden' id=ui_mode name='ui_mode' value='".fallback_mode()."' >\n";
-table_section_title(_('Version').' '.$version."   Build ".$SysPrefs->build_version.' - '._('Password reset'));
+table_section_title(_('Version').' '.$version.'   Build '.$SysPrefs->build_version.' - '._('Password reset'));
 
 text_row(_('Email'), 'email_entry_field', '', 20, 30);
 

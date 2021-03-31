@@ -119,12 +119,12 @@ function page_header($title, $no_menu=false, $is_index=false, $onload='', $js=''
 	if (!headers_sent())
 		header("Content-type: text/html; charset=$encoding");
 	
-	echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n";
+	echo "<!DOCTYPE html>\n";
 	echo "<html dir='" . $_SESSION['language']->dir . "' >\n";
 	echo "<head profile=\"http://www.w3.org/2005/10/profile\"><title>".$title."</title>";
 	if (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') != -1) // IE 11 doesn't work with input file type in form.
 		echo "<meta http-equiv='X-UA-Compatible' content='IE=10'>\n";
-	echo "<meta http-equiv='Content-type' content='text/html; charset=".$encoding."'>";
+	echo "<meta charset='".$encoding."'>";
 	echo "<meta name='viewport' content='width=device-width,initial-scale=1'>";
 	echo "<link href='".$path_to_root."/themes/default/images/favicon.ico' rel='icon' type='image/x-icon'> \n";
 
@@ -145,7 +145,7 @@ function page_header($title, $no_menu=false, $is_index=false, $onload='', $js=''
 	else
 		echo "<body onload=\"$onload\">";
 
-	include_once($path_to_root . '/themes/'.$theme.'/renderer.php');
+	include_once($path_to_root.'/themes/'.$theme.'/renderer.php');
 	$rend = new renderer();
 	$rend->menu_header($title, $no_menu, $is_index);
 	error_box();

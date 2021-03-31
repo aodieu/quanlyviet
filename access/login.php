@@ -16,8 +16,7 @@ include_once($path_to_root.'/includes/ui.inc');
 include_once($path_to_root.'/includes/page/header.inc');
 
 $js = "<script language='JavaScript' type='text/javascript'>
-function defaultCompany()
-{
+function defaultCompany() {
 	document.forms[0].company_login_name.options[".user_company()."].selected = true;
 }
 </script>";
@@ -54,11 +53,11 @@ $encoding = isset($_SESSION['language']->encoding) ? $_SESSION['language']->enco
 $rtl = isset($_SESSION['language']->dir) ? $_SESSION['language']->dir : 'ltr';
 $onload = !$login_timeout ? "onload='defaultCompany()'" : '';
 
-echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n";
+echo "<!DOCTYPE html>\n";
 echo "<html dir='".$rtl."' >\n";
 echo "<head profile=\"http://www.w3.org/2005/10/profile\"><title>".$title."</title>\n";
-echo "<meta http-equiv='Content-type' content='text/html; charset=".$encoding."' >\n";
-echo "<link href='".$path_to_root."/themes/".$def_theme."/default.css' rel='stylesheet' type='text/css'> \n";
+echo "<meta charset='".$encoding."' >\n";
+echo "<link href='".$path_to_root.'/themes/'.$def_theme."/default.css' rel='stylesheet' type='text/css'> \n";
 echo "<link href='".$path_to_root."/themes/default/images/favicon.ico' rel='icon' type='image/x-icon'> \n";
 send_scripts();
 
@@ -70,8 +69,7 @@ echo "<body id='loginscreen' ".$onload.">\n";
 echo "<table class='titletext'><tr><td>".$title."</td></tr></table>\n";
 	
 div_start('_page_body');
-br();
-br();
+br(2);
 start_form(false, false, $_SESSION['timeout']['uri'], 'loginform');
 start_table(false, "class='login'");
 start_row();
@@ -85,11 +83,11 @@ end_row();
 if (!$login_timeout)
 	table_section_title(_('Version').' '.$version.'   Build '.$SysPrefs->build_version.' - '._('Login'));
 
-$value = $login_timeout ? $_SESSION['wa_current_user']->loginname : ($SysPrefs->allow_demo_mode ? 'demouser':'');
+$value = $login_timeout ? $_SESSION['wa_current_user']->loginname : ($SysPrefs->allow_demo_mode ? 'demouser' : '');
 
 text_row(_('User name').':', 'user_name_entry_field', $value, 20, 30);
 
-$password = $SysPrefs->allow_demo_mode ? 'password':'';
+$password = $SysPrefs->allow_demo_mode ? 'password' : '';
 
 password_row(_('Password:'), 'password', $password);
 
@@ -102,7 +100,7 @@ else {
 	if (!@$SysPrefs->text_company_selection) {
 		echo "<tr><td class='label'>"._('Company').':'."</td><td><select name='company_login_name'>\n";
 		for ($i = 0; $i < count($db_connections); $i++)
-			echo "<option value=".$i.' '.($i==$coy ? 'selected':'') .'>' . $db_connections[$i]['name'].'</option>';
+			echo "<option value=".$i.' '.($i==$coy ? 'selected' : '').'>'.$db_connections[$i]['name'].'</option>';
 		echo "</select>\n";
 		echo "</td></tr>";
 	}

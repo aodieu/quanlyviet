@@ -1,10 +1,10 @@
 [<img src="https://github.com/aodieu/quanlyviet/raw/master/themes/default/images/quanlyviet.jpg" width="350" />](http://quanlyviet.com)
 ====================
 
-Quản Lý Việt là một hệ thống quản trị doanh nghiệp tổng thể mã nguồn mở được viết bằng PHP và Mysql. Quản Lý Việt bao gồm các modules cần thiết để vận hành các doanh nghiệp nhỏ và vừa. Hệ thống hỗ trợ đa người dùng, đa tiền tệ, đã ngôn ngữ.
+Quản Lý Việt là một hệ thống quản trị doanh nghiệp tổng thể mã nguồn mở được viết bằng PHP và Mysql. Quản Lý Việt bao gồm các modules cần thiết để vận hành các doanh nghiệp nhỏ và vừa. Hệ thống hỗ trợ đa người dùng, đa tiền tệ, đã ngôn ngữ, phân quyền người dùng.
 ## [DEMO](http://demo.quanlyviet.com/)
 
-## [FORUMS](http://forums.quanlyviet.com/)
+## [Thảo Luận, Hỏi Đáp](http://forums.quanlyviet.com/)
 
 ![ScreenShot](https://a.fsdn.com/con/app/proj/notrinos-erp/screenshots/Untitled.png)
 ![ScreenShot](https://a.fsdn.com/con/app/proj/notrinos-erp/screenshots/gl_dashboard.png)
@@ -26,4 +26,4 @@ Quản Lý Việt là một hệ thống quản trị doanh nghiệp tổng th�
 
 ## Giải Đáp Thắc Mắc
 Nếu bạn gặp vấn đề trong quá trình cài đặt, sử dụng hãy tham khảo [WIKI (English)](http://support.notrinos.com/ERP/index.php?n=Help.Help).
-Hoặc đăng các phản hồi của bạn lên [mục thảo luận](http://forums.quanlyviet.com).
+Hoặc đăng các phản hồi của bạn lên [Mục Thảo Luận](http://forums.quanlyviet.com).
