@@ -65,11 +65,10 @@ function send_scripts() {
 		if (!file_exists($fpath) || $SysPrefs->go_debug)
 			cache_js_file($fpath, file_get_contents($js_path.$jsfile));
 
-		$js .= '<script language="javascript" type="text/javascript" src="'.
-			$fpath . '"></script>';
+		$js .= '<script src="'.$fpath.'"></script>';
 	}
 	foreach($js_userlib as $jsfile) {
-		$js .= '<script language="javascript" type="text/javascript" src="'.$jsfile.'"></script>';
+		$js .= '<script src="'.$jsfile.'"></script>';
 	}
 
 	echo $js;
