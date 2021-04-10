@@ -1474,10 +1474,10 @@ CREATE TABLE `0_stock_category` (
 -- Data of table `0_stock_category` --
 
 INSERT INTO `0_stock_category` VALUES
-('1', 'Hàng hóa, vật liệu', '1', 'chiếc', 'B', '5111', '632', '156', '4111', '154', '0', '0', '0', '0', '0'),
-('2', 'Dụng cụ, máy móc', '1', 'chiếc', 'B', '5111', '632', '156', '4111', '154', '0', '0', '0', '0', '0'),
-('3', 'Gói sản phẩm, dịch vụ', '1', 'bộ', 'M', '5111', '632', '156', '4111', '154', '0', '0', '0', '0', '0'),
-('4', 'Dịch vụ', '1', 'giờ', 'D', '5111', '632', '156', '4111', '154', '0', '0', '0', '0', '0');
+('1', 'Hàng hóa, vật liệu', '1', 'chiếc', 'B', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0'),
+('2', 'Dụng cụ, máy móc', '1', 'chiếc', 'B', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0'),
+('3', 'Gói sản phẩm, dịch vụ', '1', 'bộ', 'M', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0'),
+('4', 'Dịch vụ', '1', 'giờ', 'D', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0');
 
 -- Structure of table `0_stock_fa_class` --
 
@@ -1724,7 +1724,7 @@ INSERT INTO `0_sys_prefs` VALUES
 ('allow_negative_stock', 'glsetup.inventory', 'tinyint', 1, '0'),
 ('default_inventory_act', 'glsetup.items', 'varchar', 15, '156'),
 ('default_cogs_act', 'glsetup.items', 'varchar', 15, '632'),
-('default_adj_act', 'glsetup.items', 'varchar', 15, '4111'),
+('default_adj_act', 'glsetup.items', 'varchar', 15, '632'),
 ('default_inv_sales_act', 'glsetup.items', 'varchar', 15, '5111'),
 ('default_wip_act', 'glsetup.items', 'varchar', 15, '154'),
 ('default_workorder_required', 'glsetup.manuf', 'int', 11, '20'),

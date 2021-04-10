@@ -849,9 +849,19 @@ CREATE TABLE `0_item_codes` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `stock_id` (`stock_id`,`item_code`),
   KEY `item_code` (`item_code`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB AUTO_INCREMENT=9;
 
 -- Data of table `0_item_codes` --
+
+INSERT INTO `0_item_codes` VALUES
+('1', '101', '101', 'Vsmart Aris 6GB-64GB', '1', '1', '0', '0'),
+('2', '102', '102', 'Vsmart Live 4 (6GB/64GB)', '1', '1', '0', '0'),
+('3', '103', '103', 'Ốp Lưng Vsmart Live 4', '1', '1', '0', '0'),
+('4', '201', '201', 'Gói Sản Phẩm, Dịch Vụ', '3', '1', '0', '0'),
+('5', '301', '301', 'Hỗ Trợ', '4', '1', '0', '0'),
+('6', '501', '102', 'Vsmart Live 4 Kèm Ốp Lưng', '1', '1', '0', '0'),
+('7', '501', '103', 'Vsmart Live 4 Kèm Ốp Lưng', '1', '1', '0', '0'),
+('8', '202', '202', 'Bảo Trì', '4', '1', '0', '0');
 
 -- Structure of table `0_item_tax_type_exemptions` --
 
@@ -963,6 +973,14 @@ CREATE TABLE `0_loc_stock` (
 ) ENGINE=InnoDB;
 
 -- Data of table `0_loc_stock` --
+
+INSERT INTO `0_loc_stock` VALUES
+('DEF', '101', '0'),
+('DEF', '102', '0'),
+('DEF', '103', '0'),
+('DEF', '201', '0'),
+('DEF', '202', '0'),
+('DEF', '301', '0');
 
 -- Structure of table `0_locations` --
 
@@ -1474,10 +1492,10 @@ CREATE TABLE `0_stock_category` (
 -- Data of table `0_stock_category` --
 
 INSERT INTO `0_stock_category` VALUES
-('1', 'Hàng hóa, vật liệu', '1', 'chiếc', 'B', '5111', '632', '156', '4111', '154', '0', '0', '0', '0', '0'),
-('2', 'Dụng cụ, máy móc', '1', 'chiếc', 'B', '5111', '632', '156', '4111', '154', '0', '0', '0', '0', '0'),
-('3', 'Gói sản phẩm, dịch vụ', '1', 'bộ', 'M', '5111', '632', '156', '4111', '154', '0', '0', '0', '0', '0'),
-('4', 'Dịch vụ', '1', 'giờ', 'D', '5111', '632', '156', '4111', '154', '0', '0', '0', '0', '0');
+('1', 'Hàng hóa, vật liệu', '1', 'chiếc', 'B', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0'),
+('2', 'Dụng cụ, máy móc', '1', 'chiếc', 'B', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0'),
+('3', 'Gói sản phẩm, dịch vụ', '1', 'bộ', 'M', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0'),
+('4', 'Dịch vụ', '1', 'giờ', 'D', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0');
 
 -- Structure of table `0_stock_fa_class` --
 
@@ -1532,6 +1550,14 @@ CREATE TABLE `0_stock_master` (
 ) ENGINE=InnoDB;
 
 -- Data of table `0_stock_master` --
+
+INSERT INTO `0_stock_master` VALUES
+('101', '1', '1', 'Vsmart Aris 6GB-64GB', '', 'chiếc', 'B', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0000-00-00', '0000-00-00', ''),
+('102', '1', '1', 'Vsmart Live 4 (6GB/64GB)', '', 'chiếc', 'B', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0000-00-00', '0000-00-00', ''),
+('103', '1', '1', 'Ốp Lưng Vsmart Live 4', '', 'chiếc', 'B', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0000-00-00', '0000-00-00', ''),
+('201', '3', '1', 'Gói Sản Phẩm, Dịch Vụ', '', 'bộ', 'M', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0000-00-00', '0000-00-00', ''),
+('202', '4', '1', 'Bảo Trì', '', 'giờ', 'D', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0000-00-00', '0000-00-00', ''),
+('301', '4', '1', 'Hỗ Trợ', '', 'giờ', 'D', '5111', '632', '156', '632', '154', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0000-00-00', '0000-00-00', '');
 
 -- Structure of table `0_stock_moves` --
 
@@ -1724,7 +1750,7 @@ INSERT INTO `0_sys_prefs` VALUES
 ('allow_negative_stock', 'glsetup.inventory', 'tinyint', 1, '0'),
 ('default_inventory_act', 'glsetup.items', 'varchar', 15, '156'),
 ('default_cogs_act', 'glsetup.items', 'varchar', 15, '632'),
-('default_adj_act', 'glsetup.items', 'varchar', 15, '4111'),
+('default_adj_act', 'glsetup.items', 'varchar', 15, '632'),
 ('default_inv_sales_act', 'glsetup.items', 'varchar', 15, '5111'),
 ('default_wip_act', 'glsetup.items', 'varchar', 15, '154'),
 ('default_workorder_required', 'glsetup.manuf', 'int', 11, '20'),
