@@ -87,8 +87,8 @@ CREATE TABLE `0_bank_accounts` (
 -- Data of table `0_bank_accounts` --
 
 INSERT INTO `0_bank_accounts` VALUES
-('11211', 0, 'ACB', 'N/A', 'Ngân hàng Á Châu', 'Hà Nội', 'VND', 1, 1, '6422', '0000-00-00 00:00:00', 0, 0),
-('11212', 3, 'VCB', '', 'Vietcombank', 'Hà Nội', 'VND', 0, 2, '6422', '0000-00-00 00:00:00', 0, 0);
+('1121', 0, 'ACB', 'N/A', 'Ngân hàng Á Châu', 'Hà Nội', 'VND', 1, 1, '6428', '0000-00-00 00:00:00', 0, 0),
+('1124', 3, 'VCB', '', 'Vietcombank', 'Hà Nội', 'VND', 0, 2, '6428', '0000-00-00 00:00:00', 0, 0);
 
 -- Structure of table `0_bank_trans` --
 
@@ -170,14 +170,15 @@ CREATE TABLE `0_chart_class` (
 -- Data of table `0_chart_class` --
 
 INSERT INTO `0_chart_class` VALUES
-('1', 'Tài sản', 1, 0),
-('2', 'Nợ phải trả', 2, 0),
-('3', 'Vốn chủ sở hữu', 2, 0),
-('4', 'Doanh thu', 4, 0),
-('5', 'Chi phí sản xuất, kinh doanh', 6, 0),
-('6', 'Thu nhập khác', 4, 0),
-('7', 'Chi phí khác', 6, 0),
-('8', 'Xác định kết quả kinh doanh', 6, 0);
+('1', 'Tài sản ngắn hạn', 1, 0),
+('2', 'Tài sản dài hạn', 1, 0),
+('3', 'Nợ phải trả', 2, 0),
+('4', 'Vốn chủ sở hữu', 2, 0),
+('5', 'Doanh thu', 4, 0),
+('6', 'Chi phí sản xuất, kinh doanh', 6, 0),
+('7', 'Thu nhập khác', 4, 0),
+('8', 'Chi phí khác', 6, 0),
+('9', 'Xác định kết quả kinh doanh', 6, 0);
 
 -- Structure of table `0_chart_master` --
 
@@ -199,15 +200,23 @@ CREATE TABLE `0_chart_master` (
 INSERT INTO `0_chart_master` VALUES
 ('1111', '', 'Tiền Việt Nam', '111', '0'),
 ('1112', '', 'Ngoại tệ', '111', '0'),
+('1113', '', 'Vàng tiền tệ', '111', '0'),
 
 ('1121', '', 'Tiền Việt Nam', '112', '0'),
-('11211', '', 'Tiền Gửi Ngân Hàng VCB', '112', '0'),
-('11212', '', 'Tiền Gửi Ngân Hàng ACB', '112', '0'),
 ('1122', '', 'Ngoại tệ', '112', '0'),
+('1123', '', 'Vàng tiền tệ', '112', '0'),
+('1124', '', 'Tiền gửi ngân hàng dùng cho thanh toán', '112', '0'),
 
-('121', '', 'Chứng khoán kinh doanh', '121', '0'),
+('1131', '', 'Tiền Việt Nam', '113', '0'),
+('1132', '', 'Ngoại tệ', '113', '0'),
+
+('1211', '', 'Cổ phiếu', '121', '0'),
+('1212', '', 'Trái phiếu', '121', '0'),
+('1218', '', 'Chứng khoán và công cụ tài chính khác', '121', '0'),
 
 ('1281', '', 'Tiền gửi có kỳ hạn', '128', '0'),
+('1282', '', 'Trái phiếu', '128', '0'),
+('1283', '', 'Cho vay', '128', '0'),
 ('1288', '', 'Các khoản đầu tư khác nắm giữ đến ngày đáo hạn', '128', '0'),
 
 ('131', '', 'Phải thu của khách hàng', '131', '0'),
@@ -216,10 +225,12 @@ INSERT INTO `0_chart_master` VALUES
 ('1332', '', 'Thuế GTGT được khấu trừ của TSCĐ', '133', '0'),
 
 ('1361', '', 'Vốn kinh doanh ở các đơn vị trực thuộc', '136', '0'),
+('1362', '', 'Phải thu nội bộ về chênh lệch tỷ giá', '136', '0'),
+('1363', '', 'Phải thu nội bộ về chi phí đi vay đủ điều kiện được vốn hoá', '136', '0'),
 ('1368', '', 'Phải thu nội bộ khác', '136', '0'),
 
 ('1381', '', 'Tài sản thiếu chờ xử lý', '138', '0'),
-('1386', '', 'Cầm cố, thế chấp, ký quỹ, ký cược', '138', '0'),
+('1385', '', 'Phải thu về cổ phần hoá', '138', '0'),
 ('1388', '', 'Phải thu khác', '138', '0'),
 
 ('141', '', 'Tạm ứng', '141', '0'),
@@ -228,19 +239,46 @@ INSERT INTO `0_chart_master` VALUES
 
 ('152', '', 'Nguyên liệu, vật liệu', '152', '0'),
 
-('153', '', 'Công cụ, dụng cụ', '153', '0'),
+('1531', '', 'Công cụ, dụng cụ', '153', '0'),
+('1532', '', 'Bao bì luân chuyển', '153', '0'),
+('1533', '', 'Đồ dùng cho thuê', '153', '0'),
+('1534', '', 'Thiết bị, phụ tùng thay thế', '153', '0'),
 
 ('154', '', 'Chi phí sản xuất, kinh doanh dở dang', '154', '0'),
 
-('155', '', 'Thành phẩm', '155', '0'),
+('1551', '', 'Thành phẩm nhập kho', '155', '0'),
+('1557', '', 'Thành phẩm bất động sản', '155', '0'),
 
-('156', '', 'Hàng hóa', '156', '0'),
+('1561', '', 'Giá mua hàng hóa', '156', '0'),
+('1562', '', 'Chi phí thu mua hàng hóa', '156', '0'),
+('1567', '', 'Hàng hóa bất động sản', '156', '0'),
 
 ('157', '', 'Hàng gửi đi bán', '157', '0'),
 
-('2111', '', 'TSCĐ hữu hình', '211', '0'),
-('2112', '', 'TSCĐ thuê tài chính', '211', '0'),
-('2113', '', 'TSCĐ vô hình', '211', '0'),
+('158', '', 'Hàng hoá kho bảo thuế', '158', '0'),
+
+('1611', '', 'Chi sự nghiệp năm trước', '161', '0'),
+('1612', '', 'Chi sự nghiệp năm nay', '161', '0'),
+
+('171', '', 'Giao dịch mua bán lại trái phiếu chính phủ', '171', '0'),
+
+('2111', '', 'Nhà cửa, vật kiến trúc', '211', '0'),
+('2112', '', 'Máy móc, thiết bị', '211', '0'),
+('2113', '', 'Phương tiện vận tải, truyền dẫn', '211', '0'),
+('2114', '', 'Thiết bị, dụng cụ quản lý', '211', '0'),
+('2115', '', 'Cây lâu năm, súc vật làm việc và cho sản phẩm', '211', '0'),
+('2118', '', 'TSCĐ khác', '211', '0'),
+
+('2121', '', 'TSCĐ hữu hình thuê tài chính.', '212', '0'),
+('2122', '', 'TSCĐ vô hình thuê tài chính.', '212', '0'),
+
+('2131', '', 'Quyền sử dụng đất', '213', '0'),
+('2132', '', 'Quyền phát hành', '213', '0'),
+('2133', '', 'Bản quyền, bằng sáng chế', '213', '0'),
+('2134', '', 'Nhãn hiệu, tên thương mại', '213', '0'),
+('2135', '', 'Chương trình phần mềm', '213', '0'),
+('2136', '', 'Giấy phép và giấy phép nhượng quyền', '213', '0'),
+('2138', '', 'TSCĐ vô hình khác', '213', '0'),
 
 ('2141', '', 'Hao mòn TSCĐ hữu hình', '214', '0'),
 ('2142', '', 'Hao mòn TSCĐ thuê tài chính', '214', '0'),
@@ -249,7 +287,11 @@ INSERT INTO `0_chart_master` VALUES
 
 ('217', '', 'Bất động sản đầu tư', '217', '0'),
 
-('2281', '', 'Đầu tư vào công ty liên doanh, liên kết', '228', '0'),
+('221', '', 'Đầu tư vào công ty con', '221', '0'),
+
+('222', '', 'Đầu tư vào công ty liên doanh, liên kết', '222', '0'),
+
+('2281', '', 'Đầu tư góp vốn vào đơn vị khác', '228', '0'),
 ('2288', '', 'Đầu tư khác', '228', '0'),
 
 ('2291', '', 'Dự phòng giảm giá chứng khoán kinh doanh', '229', '0'),
@@ -263,43 +305,60 @@ INSERT INTO `0_chart_master` VALUES
 
 ('242', '', 'Chi phí trả trước', '242', '0'),
 
+('243', '', 'Tài sản thuế thu nhập hoãn lại', '243', '0'),
+
+('244', '', 'Cầm cố, thế chấp, ký quỹ, ký cược', '244', '0'),
+
 ('331', '', 'Phải trả cho người bán', '331', '0'),
 
-('3331', '', 'Thuế GTGT phải nộp', '333', '0'),
-('33311', '', 'Thuế GTGT đầu ra', '333', '0'),
-('33312', '', 'Thuế GTGT hàng nhập khẩu', '333', '0'),
+('33311', '', 'Thuế GTGT đầu ra', '3331', '0'),
+('33312', '', 'Thuế GTGT hàng nhập khẩu', '3331', '0'),
 ('3332', '', 'Thuế tiêu thụ đặc biệt', '333', '0'),
 ('3333', '', 'Thuế xuất, nhập khẩu', '333', '0'),
 ('3334', '', 'Thuế thu nhập doanh nghiệp', '333', '0'),
 ('3335', '', 'Thuế thu nhập cá nhân', '333', '0'),
 ('3336', '', 'Thuế tài nguyên', '333', '0'),
 ('3337', '', 'Thuế nhà đất, tiền thuê đất', '333', '0'),
-('3338', '', 'Thuế bảo vệ môi trường và các loại thuế khác', '333', '0'),
-('33381', '', 'Thuế bảo vệ môi trường', '333', '0'),
-('33382', '', 'Các loại thuế khác', '333', '0'),
+('33381', '', 'Thuế bảo vệ môi trường', '3338', '0'),
+('33382', '', 'Các loại thuế khác', '3338', '0'),
 ('3339', '', 'Phí, lệ phí và các khoản phải nộp khác', '333', '0'),
 
-('334', '', 'Phải trả người lao động', '334', '0'),
+('3341', '', 'Phải trả công nhân viên', '334', '0'),
+('3348', '', 'Phải trả người lao động khác', '334', '0'),
 
 ('335', '', 'Chi phí phải trả', '335', '0'),
 
 ('3361', '', 'Phải trả nội bộ về vốn kinh doanh', '336', '0'),
+('3362', '', 'Phải trả nội bộ về chênh lệch tỷ giá', '336', '0'),
+('3363', '', 'Phải trả nội bộ về chi phí đi vay đủ điều kiện được vốn hoá', '336', '0'),
 ('3368', '', 'Phải trả nội bộ khác', '336', '0'),
+
+('337', '', 'Thanh toán theo tiến độ kế hoạch hợp đồng xây dựng', '337', '0'),
 
 ('3381', '', 'Tài sản thừa chờ giải quyết', '338', '0'),
 ('3382', '', 'Kinh phí công đoàn', '338', '0'),
 ('3383', '', 'Bảo hiểm xã hội', '338', '0'),
 ('3384', '', 'Bảo hiểm y tế', '338', '0'),
-('3385', '', 'Bảo hiểm thất nghiệp', '338', '0'),
-('3386', '', 'Nhận ký quỹ, ký cược', '338', '0'),
+('3385', '', 'Phải trả về cổ phần hoá', '338', '0'),
+('3386', '', 'Bảo hiểm thất nghiệp', '338', '0'),
 ('3387', '', 'Doanh thu chưa thực hiện', '338', '0'),
 ('3388', '', 'Phải trả, phải nộp khác', '338', '0'),
 
 ('3411', '', 'Các khoản đi vay', '341', '0'),
 ('3412', '', 'Nợ thuê tài chính', '341', '0'),
 
+('34311', '', 'Mệnh giá', '3431', '0'),
+('34312', '', 'Chiết khấu trái phiếu', '3431', '0'),
+('34313', '', 'Phụ trội trái phiếu', '3431', '0'),
+('3432', '', 'Trái phiếu chuyển đổi', '343', '0'),
+
+('344', '', 'Nhận ký quỹ, ký cược', '344', '0'),
+
+('347', '', 'Thuế thu nhập hoãn lại phải trả', '347', '0'),
+
 ('3521', '', 'Dự phòng bảo hành sản phẩm hàng hóa', '352', '0'),
 ('3522', '', 'Dự phòng bảo hành công trình xây dựng', '352', '0'),
+('3523', '', 'Dự phòng tái cơ cấu doanh nghiệp', '352', '0'),
 ('3524', '', 'Dự phòng phải trả khác', '352', '0'),
 
 ('3531', '', 'Quỹ khen thưởng', '353', '0'),
@@ -310,27 +369,70 @@ INSERT INTO `0_chart_master` VALUES
 ('3561', '', 'Quỹ phát triển khoa học và công nghệ', '356', '0'),
 ('3562', '', 'Quỹ phát triển khoa học và công nghệ đã hình thành TSCĐ', '356', '0'),
 
-('4111', '', 'Vốn góp của chủ sở hữu', '411', '0'),
+('357', '', 'Quỹ bình ổn giá', '357', '0'),
+
+('41111', '', 'Cổ phiếu phổ thông có quyền biểu quyết', '4111', '0'),
+('41112', '', 'Cổ phiếu ưu đãi', '4111', '0'),
 ('4112', '', 'Thặng dư vốn cổ phần', '411', '0'),
+('4113', '', 'Quyền chọn chuyển đổi trái phiếu', '411', '0'),
 ('4118', '', 'Vốn khác', '411', '0'),
 
-('413', '', 'Chênh lệch tỷ giá hối đoái', '413', '0'),
+('412', '', 'Chênh lệch đánh giá lại tài sản', '412', '0'),
 
-('418', '', 'Các quỹ thuộc vốn chủ sở hữu', '418', '0'),
+('4131', '', 'Chênh lệch tỷ giá do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ', '413', '0'),
+('4132', '', 'Chênh lệch tỷ giá hối đoái trong giai đoạn trước hoạt động', '413', '0'),
+
+('414', '', 'Quỹ đầu tư phát triển', '414', '0'),
+
+('417', '', 'Quỹ hỗ trợ sắp xếp doanh nghiệp', '417', '0'),
+
+('418', '', 'Các quỹ khác thuộc vốn chủ sở hữu', '418', '0'),
 
 ('419', '', 'Cổ phiếu quỹ', '419', '0'),
 
 ('4211', '', 'Lợi nhuận sau thuế chưa phân phối năm trước', '421', '0'),
 ('4212', '', 'Lợi nhuận sau thuế chưa phân phối năm nay', '421', '0'),
 
+('441', '', 'Nguồn vốn đầu tư xây dựng cơ bản', '441', '0'),
+
+('4611', '', 'Nguồn kinh phí sự nghiệp năm trước', '461', '0'),
+('4612', '', 'Nguồn kinh phí sự nghiệp năm nay', '461', '0'),
+
+('466', '', 'Nguồn kinh phí đã hình thành TSCĐ', '466', '0'),
+
 ('5111', '', 'Doanh thu bán hàng hóa', '511', '0'),
-('5112', '', 'Doanh thu bán thành phẩm', '511', '0'),
+('5112', '', 'Doanh thu bán các thành phẩm', '511', '0'),
 ('5113', '', 'Doanh thu cung cấp dịch vụ', '511', '0'),
+('5114', '', 'Doanh thu trợ cấp, trợ giá', '511', '0'),
+('5117', '', 'Doanh thu kinh doanh bất động sản đầu tư', '511', '0'),
 ('5118', '', 'Doanh thu khác', '511', '0'),
 
 ('515', '', 'Doanh thu hoạt động tài chính', '515', '0'),
 
-('611', '', 'Mua hàng', '611', '0'),
+('5211', '', 'Chiết khấu thương mại', '521', '0'),
+('5212', '', 'Hàng bán bị trả lại', '521', '0'),
+('5213', '', 'Giảm giá hàng bán', '521', '0'),
+
+('6111', '', 'Mua nguyên liệu, vật liệu', '611', '0'),
+('6112', '', 'Mua hàng hóa', '611', '0'),
+
+('621', '', 'Chi phí nguyên liệu, vật liệu trực tiếp', '621', '0'),
+
+('622', '', 'Chi phí nhân công trực tiếp', '622', '0'),
+
+('6231', '', 'Chi phí nhân công', '623', '0'),
+('6232', '', 'Chi phí nguyên, vật liệu', '623', '0'),
+('6233', '', 'Chi phí dụng cụ sản xuất', '623', '0'),
+('6234', '', 'Chi phí khấu hao máy thi công', '623', '0'),
+('6237', '', 'Chi phí dịch vụ mua ngoài', '623', '0'),
+('6238', '', 'Chi phí bằng tiền khác', '623', '0'),
+
+('6271', '', 'Chi phí nhân viên phân xưởng', '627', '0'),
+('6272', '', 'Chi phí nguyên, vật liệu', '627', '0'),
+('6273', '', 'Chi phí dụng cụ sản xuất', '627', '0'),
+('6274', '', 'Chi phí khấu hao TSCĐ', '627', '0'),
+('6277', '', 'Chi phí dịch vụ mua ngoài', '627', '0'),
+('6278', '', 'Chi phí bằng tiền khác', '627', '0'),
 
 ('631', '', 'Giá thành sản xuất', '631', '0'),
 
@@ -338,14 +440,29 @@ INSERT INTO `0_chart_master` VALUES
 
 ('635', '', 'Chi phí tài chính', '635', '0'),
 
-('6421', '', 'Chi phí bán hàng', '642', '0'),
-('6422', '', 'Chi phí quản lý doanh nghiệp', '642', '0'),
+('6411', '', 'Chi phí nhân viên', '641', '0'),
+('6412', '', 'Chi phí nguyên vật liệu, bao bì', '641', '0'),
+('6413', '', 'Chi phí dụng cụ, đồ dùng', '641', '0'),
+('6414', '', 'Chi phí khấu hao TSCĐ', '641', '0'),
+('6415', '', 'Chi phí bảo hành', '641', '0'),
+('6417', '', 'Chi phí dịch vụ mua ngoài', '641', '0'),
+('6418', '', 'Chi phí bằng tiền khác', '641', '0'),
+
+('6421', '', 'Chi phí nhân viên quản lý', '642', '0'),
+('6422', '', 'Chi phí vật liệu quản lý', '642', '0'),
+('6423', '', 'Chi phí đồ dùng văn phòng', '642', '0'),
+('6424', '', 'Chi phí khấu hao TSCĐ', '642', '0'),
+('6425', '', 'Thuế, phí và lệ phí', '642', '0'),
+('6426', '', 'Chi phí dự phòng', '642', '0'),
+('6427', '', 'Chi phí dịch vụ mua ngoài', '642', '0'),
+('6428', '', 'Chi phí bằng tiền khác', '642', '0'),
 
 ('711', '', 'Thu nhập khác', '711', '0'),
 
 ('811', '', 'Chi phí khác', '811', '0'),
 
-('821', '', 'Chi phí thuế thu nhập doanh nghiệp', '821', '0'),
+('8211', '', 'Chi phí thuế TNDN hiện hành', '821', '0'),
+('8212', '', 'Chi phí thuế TNDN hoãn lại', '821', '0'),
 
 ('911', '', 'Xác định kết quả kinh doanh', '911', '0');
 
@@ -369,6 +486,7 @@ CREATE TABLE `0_chart_types` (
 INSERT INTO `0_chart_types` VALUES
 ('111', 'Tiền mặt', '1', '-1', 0),
 ('112', 'Tiền gửi Ngân hàng', '1', '-1', 0),
+('113', 'Tiền đang chuyển', '1', '-1', 0),
 ('121', 'Chứng khoán kinh doanh', '1', '-1', 0),
 ('128', 'Đầu tư nắm giữ đến ngày đáo hạn', '1', '-1', 0),
 ('131', 'Phải thu của khách hàng', '1', '-1', 0),
@@ -383,46 +501,77 @@ INSERT INTO `0_chart_types` VALUES
 ('155', 'Thành phẩm', '1', '-1', 0),
 ('156', 'Hàng hóa', '1', '-1', 0),
 ('157', 'Hàng gửi đi bán', '1', '-1', 0),
-('211', 'Tài sản cố định', '1', '-1', 0),
-('214', 'Hao mòn tài sản cố định', '1', '-1', 0),
-('217', 'Bất động sản đầu tư', '1', '-1', 0),
-('228', 'Đầu tư góp vốn vào đơn vị khác', '1', '-1', 0),
-('229', 'Dự phòng tổn thất tài sản', '1', '-1', 0),
-('241', 'Xây dựng cơ bản dở dang', '1', '-1', 0),
-('242', 'Chi phí trả trước', '1', '-1', 0),
+('158', 'Hàng hoá kho bảo thuế', '1', '-1', 0),
+('161', 'Chi sự nghiệp', '1', '-1', 0),
+('171', 'Giao dịch mua bán lại trái phiếu chính phủ', '1', '-1', 0),
 
-('331', 'Phải trả cho người bán', '2', '-1', 0),
-('333', 'Thuế và các khoản phải nộp Nhà nước', '2', '-1', 0),
-('334', 'Phải trả người lao động', '2', '-1', 0),
-('335', 'Chi phí phải trả', '2', '-1', 0),
-('336', 'Phải trả nội bộ', '2', '-1', 0),
-('338', 'Phải trả, phải nộp khác', '2', '-1', 0),
-('341', 'Vay và nợ thuê tài chính', '2', '-1', 0),
-('352', 'Dự phòng phải trả', '2', '-1', 0),
-('353', 'Quỹ khen thưởng phúc lợi', '2', '-1', 0),
-('356', 'Quỹ phát triển khoa học và công nghệ', '2', '-1', 0),
+('211', 'Tài sản cố định hữu hình', '2', '-1', 0),
+('212', 'Tài sản cố định thuê tài chính', '2', '-1', 0),
+('213', 'Tài sản cố định vô hình', '2', '-1', 0),
+('214', 'Hao mòn tài sản cố định', '2', '-1', 0),
+('217', 'Bất động sản đầu tư', '2', '-1', 0),
+('221', 'Đầu tư vào công ty con', '2', '-1', 0),
+('222', 'Đầu tư vào công ty liên doanh, liên kết', '2', '-1', 0),
+('228', 'Đầu tư khác', '2', '-1', 0),
+('229', 'Dự phòng tổn thất tài sản', '2', '-1', 0),
+('241', 'Xây dựng cơ bản dở dang', '2', '-1', 0),
+('242', 'Chi phí trả trước', '2', '-1', 0),
+('243', 'Tài sản thuế thu nhập hoãn lại', '2', '-1', 0),
+('244', 'Cầm cố, thế chấp, ký quỹ, ký cược', '2', '-1', 0),
 
-('411', 'Vốn đầu tư của chủ sở hữu', '3', '-1', 0),
-('413', 'Chênh lệch tỷ giá hối đoái', '3', '-1', 0),
-('418', 'Các quỹ khác thuộc vốn chủ sở hữu', '3', '-1', 0),
-('419', 'Cổ phiếu quỹ', '3', '-1', 0),
-('421', 'Lợi nhuận sau thuế chưa phân phối', '3', '-1', 0),
+('331', 'Phải trả cho người bán', '3', '-1', 0),
+('333', 'Thuế và các khoản phải nộp Nhà nước', '3', '-1', 0),
+('3331', 'Thuế giá trị gia tăng phải nộp', '3', '333', 0),
+('3338', 'Thuế bảo vệ môi trường và các loại thuế khác', '3', '333', 0),
+('334', 'Phải trả người lao động', '3', '-1', 0),
+('335', 'Chi phí phải trả', '3', '-1', 0),
+('336', 'Phải trả nội bộ', '3', '-1', 0),
+('337', 'Thanh toán theo tiến độ kế hoạch hợp đồng xây dựng', '3', '-1', 0),
+('338', 'Phải trả, phải nộp khác', '3', '-1', 0),
+('341', 'Vay và nợ thuê tài chính', '3', '-1', 0),
+('343', 'Trái phiếu phát hành', '3', '-1', 0),
+('3431', 'Trái phiếu thường', '3', '343', 0),
+('344', 'Nhận ký quỹ, ký cược', '3', '-1', 0),
+('347', 'Thuế thu nhập hoãn lại phải trả', '3', '-1', 0),
+('352', 'Dự phòng phải trả', '3', '-1', 0),
+('353', 'Quỹ khen thưởng phúc lợi', '3', '-1', 0),
+('356', 'Quỹ phát triển khoa học và công nghệ', '3', '-1', 0),
+('357', 'Quỹ bình ổn giá', '3', '-1', 0),
 
-('511', 'Doanh thu bán hàng và cung cấp dịch vụ', '4', '-1', 0),
-('515', 'Doanh thu hoạt động tài chính', '4', '-1', 0),
+('411', 'Vốn đầu tư của chủ sở hữu', '4', '-1', 0),
+('4111', 'Vốn góp của chủ sở hữu', '4', '411', 0),
+('412', 'Chênh lệch đánh giá lại tài sản', '4', '-1', 0),
+('413', 'Chênh lệch tỷ giá hối đoái', '4', '-1', 0),
+('414', 'Quỹ đầu tư phát triển', '4', '-1', 0),
+('417', 'Quỹ hỗ trợ sắp xếp doanh nghiệp', '4', '-1', 0),
+('418', 'Các quỹ khác thuộc vốn chủ sở hữu', '4', '-1', 0),
+('419', 'Cổ phiếu quỹ', '4', '-1', 0),
+('421', 'Lợi nhuận sau thuế chưa phân phối', '4', '-1', 0),
+('441', 'Nguồn vốn đầu tư xây dựng cơ bản', '4', '-1', 0),
+('461', 'Nguồn kinh phí sự nghiệp', '4', '-1', 0),
+('466', 'Nguồn kinh phí đã hình thành TSCĐ', '4', '-1', 0),
 
-('611', 'Mua hàng', '5', '-1', 0),
-('631', 'Giá thành sản xuất', '5', '-1', 0),
-('632', 'Giá vốn hàng bán', '5', '-1', 0),
-('635', 'Chi phí tài chính', '5', '-1', 0),
-('642', 'Chi phí quản lý kinh doanh', '5', '-1', 0),
+('511', 'Doanh thu bán hàng và cung cấp dịch vụ', '5', '-1', 0),
+('515', 'Doanh thu hoạt động tài chính', '5', '-1', 0),
+('521', 'Các khoản giảm trừ doanh thu', '5', '-1', 0),
 
-('711', 'Thu nhập khác', '6', '-1', 0),
+('611', 'Mua hàng', '6', '-1', 0),
+('621', 'Chi phí nguyên liệu, vật liệu trực tiếp', '6', '-1', 0),
+('622', 'Chi phí nhân công trực tiếp', '6', '-1', 0),
+('623', 'Chi phí sử dụng máy thi công', '6', '-1', 0),
+('627', 'Chi phí sản xuất chung', '6', '-1', 0),
+('631', 'Giá thành sản xuất', '6', '-1', 0),
+('632', 'Giá vốn hàng bán', '6', '-1', 0),
+('635', 'Chi phí tài chính', '6', '-1', 0),
+('641', 'Chi phí bán hàng', '6', '-1', 0),
+('642', 'Chi phí quản lý doanh nghiệp', '6', '-1', 0),
 
-('811', 'Chi phí khác', '7', '-1', 0),
-('821', 'Chi phí thuế thu nhập doanh nghiệp', '7', '-1', 0),
+('711', 'Thu nhập khác', '7', '-1', 0),
 
-('911', 'Xác định kết quả kinh doanh', '8', '-1', 0);
+('811', 'Chi phí khác', '8', '-1', 0),
+('821', 'Chi phí thuế thu nhập doanh nghiệp', '8', '-1', 0),
+
+('911', 'Xác định kết quả kinh doanh', '9', '-1', 0);
 
 -- Structure of table `0_comments` --
 
@@ -849,9 +998,19 @@ CREATE TABLE `0_item_codes` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `stock_id` (`stock_id`,`item_code`),
   KEY `item_code` (`item_code`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB AUTO_INCREMENT=9;
 
 -- Data of table `0_item_codes` --
+
+INSERT INTO `0_item_codes` VALUES
+('1', '101', '101', 'Vsmart Aris 6GB-64GB', '1', '1', '0', '0'),
+('2', '102', '102', 'Vsmart Live 4 (6GB/64GB)', '1', '1', '0', '0'),
+('3', '103', '103', 'Ốp Lưng Vsmart Live 4', '1', '1', '0', '0'),
+('4', '201', '201', 'Gói Sản Phẩm, Dịch Vụ', '3', '1', '0', '0'),
+('5', '301', '301', 'Hỗ Trợ', '4', '1', '0', '0'),
+('6', '501', '102', 'Vsmart Live 4 Kèm Ốp Lưng', '1', '1', '0', '0'),
+('7', '501', '103', 'Vsmart Live 4 Kèm Ốp Lưng', '1', '1', '0', '0'),
+('8', '202', '202', 'Bảo Trì', '4', '1', '0', '0');
 
 -- Structure of table `0_item_tax_type_exemptions` --
 
@@ -963,6 +1122,14 @@ CREATE TABLE `0_loc_stock` (
 ) ENGINE=InnoDB;
 
 -- Data of table `0_loc_stock` --
+
+INSERT INTO `0_loc_stock` VALUES
+('DEF', '101', '0'),
+('DEF', '102', '0'),
+('DEF', '103', '0'),
+('DEF', '201', '0'),
+('DEF', '202', '0'),
+('DEF', '301', '0');
 
 -- Structure of table `0_locations` --
 
@@ -1184,8 +1351,8 @@ INSERT INTO `0_quick_entry_lines` VALUES
 ('2', '2', '0', '', 't-', '1', '0', '0'),
 ('3', '3', '0', '', 't-', '1', '0', '0'),
 ('4', '3', '0', '', '=', '5111', '0', '0'),
-('5', '1', '0', '', '=', '6422', '0', '0'),
-('6', '2', '0', '', '=', '6422', '0', '0');
+('5', '1', '0', '', '=', '6277', '0', '0'),
+('6', '2', '0', '', '=', '6427', '0', '0');
 
 -- Structure of table `0_recurrent_invoices` --
 
@@ -1533,6 +1700,14 @@ CREATE TABLE `0_stock_master` (
 
 -- Data of table `0_stock_master` --
 
+INSERT INTO `0_stock_master` VALUES
+('101', '1', '1', 'Vsmart Aris 6GB-64GB', '', 'chiếc', 'B', '5111', '632', '1561', '412', '154', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0000-00-00', '0000-00-00', ''),
+('102', '1', '1', 'Vsmart Live 4 (6GB/64GB)', '', 'chiếc', 'B', '5111', '632', '1561', '412', '154', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0000-00-00', '0000-00-00', ''),
+('103', '1', '1', 'Ốp Lưng Vsmart Live 4', '', 'chiếc', 'B', '5111', '632', '1561', '412', '154', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0000-00-00', '0000-00-00', ''),
+('201', '3', '1', 'Gói Sản Phẩm, Dịch Vụ', '', 'bộ', 'M', '5111', '632', '1561', '412', '154', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0000-00-00', '0000-00-00', ''),
+('202', '4', '1', 'Bảo Trì', '', 'giờ', 'D', '5111', '632', '1561', '412', '154', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0000-00-00', '0000-00-00', ''),
+('301', '4', '1', 'Hỗ Trợ', '', 'giờ', 'D', '5111', '632', '1561', '412', '154', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '0', '0000-00-00', '0000-00-00', '');
+
 -- Structure of table `0_stock_moves` --
 
 DROP TABLE IF EXISTS `0_stock_moves`;
@@ -1702,17 +1877,17 @@ INSERT INTO `0_sys_prefs` VALUES
 ('past_due_days', 'glsetup.general', 'int', 11, '30'),
 ('profit_loss_year_act', 'glsetup.general', 'varchar', 15, '911'),
 ('retained_earnings_act', 'glsetup.general', 'varchar', 15, '4212'),
-('bank_charge_act', 'glsetup.general', 'varchar', 15, '6422'),
-('exchange_diff_act', 'glsetup.general', 'varchar', 15, '413'),
+('bank_charge_act', 'glsetup.general', 'varchar', 15, '6428'),
+('exchange_diff_act', 'glsetup.general', 'varchar', 15, '4131'),
 ('tax_algorithm', 'glsetup.customer', 'tinyint', 1, '1'),
 ('default_credit_limit', 'glsetup.customer', 'int', 11, '10000000'),
 ('accumulate_shipping', 'glsetup.customer', 'tinyint', 1, '0'),
 ('legal_text', 'glsetup.customer', 'tinytext', 0, ''),
-('freight_act', 'glsetup.customer', 'varchar', 15, '6422'),
+('freight_act', 'glsetup.customer', 'varchar', 15, '6418'),
 ('debtors_act', 'glsetup.sales', 'varchar', 15, '131'),
 ('default_sales_act', 'glsetup.sales', 'varchar', 15, '5111'),
-('default_sales_discount_act', 'glsetup.sales', 'varchar', 15, '5118'),
-('default_prompt_payment_act', 'glsetup.sales', 'varchar', 15, '5118'),
+('default_sales_discount_act', 'glsetup.sales', 'varchar', 15, '5211'),
+('default_prompt_payment_act', 'glsetup.sales', 'varchar', 15, '5211'),
 ('default_delivery_required', 'glsetup.sales', 'smallint', 6, '1'),
 ('default_receival_required', 'glsetup.purchase', 'smallint', 6, '10'),
 ('default_quote_valid_days', 'glsetup.sales', 'smallint', 6, '30'),
@@ -1722,9 +1897,9 @@ INSERT INTO `0_sys_prefs` VALUES
 ('po_over_receive', 'glsetup.purchase', 'int', 11, '10'),
 ('po_over_charge', 'glsetup.purchase', 'int', 11, '10'),
 ('allow_negative_stock', 'glsetup.inventory', 'tinyint', 1, '0'),
-('default_inventory_act', 'glsetup.items', 'varchar', 15, '156'),
+('default_inventory_act', 'glsetup.items', 'varchar', 15, '1561'),
 ('default_cogs_act', 'glsetup.items', 'varchar', 15, '632'),
-('default_adj_act', 'glsetup.items', 'varchar', 15, '4111'),
+('default_adj_act', 'glsetup.items', 'varchar', 15, '412'),
 ('default_inv_sales_act', 'glsetup.items', 'varchar', 15, '5111'),
 ('default_wip_act', 'glsetup.items', 'varchar', 15, '154'),
 ('default_workorder_required', 'glsetup.manuf', 'int', 11, '20'),
@@ -1747,7 +1922,7 @@ INSERT INTO `0_sys_prefs` VALUES
 ('barcodes_on_stock','setup.company', 'tinyint', 1, '0'),
 ('print_dialog_direct','setup.company', 'tinyint', 1, '0'),
 ('ref_no_auto_increase','setup.company', 'tinyint', 1, '0'),
-('default_loss_on_asset_disposal_act', 'glsetup.items', 'varchar', '15', '2141'),
+('default_loss_on_asset_disposal_act', 'glsetup.items', 'varchar', '15', '6274'),
 ('depreciation_period', 'glsetup.company', 'tinyint', '1', '1'),
 ('use_manufacturing','setup.company', 'tinyint', 1, '1'),
 ('max_days_in_docs','setup.company', 'smallint', 5, '180'),
