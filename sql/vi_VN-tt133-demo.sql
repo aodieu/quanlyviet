@@ -503,9 +503,15 @@ CREATE TABLE `0_crm_contacts` (
   `entity_id` varchar(11) DEFAULT NULL COMMENT 'entity id in related class table',
   PRIMARY KEY (`id`),
   KEY `type` (`type`,`action`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB AUTO_INCREMENT=5;
 
 -- Data of table `0_crm_contacts` --
+
+INSERT INTO `0_crm_contacts` VALUES
+('1', '1', 'cust_branch', 'general', '1'),
+('2', '1', 'customer', 'general', '1'),
+('3', '2', 'cust_branch', 'general', '2'),
+('4', '2', 'customer', 'general', '2');
 
 -- Structure of table `0_crm_persons` --
 
@@ -526,9 +532,13 @@ CREATE TABLE `0_crm_persons` (
   `inactive` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `ref` (`ref`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB AUTO_INCREMENT=3;
 
 -- Data of table `0_crm_persons` --
+
+INSERT INTO `0_crm_persons` VALUES
+('1', 'Mai Trang LLC', 'Công Ty TNHH 1 Thành Viên Mai Trang', NULL, 'TT Vị Xuyên, Hà Giang', '4365765634346', '4576543634563456', '324523523523', 'maitrangco@aodieu.com', NULL, '', '0'),
+('2', 'Minh Phuc JSC', 'Công ty Cổ Phần Thương Mại Minh Phúc', NULL, 'Hải Bối, Đông Anh, Hà Nội', '5476453745', '4567457457', '7457547457', 'minhphucjsc@aodieu.com', NULL, '', '0');
 
 -- Structure of table `0_currencies` --
 
@@ -603,9 +613,13 @@ CREATE TABLE `0_cust_branch` (
   PRIMARY KEY (`branch_code`,`debtor_no`),
   KEY `branch_ref` (`branch_ref`),
   KEY `group_no` (`group_no`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB AUTO_INCREMENT=3;
 
 -- Data of table `0_cust_branch` --
+
+INSERT INTO `0_cust_branch` VALUES
+('1', '1', 'Công Ty TNHH 1 Thành Viên Mai Trang', 'Mai Trang LLC', 'TT Vị Xuyên, Hà Giang', '1', '1', 'DEF', '1', '', '5118', '131', '5118', '1', 'TT Vị Xuyên, Hà Giang', '0', '', NULL, '0'),
+('2', '2', 'Công ty Cổ Phần Thương Mại Minh Phúc', 'Minh Phuc JSC', 'Hải Bối, Đông Anh, Hà Nội', '1', '1', 'DEF', '1', '', '5118', '131', '5118', '1', 'Hải Bối, Đông Anh, Hà Nội', '0', '', '677547457475', '0');
 
 -- Structure of table `0_debtor_trans` --
 
@@ -691,9 +705,13 @@ CREATE TABLE `0_debtors_master` (
   PRIMARY KEY (`debtor_no`),
   UNIQUE KEY `debtor_ref` (`debtor_ref`),
   KEY `name` (`name`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB AUTO_INCREMENT=3;
 
 -- Data of table `0_debtors_master` --
+
+INSERT INTO `0_debtors_master` VALUES
+('1', 'Công Ty TNHH 1 Thành Viên Mai Trang', 'Mai Trang LLC', 'TT Vị Xuyên, Hà Giang', '567453654745', 'VND', '2', '0', '0', '1', '4', '0', '0', '100000000', '', '0'),
+('2', 'Công ty Cổ Phần Thương Mại Minh Phúc', 'Minh Phuc JSC', 'Hải Bối, Đông Anh, Hà Nội', '89567547645', 'VND', '2', '0', '0', '1', '2', '0.02', '0.01', '200000000', '', '0');
 
 -- Structure of table `0_dimensions` --
 

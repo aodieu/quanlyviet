@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FrontAccounting\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-23 20:15+0700\n"
-"PO-Revision-Date: 2021-01-23 20:40+0700\n"
+"POT-Creation-Date: 2021-04-11 11:23+0700\n"
+"PO-Revision-Date: 2021-04-11 11:23+0700\n"
 "Last-Translator: Translation Team <info@frontaccounting.net>\n"
 "Language-Team: Translators <info@frontaccounting.com>\n"
 "Language: vi\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-KeywordsList: _;addLabel\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -37,66 +37,66 @@ msgstr "Thoát"
 msgid "Restricted access"
 msgstr "Truy cập hạn chế"
 
-#: access/login.php:28
+#: access/login.php:27
 msgid "Login as user: demouser and password: password"
 msgstr "Đăng nhập với tên: demouser và mật khẩu: password"
 
-#: access/login.php:30
+#: access/login.php:29
 msgid "Please login here"
 msgstr "Đăng nhập"
 
-#: access/login.php:32
+#: access/login.php:31
 msgid "or"
 msgstr "hoặc"
 
-#: access/login.php:32
+#: access/login.php:31
 msgid "request new password"
 msgstr "yêu cầu mật khẩu mới"
 
-#: access/login.php:41
+#: access/login.php:40
 msgid "Too many failed login attempts.<br>Please wait a while or try later."
 msgstr "Đăng nhập sai quá nhiều lần.<br>Hãy chờ một lúc hoặc thử lại sau."
 
-#: access/login.php:44
+#: access/login.php:43
 msgid "Invalid password or username. Please, try again."
 msgstr "Sai thông tin đăng nhập. Hãy thử lại."
 
-#: access/login.php:52 access/login.php:82
+#: access/login.php:51 access/login.php:81
 msgid "Authorization timeout"
 msgstr "Hết thời gian chờ"
 
-#: access/login.php:52 access/login.php:86
+#: access/login.php:51 access/login.php:85
 msgid "Login"
 msgstr "Đăng nhập"
 
 # c:/Apache/htdocs/account/access/login.php:28
-#: access/login.php:86 access/password_reset.php:62
+#: access/login.php:85 access/password_reset.php:62
 msgid "Version"
 msgstr "Phiên bản"
 
-#: access/login.php:90
+#: access/login.php:89
 msgid "User name"
 msgstr "Người dùng"
 
 # c:/Apache/htdocs/account/admin/Users.php:162
-#: access/login.php:94 admin/users.php:181
+#: access/login.php:93 admin/users.php:181
 msgid "Password:"
 msgstr "Mật khẩu:"
 
 # c:/Apache2/htdocs/account/admin/create_coy.php:151
 # c:/Apache2/htdocs/account/admin/create_coy.php:232
-#: access/login.php:103 access/login.php:110 access/password_reset.php:70
+#: access/login.php:102 access/login.php:109 access/password_reset.php:70
 #: access/password_reset.php:77 admin/create_coy.php:227
 #: admin/create_coy.php:300 admin/inst_upgrade.php:59 includes/sysnames.inc:210
 msgid "Company"
 msgstr "Công ty"
 
-#: access/login.php:117
+#: access/login.php:116
 msgid "Login -->"
 msgstr "Đăng Nhập"
 
 # c:/Apache/htdocs/account/admin/display_prefs.php:120
-#: access/login.php:150 access/password_reset.php:109
+#: access/login.php:149 access/password_reset.php:109
 #: admin/display_prefs.php:118 themes/canvas/renderer.php:171
 #: themes/default/renderer.php:116 themes/dropdown/renderer.php:186
 msgid "Theme:"
@@ -112,7 +112,7 @@ msgstr "Cảm ơn đã sử dụng"
 msgid "Click here to Login Again."
 msgstr "Đăng nhập lại."
 
-#: access/password_reset.php:32 access/password_reset.php:62
+#: access/password_reset.php:31 access/password_reset.php:62
 msgid "Password reset"
 msgstr "Khôi phục mật khẩu"
 
@@ -147,7 +147,7 @@ msgstr ""
 msgid "Select attachment file."
 msgstr "Chọn file đính kèm."
 
-#: admin/attachments.php:93 admin/company_preferences.php:61
+#: admin/attachments.php:93 admin/company_preferences.php:66
 #: inventory/manage/items.php:93
 msgid "The file size is over the maximum allowed."
 msgstr "Dung lượng file quá mức cho phép."
@@ -157,15 +157,15 @@ msgid ""
 "File name exceeds maximum of 60 chars. Please change filename and try again."
 msgstr ""
 
-#: admin/attachments.php:134
+#: admin/attachments.php:133
 msgid "Attachment has been inserted."
 msgstr "Đã thêm file đính kèm."
 
-#: admin/attachments.php:138
+#: admin/attachments.php:137
 msgid "Attachment has been updated."
 msgstr "Đã cập nhật file đính kèm."
 
-#: admin/attachments.php:152
+#: admin/attachments.php:151
 msgid "Attachment has been deleted."
 msgstr "Đã xoá file đính kèm."
 
@@ -263,11 +263,11 @@ msgstr "Chọn nhà cung cấp: "
 #: gl/manage/gl_quick_entries.php:183 gl/manage/gl_quick_entries.php:271
 #: includes/ui/attachment.inc:95 includes/ui/class.crud_view.inc:281
 #: includes/ui/contacts_view.inc:59 includes/ui/simple_crud_class.inc:51
-#: includes/ui/ui_view.inc:1497 inventory/includes/item_adjustments_ui.inc:100
+#: includes/ui/ui_view.inc:1501 inventory/includes/item_adjustments_ui.inc:100
 #: inventory/includes/stock_transfers_ui.inc:81
 #: inventory/manage/item_categories.php:131 inventory/manage/item_codes.php:135
 #: inventory/manage/item_units.php:100 inventory/manage/locations.php:146
-#: inventory/manage/sales_kits.php:50 inventory/prices.php:148
+#: inventory/manage/sales_kits.php:49 inventory/prices.php:148
 #: inventory/purchasing_data.php:147
 #: manufacturing/includes/work_order_issue_ui.inc:58
 #: manufacturing/manage/bom_edit.php:58
@@ -343,12 +343,12 @@ msgstr "Tải về"
 #: gl/manage/gl_account_types.php:139 gl/manage/gl_quick_entries.php:184
 #: gl/manage/gl_quick_entries.php:272 includes/ui/attachment.inc:99
 #: includes/ui/class.crud_view.inc:283 includes/ui/contacts_view.inc:62
-#: includes/ui/simple_crud_class.inc:52 includes/ui/ui_input.inc:287
+#: includes/ui/simple_crud_class.inc:52 includes/ui/ui_input.inc:282
 #: inventory/includes/item_adjustments_ui.inc:105
 #: inventory/includes/stock_transfers_ui.inc:82
 #: inventory/manage/item_categories.php:132 inventory/manage/item_codes.php:136
 #: inventory/manage/item_units.php:101 inventory/manage/locations.php:147
-#: inventory/manage/sales_kits.php:51 inventory/prices.php:149
+#: inventory/manage/sales_kits.php:50 inventory/prices.php:149
 #: inventory/purchasing_data.php:148
 #: manufacturing/includes/work_order_issue_ui.inc:59
 #: manufacturing/manage/bom_edit.php:59
@@ -409,7 +409,7 @@ msgstr "Xoá"
 #: purchasing/inquiry/supplier_inquiry.php:156 purchasing/view/view_po.php:106
 #: purchasing/view/view_po.php:129 reporting/includes/doctext.inc:162
 #: reporting/includes/doctext.inc:204 reporting/includes/doctext.inc:241
-#: reporting/rep101.php:126 reporting/rep201.php:106 reporting/rep203.php:80
+#: reporting/rep101.php:130 reporting/rep201.php:105 reporting/rep203.php:80
 #: reporting/rep306.php:133 reporting/rep310.php:134 reporting/rep601.php:73
 #: reporting/rep602.php:71 reporting/rep704.php:69 reporting/rep704.php:75
 #: reporting/rep704.php:81 reporting/rep710.php:71
@@ -466,7 +466,7 @@ msgid "Description"
 msgstr "Mô tả"
 
 # c:/Apache/htdocs/account/admin/backups.php:108
-#: admin/attachments.php:209 admin/backups.php:72 admin/backups.php:154
+#: admin/attachments.php:209 admin/backups.php:72 admin/backups.php:153
 #: includes/ui/attachment.inc:85
 msgid "Filename"
 msgstr "Tên file"
@@ -491,8 +491,8 @@ msgstr "Giao dịch #"
 msgid "Attached File"
 msgstr "File đính kèm"
 
-#: admin/backups.php:22 admin/backups.php:50 admin/backups.php:119
-#: admin/backups.php:148 admin/backups.php:161 admin/backups.php:182
+#: admin/backups.php:22 admin/backups.php:50 admin/backups.php:118
+#: admin/backups.php:147 admin/backups.php:160 admin/backups.php:181
 msgid "Select backup file first."
 msgstr "Trước tiên chọn sao lưu file."
 
@@ -535,19 +535,19 @@ msgstr "Lỗi khi xoá sao lưu."
 # c:/Apache/htdocs/account/includes/ui/UI_Lists.inc:771
 # c:/Apache/htdocs/account/includes/ui/UI_Lists.inc:783
 # c:/Apache/htdocs/account/reporting/includes/reports_classes.inc:217
-#: admin/backups.php:105 admin/create_coy.php:246 admin/fiscalyears.php:135
+#: admin/backups.php:104 admin/create_coy.php:246 admin/fiscalyears.php:135
 #: admin/inst_lang.php:81 admin/inst_lang.php:87
 #: dimensions/inquiry/search_dimensions.php:100 gl/manage/bank_accounts.php:110
 #: gl/manage/currencies.php:137 gl/manage/gl_account_classes.php:117
 #: gl/manage/gl_quick_entries.php:215 includes/system_tests.inc:40
 #: includes/system_tests.inc:108 includes/system_tests.inc:120
-#: includes/ui/class.reflines_crud.inc:53 includes/ui/ui_lists.inc:1678
+#: includes/ui/class.reflines_crud.inc:53 includes/ui/ui_lists.inc:1661
 #: install/index.php:351 purchasing/manage/suppliers.php:206
-#: reporting/rep101.php:112 reporting/rep101.php:122 reporting/rep102.php:101
+#: reporting/rep101.php:114 reporting/rep101.php:126 reporting/rep102.php:101
 #: reporting/rep102.php:103 reporting/rep104.php:95 reporting/rep106.php:75
-#: reporting/rep114.php:66 reporting/rep115.php:146 reporting/rep201.php:102
+#: reporting/rep114.php:66 reporting/rep115.php:145 reporting/rep201.php:101
 #: reporting/rep202.php:106 reporting/rep202.php:108 reporting/rep203.php:76
-#: reporting/rep206.php:101 reporting/rep303.php:195 reporting/rep303.php:200
+#: reporting/rep206.php:100 reporting/rep303.php:195 reporting/rep303.php:200
 #: reporting/rep304.php:115 reporting/rep402.php:120 reporting/rep402.php:121
 #: reporting/rep402.php:169 reporting/rep501.php:103
 #: sales/manage/sales_points.php:87 sales/manage/sales_points.php:88
@@ -556,74 +556,74 @@ msgid "No"
 msgstr "No"
 
 # c:/Apache/htdocs/account/admin/backups.php:119
-#: admin/backups.php:144
+#: admin/backups.php:143
 msgid "Restore backup completed."
 msgstr "Khôi phục đã hoàn tất."
 
 # c:/Apache2/htdocs/account/admin/backups.php:144
-#: admin/backups.php:154
+#: admin/backups.php:153
 msgid "File successfully deleted."
 msgstr "File đã được xoá."
 
-#: admin/backups.php:158
+#: admin/backups.php:157
 msgid "Can't delete backup file."
 msgstr "Không thể xoá file."
 
-#: admin/backups.php:170
+#: admin/backups.php:169
 msgid "You can only upload *.sql backup files"
 msgstr "Bạn chỉ tải lên được file .sql"
 
-#: admin/backups.php:172
+#: admin/backups.php:171
 msgid "Filename contains forbidden chars. Please rename file and try again."
 msgstr "Tên file chứa các ký tự bị cấm. Hãy đổi tên và thử lại."
 
-#: admin/backups.php:175
+#: admin/backups.php:174
 msgid "File uploaded to backup directory"
 msgstr "Đã tải file vào thư mục sao lưu"
 
-#: admin/backups.php:179
+#: admin/backups.php:178
 msgid "File was not uploaded into the system."
 msgstr "File chưa được tải lên hệ thống."
 
-#: admin/backups.php:191
+#: admin/backups.php:190
 msgid "Create backup"
 msgstr "Tạo sao lưu"
 
 # c:/Apache2/htdocs/account/sales/includes/ui/sales_order_ui.inc:374
-#: admin/backups.php:192 sales/includes/ui/sales_order_ui.inc:537
+#: admin/backups.php:191 sales/includes/ui/sales_order_ui.inc:537
 #: sales/includes/ui/sales_order_ui.inc:581
 msgid "Comments:"
 msgstr "Bình luận:"
 
-#: admin/backups.php:193
+#: admin/backups.php:192
 msgid "Compression:"
 msgstr "Nén:"
 
 # c:/Apache/htdocs/account/admin/backups.php:60
-#: admin/backups.php:195
+#: admin/backups.php:194
 msgid "Create Backup"
 msgstr "Tạo sao lưu"
 
-#: admin/backups.php:197
+#: admin/backups.php:196
 msgid "Backup scripts maintenance"
 msgstr "Thiết lập kịch bản sao lưu"
 
 # c:/Apache2/htdocs/account/admin/backups.php:85
-#: admin/backups.php:203
+#: admin/backups.php:202
 msgid "View Backup"
 msgstr "Xem sao lưu"
 
 # c:/Apache/htdocs/account/admin/backups.php:62
-#: admin/backups.php:204
+#: admin/backups.php:203
 msgid "Download Backup"
 msgstr "Download sao lưu"
 
 # c:/Apache/htdocs/account/admin/backups.php:61
-#: admin/backups.php:205
+#: admin/backups.php:204
 msgid "Restore Backup"
 msgstr "Khôi phục sao lưu"
 
-#: admin/backups.php:206
+#: admin/backups.php:205
 msgid ""
 "You are about to restore database from backup file.\n"
 "Do you want to continue?"
@@ -632,11 +632,11 @@ msgstr ""
 "Tiếp tục chứ?"
 
 # c:/Apache2/htdocs/account/admin/backups.php:86
-#: admin/backups.php:208
+#: admin/backups.php:207
 msgid "Delete Backup"
 msgstr "Xoá sao lưu"
 
-#: admin/backups.php:210
+#: admin/backups.php:209
 #, php-format
 msgid ""
 "You are about to remove selected backup file.\n"
@@ -645,20 +645,20 @@ msgstr ""
 "Bạn đang gỡ bỏ file sao lưu.\n"
 "Tiếp tục chứ?"
 
-#: admin/backups.php:215
+#: admin/backups.php:214
 msgid "Update security settings"
 msgstr "Cập nhật cài đặt an ninh"
 
-#: admin/backups.php:215
+#: admin/backups.php:214
 msgid "Protect security settings"
 msgstr "Bảo vệ cài đăt an ninh"
 
-#: admin/backups.php:219
+#: admin/backups.php:218
 msgid "Upload file"
 msgstr "Tải lên"
 
 #: admin/change_current_user_password.php:17
-#: admin/change_current_user_password.php:89 themes/canvas/renderer.php:44
+#: admin/change_current_user_password.php:88 themes/canvas/renderer.php:44
 #: themes/default/renderer.php:74 themes/dropdown/renderer.php:78
 msgid "Change password"
 msgstr "Đổi mật khẩu"
@@ -685,28 +685,28 @@ msgstr "Mật khẩu nhập vào không giống nhau."
 msgid "Password cannot be changed in demo mode."
 msgstr "Không đổi được mật khẩu trong chế độ demo."
 
-#: admin/change_current_user_password.php:63
+#: admin/change_current_user_password.php:62
 msgid "Your password has been updated."
 msgstr "Mật khẩu đã cập nhật."
 
 # c:/Apache/htdocs/account/admin/Users.php:153
-#: admin/change_current_user_password.php:75 admin/users.php:171
+#: admin/change_current_user_password.php:74 admin/users.php:171
 msgid "User login:"
 msgstr "Tên người dùng:"
 
-#: admin/change_current_user_password.php:81
+#: admin/change_current_user_password.php:80
 msgid "Current Password:"
 msgstr "Mật khẩu hiện tại:"
 
-#: admin/change_current_user_password.php:82
+#: admin/change_current_user_password.php:81
 msgid "New Password:"
 msgstr "Mật khẩu mới:"
 
-#: admin/change_current_user_password.php:83
+#: admin/change_current_user_password.php:82
 msgid "Repeat New Password:"
 msgstr "Nhập lại mật khẩu mới:"
 
-#: admin/change_current_user_password.php:85
+#: admin/change_current_user_password.php:84
 msgid "Enter your new password in the fields."
 msgstr "Nhập mật khẩu mới."
 
@@ -742,38 +742,42 @@ msgid "Round Calculated field must be a positive number."
 msgstr "Giá trị nhập vào mục Làm Tròn phải lớn hơn không."
 
 #: admin/company_preferences.php:55
+msgid "Max day range in Documents must be a positive number."
+msgstr ""
+
+#: admin/company_preferences.php:60
 msgid "Add Price from Std Cost field must be number."
 msgstr "Công Giá từ Giá Thành phải là số."
 
-#: admin/company_preferences.php:65
+#: admin/company_preferences.php:70
 msgid "Error uploading logo file."
 msgstr "Tải logo lên bị lỗi."
 
-#: admin/company_preferences.php:77
+#: admin/company_preferences.php:82
 msgid ""
 "Only jpg and png files are supported - a file extension of .jpg or .png is "
 "expected"
 msgstr "Chỉ hỗ trợ file định dạng JPG hoặc PNG"
 
 # c:/Apache2/htdocs/account/inventory/manage/items.php:57
-#: admin/company_preferences.php:81 inventory/manage/items.php:116
+#: admin/company_preferences.php:86 inventory/manage/items.php:116
 msgid ""
 "The file size is over the maximum allowed. The maximum size allowed in KB is"
 msgstr "Dung lượng file quá mức cho phép. Lớn nhất chỉ tính bằng Kb"
 
 # c:/Apache2/htdocs/account/inventory/manage/items.php:62
-#: admin/company_preferences.php:85 inventory/manage/items.php:108
+#: admin/company_preferences.php:90 inventory/manage/items.php:108
 #: inventory/manage/items.php:120
 msgid "Only graphics files can be uploaded"
 msgstr "Chỉ các file đồ hoạ mới tải lên được"
 
 # c:/Apache2/htdocs/account/inventory/manage/items.php:71
-#: admin/company_preferences.php:91 admin/company_preferences.php:118
+#: admin/company_preferences.php:96 admin/company_preferences.php:123
 #: inventory/manage/items.php:126
 msgid "The existing image could not be removed"
 msgstr "Không thể xoá hình ảnh"
 
-#: admin/company_preferences.php:100
+#: admin/company_preferences.php:105
 msgid "Error uploading logo file"
 msgstr "Tải logo lên bị lỗi"
 
@@ -782,12 +786,12 @@ msgstr "Tải logo lên bị lỗi"
 msgid "Company setup has been updated."
 msgstr "Cài đặt công ty đã cập nhật."
 
-#: admin/company_preferences.php:222
+#: admin/company_preferences.php:230
 msgid "General settings"
 msgstr "Cài đặt chung"
 
 # c:/Apache/htdocs/account/admin/company_preferences.php:64
-#: admin/company_preferences.php:224
+#: admin/company_preferences.php:232
 msgid "Name (to appear on reports):"
 msgstr "Tên (trên báo cáo):"
 
@@ -797,26 +801,26 @@ msgstr "Tên (trên báo cáo):"
 # c:/Apache/htdocs/account/purchasing/manage/suppliers.php:152
 # c:/Apache/htdocs/account/sales/delivery_details.php:165
 # c:/Apache/htdocs/account/sales/manage/customers.php:238
-#: admin/company_preferences.php:225 admin/shipping_companies.php:126
+#: admin/company_preferences.php:233 admin/shipping_companies.php:126
 #: includes/ui/contacts_view.inc:103 inventory/manage/locations.php:186
 #: sales/includes/ui/sales_order_ui.inc:575 sales/manage/customers.php:199
 msgid "Address:"
 msgstr "Địa chỉ:"
 
 # c:/Apache2/htdocs/account/admin/company_preferences.php:83
-#: admin/company_preferences.php:226
+#: admin/company_preferences.php:234
 msgid "Domicile:"
 msgstr "Trụ sở:"
 
 # c:/Apache/htdocs/account/admin/shipping_companies.php:140
 # c:/Apache/htdocs/account/sales/manage/customer_branches.php:252
-#: admin/company_preferences.php:228 admin/shipping_companies.php:124
+#: admin/company_preferences.php:236 admin/shipping_companies.php:124
 #: purchasing/manage/suppliers.php:219 sales/manage/customer_branches.php:226
 msgid "Phone Number:"
 msgstr "Điện thoại:"
 
 # c:/Apache/htdocs/account/sales/manage/customer_branches.php:253
-#: admin/company_preferences.php:229 includes/ui/contacts_view.inc:98
+#: admin/company_preferences.php:237 includes/ui/contacts_view.inc:98
 #: purchasing/manage/suppliers.php:222 sales/manage/customer_branches.php:228
 #: sales/manage/customers.php:218
 msgid "Fax Number:"
@@ -824,185 +828,190 @@ msgstr "FAX:"
 
 # c:/Apache/htdocs/account/admin/company_preferences.php:75
 # c:/Apache/htdocs/account/admin/Users.php:173
-#: admin/company_preferences.php:230 admin/users.php:188
+#: admin/company_preferences.php:238 admin/users.php:188
 msgid "Email Address:"
 msgstr "Email :"
 
-#: admin/company_preferences.php:232
+#: admin/company_preferences.php:240
 msgid "BCC Address for all outgoing mails:"
 msgstr "BCC gửi email :"
 
 # c:/Apache/htdocs/account/admin/company_preferences.php:65
-#: admin/company_preferences.php:234
+#: admin/company_preferences.php:242
 msgid "Official Company Number:"
 msgstr "Trụ sở chính :"
 
 # c:/Apache2/htdocs/account/sales/manage/customers.php:245
-#: admin/company_preferences.php:235 purchasing/manage/suppliers.php:182
+#: admin/company_preferences.php:243 purchasing/manage/suppliers.php:182
 #: sales/manage/customers.php:201
 msgid "GSTNo:"
 msgstr "Mã số thuế:"
 
 # c:/Apache/htdocs/account/admin/company_preferences.php:68
-#: admin/company_preferences.php:236
+#: admin/company_preferences.php:244
 msgid "Home Currency:"
 msgstr "Đơn vị tiền tệ:"
 
 # c:/Apache2/htdocs/account/admin/company_preferences.php:82
-#: admin/company_preferences.php:238
+#: admin/company_preferences.php:246
 msgid "Company Logo:"
 msgstr "Logo:"
 
-#: admin/company_preferences.php:239
+#: admin/company_preferences.php:247
 msgid "New Company Logo (.jpg)"
 msgstr "Tải lên file logo"
 
-#: admin/company_preferences.php:240
+#: admin/company_preferences.php:248
 msgid "Delete Company Logo:"
 msgstr "Xoá Logo:"
 
-#: admin/company_preferences.php:242
-msgid "Time Zone on Reports"
-msgstr "Múi giờ trên báo cáo"
+#: admin/company_preferences.php:250
+msgid "Time Zone on Reports:"
+msgstr ""
 
-#: admin/company_preferences.php:243
-msgid "Company Logo on Reports"
-msgstr "Logo trong báo cáo"
-
-#: admin/company_preferences.php:244
-msgid "Use Barcodes on Stocks"
-msgstr "Dùng mã vạch"
-
-#: admin/company_preferences.php:245
-msgid "Auto Increase of Document References"
-msgstr "Dùng"
-
-#: admin/company_preferences.php:246
-msgid "Use Dimensions on Recurrent Invoices"
-msgstr "Dùng khoản mục cho hóa đơn định kỳ"
-
-#: admin/company_preferences.php:247
-msgid "Use Long Descriptions on Invoices"
-msgstr "Mô tả đầy đủ trong hóa đơn"
-
-#: admin/company_preferences.php:248
-msgid "Database Scheme Version"
-msgstr "Phiên bản cơ sở dữ liệu"
+#: admin/company_preferences.php:251
+msgid "Company Logo on Reports:"
+msgstr ""
 
 #: admin/company_preferences.php:252
+msgid "Use Barcodes on Stocks:"
+msgstr ""
+
+#: admin/company_preferences.php:253
+msgid "Auto Increase of Document References:"
+msgstr ""
+
+#: admin/company_preferences.php:254
+msgid "Use Dimensions on Recurrent Invoices:"
+msgstr ""
+
+#: admin/company_preferences.php:255
+msgid "Use Long Descriptions on Invoices:"
+msgstr ""
+
+#: admin/company_preferences.php:256
+msgid "Database Scheme Version:"
+msgstr ""
+
+#: admin/company_preferences.php:260
 msgid "General Ledger Settings"
 msgstr "Cài đặt kế toán"
 
 # c:/Apache/htdocs/account/admin/company_preferences.php:69
-#: admin/company_preferences.php:253 gl/gl_budget.php:59
+#: admin/company_preferences.php:261 gl/gl_budget.php:59
 msgid "Fiscal Year:"
 msgstr "Năm tài chính:"
 
 # c:/Apache2/htdocs/account/admin/company_preferences.php:71
-#: admin/company_preferences.php:254
+#: admin/company_preferences.php:262
 msgid "Tax Periods:"
 msgstr "Kỳ tính thuế:"
 
 # c:/Apache2/htdocs/account/admin/company_preferences.php:71
-#: admin/company_preferences.php:254
+#: admin/company_preferences.php:262
 msgid "Months."
 msgstr "Tháng."
 
 # c:/Apache2/htdocs/account/admin/company_preferences.php:72
-#: admin/company_preferences.php:255
+#: admin/company_preferences.php:263
 msgid "Tax Last Period:"
 msgstr "Kỳ thuế trước:"
 
 # c:/Apache2/htdocs/account/admin/company_preferences.php:72
-#: admin/company_preferences.php:255
+#: admin/company_preferences.php:263
 msgid "Months back."
 msgstr "Tháng trước."
 
-#: admin/company_preferences.php:256
-msgid "Put alternative Tax Include on Docs"
-msgstr "Nhiều loại thuế trên tài liệu"
+#: admin/company_preferences.php:264
+msgid "Put alternative Tax Include on Docs:"
+msgstr ""
 
-#: admin/company_preferences.php:257
-msgid "Suppress Tax Rates on Docs"
-msgstr "Bỏ thuế khỏi tài liệu"
+#: admin/company_preferences.php:265
+msgid "Suppress Tax Rates on Docs:"
+msgstr ""
 
-#: admin/company_preferences.php:258
-msgid "Automatic Revaluation Currency Accounts"
-msgstr "Tự động xác nhận tỷ giá"
+#: admin/company_preferences.php:266
+msgid "Automatic Revaluation Currency Accounts:"
+msgstr ""
 
-#: admin/company_preferences.php:260 themes/canvas/renderer.php:97
+#: admin/company_preferences.php:268 themes/canvas/renderer.php:97
 msgid "Sales Pricing"
 msgstr "Giá bán hàng"
 
-#: admin/company_preferences.php:261
+#: admin/company_preferences.php:269
 msgid "Base for auto price calculations:"
 msgstr "Cơ sở tính giá tự động:"
 
-#: admin/company_preferences.php:261
+#: admin/company_preferences.php:269
 msgid "No base price list"
 msgstr "Không có danh sách giá cơ sở"
 
-#: admin/company_preferences.php:263
+#: admin/company_preferences.php:271
 msgid "Add Price from Std Cost:"
 msgstr "Giá thành định mức:"
 
-#: admin/company_preferences.php:265
+#: admin/company_preferences.php:273
 msgid "Round calculated prices to nearest:"
 msgstr "Làm tròn tính giá đến:"
 
-#: admin/company_preferences.php:269
+#: admin/company_preferences.php:277
 msgid "Optional Modules"
 msgstr "Chọn Modules"
 
-# c:/Apache/htdocs/account/applications/Manufacturing.php:5
-# c:/Apache/htdocs/account/includes/page/header.inc:43
-#: admin/company_preferences.php:270 dashboard/widget402.php:40
-#: reporting/reports_main.php:318
-msgid "Manufacturing"
-msgstr "Sản xuất"
+#: admin/company_preferences.php:278
+msgid "Manufacturing:"
+msgstr ""
 
-#: admin/company_preferences.php:271 admin/dashboard.php:69
+#: admin/company_preferences.php:279 admin/dashboard.php:69
 #: dashboard/widget502.php:40 inventory/manage/items.php:26
 #: reporting/reports_main.php:341 themes/canvas/renderer.php:110
 msgid "Fixed Assets"
 msgstr "Tài sản cố định"
 
 # c:/Apache/htdocs/account/admin/company_preferences.php:77
-#: admin/company_preferences.php:272
+#: admin/company_preferences.php:280
 msgid "Use Dimensions:"
 msgstr "Khoản mục:"
 
-#: admin/company_preferences.php:274
+#: admin/company_preferences.php:282
 msgid "User Interface Options"
 msgstr "Giao diện người dùng"
 
-#: admin/company_preferences.php:276
-msgid "Short Name and Name in List"
-msgstr "Tên viết tắt và đầy đủ trong danh sách"
+#: admin/company_preferences.php:284
+msgid "Short Name and Name in List:"
+msgstr ""
 
-#: admin/company_preferences.php:277
-msgid "Open Print Dialog Direct on Reports"
-msgstr "In Nhanh"
+#: admin/company_preferences.php:285
+msgid "Open Print Dialog Direct on Reports:"
+msgstr ""
 
-#: admin/company_preferences.php:278
-msgid "Search Item List"
-msgstr "Tìm kiếm hàng"
+#: admin/company_preferences.php:286
+msgid "Search Item List:"
+msgstr ""
 
-#: admin/company_preferences.php:279
-msgid "Search Customer List"
-msgstr "Tìm kiếm khách hàng"
+#: admin/company_preferences.php:287
+msgid "Search Customer List:"
+msgstr ""
 
-#: admin/company_preferences.php:280
-msgid "Search Supplier List"
-msgstr "Tìm nhà cung cấp"
+#: admin/company_preferences.php:288
+msgid "Search Supplier List:"
+msgstr ""
 
-#: admin/company_preferences.php:281
+#: admin/company_preferences.php:289
 msgid "Login Timeout:"
 msgstr "Thờ gian đăng nhập:"
 
-#: admin/company_preferences.php:281
+#: admin/company_preferences.php:289
 msgid "seconds"
 msgstr "giây"
+
+#: admin/company_preferences.php:290
+msgid "Max day range in documents:"
+msgstr ""
+
+#: admin/company_preferences.php:290
+msgid "days."
+msgstr ""
 
 # c:/Apache/htdocs/account/admin/company_preferences.php:93
 # c:/Apache/htdocs/account/admin/display_prefs.php:53
@@ -1031,20 +1040,20 @@ msgstr "giây"
 # c:/Apache/htdocs/account/purchasing/includes/ui/po_ui.inc:308
 # c:/Apache/htdocs/account/sales/includes/ui/sales_credit_ui.inc:216
 # c:/Apache/htdocs/account/sales/includes/ui/sales_order_ui.inc:299
-#: admin/company_preferences.php:286 admin/display_prefs.php:151
+#: admin/company_preferences.php:295 admin/display_prefs.php:151
 #: admin/gl_setup.php:232 admin/inst_chart.php:81 admin/inst_lang.php:92
 #: admin/inst_module.php:141 admin/inst_module.php:158
 #: admin/inst_module.php:199 admin/inst_theme.php:77
-#: dimensions/dimension_entry.php:247 gl/gl_bank.php:368 gl/gl_budget.php:126
+#: dimensions/dimension_entry.php:221 gl/gl_bank.php:368 gl/gl_budget.php:126
 #: gl/includes/ui/gl_bank_ui.inc:240 gl/includes/ui/gl_journal_ui.inc:252
 #: gl/manage/gl_quick_entries.php:58 includes/ui/attachment.inc:170
 #: includes/ui/class.crud_view.inc:285 includes/ui/db_pager_view.inc:174
 #: includes/ui/simple_crud_class.inc:53 includes/ui/simple_crud_class.inc:211
-#: includes/ui/ui_input.inc:217 includes/ui/ui_input.inc:878
-#: inventory/adjustments.php:241 inventory/cost_update.php:142
+#: includes/ui/ui_input.inc:212 includes/ui/ui_input.inc:866
+#: inventory/adjustments.php:241 inventory/cost_update.php:141
 #: inventory/includes/item_adjustments_ui.inc:200
 #: inventory/includes/stock_transfers_ui.inc:143
-#: inventory/manage/sales_kits.php:202 inventory/reorder_level.php:108
+#: inventory/manage/sales_kits.php:197 inventory/reorder_level.php:108
 #: inventory/transfers.php:223
 #: manufacturing/includes/work_order_issue_ui.inc:120
 #: manufacturing/work_order_entry.php:376
@@ -1225,9 +1234,9 @@ msgstr "Mặc định"
 #: gl/manage/gl_quick_entries.php:215 includes/system_tests.inc:40
 #: includes/system_tests.inc:108 includes/system_tests.inc:120
 #: includes/ui/class.reflines_crud.inc:53
-#: includes/ui/class.reflines_crud.inc:97 includes/ui/ui_lists.inc:1679
+#: includes/ui/class.reflines_crud.inc:97 includes/ui/ui_lists.inc:1662
 #: install/index.php:351 purchasing/manage/suppliers.php:206
-#: reporting/rep101.php:111 reporting/rep101.php:121 reporting/rep102.php:100
+#: reporting/rep101.php:112 reporting/rep101.php:124 reporting/rep102.php:100
 #: reporting/rep102.php:102 reporting/rep104.php:97 reporting/rep106.php:77
 #: reporting/rep114.php:68 reporting/rep115.php:145 reporting/rep201.php:101
 #: reporting/rep202.php:105 reporting/rep202.php:107 reporting/rep203.php:75
@@ -1389,9 +1398,9 @@ msgstr "Bảng tin"
 #: dashboard/widget103.php:40 dashboard/widget104.php:22
 #: dashboard/widget801.php:27 dashboard/widget802.php:40
 #: includes/sysnames.inc:43 includes/sysnames.inc:101 includes/sysnames.inc:211
-#: reporting/rep101.php:134 reporting/rep102.php:112 reporting/rep102.php:119
+#: reporting/rep101.php:138 reporting/rep102.php:112 reporting/rep102.php:119
 #: reporting/rep105.php:103 reporting/rep106.php:83 reporting/rep114.php:87
-#: reporting/rep115.php:157 reporting/rep304.php:119 reporting/rep304.php:129
+#: reporting/rep115.php:156 reporting/rep304.php:119 reporting/rep304.php:129
 #: reporting/reports_main.php:36 reporting/reports_main.php:40
 #: reporting/reports_main.php:49 reporting/reports_main.php:61
 #: reporting/reports_main.php:117 reporting/reports_main.php:136
@@ -1447,9 +1456,9 @@ msgstr "Khách hàng"
 #: purchasing/inquiry/suppliers_list.php:37
 #: purchasing/inquiry/suppliers_list.php:49
 #: purchasing/view/view_supp_credit.php:39
-#: purchasing/view/view_supp_invoice.php:43 reporting/rep201.php:114
+#: purchasing/view/view_supp_invoice.php:43 reporting/rep201.php:113
 #: reporting/rep202.php:118 reporting/rep202.php:125 reporting/rep203.php:86
-#: reporting/rep204.php:83 reporting/rep206.php:111 reporting/rep306.php:133
+#: reporting/rep204.php:83 reporting/rep206.php:110 reporting/rep306.php:133
 #: reporting/rep306.php:143 reporting/rep310.php:134 reporting/rep310.php:144
 #: reporting/reports_main.php:165 reporting/reports_main.php:169
 #: reporting/reports_main.php:178 reporting/reports_main.php:190
@@ -1530,8 +1539,8 @@ msgid "Closing Year"
 msgstr "Kết thúc năm"
 
 # c:/Apache/htdocs/account/reporting/Rep706.php:85
-#: admin/db/fiscalyears_db.inc:200 reporting/rep101.php:179
-#: reporting/rep115.php:151 reporting/rep201.php:158 reporting/rep206.php:105
+#: admin/db/fiscalyears_db.inc:200 reporting/rep101.php:187
+#: reporting/rep115.php:150 reporting/rep201.php:161 reporting/rep206.php:104
 #: reporting/rep706.php:166
 msgid "Open Balance"
 msgstr "Số dư mở"
@@ -1734,7 +1743,7 @@ msgstr "Định dạng báo cáo:"
 msgid "Excel"
 msgstr "EXCEL"
 
-#: admin/display_prefs.php:103 reporting/includes/reports_classes.inc:221
+#: admin/display_prefs.php:103 reporting/includes/reports_classes.inc:223
 msgid "PDF/Printer"
 msgstr "PDF/IN"
 
@@ -1742,11 +1751,11 @@ msgstr "PDF/IN"
 msgid "Default Report Orientation:"
 msgstr "Kiểu trang báo cáo:"
 
-#: admin/display_prefs.php:106 reporting/includes/reports_classes.inc:228
+#: admin/display_prefs.php:106 reporting/includes/reports_classes.inc:230
 msgid "Landscape"
 msgstr "Ngang"
 
-#: admin/display_prefs.php:106 reporting/includes/reports_classes.inc:228
+#: admin/display_prefs.php:106 reporting/includes/reports_classes.inc:230
 msgid "Portrait"
 msgstr "Dọc"
 
@@ -1907,8 +1916,8 @@ msgstr "Kết thúc"
 # c:/Apache/htdocs/account/includes/ui/UI_Lists.inc:257
 # c:/Apache/htdocs/account/reporting/includes/PDFReport.inc:142
 #: admin/fiscalyears.php:122 dimensions/inquiry/search_dimensions.php:126
-#: dimensions/inquiry/search_dimensions.php:133 includes/ui/ui_lists.inc:676
-#: includes/ui/ui_view.inc:1496 manufacturing/search_work_orders.php:109
+#: dimensions/inquiry/search_dimensions.php:133 includes/ui/ui_lists.inc:682
+#: includes/ui/ui_view.inc:1500 manufacturing/search_work_orders.php:109
 #: reporting/includes/excel_report.inc:219
 #: reporting/includes/pdf_report.inc:240 reporting/rep402.php:125
 #: reporting/rep501.php:78 reporting/rep710.php:106
@@ -2075,7 +2084,7 @@ msgstr "Định danh hoá đơn:"
 # c:/Apache/htdocs/account/sales/inquiry/customer_allocation_inquiry.php:128
 # c:/Apache/htdocs/account/includes/ui/ui_view.inc:390
 #: admin/gl_setup.php:176 gl/manage/bank_accounts.php:91
-#: includes/ui/ui_view.inc:496
+#: includes/ui/ui_view.inc:494
 msgid "Number"
 msgstr "Số"
 
@@ -2480,7 +2489,7 @@ msgstr "Cài đặt / Cập nhật ngôn ngữ"
 # c:/Apache/htdocs/account/taxes/item_tax_types.php:91
 # c:/Apache/htdocs/account/purchasing/includes/ui/invoice_ui.inc:185
 #: admin/inst_lang.php:35 admin/printers.php:74 admin/shipping_companies.php:81
-#: dimensions/dimension_entry.php:232
+#: dimensions/dimension_entry.php:206
 #: dimensions/inquiry/search_dimensions.php:122
 #: dimensions/view/view_dimension.php:51 gl/gl_journal.php:506
 #: inventory/manage/item_categories.php:106
@@ -2488,9 +2497,9 @@ msgstr "Cài đặt / Cập nhật ngôn ngữ"
 #: manufacturing/manage/work_centres.php:92
 #: purchasing/includes/ui/invoice_ui.inc:259
 #: purchasing/includes/ui/invoice_ui.inc:261
-#: purchasing/includes/ui/invoice_ui.inc:263 reporting/rep115.php:151
-#: reporting/rep206.php:105 reporting/rep501.php:78 reporting/rep709.php:107
-#: reporting/rep709.php:108 sales/manage/customer_branches.php:257
+#: purchasing/includes/ui/invoice_ui.inc:263 reporting/rep115.php:150
+#: reporting/rep206.php:104 reporting/rep501.php:78 reporting/rep709.php:108
+#: reporting/rep709.php:109 sales/manage/customer_branches.php:257
 #: sales/manage/sales_people.php:87 taxes/item_tax_types.php:104
 msgid "Name"
 msgstr "Tên"
@@ -2598,7 +2607,7 @@ msgstr "Cài đặt mở rộng bên thứ 3."
 
 # c:/Apache2/htdocs/account/reporting/includes/pdf_report.inc:166
 #: admin/inst_module.php:171 fixed_assets/inquiry/stock_inquiry.php:108
-#: includes/ui/ui_lists.inc:676 includes/ui/ui_lists.inc:2111
+#: includes/ui/ui_lists.inc:682 includes/ui/ui_lists.inc:2096
 #: reporting/includes/excel_report.inc:217
 #: reporting/includes/pdf_report.inc:238
 msgid "Active"
@@ -2774,7 +2783,7 @@ msgstr "Đã xoá điều khoản thanh toán"
 # c:/Apache/htdocs/account/manufacturing/includes/manufacturing_ui.inc:271
 # c:/Apache/htdocs/account/manufacturing/includes/manufacturing_ui.inc:333
 # c:/Apache/htdocs/account/projects/includes/projects_ui.inc:20
-#: admin/payment_terms.php:112 dimensions/dimension_entry.php:234
+#: admin/payment_terms.php:112 dimensions/dimension_entry.php:208
 #: dimensions/inquiry/search_dimensions.php:73
 #: dimensions/inquiry/search_dimensions.php:123
 #: dimensions/view/view_dimension.php:51 gl/bank_account_reconcile.php:248
@@ -2782,7 +2791,7 @@ msgstr "Đã xoá điều khoản thanh toán"
 #: gl/inquiry/gl_account_inquiry.php:125 gl/inquiry/journal_inquiry.php:106
 #: gl/inquiry/tax_inquiry.php:75 gl/manage/bank_accounts.php:91
 #: gl/manage/gl_quick_entries.php:173 gl/view/accrual_trans.php:51
-#: includes/ui/ui_view.inc:496 inventory/inquiry/stock_movements.php:100
+#: includes/ui/ui_view.inc:494 inventory/inquiry/stock_movements.php:100
 #: inventory/manage/item_categories.php:108
 #: manufacturing/includes/manufacturing_ui.inc:219
 #: manufacturing/includes/manufacturing_ui.inc:254
@@ -2796,7 +2805,7 @@ msgstr "Đã xoá điều khoản thanh toán"
 #: reporting/rep202.php:127 reporting/rep402.php:125 reporting/rep501.php:78
 #: reporting/rep601.php:73 reporting/rep602.php:71 reporting/rep702.php:54
 #: reporting/rep704.php:69 reporting/rep704.php:75 reporting/rep704.php:81
-#: reporting/rep709.php:103 reporting/rep710.php:71 reporting/rep710.php:79
+#: reporting/rep709.php:104 reporting/rep710.php:71 reporting/rep710.php:79
 #: reporting/reports_main.php:386 reporting/reports_main.php:548
 #: sales/inquiry/customer_allocation_inquiry.php:121
 #: sales/inquiry/customer_inquiry.php:177
@@ -3050,7 +3059,7 @@ msgstr "Xoá vai trò"
 #: gl/manage/gl_quick_entries.php:59 includes/ui/attachment.inc:171
 #: includes/ui/class.crud_view.inc:286 includes/ui/simple_crud_class.inc:54
 #: includes/ui/simple_crud_class.inc:215 includes/ui/ui_controls.inc:613
-#: includes/ui/ui_input.inc:220 inventory/includes/item_adjustments_ui.inc:201
+#: includes/ui/ui_input.inc:215 inventory/includes/item_adjustments_ui.inc:201
 #: inventory/includes/stock_transfers_ui.inc:144 inventory/manage/items.php:493
 #: manufacturing/includes/work_order_issue_ui.inc:121
 #: purchasing/includes/ui/po_ui.inc:408 sales/create_recurrent_invoices.php:180
@@ -3502,7 +3511,7 @@ msgstr "Giao dịch cuối phải là số và lớn hơn 0."
 #: gl/inquiry/journal_inquiry.php:105 gl/view/accrual_trans.php:51
 #: gl/view/bank_transfer_view.php:78 gl/view/gl_deposit_view.php:61
 #: gl/view/gl_payment_view.php:59 includes/ui/allocation_cart.inc:262
-#: includes/ui/attachment.inc:137 includes/ui/ui_view.inc:496
+#: includes/ui/attachment.inc:137 includes/ui/ui_view.inc:494
 #: inventory/inquiry/stock_movements.php:105
 #: inventory/view/view_adjustment.php:41 inventory/view/view_transfer.php:36
 #: manufacturing/includes/manufacturing_ui.inc:151
@@ -3523,11 +3532,11 @@ msgstr "Giao dịch cuối phải là số và lớn hơn 0."
 #: purchasing/inquiry/supplier_inquiry.php:160 purchasing/view/view_po.php:129
 #: reporting/includes/doctext.inc:162 reporting/includes/doctext.inc:204
 #: reporting/includes/doctext.inc:241 reporting/includes/header2.inc:129
-#: reporting/rep101.php:126 reporting/rep107.php:207 reporting/rep201.php:106
+#: reporting/rep101.php:130 reporting/rep107.php:207 reporting/rep201.php:105
 #: reporting/rep306.php:133 reporting/rep310.php:134 reporting/rep402.php:125
 #: reporting/rep402.php:129 reporting/rep501.php:78 reporting/rep601.php:73
 #: reporting/rep602.php:71 reporting/rep704.php:69 reporting/rep704.php:75
-#: reporting/rep704.php:81 reporting/rep709.php:107 reporting/rep710.php:71
+#: reporting/rep704.php:81 reporting/rep709.php:108 reporting/rep710.php:71
 #: sales/allocations/customer_allocation_main.php:89
 #: sales/customer_delivery.php:347 sales/customer_invoice.php:463
 #: sales/inquiry/customer_allocation_inquiry.php:125
@@ -3539,7 +3548,7 @@ msgstr "Ngày"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_view.inc:51
 #: admin/view_print_transaction.php:115 admin/void_transaction.php:184
-#: includes/ui/ui_view.inc:50
+#: includes/ui/ui_view.inc:48
 msgid "GL"
 msgstr "Sổ cái"
 
@@ -3550,8 +3559,8 @@ msgid "Void a Transaction"
 msgstr "Vô hiêu hoá giao dịch"
 
 #: admin/void_transaction.php:126 admin/void_transaction.php:185
-#: gl/inquiry/accounts_list.php:60 includes/ui/ui_input.inc:144
-#: includes/ui/ui_input.inc:284 includes/ui/ui_lists.inc:21
+#: gl/inquiry/accounts_list.php:60 includes/ui/ui_input.inc:134
+#: includes/ui/ui_input.inc:279 includes/ui/ui_lists.inc:21
 #: inventory/inquiry/stock_list.php:65 inventory/inquiry/stock_list.php:68
 #: purchasing/inquiry/suppliers_list.php:61
 #: purchasing/inquiry/suppliers_list.php:64
@@ -3594,12 +3603,12 @@ msgstr "Ngày vô hiệu:"
 # c:/Apache/htdocs/account/includes/ui/ui_view.inc:252
 # c:/Apache/htdocs/account/manufacturing/includes/work_order_issue_ui.inc:156
 # c:/Apache/htdocs/account/purchasing/includes/ui/invoice_ui.inc:139
-#: admin/void_transaction.php:208 dimensions/dimension_entry.php:238
+#: admin/void_transaction.php:208 dimensions/dimension_entry.php:212
 #: fixed_assets/process_depreciation.php:169 gl/bank_transfer.php:125
 #: gl/inquiry/gl_account_inquiry.php:82 gl/inquiry/journal_inquiry.php:54
 #: gl/manage/revaluate_currencies.php:75
-#: includes/ui/class.reflines_crud.inc:101 includes/ui/ui_view.inc:322
-#: manufacturing/work_order_add_finished.php:176
+#: includes/ui/class.reflines_crud.inc:101 includes/ui/ui_view.inc:320
+#: inventory/cost_update.php:137 manufacturing/work_order_add_finished.php:176
 #: manufacturing/work_order_costs.php:137
 #: manufacturing/work_order_entry.php:369
 #: manufacturing/work_order_release.php:94
@@ -4363,7 +4372,7 @@ msgstr ""
 #: gl/view/gl_payment_view.php:58 gl/view/gl_payment_view.php:90
 #: gl/view/gl_payment_view.php:92 gl/view/gl_payment_view.php:94
 #: includes/sysnames.inc:138 includes/ui/allocation_cart.inc:262
-#: includes/ui/ui_lists.inc:1218
+#: includes/ui/ui_lists.inc:1210
 #: manufacturing/includes/manufacturing_ui.inc:219
 #: purchasing/includes/ui/invoice_ui.inc:259
 #: purchasing/includes/ui/invoice_ui.inc:261
@@ -4416,8 +4425,8 @@ msgstr "Tham chiếu."
 #: purchasing/view/view_supp_invoice.php:49 reporting/includes/doctext.inc:108
 #: reporting/includes/doctext.inc:139 reporting/includes/doctext.inc:160
 #: reporting/includes/doctext.inc:162 reporting/includes/doctext.inc:202
-#: reporting/includes/doctext.inc:204 reporting/rep101.php:126
-#: reporting/rep201.php:106 reporting/rep203.php:80 reporting/rep501.php:78
+#: reporting/includes/doctext.inc:204 reporting/rep101.php:130
+#: reporting/rep201.php:105 reporting/rep203.php:80 reporting/rep501.php:78
 #: sales/customer_invoice.php:468 sales/includes/ui/sales_order_ui.inc:544
 #: sales/inquiry/customer_allocation_inquiry.php:126
 #: sales/inquiry/customer_inquiry.php:182 sales/view/view_dispatch.php:93
@@ -4482,11 +4491,11 @@ msgstr "Chi nhánh"
 #: purchasing/inquiry/supplier_inquiry.php:162
 #: purchasing/inquiry/supplier_inquiry.php:173
 #: purchasing/view/view_supp_credit.php:46
-#: purchasing/view/view_supp_invoice.php:51 reporting/rep101.php:136
+#: purchasing/view/view_supp_invoice.php:51 reporting/rep101.php:140
 #: reporting/rep102.php:120 reporting/rep102.php:126 reporting/rep103.php:213
-#: reporting/rep104.php:106 reporting/rep115.php:160 reporting/rep201.php:115
+#: reporting/rep104.php:106 reporting/rep115.php:159 reporting/rep201.php:114
 #: reporting/rep202.php:126 reporting/rep203.php:87 reporting/rep205.php:129
-#: reporting/rep206.php:112 sales/allocations/customer_allocation_main.php:91
+#: reporting/rep206.php:111 sales/allocations/customer_allocation_main.php:91
 #: sales/allocations/customer_allocation_main.php:99
 #: sales/customer_credit_invoice.php:230 sales/customer_delivery.php:310
 #: sales/customer_invoice.php:433
@@ -4546,9 +4555,9 @@ msgstr "Tiền tệ"
 #: purchasing/includes/ui/invoice_ui.inc:457
 #: purchasing/includes/ui/invoice_ui.inc:518 purchasing/po_receive_items.php:59
 #: purchasing/view/view_po.php:129 reporting/includes/doctext.inc:32
-#: reporting/includes/doctext.inc:186 reporting/rep101.php:245
+#: reporting/includes/doctext.inc:186 reporting/rep101.php:253
 #: reporting/rep106.php:83 reporting/rep106.php:114 reporting/rep106.php:159
-#: reporting/rep114.php:147 reporting/rep201.php:213 reporting/rep203.php:80
+#: reporting/rep114.php:147 reporting/rep201.php:216 reporting/rep203.php:80
 #: reporting/rep203.php:153 reporting/rep204.php:103 reporting/rep204.php:130
 #: reporting/rep301.php:177 reporting/rep301.php:220 reporting/rep304.php:149
 #: reporting/rep304.php:193 reporting/rep305.php:98 reporting/rep305.php:121
@@ -4764,6 +4773,12 @@ msgstr "Hàng hoá"
 msgid "Top %s Manufactured Items in fiscal year"
 msgstr "Top %s mặt hàng sản xuất"
 
+# c:/Apache/htdocs/account/applications/Manufacturing.php:5
+# c:/Apache/htdocs/account/includes/page/header.inc:43
+#: dashboard/widget402.php:40 reporting/reports_main.php:318
+msgid "Manufacturing"
+msgstr "Sản xuất"
+
 #: dashboard/widget501.php:20 dashboard/widget502.php:22
 #: dashboard/widget810.php:20
 #, php-format
@@ -4842,7 +4857,7 @@ msgstr "Tổng quan"
 
 # c:/Apache2/htdocs/account/reporting/Rep706.php:246
 # c:/Apache2/htdocs/account/reporting/Rep707.php:282
-#: dashboard/widget701.php:37 dashboard/widget808.php:37
+#: dashboard/widget701.php:36 dashboard/widget808.php:36
 #: gl/inquiry/balance_sheet.php:200 gl/inquiry/profit_loss.php:270
 #: reporting/rep705.php:309 reporting/rep706.php:252 reporting/rep706.php:275
 #: reporting/rep707.php:281 reporting/rep707.php:286
@@ -4880,9 +4895,9 @@ msgstr "Tài khoản"
 #: gl/inquiry/gl_account_inquiry.php:140 gl/inquiry/gl_trial_balance.php:225
 #: purchasing/inquiry/supplier_allocation_inquiry.php:130
 #: purchasing/inquiry/supplier_inquiry.php:164
-#: purchasing/inquiry/supplier_inquiry.php:176 reporting/rep101.php:129
-#: reporting/rep115.php:151 reporting/rep201.php:109 reporting/rep203.php:80
-#: reporting/rep204.php:77 reporting/rep206.php:105 reporting/rep307.php:105
+#: purchasing/inquiry/supplier_inquiry.php:176 reporting/rep101.php:133
+#: reporting/rep115.php:150 reporting/rep201.php:108 reporting/rep203.php:80
+#: reporting/rep204.php:77 reporting/rep206.php:104 reporting/rep307.php:105
 #: reporting/rep601.php:74 reporting/rep602.php:72 reporting/rep701.php:97
 #: reporting/rep704.php:69 reporting/rep704.php:75 reporting/rep704.php:81
 #: reporting/rep708.php:168 sales/inquiry/customer_allocation_inquiry.php:132
@@ -4903,7 +4918,7 @@ msgstr "Loại"
 msgid "Last %s weeks Performance"
 msgstr "Kết quả %s tuần gần đây"
 
-#: dashboard/widget704.php:36
+#: dashboard/widget704.php:36 includes/ui/ui_view.inc:1211
 msgid "Week"
 msgstr "Tuần"
 
@@ -4914,43 +4929,43 @@ msgid "Dimension Entry"
 msgstr "Thêm khoản mục"
 
 # c:/Apache/htdocs/account/projects/project_entry.php:31
-#: dimensions/dimension_entry.php:43
+#: dimensions/dimension_entry.php:42
 msgid "The dimension has been entered."
 msgstr "Khoản mục đã được nhập."
 
 # c:/Apache/htdocs/account/projects/project_entry.php:42
-#: dimensions/dimension_entry.php:53
+#: dimensions/dimension_entry.php:48
 msgid "The dimension has been updated."
 msgstr "Đã cập nhật khoản mục."
 
 # c:/Apache/htdocs/account/projects/project_entry.php:52
-#: dimensions/dimension_entry.php:62
+#: dimensions/dimension_entry.php:54
 msgid "The dimension has been deleted."
 msgstr "Đã xoá khoản mục."
 
 # c:/Apache/htdocs/account/projects/project_entry.php:62
-#: dimensions/dimension_entry.php:71
+#: dimensions/dimension_entry.php:61
 msgid "The dimension has been closed. There can be no more changes to it."
 msgstr "Khoản mục đã được đóng. Không thay đổi được nữa."
 
-#: dimensions/dimension_entry.php:80
+#: dimensions/dimension_entry.php:68
 msgid "The dimension has been re-opened. "
 msgstr "Khoản mục đã được mở lại."
 
-#: dimensions/dimension_entry.php:89
+#: dimensions/dimension_entry.php:77
 msgid "Enter a &new dimension"
 msgstr "Nhập khoản mục mới"
 
-#: dimensions/dimension_entry.php:90
+#: dimensions/dimension_entry.php:78
 msgid "&Select an existing dimension"
 msgstr "Chọn khoản mục đang có"
 
-#: dimensions/dimension_entry.php:91
+#: dimensions/dimension_entry.php:79
 msgid "&Add Attachment"
 msgstr "Đính kèm file"
 
 # c:/Apache/htdocs/account/projects/project_entry.php:102
-#: dimensions/dimension_entry.php:108
+#: dimensions/dimension_entry.php:94
 msgid "The dimension name must be entered."
 msgstr "Phải nhập tên khoản mục."
 
@@ -4958,29 +4973,29 @@ msgstr "Phải nhập tên khoản mục."
 # c:/Apache/htdocs/account/manufacturing/work_order_entry.php:168
 # c:/Apache/htdocs/account/projects/project_entry.php:107
 # c:/Apache/htdocs/account/purchasing/po_entry_items.php:150
-#: dimensions/dimension_entry.php:113 manufacturing/work_order_entry.php:127
+#: dimensions/dimension_entry.php:99 manufacturing/work_order_entry.php:127
 #: manufacturing/work_order_entry.php:188 purchasing/po_entry_items.php:245
 msgid "The date entered is in an invalid format."
 msgstr "Ngày nhập vào không đúng định dạng."
 
 # c:/Apache/htdocs/account/projects/project_entry.php:112
-#: dimensions/dimension_entry.php:118
+#: dimensions/dimension_entry.php:104
 msgid "The required by date entered is in an invalid format."
 msgstr "Ngày yêu cầu nhập vào không đúng định dạng."
 
 # c:/Apache/htdocs/account/projects/project_entry.php:148
-#: dimensions/dimension_entry.php:157
+#: dimensions/dimension_entry.php:141
 msgid "This dimension cannot be deleted because it has already been processed."
 msgstr "Không thể xoá khoản mục vì khoản mục này đang thực hiện."
 
 # c:/Apache/htdocs/account/projects/project_entry.php:180
-#: dimensions/dimension_entry.php:196
+#: dimensions/dimension_entry.php:176
 msgid "The dimension sent is not valid."
 msgstr "Khoản mục không hợp lệ."
 
 # c:/Apache/htdocs/account/projects/project_entry.php:200
 # c:/Apache/htdocs/account/projects/project_entry.php:204
-#: dimensions/dimension_entry.php:223 dimensions/dimension_entry.php:229
+#: dimensions/dimension_entry.php:198 dimensions/dimension_entry.php:203
 msgid "Dimension Reference:"
 msgstr "Tham chiếu KM:"
 
@@ -4991,7 +5006,7 @@ msgstr "Tham chiếu KM:"
 # c:/Apache/htdocs/account/reporting/reports_main.php:54
 # c:/Apache/htdocs/account/reporting/reports_main.php:55
 # c:/Apache/htdocs/account/reporting/reports_main.php:56
-#: dimensions/dimension_entry.php:235 reporting/reports_main.php:38
+#: dimensions/dimension_entry.php:209 reporting/reports_main.php:38
 #: reporting/reports_main.php:59 reporting/reports_main.php:79
 #: reporting/reports_main.php:95 reporting/reports_main.php:104
 #: reporting/reports_main.php:167 reporting/reports_main.php:188
@@ -5012,49 +5027,49 @@ msgstr "Từ ngày"
 
 # c:/Apache/htdocs/account/manufacturing/work_order_entry.php:320
 # c:/Apache/htdocs/account/projects/project_entry.php:211
-#: dimensions/dimension_entry.php:236 manufacturing/work_order_entry.php:343
+#: dimensions/dimension_entry.php:210 manufacturing/work_order_entry.php:343
 msgid "Date Required By"
 msgstr "Ngày yêu cầu"
 
-#: dimensions/dimension_entry.php:237
+#: dimensions/dimension_entry.php:211
 msgid "Tags:"
 msgstr "Thẻ:"
 
-#: dimensions/dimension_entry.php:243
+#: dimensions/dimension_entry.php:217
 msgid "This Dimension is closed."
 msgstr "Khoản mục đã đóng."
 
-#: dimensions/dimension_entry.php:247
+#: dimensions/dimension_entry.php:221
 msgid "Save changes to dimension"
 msgstr "Lưu thay đổi khoản mục"
 
-#: dimensions/dimension_entry.php:249
+#: dimensions/dimension_entry.php:223
 msgid "Re-open This Dimension"
 msgstr "Mở lại khoản mục"
 
-#: dimensions/dimension_entry.php:249
+#: dimensions/dimension_entry.php:223
 msgid "Mark this dimension as re-opened"
 msgstr "Đánh dấu khoản mục là mở lại"
 
 # c:/Apache/htdocs/account/projects/project_entry.php:224
-#: dimensions/dimension_entry.php:251
+#: dimensions/dimension_entry.php:225
 msgid "Close This Dimension"
 msgstr "Đóng khoản mục"
 
-#: dimensions/dimension_entry.php:251
+#: dimensions/dimension_entry.php:225
 msgid "Mark this dimension as closed"
 msgstr "Đánh dấu khoản mục là đã đóng"
 
 # c:/Apache/htdocs/account/projects/project_entry.php:225
-#: dimensions/dimension_entry.php:252
+#: dimensions/dimension_entry.php:226
 msgid "Delete This Dimension"
 msgstr "Xoá khoản mục"
 
-#: dimensions/dimension_entry.php:252
+#: dimensions/dimension_entry.php:226
 msgid "Delete unused dimension"
 msgstr "Xoá khoản mục không sử dụng"
 
-#: dimensions/dimension_entry.php:255 includes/ui/attachment.inc:168
+#: dimensions/dimension_entry.php:229 includes/ui/attachment.inc:168
 #: includes/ui/class.crud_view.inc:288 includes/ui/simple_crud_class.inc:209
 #: purchasing/includes/ui/invoice_ui.inc:205
 #: purchasing/includes/ui/invoice_ui.inc:385
@@ -5096,7 +5111,7 @@ msgstr "Số dư khoản mục"
 #: gl/view/gl_trans_view.php:88 gl/view/gl_trans_view.php:90
 #: manufacturing/view/wo_costs_view.php:56
 #: purchasing/inquiry/supplier_allocation_inquiry.php:127
-#: reporting/rep115.php:151 reporting/rep206.php:105 reporting/rep402.php:129
+#: reporting/rep115.php:150 reporting/rep206.php:104 reporting/rep402.php:129
 #: reporting/rep601.php:74 reporting/rep602.php:72 reporting/rep702.php:48
 #: reporting/rep704.php:69 reporting/rep704.php:75 reporting/rep704.php:81
 #: reporting/rep708.php:175 reporting/rep708.php:176
@@ -5130,7 +5145,7 @@ msgstr "Nợ"
 #: gl/view/gl_trans_view.php:88 gl/view/gl_trans_view.php:90
 #: includes/sysnames.inc:90 manufacturing/view/wo_costs_view.php:56
 #: purchasing/inquiry/supplier_allocation_inquiry.php:128
-#: reporting/rep115.php:151 reporting/rep206.php:105 reporting/rep402.php:129
+#: reporting/rep115.php:150 reporting/rep206.php:104 reporting/rep402.php:129
 #: reporting/rep601.php:74 reporting/rep602.php:72 reporting/rep702.php:48
 #: reporting/rep704.php:69 reporting/rep704.php:75 reporting/rep704.php:81
 #: reporting/rep708.php:175 reporting/rep708.php:176
@@ -5187,8 +5202,8 @@ msgstr "Tham chiếu:"
 # c:/Apache/htdocs/account/purchasing/allocations/supplier_allocate.php:216
 # c:/Apache/htdocs/account/sales/allocations/customer_allocate.php:211
 #: dimensions/inquiry/search_dimensions.php:73
-#: includes/ui/allocation_cart.inc:284 includes/ui/ui_lists.inc:1900
-#: reporting/includes/reports_classes.inc:268 reporting/rep101.php:106
+#: includes/ui/allocation_cart.inc:284 includes/ui/ui_lists.inc:1884
+#: reporting/includes/reports_classes.inc:269 reporting/rep101.php:106
 #: reporting/rep102.php:84 reporting/rep104.php:87 reporting/rep104.php:91
 #: reporting/rep105.php:89 reporting/rep105.php:93 reporting/rep115.php:118
 #: reporting/rep201.php:89 reporting/rep202.php:89 reporting/rep203.php:62
@@ -5360,8 +5375,8 @@ msgstr "Loại tài sản:"
 # c:/Apache/htdocs/account/taxes/tax_groups.php:175
 # c:/Apache/htdocs/account/taxes/tax_types.php:128
 #: fixed_assets/fixed_asset_classes.php:120 inventory/manage/item_codes.php:174
-#: inventory/manage/items.php:333 inventory/manage/sales_kits.php:200
-#: inventory/manage/sales_kits.php:224
+#: inventory/manage/items.php:333 inventory/manage/sales_kits.php:195
+#: inventory/manage/sales_kits.php:219
 #: manufacturing/manage/work_centres.php:128
 #: sales/create_recurrent_invoices.php:167 sales/manage/credit_status.php:130
 #: sales/manage/recurrent_invoices.php:170 taxes/item_tax_types.php:153
@@ -5494,9 +5509,9 @@ msgstr "Bắt đầu từ tháng"
 #: fixed_assets/process_depreciation.php:163
 #: fixed_assets/process_depreciation.php:165 gl/gl_budget.php:84
 #: gl/gl_budget.php:86 gl/inquiry/profit_loss.php:216
-#: gl/manage/gl_quick_entries.php:221 reporting/rep101.php:133
+#: gl/manage/gl_quick_entries.php:221 reporting/rep101.php:137
 #: reporting/rep105.php:112 reporting/rep106.php:90 reporting/rep114.php:82
-#: reporting/rep115.php:156 reporting/rep201.php:113 reporting/rep206.php:110
+#: reporting/rep115.php:155 reporting/rep201.php:112 reporting/rep206.php:109
 #: reporting/rep304.php:126 reporting/rep305.php:103 reporting/rep306.php:140
 #: reporting/rep307.php:110 reporting/rep308.php:214 reporting/rep309.php:96
 #: reporting/rep310.php:141 reporting/rep601.php:85 reporting/rep602.php:77
@@ -5505,7 +5520,7 @@ msgstr "Bắt đầu từ tháng"
 #: reporting/rep706.php:182 reporting/rep706.php:189 reporting/rep707.php:188
 #: reporting/rep707.php:194 reporting/rep707.php:203 reporting/rep707.php:210
 #: reporting/rep708.php:182 reporting/rep708.php:190 reporting/rep708.php:196
-#: reporting/rep709.php:102 reporting/rep710.php:78
+#: reporting/rep709.php:103 reporting/rep710.php:78
 msgid "Period"
 msgstr "Giai đoạn"
 
@@ -5513,7 +5528,7 @@ msgstr "Giai đoạn"
 msgid "months"
 msgstr "tháng"
 
-#: fixed_assets/process_depreciation.php:168 inventory/cost_update.php:137
+#: fixed_assets/process_depreciation.php:168 inventory/cost_update.php:136
 msgid "Reference line:"
 msgstr "Tham chiếu:"
 
@@ -5577,7 +5592,7 @@ msgstr "Trích trước %s"
 #: gl/view/gl_payment_view.php:92 gl/view/gl_payment_view.php:94
 #: gl/view/gl_trans_view.php:86 gl/view/gl_trans_view.php:88
 #: gl/view/gl_trans_view.php:90 includes/ui/class.reflines_crud.inc:36
-#: inventory/cost_update.php:138 inventory/includes/item_adjustments_ui.inc:217
+#: inventory/includes/item_adjustments_ui.inc:217
 #: inventory/includes/stock_transfers_ui.inc:160
 #: manufacturing/includes/work_order_issue_ui.inc:150
 #: manufacturing/view/wo_costs_view.php:56
@@ -6126,7 +6141,7 @@ msgstr "Số nợ nhập vào không hợp lệ hoặc nhỏ hơn 0."
 msgid "The credit amount entered is not a valid number or is less than zero."
 msgstr "Số có nhập vào không hợp lệ hoặc nhỏ hơn 0."
 
-#: gl/gl_journal.php:367 includes/ui/ui_view.inc:588
+#: gl/gl_journal.php:367 includes/ui/ui_view.inc:586
 #: purchasing/supplier_credit.php:136 purchasing/supplier_invoice.php:144
 msgid "Cannot post to GL account used by more than one tax type."
 msgstr ""
@@ -6161,12 +6176,12 @@ msgid "VAT date:"
 msgstr "Ngày VAT:"
 
 # c:/Apache2/htdocs/account/reporting/Rep709.php:354
-#: gl/gl_journal.php:506 gl/inquiry/tax_inquiry.php:96 reporting/rep709.php:176
+#: gl/gl_journal.php:506 gl/inquiry/tax_inquiry.php:96 reporting/rep709.php:177
 msgid "Input Tax"
 msgstr "Thuế đầu vào"
 
 # c:/Apache2/htdocs/account/reporting/Rep709.php:352
-#: gl/gl_journal.php:506 gl/inquiry/tax_inquiry.php:90 reporting/rep709.php:176
+#: gl/gl_journal.php:506 gl/inquiry/tax_inquiry.php:90 reporting/rep709.php:177
 msgid "Output Tax"
 msgstr "Thuế đầu ra"
 
@@ -6527,7 +6542,6 @@ msgstr "Vốn"
 # c:/Apache2/htdocs/account/includes/ui/ui_controls.inc:64
 #: gl/inquiry/balance_sheet.php:230 gl/inquiry/profit_loss.php:294
 #: includes/current_user.inc:95 includes/ui/ui_controls.inc:198
-#: includes/ui/ui_view.inc:924
 msgid "Back"
 msgstr "QUAY LẠI"
 
@@ -6689,19 +6703,19 @@ msgid "Profit & Loss Drilldown"
 msgstr "Báo cáo thu nhập và chi phí"
 
 # c:/Apache2/htdocs/account/reporting/Rep707.php:62
-#: gl/inquiry/profit_loss.php:31 reporting/includes/reports_classes.inc:235
+#: gl/inquiry/profit_loss.php:31 reporting/includes/reports_classes.inc:237
 #: reporting/rep707.php:188
 msgid "Accumulated"
 msgstr "Tích luỹ"
 
 # c:/Apache2/htdocs/account/reporting/Rep707.php:126
-#: gl/inquiry/profit_loss.php:32 reporting/includes/reports_classes.inc:235
+#: gl/inquiry/profit_loss.php:32 reporting/includes/reports_classes.inc:237
 #: reporting/rep707.php:229
 msgid "Period Y-1"
 msgstr "Giai đoạn Y-1"
 
 # c:/Apache2/htdocs/account/reporting/Rep707.php:132
-#: gl/inquiry/profit_loss.php:33 reporting/includes/reports_classes.inc:235
+#: gl/inquiry/profit_loss.php:33 reporting/includes/reports_classes.inc:237
 #: reporting/rep707.php:219
 msgid "Budget"
 msgstr "Ngân sách"
@@ -6726,12 +6740,12 @@ msgid "Tax Inquiry"
 msgstr "Xem tình hình thuế"
 
 # c:/Apache2/htdocs/account/reporting/Rep709.php:351
-#: gl/inquiry/tax_inquiry.php:75 reporting/rep709.php:176
+#: gl/inquiry/tax_inquiry.php:75 reporting/rep709.php:177
 msgid "Outputs"
 msgstr "Đầu ra"
 
 # c:/Apache2/htdocs/account/reporting/Rep709.php:353
-#: gl/inquiry/tax_inquiry.php:75 reporting/rep709.php:176
+#: gl/inquiry/tax_inquiry.php:75 reporting/rep709.php:177
 msgid "Inputs"
 msgstr "Đầu vào"
 
@@ -6747,7 +6761,7 @@ msgstr "Trả khi mua hàng"
 msgid "Net payable or collectible"
 msgstr "Tổng phải trả / phải thu"
 
-#: gl/inquiry/tax_inquiry.php:109 reporting/rep709.php:207
+#: gl/inquiry/tax_inquiry.php:109 reporting/rep709.php:208
 msgid "Total payable or refund"
 msgstr "Tổng phải trả"
 
@@ -7058,7 +7072,7 @@ msgstr "Từ ngày:"
 
 # c:/Apache/htdocs/account/gl/manage/exchange_rates.php:127
 # c:/Apache/htdocs/account/includes/ui/ui_view.inc:234
-#: gl/manage/exchange_rates.php:122 includes/ui/ui_view.inc:304
+#: gl/manage/exchange_rates.php:122 includes/ui/ui_view.inc:302
 msgid "Exchange Rate:"
 msgstr "Tỷ giá:"
 
@@ -7392,7 +7406,7 @@ msgstr "Các mục tạp phí"
 
 #: gl/manage/gl_quick_entries.php:56 includes/ui/attachment.inc:165
 #: includes/ui/class.crud_view.inc:288 includes/ui/class.crud_view.inc:290
-#: includes/ui/simple_crud_class.inc:206 includes/ui/ui_input.inc:215
+#: includes/ui/simple_crud_class.inc:206 includes/ui/ui_input.inc:210
 msgid "Add new"
 msgstr "Thêm mới"
 
@@ -9119,7 +9133,7 @@ msgstr "Th 4"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:31
 # c:/Apache2/htdocs/account/tmp2/example.php:40
-#: includes/sysnames.inc:216 includes/ui/ui_view.inc:921
+#: includes/sysnames.inc:216 includes/ui/ui_view.inc:917
 msgid "May"
 msgstr "Th 5"
 
@@ -9230,7 +9244,7 @@ msgstr "Italian"
 # c:/Apache2/htdocs/account/reporting/rep705.php:137
 # c:/Apache2/htdocs/account/reporting/rep705.php:147
 # c:/Apache2/htdocs/account/reporting/rep705.php:155
-#: includes/system_tests.inc:16 includes/ui/ui_view.inc:190
+#: includes/system_tests.inc:16 includes/ui/ui_view.inc:188
 #: reporting/rep705.php:241 reporting/rep705.php:250 reporting/rep705.php:257
 msgid "Info"
 msgstr "Thông tin"
@@ -9535,7 +9549,7 @@ msgstr "Đối chiếu"
 # c:/Apache/htdocs/account/sales/view/view_sales_order.php:55
 # c:/Apache/htdocs/account/sales/view/view_sales_order.php:89
 #: includes/ui/allocation_cart.inc:262 reporting/rep704.php:69
-#: reporting/rep704.php:75 reporting/rep704.php:81 reporting/rep709.php:107
+#: reporting/rep704.php:75 reporting/rep704.php:81 reporting/rep709.php:108
 #: sales/inquiry/customer_branches_list.php:44
 #: sales/inquiry/sales_orders_view.php:195
 #: sales/inquiry/sales_orders_view.php:232
@@ -9557,7 +9571,7 @@ msgstr "Phân bổ khác"
 # c:/Apache/htdocs/account/sales/allocations/customer_allocate.php:223
 # c:/Apache/htdocs/account/includes/ui/ui_view.inc:393
 #: includes/ui/allocation_cart.inc:263 includes/ui/allocation_cart.inc:306
-#: includes/ui/ui_view.inc:496
+#: includes/ui/ui_view.inc:494
 #: purchasing/allocations/supplier_allocation_main.php:93
 #: reporting/includes/doctext.inc:162 reporting/includes/doctext.inc:204
 #: reporting/rep112.php:147 reporting/rep210.php:143
@@ -9568,7 +9582,7 @@ msgstr "Còn thiếu"
 # c:/Apache/htdocs/account/purchasing/allocations/supplier_allocate.php:189
 # c:/Apache/htdocs/account/sales/allocations/customer_allocate.php:184
 # c:/Apache/htdocs/account/includes/ui/ui_view.inc:394
-#: includes/ui/allocation_cart.inc:263 includes/ui/ui_view.inc:496
+#: includes/ui/allocation_cart.inc:263 includes/ui/ui_view.inc:494
 #: reporting/includes/doctext.inc:162 reporting/includes/doctext.inc:204
 msgid "This Allocation"
 msgstr "Hiện tại"
@@ -9643,12 +9657,12 @@ msgid "Select file"
 msgstr ""
 
 #: includes/ui/attachment.inc:170 includes/ui/class.crud_view.inc:285
-#: includes/ui/simple_crud_class.inc:211 includes/ui/ui_input.inc:217
+#: includes/ui/simple_crud_class.inc:211 includes/ui/ui_input.inc:212
 msgid "Submit changes"
 msgstr "Thay đổi"
 
 #: includes/ui/attachment.inc:171 includes/ui/simple_crud_class.inc:215
-#: includes/ui/ui_input.inc:220
+#: includes/ui/ui_input.inc:215
 msgid "Cancel edition"
 msgstr "Hủy"
 
@@ -9669,7 +9683,7 @@ msgid "The Selected Attachment is Deleted Successfully"
 msgstr "Đã gỡ bỏ tệp đính kèm"
 
 #: includes/ui/class.crud_view.inc:292 includes/ui/simple_crud_class.inc:213
-#: includes/ui/ui_input.inc:219
+#: includes/ui/ui_input.inc:214
 msgid "Clone"
 msgstr "Sao chép"
 
@@ -9768,32 +9782,32 @@ msgstr "Tham chiếu liên hệ không được trống."
 msgid "You have to select at least one category."
 msgstr "Bạn phải chọn ít nhất một loại."
 
-#: includes/ui/db_pager_view.inc:166 includes/ui/ui_input.inc:876
+#: includes/ui/db_pager_view.inc:166 includes/ui/ui_input.inc:864
 msgid "Show also Inactive"
 msgstr "Hiện cả chưa kích hoạt"
 
 #: includes/ui/db_pager_view.inc:175
-msgid "First"
-msgstr "|<"
+msgid "<<"
+msgstr ""
 
 #: includes/ui/db_pager_view.inc:176
-msgid "Prev"
-msgstr "<"
-
-#: includes/ui/db_pager_view.inc:177
-msgid "Next"
-msgstr ">"
+msgid "<"
+msgstr ""
 
 #: includes/ui/db_pager_view.inc:178
-msgid "Last"
-msgstr ">|"
+msgid ">"
+msgstr ""
 
-#: includes/ui/db_pager_view.inc:187
+#: includes/ui/db_pager_view.inc:179
+msgid ">>"
+msgstr ""
+
+#: includes/ui/db_pager_view.inc:188
 #, php-format
 msgid "Records %d-%d of %d"
 msgstr "%d-%d trong tổng số %d dòng"
 
-#: includes/ui/db_pager_view.inc:192
+#: includes/ui/db_pager_view.inc:193
 msgid "No records"
 msgstr "Không có"
 
@@ -9801,7 +9815,7 @@ msgstr "Không có"
 msgid "Exchange rate roundings"
 msgstr "Làm tròn quy đổi"
 
-#: includes/ui/simple_crud_class.inc:213 includes/ui/ui_input.inc:219
+#: includes/ui/simple_crud_class.inc:213 includes/ui/ui_input.inc:214
 msgid "Edit new record with current data"
 msgstr "Sửa hồ sơ mới với dữ liệu hiện tại"
 
@@ -9880,11 +9894,11 @@ msgstr ""
 "Dữ liệu nhập vàochưa được lưu.\n"
 "Bạn vẫn tiếp tục ?"
 
-#: includes/ui/ui_input.inc:603 reporting/includes/reports_classes.inc:209
+#: includes/ui/ui_input.inc:593 reporting/includes/reports_classes.inc:211
 msgid "Click Here to Pick up the date"
 msgstr "Bấm để chọn ngày"
 
-#: includes/ui/ui_input.inc:888 includes/ui/ui_lists.inc:2111
+#: includes/ui/ui_input.inc:876 includes/ui/ui_lists.inc:2096
 #: reporting/rep301.php:205 reporting/rep302.php:157 reporting/rep303.php:276
 #: reporting/rep304.php:172 reporting/rep304.php:176 reporting/rep306.php:217
 #: reporting/rep306.php:223 reporting/rep310.php:177 reporting/rep310.php:184
@@ -9892,11 +9906,11 @@ msgstr "Bấm để chọn ngày"
 msgid "Inactive"
 msgstr "Tắt"
 
-#: includes/ui/ui_input.inc:896 includes/ui/ui_input.inc:907
+#: includes/ui/ui_input.inc:884 includes/ui/ui_input.inc:895
 msgid "Current Credit:"
 msgstr "Tín dụng còn:"
 
-#: includes/ui/ui_input.inc:920
+#: includes/ui/ui_input.inc:908
 msgid "Bank Balance:"
 msgstr "Số Dư:"
 
@@ -9918,39 +9932,39 @@ msgstr "Nhập ký tự rồi nhấn Enter để tìm hoặc nhập * để ra t
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:28
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:32
-#: includes/ui/ui_lists.inc:483 includes/ui/ui_lists.inc:1378
+#: includes/ui/ui_lists.inc:489 includes/ui/ui_lists.inc:1363
 msgid "All Suppliers"
 msgstr "Tất cả nhà cung cấp"
 
-#: includes/ui/ui_lists.inc:487
+#: includes/ui/ui_lists.inc:493
 msgid "Press Space tab to filter by name fragment"
 msgstr "Nhấn Space(dấu cách) để tìm kiếm theo ký tự"
 
-#: includes/ui/ui_lists.inc:488
+#: includes/ui/ui_lists.inc:493
 msgid "Select supplier"
 msgstr "Chọn nhà cung cấp"
 
-#: includes/ui/ui_lists.inc:531
+#: includes/ui/ui_lists.inc:538
 msgid "All Customers"
 msgstr "Tất cả khách hàng"
 
-#: includes/ui/ui_lists.inc:535
+#: includes/ui/ui_lists.inc:542
 msgid "Press Space tab to filter by name fragment; F2 - entry new customer"
 msgstr "Nhấn phím Space để tìm theo ký tự; F2 để tạo mới khách hàng"
 
-#: includes/ui/ui_lists.inc:536
+#: includes/ui/ui_lists.inc:542
 msgid "Select customer"
 msgstr "Chọn khách hàng"
 
-#: includes/ui/ui_lists.inc:574
+#: includes/ui/ui_lists.inc:579
 msgid "All branches"
 msgstr "Tất cả chi nhánh"
 
-#: includes/ui/ui_lists.inc:577
+#: includes/ui/ui_lists.inc:582
 msgid "Select customer branch"
 msgstr "Chọn chi nhánh khách"
 
-#: includes/ui/ui_lists.inc:607
+#: includes/ui/ui_lists.inc:613
 msgid "All Locations"
 msgstr "Tất Cả Phân Bổ"
 
@@ -9962,39 +9976,39 @@ msgstr "Tất Cả Phân Bổ"
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:757
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:770
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:799
-#: includes/ui/ui_lists.inc:746 includes/ui/ui_lists.inc:825
+#: includes/ui/ui_lists.inc:752 includes/ui/ui_lists.inc:817
 msgid "All Items"
 msgstr "Tất cả mặt hàng"
 
-#: includes/ui/ui_lists.inc:1316
+#: includes/ui/ui_lists.inc:1308
 msgid "All Sales Types"
 msgstr "Tất cả kiểu bán"
 
-#: includes/ui/ui_lists.inc:1641
+#: includes/ui/ui_lists.inc:1625
 msgid "Use Item Sales Accounts"
 msgstr "Dùng tài khoản bán của mặt hàng"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1850
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1863
-#: includes/ui/ui_lists.inc:1915 includes/ui/ui_lists.inc:1930
-#: includes/ui/ui_lists.inc:1945
+#: includes/ui/ui_lists.inc:1899 includes/ui/ui_lists.inc:1914
+#: includes/ui/ui_lists.inc:1929
 msgid "All Types"
 msgstr "Tất cả"
 
 # c:/Apache/htdocs/account/sales/inquiry/customer_allocation_inquiry.php:35
 # c:/Apache/htdocs/account/sales/inquiry/customer_inquiry.php:37
 # c:/Apache/htdocs/account/sales/view/view_sales_order.php:30
-#: includes/ui/ui_lists.inc:1916 sales/view/view_sales_order.php:134
+#: includes/ui/ui_lists.inc:1900 sales/view/view_sales_order.php:134
 msgid "Sales Invoices"
 msgstr "Hoá đơn bán"
 
-#: includes/ui/ui_lists.inc:1917 includes/ui/ui_lists.inc:1948
+#: includes/ui/ui_lists.inc:1901 includes/ui/ui_lists.inc:1931
 msgid "Unsettled transactions"
 msgstr "Giao dịch chưa xong"
 
-#: includes/ui/ui_lists.inc:1918 includes/ui/ui_lists.inc:1933
-#: includes/ui/ui_lists.inc:1949 includes/ui/ui_view.inc:552
-#: includes/ui/ui_view.inc:556 themes/canvas/renderer.php:77
+#: includes/ui/ui_lists.inc:1902 includes/ui/ui_lists.inc:1917
+#: includes/ui/ui_lists.inc:1932 includes/ui/ui_view.inc:550
+#: includes/ui/ui_view.inc:554 themes/canvas/renderer.php:77
 #: themes/canvas/renderer.php:88 themes/canvas/renderer.php:120
 msgid "Payments"
 msgstr "Thanh toán"
@@ -10004,42 +10018,42 @@ msgstr "Thanh toán"
 # c:/Apache/htdocs/account/sales/inquiry/customer_allocation_inquiry.php:38
 # c:/Apache/htdocs/account/sales/inquiry/customer_inquiry.php:40
 # c:/Apache/htdocs/account/sales/view/view_sales_order.php:32
-#: includes/ui/ui_lists.inc:1919 includes/ui/ui_lists.inc:1934
-#: includes/ui/ui_lists.inc:1950 sales/view/view_sales_order.php:169
+#: includes/ui/ui_lists.inc:1903 includes/ui/ui_lists.inc:1918
+#: includes/ui/ui_lists.inc:1933 sales/view/view_sales_order.php:169
 msgid "Credit Notes"
 msgstr "Điều chỉnh"
 
-#: includes/ui/ui_lists.inc:1920 sales/view/view_sales_order.php:101
+#: includes/ui/ui_lists.inc:1904 sales/view/view_sales_order.php:101
 msgid "Delivery Notes"
 msgstr "Phiếu giao hàng"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1864
-#: includes/ui/ui_lists.inc:1931 includes/ui/ui_lists.inc:1947
+#: includes/ui/ui_lists.inc:1915 includes/ui/ui_lists.inc:1930
 msgid "Invoices"
 msgstr "Hóa đơn"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1852
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1865
-#: includes/ui/ui_lists.inc:1932
+#: includes/ui/ui_lists.inc:1916
 msgid "Overdue Invoices"
 msgstr "Hoá đơn quá hạn"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1868
-#: includes/ui/ui_lists.inc:1935 includes/ui/ui_lists.inc:1951
+#: includes/ui/ui_lists.inc:1919 includes/ui/ui_lists.inc:1934
 msgid "Overdue Credit Notes"
 msgstr "Hoá đơn điều chỉnh quá hạn"
 
-#: includes/ui/ui_lists.inc:1946
+#: includes/ui/ui_lists.inc:1935
 msgid "GRNs"
 msgstr "Biên nhận"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1883
-#: includes/ui/ui_lists.inc:1963
+#: includes/ui/ui_lists.inc:1947
 msgid "Automatically put balance on back order"
 msgstr "Tự động đặt số dư khi chậm đơn hàng"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1884
-#: includes/ui/ui_lists.inc:1964
+#: includes/ui/ui_lists.inc:1948
 msgid "Cancel any quantites not delivered"
 msgstr "Huỷ số lượng không được giao"
 
@@ -10048,7 +10062,7 @@ msgstr "Huỷ số lượng không được giao"
 # c:/Apache/htdocs/account/sales/customer_credit_invoice.php:335
 # c:/Apache/htdocs/account/sales/includes/ui/sales_credit_ui.inc:240
 # c:/Apache/htdocs/account/sales/includes/ui/sales_credit_ui.inc:243
-#: includes/ui/ui_lists.inc:1979
+#: includes/ui/ui_lists.inc:1963
 msgid "Items Returned to Inventory Location"
 msgstr "Hàng trả lại nhập kho"
 
@@ -10056,68 +10070,80 @@ msgstr "Hàng trả lại nhập kho"
 # c:/Apache/htdocs/account/sales/customer_credit_invoice.php:323
 # c:/Apache/htdocs/account/sales/includes/ui/sales_credit_ui.inc:241
 # c:/Apache/htdocs/account/sales/includes/ui/sales_credit_ui.inc:244
-#: includes/ui/ui_lists.inc:1980
+#: includes/ui/ui_lists.inc:1964
 msgid "Items Written Off"
 msgstr "Các mục đã xoá"
 
-#: includes/ui/ui_lists.inc:2133
+#: includes/ui/ui_lists.inc:2115
 msgid "New role"
 msgstr "Vai trò mới"
 
-#: includes/ui/ui_lists.inc:2179
+#: includes/ui/ui_lists.inc:2161
 msgid "No tags defined."
 msgstr "Không có thẻ."
 
-#: includes/ui/ui_lists.inc:2179
+#: includes/ui/ui_lists.inc:2161
 msgid "No active tags defined."
 msgstr "Không có thẻ đang chạy."
 
-#: includes/ui/ui_lists.inc:2214
+#: includes/ui/ui_lists.inc:2196
 #, php-format
 msgid "Activated for '%s'"
 msgstr "Kích hoạt cho ‘%s’"
 
-#: includes/ui/ui_lists.inc:2217
+#: includes/ui/ui_lists.inc:2199
 msgid "Available and/or installed"
 msgstr "Có sẵn và/hoặc đã cài"
 
-#: includes/ui/ui_lists.inc:2282
+#: includes/ui/ui_lists.inc:2264
 msgid "Hệ thống tài khoản theo Thông tư 200 mới"
 msgstr "Hệ thống tài khoản theo Thông tư 200 mới"
 
-#: includes/ui/ui_lists.inc:2284
+#: includes/ui/ui_lists.inc:2266
 msgid "Hệ thống tài khoản theo Thông tư 200 có dữ liệu demo"
 msgstr "Hệ thống tài khoản theo Thông tư 200 có dữ liệu demo"
 
-#: includes/ui/ui_lists.inc:2286
+#: includes/ui/ui_lists.inc:2268
 msgid "Hệ thống tài khoản theo Thông tư 133 mới"
 msgstr "Hệ thống tài khoản theo Thông tư 133 mới"
 
-#: includes/ui/ui_lists.inc:2288
+#: includes/ui/ui_lists.inc:2270
+msgid "Hệ thống tài khoản theo Thông tư 133 có dữ liệu demo"
+msgstr ""
+
+#: includes/ui/ui_lists.inc:2272
+msgid "Hệ thống tài khoản theo Thông tư 132 mới"
+msgstr ""
+
+#: includes/ui/ui_lists.inc:2274
+msgid "Hệ thống tài khoản theo Thông tư 132 có dữ liệu demo"
+msgstr ""
+
+#: includes/ui/ui_lists.inc:2276
 msgid "Standard new company American COA (4 digit)"
 msgstr "Hệ thống tài khoản Mỹ - American COA (4 digit)"
 
-#: includes/ui/ui_lists.inc:2290
+#: includes/ui/ui_lists.inc:2278
 msgid "Standard American COA (4 digit) with demo data"
 msgstr "Hệ thống tài khoản Mỹ American COA (4 digit) có dữ liệu demo"
 
-#: includes/ui/ui_lists.inc:2310
+#: includes/ui/ui_lists.inc:2298
 msgid "No payment Link"
 msgstr "Không liên kết"
 
-#: includes/ui/ui_lists.inc:2420
+#: includes/ui/ui_lists.inc:2408
 msgid "Numeric"
 msgstr "Dạng số"
 
-#: includes/ui/ui_lists.inc:2420
+#: includes/ui/ui_lists.inc:2408
 msgid "Alpha Numeric"
 msgstr "Số và chữ cái"
 
-#: includes/ui/ui_lists.inc:2420
+#: includes/ui/ui_lists.inc:2408
 msgid "ALPHA NUMERIC"
 msgstr "SỐ VÀ CHỮ CÁI"
 
-#: includes/ui/ui_lists.inc:2435
+#: includes/ui/ui_lists.inc:2423
 msgid "All users"
 msgstr "Tất cả người dùng"
 
@@ -10126,7 +10152,7 @@ msgstr "Tất cả người dùng"
 msgid "in units of : "
 msgstr "đơn vị tính theo: "
 
-#: includes/ui/ui_view.inc:280
+#: includes/ui/ui_view.inc:278
 #, php-format
 msgid ""
 "Cannot retrieve exchange rate for currency %s. Please adjust approximate "
@@ -10135,11 +10161,11 @@ msgstr ""
 "Không thể cập nhật tỷ giá cho loại tiền %s. Hãy tự điều chỉnh tỷ giá nếu cần."
 
 # c:/Apache2/htdocs/account/includes/ui/ui_view.inc:301
-#: includes/ui/ui_view.inc:320
+#: includes/ui/ui_view.inc:318
 msgid "Date Voided:"
 msgstr "Vô hiệu hoá:"
 
-#: includes/ui/ui_view.inc:406 reporting/rep107.php:256
+#: includes/ui/ui_view.inc:404 reporting/rep107.php:256
 #: reporting/rep109.php:154 reporting/rep110.php:162 reporting/rep111.php:166
 #: reporting/rep113.php:158 reporting/rep209.php:170
 msgid "Total Tax Excluded"
@@ -10149,160 +10175,160 @@ msgstr "Tổng chưa thuế"
 # c:/Apache2/htdocs/account/includes/ui/ui_view.inc:408
 # c:/Apache2/htdocs/account/includes/ui/ui_view.inc:426
 # c:/Apache2/htdocs/account/reporting/includes/doctext.inc:66
-#: includes/ui/ui_view.inc:411 includes/ui/ui_view.inc:427
-#: includes/ui/ui_view.inc:447 includes/ui/ui_view.inc:464
+#: includes/ui/ui_view.inc:409 includes/ui/ui_view.inc:425
+#: includes/ui/ui_view.inc:445 includes/ui/ui_view.inc:462
 #: reporting/rep107.php:265 reporting/rep109.php:163 reporting/rep110.php:171
 #: reporting/rep111.php:175 reporting/rep113.php:167 reporting/rep209.php:179
 msgid "Included"
 msgstr "Bao gồm"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_view.inc:463
-#: includes/ui/ui_view.inc:496 reporting/includes/doctext.inc:162
+#: includes/ui/ui_view.inc:494 reporting/includes/doctext.inc:162
 #: reporting/includes/doctext.inc:204 reporting/rep105.php:109
 msgid "Total Amount"
 msgstr "Tổng tiền"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_view.inc:485
-#: includes/ui/ui_view.inc:518
+#: includes/ui/ui_view.inc:516
 msgid "Total Allocated:"
 msgstr "Đã trả :"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_view.inc:489
-#: includes/ui/ui_view.inc:523
+#: includes/ui/ui_view.inc:521
 msgid "Left to Allocate:"
 msgstr "Còn thiếu:"
 
 # c:/Apache/htdocs/account/purchasing/inquiry/supplier_allocation_inquiry.php:163
 # c:/Apache/htdocs/account/includes/ui/ui_view.inc:396
-#: includes/ui/ui_view.inc:537 includes/ui/ui_view.inc:541
+#: includes/ui/ui_view.inc:535 includes/ui/ui_view.inc:539
 #: purchasing/inquiry/supplier_allocation_inquiry.php:88
 msgid "Allocations"
 msgstr "Phân bổ"
 
-#: includes/ui/ui_view.inc:552 includes/ui/ui_view.inc:556
+#: includes/ui/ui_view.inc:550 includes/ui/ui_view.inc:554
 msgid "Pre-Payments"
 msgstr "Trả trước"
 
-#: includes/ui/ui_view.inc:570
+#: includes/ui/ui_view.inc:568
 msgid "No Quick Entries are defined."
 msgstr "Chưa tạo các ghi chép nhanh."
 
-#: includes/ui/ui_view.inc:583
+#: includes/ui/ui_view.inc:581
 msgid "No Quick Entry lines are defined."
 msgstr "Mục tạp phí chưa có các khoản tạp phí."
 
-#: includes/ui/ui_view.inc:795 purchasing/includes/ui/invoice_ui.inc:440
+#: includes/ui/ui_view.inc:791 purchasing/includes/ui/invoice_ui.inc:440
 msgid "and"
 msgstr "và"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:31
 # c:/Apache2/htdocs/account/tmp2/example.php:40
-#: includes/ui/ui_view.inc:921
+#: includes/ui/ui_view.inc:917
 msgid "January"
 msgstr "Tháng 1"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:31
 # c:/Apache2/htdocs/account/tmp2/example.php:40
-#: includes/ui/ui_view.inc:921
+#: includes/ui/ui_view.inc:917
 msgid "February"
 msgstr "Tháng 2"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:31
 # c:/Apache2/htdocs/account/tmp2/example.php:40
-#: includes/ui/ui_view.inc:921
+#: includes/ui/ui_view.inc:917
 msgid "March"
 msgstr "Tháng 3"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:31
 # c:/Apache2/htdocs/account/tmp2/example.php:40
-#: includes/ui/ui_view.inc:921
+#: includes/ui/ui_view.inc:917
 msgid "April"
 msgstr "Tháng 4"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:31
 # c:/Apache2/htdocs/account/tmp2/example.php:40
-#: includes/ui/ui_view.inc:921
+#: includes/ui/ui_view.inc:917
 msgid "June"
 msgstr "Tháng 5"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:32
 # c:/Apache2/htdocs/account/tmp2/example.php:41
-#: includes/ui/ui_view.inc:921
+#: includes/ui/ui_view.inc:917
 msgid "July"
 msgstr "Tháng 7"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:32
 # c:/Apache2/htdocs/account/tmp2/example.php:41
-#: includes/ui/ui_view.inc:921
+#: includes/ui/ui_view.inc:917
 msgid "August"
 msgstr "Tháng 8"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_view.inc:651
-#: includes/ui/ui_view.inc:921
+#: includes/ui/ui_view.inc:917
 msgid "September"
 msgstr "Tháng 9"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:32
 # c:/Apache2/htdocs/account/tmp2/example.php:41
-#: includes/ui/ui_view.inc:921
+#: includes/ui/ui_view.inc:917
 msgid "October"
 msgstr "Tháng 10"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:32
 # c:/Apache2/htdocs/account/tmp2/example.php:41
-#: includes/ui/ui_view.inc:921
+#: includes/ui/ui_view.inc:917
 msgid "November"
 msgstr "Tháng 11"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:32
 # c:/Apache2/htdocs/account/tmp2/example.php:41
-#: includes/ui/ui_view.inc:921
+#: includes/ui/ui_view.inc:917
 msgid "December"
 msgstr "Tháng 12"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:33
 # c:/Apache2/htdocs/account/tmp2/example.php:42
-#: includes/ui/ui_view.inc:922
+#: includes/ui/ui_view.inc:918
 msgid "Su"
 msgstr "CN"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:33
 # c:/Apache2/htdocs/account/tmp2/example.php:42
-#: includes/ui/ui_view.inc:922
+#: includes/ui/ui_view.inc:918
 msgid "Mo"
 msgstr "T2"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:33
 # c:/Apache2/htdocs/account/tmp2/example.php:42
-#: includes/ui/ui_view.inc:922
+#: includes/ui/ui_view.inc:918
 msgid "Tu"
 msgstr "T3"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:33
 # c:/Apache2/htdocs/account/tmp2/example.php:42
-#: includes/ui/ui_view.inc:922
+#: includes/ui/ui_view.inc:918
 msgid "We"
 msgstr "T4"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:33
 # c:/Apache2/htdocs/account/tmp2/example.php:42
-#: includes/ui/ui_view.inc:922
+#: includes/ui/ui_view.inc:918
 msgid "Th"
 msgstr "T5"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:33
 # c:/Apache2/htdocs/account/tmp2/example.php:42
-#: includes/ui/ui_view.inc:922
+#: includes/ui/ui_view.inc:918
 msgid "Fr"
 msgstr "T6"
 
 # c:/Apache2/htdocs/account/tmp2/datepicker.php:33
 # c:/Apache2/htdocs/account/tmp2/example.php:42
-#: includes/ui/ui_view.inc:922
+#: includes/ui/ui_view.inc:918
 msgid "Sa"
 msgstr "T7"
 
-#: includes/ui/ui_view.inc:923
+#: includes/ui/ui_view.inc:919
 msgid "W"
 msgstr "T"
 
@@ -10650,22 +10676,22 @@ msgstr ""
 "Chưa định nghĩa các mặt hàng có chi phí (Hàng thu mua hoặc tự sản xuất)."
 
 # c:/Apache/htdocs/account/inventory/cost_update.php:36
-#: inventory/cost_update.php:63
+#: inventory/cost_update.php:62
 msgid "The entered cost is not numeric."
 msgstr "Chi phí nhập vào không phải là số."
 
 # c:/Apache/htdocs/account/inventory/cost_update.php:39
-#: inventory/cost_update.php:68
+#: inventory/cost_update.php:67
 msgid "The new cost is the same as the old cost. Cost was not updated."
 msgstr "Chi phí mới giống chi phí cũ. Chi phí chưa được cập nhật."
 
 # c:/Apache/htdocs/account/inventory/cost_update.php:49
-#: inventory/cost_update.php:75
+#: inventory/cost_update.php:74
 msgid "Cost has been updated."
 msgstr "Đã cập nhật chi phí."
 
 # c:/Apache/htdocs/account/inventory/cost_update.php:53
-#: inventory/cost_update.php:78
+#: inventory/cost_update.php:77
 msgid "View the GL Journal Entries for this Cost Update"
 msgstr "Xem các bút toán cho nghiệp vụ này"
 
@@ -10679,7 +10705,7 @@ msgstr "Xem các bút toán cho nghiệp vụ này"
 # c:/Apache/htdocs/account/manufacturing/work_order_entry.php:307
 # c:/Apache/htdocs/account/manufacturing/inquiry/bom_cost_inquiry.php:21
 # c:/Apache/htdocs/account/sales/inquiry/sales_orders_view.php:41
-#: inventory/cost_update.php:100 inventory/inquiry/stock_movements.php:61
+#: inventory/cost_update.php:99 inventory/inquiry/stock_movements.php:61
 #: inventory/inquiry/stock_movements.php:71
 #: inventory/inquiry/stock_status.php:46 inventory/manage/item_codes.php:99
 #: inventory/prices.php:64 inventory/purchasing_data.php:107
@@ -10690,17 +10716,17 @@ msgstr "Xem các bút toán cho nghiệp vụ này"
 msgid "Item:"
 msgstr "Mã hàng:"
 
-#: inventory/cost_update.php:127
-msgid "Unit cost"
-msgstr "Đơn giá"
+#: inventory/cost_update.php:126
+msgid "Unit cost:"
+msgstr ""
 
 # c:/Apache/htdocs/account/inventory/cost_update.php:94
-#: inventory/cost_update.php:130
+#: inventory/cost_update.php:129
 msgid "Standard Labour Cost Per Unit"
 msgstr "Chi phí nhân công tiêu chuẩn mỗi đơn vị"
 
 # c:/Apache/htdocs/account/inventory/cost_update.php:96
-#: inventory/cost_update.php:131
+#: inventory/cost_update.php:130
 msgid "Standard Overhead Cost Per Unit"
 msgstr "Chi phí chung mỗi đơn vị"
 
@@ -11178,12 +11204,12 @@ msgstr "Chưa chọn mặt hàng."
 msgid "The quantity entered was not positive number."
 msgstr "Số lượng nhập vào không hợp lệ."
 
-#: inventory/manage/item_codes.php:48 inventory/manage/sales_kits.php:70
+#: inventory/manage/item_codes.php:48 inventory/manage/sales_kits.php:68
 msgid "Item code description cannot be empty."
 msgstr "Mô tả mã không được trống."
 
 #: inventory/manage/item_codes.php:55 inventory/manage/items.php:194
-#: inventory/manage/sales_kits.php:84
+#: inventory/manage/sales_kits.php:82
 msgid "This item code is already assigned to stock item or sale kit."
 msgstr "Mã hàng đã được sử dụng cho mặt hàng hoặc cấu kiện khác."
 
@@ -11210,7 +11236,7 @@ msgstr "Mã EAN/UPC:"
 # c:/Apache/htdocs/account/manufacturing/work_order_add_finished.php:136
 # c:/Apache/htdocs/account/manufacturing/work_order_entry.php:323
 # c:/Apache/htdocs/account/manufacturing/manage/bom_edit.php:247
-#: inventory/manage/item_codes.php:173 inventory/manage/sales_kits.php:236
+#: inventory/manage/item_codes.php:173 inventory/manage/sales_kits.php:231
 #: manufacturing/manage/bom_edit.php:208
 #: manufacturing/work_order_add_finished.php:174
 #: manufacturing/work_order_entry.php:346
@@ -11219,7 +11245,7 @@ msgstr "Số lượng:"
 
 # c:/Apache/htdocs/account/inventory/manage/items.php:213
 #: inventory/manage/item_codes.php:175 inventory/manage/items.php:335
-#: inventory/manage/sales_kits.php:201 inventory/manage/sales_kits.php:225
+#: inventory/manage/sales_kits.php:196 inventory/manage/sales_kits.php:220
 msgid "Category:"
 msgstr "Loại:"
 
@@ -11580,25 +11606,25 @@ msgstr "Mã cấu kiện và Định danh"
 msgid "Stock Item"
 msgstr "Mặt hàng"
 
-#: inventory/manage/sales_kits.php:49
+#: inventory/manage/sales_kits.php:48
 msgid "kit"
 msgstr "bộ"
 
-#: inventory/manage/sales_kits.php:65 manufacturing/manage/bom_edit.php:89
+#: inventory/manage/sales_kits.php:63 manufacturing/manage/bom_edit.php:89
 msgid "The quantity entered must be numeric and greater than zero."
 msgstr "Số lượng nhập vào phải là số và lớn hơn 0."
 
-#: inventory/manage/sales_kits.php:77
+#: inventory/manage/sales_kits.php:75
 msgid "Kit/alias code cannot be empty."
 msgstr "Bộ/đinh danh không được trống."
 
-#: inventory/manage/sales_kits.php:92
+#: inventory/manage/sales_kits.php:90
 msgid ""
 "The selected component contains directly or on any lower level the kit under "
 "edition. Recursive kits are not allowed."
 msgstr ""
 
-#: inventory/manage/sales_kits.php:99
+#: inventory/manage/sales_kits.php:96
 msgid ""
 "The selected component is already in this kit. You can modify it's quantity "
 "but it cannot appear more than once in the same kit."
@@ -11606,24 +11632,24 @@ msgstr ""
 "Đối tượng được chọn đã có trong cấu kiện. Bạn có thể chỉnh sửa số lượng "
 "nhưng một đối tượng không thể xuất hiện nhiều hơn 1 lần trong cùng cấu kiện."
 
-#: inventory/manage/sales_kits.php:106
+#: inventory/manage/sales_kits.php:103
 msgid "New alias code has been created."
 msgstr "Đã tạo định danh mới"
 
-#: inventory/manage/sales_kits.php:109
+#: inventory/manage/sales_kits.php:106
 msgid "New component has been added to selected kit."
 msgstr "Đã thêm thành phần mới vào bộ."
 
-#: inventory/manage/sales_kits.php:118
+#: inventory/manage/sales_kits.php:115
 msgid "Component of selected kit has been updated."
 msgstr "Đã cập nhật thành phần trong bộ được chọn."
 
-#: inventory/manage/sales_kits.php:130
+#: inventory/manage/sales_kits.php:127
 msgid "Kit common properties has been updated"
 msgstr "Đã cập nhật thuộc tính bộ"
 
 # c:/Apache/htdocs/account/purchasing/po_entry_items.php:94
-#: inventory/manage/sales_kits.php:149
+#: inventory/manage/sales_kits.php:145
 msgid ""
 "This item cannot be deleted because it is the last item in the kit used by "
 "following kits"
@@ -11631,34 +11657,34 @@ msgstr ""
 "Không thể xoá mặt hàng vì nó nó là thành phần trong cấu kiện được sử dụng "
 "bởi các cấu kiện sau đây"
 
-#: inventory/manage/sales_kits.php:160 manufacturing/manage/bom_edit.php:128
+#: inventory/manage/sales_kits.php:157 manufacturing/manage/bom_edit.php:128
 msgid "The component item has been deleted from this bom"
 msgstr "Thành phần đã bị xoá khỏi định mức nguyên vật liệu"
 
-#: inventory/manage/sales_kits.php:175
+#: inventory/manage/sales_kits.php:172
 msgid "Select a sale kit:"
 msgstr "Chọn bộ :"
 
-#: inventory/manage/sales_kits.php:176
+#: inventory/manage/sales_kits.php:173
 msgid "New kit"
 msgstr "Cấu kiện mới"
 
-#: inventory/manage/sales_kits.php:193
+#: inventory/manage/sales_kits.php:189
 msgid "Alias/kit code:"
 msgstr "Mã bộ/Đinh danh:"
 
-#: inventory/manage/sales_kits.php:202
+#: inventory/manage/sales_kits.php:197
 msgid "Update kit/alias name"
 msgstr "Cập nhật"
 
 # c:/Apache/htdocs/account/manufacturing/manage/bom_edit.php:228
 # c:/Apache/htdocs/account/manufacturing/manage/bom_edit.php:234
-#: inventory/manage/sales_kits.php:217 manufacturing/manage/bom_edit.php:186
+#: inventory/manage/sales_kits.php:212 manufacturing/manage/bom_edit.php:186
 #: manufacturing/manage/bom_edit.php:192
 msgid "Component:"
 msgstr "Thành phần:"
 
-#: inventory/manage/sales_kits.php:229
+#: inventory/manage/sales_kits.php:224
 msgid "kits"
 msgstr "bộ"
 
@@ -12898,7 +12924,6 @@ msgid "Total:"
 msgstr "Tổng:"
 
 #: purchasing/allocations/supplier_allocate.php:60
-#: sales/allocations/customer_allocate.php:60
 msgid "Amount ot be settled:"
 msgstr "Số quy đổi:"
 
@@ -13464,8 +13489,8 @@ msgstr "Đối chiếu"
 # c:/Apache/htdocs/account/purchasing/inquiry/supplier_allocation_inquiry.php:128
 # c:/Apache/htdocs/account/sales/inquiry/customer_allocation_inquiry.php:137
 #: purchasing/inquiry/supplier_allocation_inquiry.php:129
-#: reporting/includes/doctext.inc:241 reporting/rep101.php:126
-#: reporting/rep201.php:106 sales/inquiry/customer_allocation_inquiry.php:131
+#: reporting/includes/doctext.inc:241 reporting/rep101.php:130
+#: reporting/rep201.php:105 sales/inquiry/customer_allocation_inquiry.php:131
 msgid "Allocated"
 msgstr "Phân bổ"
 
@@ -14033,8 +14058,8 @@ msgstr "Đã đặt"
 
 # c:/Apache/htdocs/account/purchasing/po_receive_items.php:49
 #: purchasing/po_receive_items.php:59 reporting/includes/doctext.inc:241
-#: reporting/rep101.php:126 reporting/rep105.php:109 reporting/rep105.php:159
-#: reporting/rep201.php:106
+#: reporting/rep101.php:130 reporting/rep105.php:109 reporting/rep105.php:159
+#: reporting/rep201.php:105
 msgid "Outstanding"
 msgstr "Còn"
 
@@ -14578,7 +14603,7 @@ msgstr "BÁO GIÁ HÀNG BÁN"
 
 #: reporting/includes/doctext.inc:48
 msgid "Quotation No."
-msgstr "Số:"
+msgstr "Số."
 
 #: reporting/includes/doctext.inc:53 reporting/includes/doctext.inc:70
 #: reporting/includes/doctext.inc:90 reporting/includes/doctext.inc:104
@@ -14631,7 +14656,7 @@ msgstr "ĐƠN HÀNG BÁN"
 # c:/Apache2/htdocs/account/reporting/includes/doctext.inc:16
 #: reporting/includes/doctext.inc:63
 msgid "Order No."
-msgstr "Số:"
+msgstr "Số."
 
 # c:/Apache/htdocs/account/sales/view/view_invoice.php:67
 #: reporting/includes/doctext.inc:73 reporting/includes/doctext.inc:93
@@ -14652,7 +14677,7 @@ msgstr "PHIẾU GIAO HÀNG"
 
 #: reporting/includes/doctext.inc:80
 msgid "Delivery Note No."
-msgstr "Số:"
+msgstr "Số."
 
 #: reporting/includes/doctext.inc:94
 msgid "To Be Invoiced Before"
@@ -14666,7 +14691,7 @@ msgstr "HOÁ ĐƠN ĐIỀU CHỈNH"
 
 #: reporting/includes/doctext.inc:100
 msgid "Credit No."
-msgstr "Số chứng từ"
+msgstr "Số chứng từ."
 
 #: reporting/includes/doctext.inc:101
 msgid "Please quote Credit no. when paying. All amounts stated in"
@@ -14690,7 +14715,7 @@ msgstr "HOÁ ĐƠN"
 
 #: reporting/includes/doctext.inc:115
 msgid "Invoice No."
-msgstr "Số:"
+msgstr "Số."
 
 # c:/Apache2/htdocs/account/reporting/includes/doctext.inc:20
 #: reporting/includes/doctext.inc:117
@@ -14712,7 +14737,7 @@ msgstr "CHUYỂN TIỀN"
 
 #: reporting/includes/doctext.inc:147
 msgid "Remittance No."
-msgstr "Số:"
+msgstr "Số."
 
 #: reporting/includes/doctext.inc:148 reporting/includes/doctext.inc:168
 msgid "Order To"
@@ -14723,8 +14748,8 @@ msgstr "Đặt hàng"
 # c:/Apache2/htdocs/account/reporting/Rep201.php:75
 # c:/Apache2/htdocs/account/reporting/Rep709.php:187
 #: reporting/includes/doctext.inc:162 reporting/includes/doctext.inc:204
-#: reporting/includes/doctext.inc:241 reporting/rep101.php:126
-#: reporting/rep201.php:106 reporting/rep203.php:80 reporting/rep709.php:107
+#: reporting/includes/doctext.inc:241 reporting/rep101.php:130
+#: reporting/rep201.php:105 reporting/rep203.php:80 reporting/rep709.php:108
 msgid "Trans Type"
 msgstr "Loại giao dịch"
 
@@ -14737,7 +14762,7 @@ msgstr "ĐƠN HÀNG THU MUA"
 
 #: reporting/includes/doctext.inc:167
 msgid "Purchase Order No."
-msgstr "Số:"
+msgstr "Số."
 
 #: reporting/includes/doctext.inc:171
 msgid "Deliver To"
@@ -14750,7 +14775,7 @@ msgstr "PHIẾU THU TIỀN"
 
 #: reporting/includes/doctext.inc:193
 msgid "Receipt No."
-msgstr "Số:"
+msgstr "Số."
 
 #: reporting/includes/doctext.inc:194
 msgid "With thanks from"
@@ -14763,7 +14788,7 @@ msgstr "LỆNH SẢN XUẤT"
 
 #: reporting/includes/doctext.inc:211
 msgid "Work Order No."
-msgstr "Số lệnh SX"
+msgstr "Số lệnh SX."
 
 # c:/Apache2/htdocs/account/reporting/Rep108.php:93
 # c:/Apache2/htdocs/account/reporting/Rep108.php:118
@@ -14780,16 +14805,16 @@ msgstr "Đến hạn"
 # c:/Apache2/htdocs/account/reporting/Rep101.php:79
 # c:/Apache2/htdocs/account/reporting/Rep108.php:65
 # c:/Apache2/htdocs/account/reporting/Rep201.php:79
-#: reporting/includes/doctext.inc:241 reporting/rep101.php:126
-#: reporting/rep201.php:106
+#: reporting/includes/doctext.inc:241 reporting/rep101.php:130
+#: reporting/rep201.php:105
 msgid "Charges"
 msgstr "Phải trả"
 
 # c:/Apache2/htdocs/account/reporting/Rep101.php:80
 # c:/Apache2/htdocs/account/reporting/Rep108.php:66
 # c:/Apache2/htdocs/account/reporting/Rep201.php:80
-#: reporting/includes/doctext.inc:241 reporting/rep101.php:126
-#: reporting/rep201.php:106
+#: reporting/includes/doctext.inc:241 reporting/rep101.php:130
+#: reporting/rep201.php:105
 msgid "Credits"
 msgstr "Vào sổ"
 
@@ -14806,7 +14831,7 @@ msgstr "Bạn có thể thanh toán qua"
 
 #: reporting/includes/doctext.inc:269
 msgid "* Subject to Realisation of the Cheque."
-msgstr " Tiêu đề séc."
+msgstr " *Tiêu đề séc."
 
 #: reporting/includes/excel_report.inc:67 reporting/includes/pdf_report.inc:80
 msgid ""
@@ -14843,7 +14868,7 @@ msgstr "Tạo bởi"
 # c:/Apache2/htdocs/account/reporting/includes/doctext.inc:16
 #: reporting/includes/header2.inc:117
 msgid "Our VAT No."
-msgstr "MS thuế"
+msgstr "MS thuế."
 
 # c:/Apache2/htdocs/account/reporting/includes/doctext.inc:19
 #: reporting/includes/header2.inc:122
@@ -14894,7 +14919,7 @@ msgstr "đã gửi đến."
 
 #: reporting/includes/pdf_report.inc:982
 msgid "Report has been sent to network printer "
-msgstr "Báo cáo đã gửi đến hệ thống máy in"
+msgstr "Báo cáo đã gửi đến hệ thống máy in "
 
 #: reporting/includes/printer_class.inc:39
 msgid "Cannot open connection to printer"
@@ -14944,100 +14969,100 @@ msgid "Unknown report parameter type:"
 msgstr "Không xác định tham số loại báo cáo:"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:123
-#: reporting/includes/reports_classes.inc:169
+#: reporting/includes/reports_classes.inc:170
 msgid "No Currency Filter"
 msgstr "Không lọc tiền tệ"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:167
-#: reporting/includes/reports_classes.inc:239
+#: reporting/includes/reports_classes.inc:241
 msgid "No Graphics"
 msgstr "Không biểu đồ"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:167
-#: reporting/includes/reports_classes.inc:239
+#: reporting/includes/reports_classes.inc:241
 msgid "Vertical bars"
 msgstr "Dọc"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:167
-#: reporting/includes/reports_classes.inc:239
+#: reporting/includes/reports_classes.inc:241
 msgid "Horizontal bars"
 msgstr "Ngang"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:167
-#: reporting/includes/reports_classes.inc:240
+#: reporting/includes/reports_classes.inc:241
 msgid "Dots"
 msgstr "Điểm"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:167
-#: reporting/includes/reports_classes.inc:240
+#: reporting/includes/reports_classes.inc:241
 msgid "Lines"
 msgstr "Đường"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:167
-#: reporting/includes/reports_classes.inc:240
+#: reporting/includes/reports_classes.inc:241
 msgid "Pie"
 msgstr "Bánh"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:167
-#: reporting/includes/reports_classes.inc:240
+#: reporting/includes/reports_classes.inc:241
 msgid "Donut"
 msgstr "Vòng tròn"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:167
-#: reporting/includes/reports_classes.inc:244
-#: reporting/includes/reports_classes.inc:247
+#: reporting/includes/reports_classes.inc:245
+#: reporting/includes/reports_classes.inc:248
 msgid "No Type Filter"
 msgstr "Không lọc kiểu"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:177
-#: reporting/includes/reports_classes.inc:257
+#: reporting/includes/reports_classes.inc:258
 msgid "No Account Group Filter"
 msgstr "Không lọc nhóm TK"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:194
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:202
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:210
-#: reporting/includes/reports_classes.inc:276
-#: reporting/includes/reports_classes.inc:282
-#: reporting/includes/reports_classes.inc:288
+#: reporting/includes/reports_classes.inc:277
+#: reporting/includes/reports_classes.inc:283
+#: reporting/includes/reports_classes.inc:289
 msgid "No Dimension Filter"
 msgstr "Không lọc khoản mục"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:216
-#: reporting/includes/reports_classes.inc:293
+#: reporting/includes/reports_classes.inc:294
 msgid "No Customer Filter"
 msgstr "Không lọc khách"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:233
-#: reporting/includes/reports_classes.inc:300
+#: reporting/includes/reports_classes.inc:301
 msgid "No Supplier Filter"
 msgstr "Không lọc NCC"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:250
-#: reporting/includes/reports_classes.inc:415
-#: reporting/includes/reports_classes.inc:417
+#: reporting/includes/reports_classes.inc:423
+#: reporting/includes/reports_classes.inc:425
 msgid "No Location Filter"
 msgstr "Không lọc địa điểm"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:254
-#: reporting/includes/reports_classes.inc:420
-#: reporting/includes/reports_classes.inc:422
+#: reporting/includes/reports_classes.inc:428
+#: reporting/includes/reports_classes.inc:430
 msgid "No Category Filter"
 msgstr "Không lọc"
 
-#: reporting/includes/reports_classes.inc:424
+#: reporting/includes/reports_classes.inc:432
 msgid "No Class Filter"
 msgstr "Không lọc loại"
 
-#: reporting/includes/reports_classes.inc:429
+#: reporting/includes/reports_classes.inc:437
 msgid "No Areas Filter"
 msgstr "Không lọc"
 
-#: reporting/includes/reports_classes.inc:432
+#: reporting/includes/reports_classes.inc:440
 msgid "No Sales Folk Filter"
 msgstr "Không lọc người bán"
 
-#: reporting/includes/reports_classes.inc:439
+#: reporting/includes/reports_classes.inc:447
 msgid "No Users Filter"
 msgstr "Không Lọc User"
 
@@ -15049,20 +15074,20 @@ msgstr ""
 # c:/Apache2/htdocs/account/reporting/Rep102.php:122
 # c:/Apache2/htdocs/account/reporting/Rep201.php:58
 # c:/Apache2/htdocs/account/reporting/Rep202.php:127
-#: reporting/rep101.php:116 reporting/rep102.php:95 reporting/rep114.php:100
+#: reporting/rep101.php:118 reporting/rep102.php:95 reporting/rep114.php:100
 #: reporting/rep115.php:140 reporting/rep202.php:100 reporting/rep203.php:70
 msgid "Balances in Home Currency"
 msgstr "Số dư trong tiền tệ chính"
 
 # c:/Apache2/htdocs/account/reporting/reports_main.php:129
-#: reporting/rep101.php:135 reporting/reports_main.php:41
+#: reporting/rep101.php:139 reporting/reports_main.php:41
 #: reporting/reports_main.php:170 reporting/reports_main.php:356
 msgid "Show Balance"
 msgstr "Hiện cân đối"
 
-#: reporting/rep101.php:137 reporting/rep102.php:123 reporting/rep115.php:161
-#: reporting/rep201.php:116 reporting/rep202.php:129 reporting/rep203.php:88
-#: reporting/rep206.php:113 reporting/rep303.php:217
+#: reporting/rep101.php:141 reporting/rep102.php:123 reporting/rep115.php:160
+#: reporting/rep201.php:115 reporting/rep202.php:129 reporting/rep203.php:88
+#: reporting/rep206.php:112 reporting/rep303.php:217
 #: reporting/reports_main.php:43 reporting/reports_main.php:53
 #: reporting/reports_main.php:65 reporting/reports_main.php:172
 #: reporting/reports_main.php:182 reporting/reports_main.php:192
@@ -15071,7 +15096,7 @@ msgid "Suppress Zeros"
 msgstr "Bỏ giá trị 0"
 
 # c:/Apache/htdocs/account/reporting/reports_main.php:17
-#: reporting/rep101.php:139
+#: reporting/rep101.php:143
 msgid "Customer Balances"
 msgstr "Số dư của khách hàng"
 
@@ -15079,10 +15104,10 @@ msgstr "Số dư của khách hàng"
 # c:/Apache2/htdocs/account/reporting/Rep102.php:286
 # c:/Apache2/htdocs/account/reporting/Rep201.php:207
 # c:/Apache2/htdocs/account/reporting/Rep202.php:291
-#: reporting/rep101.php:252 reporting/rep102.php:210 reporting/rep105.php:166
-#: reporting/rep106.php:168 reporting/rep115.php:270 reporting/rep201.php:222
+#: reporting/rep101.php:260 reporting/rep102.php:210 reporting/rep105.php:166
+#: reporting/rep106.php:168 reporting/rep115.php:273 reporting/rep201.php:225
 #: reporting/rep202.php:219 reporting/rep203.php:162 reporting/rep204.php:137
-#: reporting/rep206.php:208 reporting/rep301.php:228 reporting/rep304.php:200
+#: reporting/rep206.php:211 reporting/rep301.php:228 reporting/rep304.php:200
 #: reporting/rep305.php:178 reporting/rep306.php:271 reporting/rep309.php:146
 #: reporting/rep451.php:149
 msgid "Grand Total"
@@ -15095,7 +15120,7 @@ msgstr "Tổng cộng"
 # c:/Apache2/htdocs/account/reporting/reports_main.php:27
 # c:/Apache2/htdocs/account/reporting/reports_main.php:55
 #: reporting/rep102.php:90 reporting/rep106.php:91 reporting/rep202.php:95
-#: reporting/rep709.php:91 reporting/reports_main.php:52
+#: reporting/rep709.php:92 reporting/reports_main.php:52
 #: reporting/reports_main.php:106 reporting/reports_main.php:181
 #: reporting/reports_main.php:236 reporting/reports_main.php:346
 #: reporting/reports_main.php:541
@@ -15105,7 +15130,7 @@ msgstr "Chỉ chi tiết"
 # c:/Apache2/htdocs/account/reporting/Rep102.php:118
 # c:/Apache2/htdocs/account/reporting/Rep202.php:123
 # c:/Apache2/htdocs/account/reporting/Rep709.php:157
-#: reporting/rep102.php:92 reporting/rep202.php:97 reporting/rep709.php:93
+#: reporting/rep102.php:92 reporting/rep202.php:97 reporting/rep709.php:94
 msgid "Detailed Report"
 msgstr "Báo cáo chi tiết"
 
@@ -15199,7 +15224,7 @@ msgstr "Hoạt động từ"
 
 # c:/Apache/htdocs/account/applications/Customers.php:28
 # c:/Apache/htdocs/account/sales/manage/sales_areas.php:8
-#: reporting/rep103.php:148 reporting/rep115.php:158
+#: reporting/rep103.php:148 reporting/rep115.php:157
 #: reporting/reports_main.php:62 reporting/reports_main.php:71
 #: sales/manage/sales_areas.php:17
 msgid "Sales Areas"
@@ -15207,7 +15232,7 @@ msgstr "Khu vực bán hàng"
 
 # c:/Apache2/htdocs/account/reporting/Rep103.php:158
 # c:/Apache2/htdocs/account/reporting/reports_main.php:19
-#: reporting/rep103.php:149 reporting/rep115.php:159
+#: reporting/rep103.php:149 reporting/rep115.php:158
 #: reporting/reports_main.php:63 reporting/reports_main.php:72
 msgid "Sales Folk"
 msgstr "Người bán"
@@ -15368,7 +15393,7 @@ msgstr "Vận chuyển"
 # c:/Apache2/htdocs/account/reporting/includes/doctext.inc:69
 #: reporting/rep107.php:278 reporting/rep109.php:177 reporting/rep111.php:189
 msgid "TOTAL ORDER VAT INCL."
-msgstr "TỔNG ĐƠN HÀNG CẢ THUẾ"
+msgstr "TỔNG ĐƠN HÀNG CẢ THUẾ."
 
 #: reporting/rep107.php:283
 msgid "THIS INVOICE"
@@ -15450,7 +15475,7 @@ msgid "Total ex. Tax"
 msgstr "Tổng chưa thuế"
 
 # c:/Apache/htdocs/account/taxes/tax_groups.php:183
-#: reporting/rep114.php:87 reporting/rep709.php:108 taxes/tax_groups.php:158
+#: reporting/rep114.php:87 reporting/rep709.php:109 taxes/tax_groups.php:158
 msgid "Tax"
 msgstr "Thuế"
 
@@ -15459,7 +15484,7 @@ msgid "All Sales Man"
 msgstr "Tất cả người bán"
 
 # c:/Apache/htdocs/account/reporting/reports_main.php:17
-#: reporting/rep115.php:163 reporting/reports_main.php:58
+#: reporting/rep115.php:162 reporting/reports_main.php:58
 msgid "Customer Trial Balance"
 msgstr "Bảng Cân Đối Theo Khách Hàng"
 
@@ -15469,7 +15494,7 @@ msgid "Balances in Home currency"
 msgstr "Số dư trong loại tiền chính"
 
 # c:/Apache/htdocs/account/reporting/reports_main.php:27
-#: reporting/rep201.php:118
+#: reporting/rep201.php:117
 msgid "Supplier Balances"
 msgstr "Số dư nhà cung cấp"
 
@@ -15524,7 +15549,7 @@ msgid "Tax_Id"
 msgstr "ID thuế"
 
 # c:/Apache/htdocs/account/reporting/reports_main.php:27
-#: reporting/rep206.php:115
+#: reporting/rep206.php:114
 msgid "Supplier Trial Balance"
 msgstr "Bảng Cân Đối Theo Nhà Cung Cấp"
 
@@ -15649,7 +15674,7 @@ msgstr "Cuối kỳ"
 msgid "QTY"
 msgstr "SL"
 
-#: reporting/rep308.php:209 reporting/rep709.php:108
+#: reporting/rep308.php:209 reporting/rep709.php:109
 #: taxes/item_tax_types.php:164
 msgid "Rate"
 msgstr "%"
@@ -15819,30 +15844,30 @@ msgid "Profit and Loss Statement"
 msgstr "Báo cáo doanh thu chi phí"
 
 # c:/Apache/htdocs/account/reporting/reports_main.php:56
-#: reporting/rep709.php:89
+#: reporting/rep709.php:90
 msgid "Tax Report"
 msgstr "Báo cáo thuế"
 
 # c:/Apache2/htdocs/account/reporting/Rep709.php:191
-#: reporting/rep709.php:107
+#: reporting/rep709.php:108
 msgid "Branch Name"
 msgstr "Tên chi nhánh"
 
 # c:/Apache2/htdocs/account/reporting/Rep709.php:192
-#: reporting/rep709.php:108
+#: reporting/rep709.php:109
 msgid "Net"
 msgstr "Tổng"
 
 # c:/Apache2/htdocs/account/reporting/Rep709.php:350
-#: reporting/rep709.php:176
+#: reporting/rep709.php:177
 msgid "Tax Rate"
 msgstr "Thuế suất"
 
-#: reporting/rep709.php:176
+#: reporting/rep709.php:177
 msgid "Net Tax"
 msgstr "Tổng thuế"
 
-#: reporting/rep709.php:193
+#: reporting/rep709.php:194
 msgid "Exempt"
 msgstr "Miễn thuế"
 
@@ -16324,6 +16349,10 @@ msgstr "Phân bổ thanh toán của khách hàng / hoá đơn điều chỉnh"
 msgid "Allocation of %s # %d"
 msgstr "Phân bổ của %s # %d"
 
+#: sales/allocations/customer_allocate.php:60
+msgid "Amount to be settled:"
+msgstr ""
+
 # c:/Apache/htdocs/account/sales/allocations/customer_allocation_main.php:7
 #: sales/allocations/customer_allocation_main.php:23
 msgid "Customer Allocations"
@@ -16440,9 +16469,6 @@ msgstr "Không có hoá đơn định kỳ đến hạn."
 msgid "Modifying Customer Credit Note #%d"
 msgstr "Chỉnh sửa hoá đơn điều chỉnh #%d"
 
-# c:/Apache/htdocs/account/sales/credit_note_entry.php:29
-# c:/Apache/htdocs/account/sales/sales_invoice_entry.php:197
-# c:/Apache/htdocs/account/sales/sales_order_entry.php:194
 #: sales/credit_note_entry.php:50 sales/sales_order_entry.php:693
 msgid ""
 "There are no customers, or there are no customers with branches. Please "
@@ -16866,7 +16892,7 @@ msgstr "Kiểm tra dữ liệu nhập vào và lưu tài liệu"
 #: sales/customer_invoice.php:36
 #, php-format
 msgid "Modifying Sales Invoice # %d."
-msgstr "Chỉnh sửa đơn hàng bán # %d"
+msgstr "Chỉnh sửa đơn hàng bán # %d."
 
 #: sales/customer_invoice.php:40
 msgid "Issue an Invoice for Delivery Note"
@@ -17050,7 +17076,7 @@ msgstr "Thanh toán của khách hàng"
 # c:/Apache/htdocs/account/sales/customer_payments.php:18
 #: sales/customer_payments.php:36
 msgid "There are no customers defined in the system."
-msgstr "Chưa định nghĩa khách hàng trong hệ thống."
+msgstr "Chưa có khách hàng trong hệ thống."
 
 #: sales/customer_payments.php:71
 msgid "Invalid sales invoice number."
@@ -17559,9 +17585,7 @@ msgstr "Cho xuất hoá đơn ?"
 msgid ""
 "There are no customers defined in the system. Please define a customer to "
 "add customer branches."
-msgstr ""
-"Không có khách hàng trong hệ thống. Hãy khởi tạo khách hàng để tạo các chi "
-"nhánh của họ."
+msgstr "Hãy khởi tạo các khách hàng trước."
 
 # c:/Apache/htdocs/account/sales/manage/customer_branches.php:16
 #: sales/manage/customer_branches.php:31
@@ -17830,7 +17854,7 @@ msgstr "Chọn / Thêm"
 
 #: sales/manage/customers.php:247
 msgid "&Add or Edit "
-msgstr "Thêm / Sửa"
+msgstr "Thêm / Sửa "
 
 # c:/Apache/htdocs/account/sales/manage/customers.php:260
 #: sales/manage/customers.php:265
@@ -18124,7 +18148,7 @@ msgstr "Chấp nhận tiền mặt:"
 
 #: sales/manage/sales_points.php:126
 msgid "Default cash account"
-msgstr "Sổ cái tài khoản mặc định:"
+msgstr "Sổ cái tài khoản mặc định"
 
 #: sales/manage/sales_points.php:133
 msgid "POS location"
@@ -18371,7 +18395,7 @@ msgstr "Phí vận chuyển phải là số."
 
 #: sales/sales_order_entry.php:416
 msgid "The Valid date is invalid."
-msgstr "Ngày hiệu lực không hợp lệ"
+msgstr "Ngày hiệu lực không hợp lệ."
 
 # c:/Apache/htdocs/account/sales/delivery_details.php:96
 #: sales/sales_order_entry.php:418
@@ -18454,7 +18478,7 @@ msgstr "Tạo báo giá mới"
 
 #: sales/sales_order_entry.php:609
 msgid "Undelivered part of order has been cancelled as requested."
-msgstr "Những thành phần chưa được giao hàng đã được huỷ theo yêu cầu"
+msgstr "Những thành phần chưa được giao hàng đã được huỷ theo yêu cầu."
 
 #: sales/sales_order_entry.php:610
 msgid "Select Another Sales Order for Edition"
@@ -18590,7 +18614,7 @@ msgstr "Chi nhánh"
 #: sales/view/view_dispatch.php:87 sales/view/view_invoice.php:84
 #: sales/view/view_sales_order.php:59
 msgid "Customer Order Ref."
-msgstr "Đối chiếu"
+msgstr "Đối chiếu."
 
 #: sales/view/view_dispatch.php:92
 msgid "Dispatch Date"
@@ -18866,7 +18890,7 @@ msgstr "Các loại thuế"
 # c:/Apache/htdocs/account/taxes/tax_types.php:22
 #: taxes/tax_types.php:30
 msgid "The tax type name cannot be empty."
-msgstr "Tên loại thuế không được trống"
+msgstr "Tên loại thuế không được trống."
 
 #: taxes/tax_types.php:35
 msgid "The default tax rate must be numeric and not less than zero."
@@ -19006,6 +19030,69 @@ msgstr "Cài đặt Forms"
 #: themes/canvas/renderer.php:136
 msgid "Backup and Restore"
 msgstr "Sao Lưu và Khôi Phục"
+
+#~ msgid "Please define a customer to add customer branches."
+#~ msgstr "Hãy tạo khách hàng trước khi thêm các chi nhánh."
+
+#~ msgid "Time Zone on Reports"
+#~ msgstr "Múi giờ trên báo cáo"
+
+#~ msgid "Company Logo on Reports"
+#~ msgstr "Logo trong báo cáo"
+
+#~ msgid "Use Barcodes on Stocks"
+#~ msgstr "Dùng mã vạch"
+
+#~ msgid "Auto Increase of Document References"
+#~ msgstr "Dùng"
+
+#~ msgid "Use Dimensions on Recurrent Invoices"
+#~ msgstr "Dùng khoản mục cho hóa đơn định kỳ"
+
+#~ msgid "Use Long Descriptions on Invoices"
+#~ msgstr "Mô tả đầy đủ trong hóa đơn"
+
+#~ msgid "Database Scheme Version"
+#~ msgstr "Phiên bản cơ sở dữ liệu"
+
+#~ msgid "Put alternative Tax Include on Docs"
+#~ msgstr "Nhiều loại thuế trên tài liệu"
+
+#~ msgid "Suppress Tax Rates on Docs"
+#~ msgstr "Bỏ thuế khỏi tài liệu"
+
+#~ msgid "Automatic Revaluation Currency Accounts"
+#~ msgstr "Tự động xác nhận tỷ giá"
+
+#~ msgid "Short Name and Name in List"
+#~ msgstr "Tên viết tắt và đầy đủ trong danh sách"
+
+#~ msgid "Open Print Dialog Direct on Reports"
+#~ msgstr "In Nhanh"
+
+#~ msgid "Search Item List"
+#~ msgstr "Tìm kiếm hàng"
+
+#~ msgid "Search Customer List"
+#~ msgstr "Tìm kiếm khách hàng"
+
+#~ msgid "Search Supplier List"
+#~ msgstr "Tìm nhà cung cấp"
+
+#~ msgid "First"
+#~ msgstr "|<"
+
+#~ msgid "Prev"
+#~ msgstr "<"
+
+#~ msgid "Next"
+#~ msgstr ">"
+
+#~ msgid "Last"
+#~ msgstr ">|"
+
+#~ msgid "Unit cost"
+#~ msgstr "Đơn giá"
 
 # c:/Apache2/htdocs/account/includes/session.inc:35
 #~ msgid "Forgot Password ?"
