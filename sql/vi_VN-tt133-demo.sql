@@ -1758,7 +1758,7 @@ INSERT INTO `0_sys_prefs` VALUES
 ('auto_curr_reval', 'setup.company', 'smallint', 6, '1'),
 ('grn_clearing_act', 'glsetup.purchase', 'varchar', 15, '151'),
 ('bcc_email', 'setup.company', 'varchar', 100, ''),
-('deferred_income_act', 'glsetup.sales', 'varchar', '15', ''),
+('deferred_income_act', 'glsetup.sales', 'varchar', 15, '3387'),
 ('gl_closing_date','setup.closing_date', 'date', 8, ''),
 ('alternative_tax_include_on_docs','setup.company', 'tinyint', 1, '0'),
 ('no_zero_lines_amount','glsetup.sales', 'tinyint', 1, '1'),
