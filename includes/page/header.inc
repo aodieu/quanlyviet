@@ -59,11 +59,16 @@ function send_scripts() {
 
 	$js ='';
 	foreach($js_static as $jsfile) {
-		$cached_name = basename($jsfile);
-		$fpath = user_js_cache().'/'.$cached_name;
+		$basename = basename($jsfile);
+		$fpath = user_js_cache().'/'.$basename;
 		// compress also static files
-		if (!file_exists($fpath) || $SysPrefs->go_debug)
-			cache_js_file($fpath, file_get_contents($js_path.$jsfile));
+		if (!file_exists($fpath) || $SysPrefs->go_debug) {
+			// don't need to compress minified files
+			if(strpos($basename, '.min.js' ) !== false)
+				copy($js_path.$jsfile, $fpath);
+			else
+				cache_js_file($fpath, file_get_contents($js_path.$jsfile));
+		}
 
 		$js .= '<script src="'.$fpath.'"></script>';
 	}
@@ -89,19 +94,19 @@ function page_header($title, $no_menu=false, $is_index=false, $onload='', $js=''
 		
 		add_js_source(get_js_open_window(900, 500));
 	}
-	if ($js!='')
+	if ($js != '')
 		add_js_source($js);
 
 	if (!isset($no_menu))
 		$no_menu = false;
 	
-	if (isset($_SESSION['App']) && is_object($_SESSION['App']) && isset($_SESSION['App']->selected_application) &&
-		$_SESSION['App']->selected_application != '')
+	if (isset($_SESSION['App']) && is_object($_SESSION['App']) && isset($_SESSION['App']->selected_application) && $_SESSION['App']->selected_application != '')
 		$sel_app = $_SESSION['App']->selected_application;
 	elseif (isset($_SESSION['sel_app']) && $_SESSION['sel_app'] != '')
 		$sel_app = $_SESSION['sel_app'];
 	else
 		$sel_app = user_startup_tab();
+	
 	$_SESSION['sel_app'] = $sel_app;
 
 	// When startup tab for current user was set to already 
@@ -126,15 +131,6 @@ function page_header($title, $no_menu=false, $is_index=false, $onload='', $js=''
 	echo "<meta charset='".$encoding."'>";
 	echo "<meta name='viewport' content='width=device-width,initial-scale=1'>";
 	echo "<link href='".$path_to_root."/themes/default/images/favicon.ico' rel='icon' type='image/x-icon'> \n";
-
-	$theme_path = $path_to_root.'/themes/'.user_theme();
-	//The $_SERVER['REQUEST_URI'] is different depending on the server configuration (Apache, Nginx)
-	$file_ext = strpos($_SERVER['REQUEST_URI'], '?') ? '.php?' : '.php';
-	$local_css = basename($_SERVER['REQUEST_URI'], $file_ext . $_SERVER['QUERY_STRING']);
-	$css_file = $theme_path.'/local_style/'.$local_css.'.css';
-
-	if(file_exists($css_file))
-		add_css_file($css_file);
 
 	send_css($css);
 
