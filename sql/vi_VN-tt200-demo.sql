@@ -1921,7 +1921,7 @@ INSERT INTO `0_sys_prefs` VALUES
 ('default_inv_sales_act', 'glsetup.items', 'varchar', 15, '5111'),
 ('default_wip_act', 'glsetup.items', 'varchar', 15, '154'),
 ('default_workorder_required', 'glsetup.manuf', 'int', 11, '20'),
-('version_id', 'system', 'varchar', 11, '2.4.1'),
+('version_id', 'system', 'varchar', 11, '0.1'),
 ('auto_curr_reval', 'setup.company', 'smallint', 6, '1'),
 ('grn_clearing_act', 'glsetup.purchase', 'varchar', 15, '151'),
 ('bcc_email', 'setup.company', 'varchar', 100, ''),

@@ -1,88 +1,624 @@
-2021-03-10 20:32 +0700 Trần Anh Phương
-Function get_magic_quotes_gpc() is deprecated php7.4. /install/isession.inc. Fixed.
-M	install/isession.inc
+commit 037a815be72795529682fb62d596a66953b4ab5f
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Mon Apr 19 16:07:00 2021 +0700
 
-2021-03-10 14:49 +0700 Trần Anh Phương
-Update installation requirements
+    Exclude unnecessary dropdown lists from select2
+
+M	includes/ui/db_pager_view.inc
+M	includes/ui/ui_lists.inc
+M	libraries/select.js
+
+commit bc83ec58157cdcd9a5b791e103784d9a2c530217
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Mon Apr 19 07:12:31 2021 +0700
+
+    Few small ui improvements
+
+M	admin/company_preferences.php
+M	gl/accruals.php
+A	themes/default/local_style/bom_edit.css
+A	themes/default/local_style/exchange_rates.css
+A	themes/default/local_style/fiscalyears.css
+A	themes/default/local_style/fixed_asset_classes.css
+A	themes/default/local_style/payment_terms.css
+
+commit a26bd7097a0227a00e6dc7f350a73ce825f8d859
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sun Apr 18 21:54:03 2021 +0700
+
+    Theme fixes after moved search button to bottom of dropdown list
+
+M	includes/ui/ui_lists.inc
+M	themes/canvas/default.css
+M	themes/default/default.css
+M	themes/default/local_style/accruals.css
+M	themes/default/local_style/bank_accounts.css
+M	themes/default/local_style/bank_transfer.css
+M	themes/default/local_style/company_preferences.css
+M	themes/default/local_style/cost_update.css
+M	themes/default/local_style/create_coy.css
+M	themes/default/local_style/customer_branches.css
+M	themes/default/local_style/customers.css
+M	themes/default/local_style/dimension_entry.css
+M	themes/default/local_style/display_prefs.css
+M	themes/default/local_style/gl_account_classes.css
+M	themes/default/local_style/gl_account_types.css
+M	themes/default/local_style/gl_accounts.css
+M	themes/default/local_style/gl_quick_entries.css
+M	themes/default/local_style/gl_setup.css
+M	themes/default/local_style/item_categories.css
+M	themes/default/local_style/item_codes.css
+M	themes/default/local_style/item_units.css
+M	themes/default/local_style/items.css
+M	themes/default/local_style/purchasing_data.css
+M	themes/default/local_style/recurrent_invoices.css
+M	themes/default/local_style/sales_kits.css
+M	themes/default/local_style/sales_people.css
+M	themes/default/local_style/sales_points.css
+M	themes/default/local_style/sales_types.css
+M	themes/default/local_style/suppliers.css
+M	themes/default/local_style/tags.css
+M	themes/default/local_style/tax_types.css
+M	themes/default/local_style/users.css
+M	themes/default/local_style/work_order_entry.css
+M	themes/dropdown/default.css
+
+commit 0ed4dffd5841a78af40de54a3f79a60d1399fa37
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sun Apr 18 19:49:56 2021 +0700
+
+    Moved all search links to bottom of dropdown list
+
+M	includes/ui/ui_lists.inc
+M	libraries/select.js
+M	themes/canvas/default.css
+M	themes/default/default.css
+M	themes/dropdown/default.css
+
+commit 51f61b5b8302b0da55da6b8c8fc61816c4ae045d
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sat Apr 17 21:23:47 2021 +0700
+
+    Cải thiện giao diện
+
+M	manufacturing/work_order_entry.php
+M	themes/default/local_style/accruals.css
+M	themes/default/local_style/bank_accounts.css
+M	themes/default/local_style/bank_transfer.css
+M	themes/default/local_style/company_preferences.css
+M	themes/default/local_style/cost_update.css
+M	themes/default/local_style/create_coy.css
+M	themes/default/local_style/currencies.css
+M	themes/default/local_style/customer_branches.css
+M	themes/default/local_style/dimension_entry.css
+M	themes/default/local_style/gl_account_classes.css
+M	themes/default/local_style/gl_account_types.css
+M	themes/default/local_style/gl_accounts.css
+M	themes/default/local_style/gl_setup.css
+M	themes/default/local_style/item_categories.css
+M	themes/default/local_style/item_codes.css
+M	themes/default/local_style/items.css
+M	themes/default/local_style/printers.css
+M	themes/default/local_style/purchasing_data.css
+M	themes/default/local_style/recurrent_invoices.css
+M	themes/default/local_style/sales_people.css
+M	themes/default/local_style/sales_points.css
+M	themes/default/local_style/sales_types.css
+M	themes/default/local_style/shipping_companies.css
+M	themes/default/local_style/suppliers.css
+M	themes/default/local_style/tags.css
+M	themes/default/local_style/tax_types.css
+M	themes/default/local_style/users.css
+M	themes/default/local_style/work_centres.css
+M	themes/default/local_style/work_order_entry.css
+
+commit acfd9e2777064a425ff60a38c4c19807d2daeefd
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sat Apr 17 19:59:47 2021 +0700
+
+    Sai thông tin bản quyền, đã sửa
+
+M	libraries/select.js
+
+commit 88bcfc76354063e8d24d6cdf67efd5557e0ab0a9
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sat Apr 17 19:56:28 2021 +0700
+
+    Added jquery, select2. Exclude minified js from compressing and few ui improvements
+
+M	includes/main.inc
+M	includes/page/header.inc
+R100	js/JsHttpRequest.js	libraries/JsHttpRequest.js
+R100	js/allocate.js	libraries/allocate.js
+R100	js/behaviour.js	libraries/behaviour.js
+R100	js/budget.js	libraries/budget.js
+R100	js/index.php	libraries/index.php
+R099	js/inserts.js	libraries/inserts.js
+A	libraries/jquery.min.js
+R100	js/login.js	libraries/login.js
+R100	js/payalloc.js	libraries/payalloc.js
+R100	js/reconcile.js	libraries/reconcile.js
+R100	js/reports.js	libraries/reports.js
+A	libraries/select.js
+A	libraries/select2.min.css
+A	libraries/select2.min.js
+R100	js/utils.js	libraries/utils.js
+M	themes/canvas/default.css
+M	themes/default/default.css
+M	themes/default/local_style/customers.css
+M	themes/default/local_style/display_prefs.css
+M	themes/default/local_style/gl_accounts.css
+M	themes/default/local_style/sales_kits.css
+A	themes/default/local_style/sales_order_entry.css
+M	themes/dropdown/default.css
+
+commit b46d005c8a14f00a04b101cb7726ca1b3c5bdfed
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Fri Apr 16 12:48:58 2021 +0700
+
+    Theme improvement
+
+M	themes/default/local_style/display_prefs.css
+
+commit 2b93ab18a82917d6a21ef536c532263cb0f4a77d
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Thu Apr 15 09:05:22 2021 +0700
+
+    Default theme improvement
+
+M	themes/default/default.css
+M	themes/default/local_style/company_preferences.css
+M	themes/default/local_style/sales_kits.css
+
+commit f646f258f62435ad2d14d7ebfb5987c4f7c3b301
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Wed Apr 14 11:41:07 2021 +0700
+
+    Changed docs location
+
+R100	CODE_OF_CONDUCT.md	docs/CODE_OF_CONDUCT.md
+R100	CONTRIBUTING.md	docs/CONTRIBUTING.md
+R100	doc/index.php	docs/index.php
+R100	doc/license.txt	docs/license.txt
+
+commit 6c972265174818c9bb73f0eff4c5c4cbb0b50efd
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Wed Apr 14 11:30:29 2021 +0700
+
+    Fixed error undifined index customer_id in customer_branches_list.php
+
+M	includes/ui/ui_controls.inc
+M	includes/ui/ui_lists.inc
+
+commit 2514f009f62442da9a184668849c3769da190dd5
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Wed Apr 14 08:30:05 2021 +0700
+
+    Added css for access pages
+
+M	access/login.php
+M	access/password_reset.php
+A	themes/default/local_style/access.css
+
+commit 48d9396eae92bc61b99fa405046e358f69bb837d
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Tue Apr 13 22:27:51 2021 +0700
+
+    Cập nhật tài liệu
+
+R100	doc/CODE_OF_CONDUCT.md	CODE_OF_CONDUCT.md
+R100	doc/CONTRIBUTING.md	CONTRIBUTING.md
+
+commit 5ced209420235fbc56e67f8c04402055dd3c22fc
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Tue Apr 13 22:22:35 2021 +0700
+
+    Caaph nhật tài liệu
+
+R100	CODE_OF_CONDUCT.md	doc/CODE_OF_CONDUCT.md
+A	doc/CONTRIBUTING.md
+
+commit 3ea8f98b1e411cbdb1f4a2b74ed295782ce39657
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Tue Apr 13 22:10:56 2021 +0700
+
+    Added CODE_OF_CONDUCT.md
+
+A	CODE_OF_CONDUCT.md
+
+commit eb9be9fd6e29360345c9248efa6c5dfa810adaa5
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Mon Apr 12 23:27:40 2021 +0700
+
+    php7.4 error Trying to access array offset on value of type bool. Fixed
+
+M	includes/ui/contacts_view.inc
+
+commit 29bcb41b227f06770e02a2a962a99580556122ec
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sun Apr 11 15:22:12 2021 +0700
+
+    Thêm dữ liệu demo, cập nhật files ngôn ngữ
+
+M	lang/vi_VN/LC_MESSAGES/vi_VN.mo
+M	lang/vi_VN/LC_MESSAGES/vi_VN.po
+M	sql/vi_VN-tt132-demo.sql
+M	sql/vi_VN-tt133-demo.sql
+M	sql/vi_VN-tt200-demo.sql
+
+commit 2bb9d18c2feccc3e4e5703fa504179d0e903095c
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sun Apr 11 09:08:34 2021 +0700
+
+    Thêm hệ thống tài khoản theo Thông tư 132
+
+M	includes/ui/ui_lists.inc
+A	sql/vi_VN-tt132-demo.sql
+A	sql/vi_VN-tt132-new.sql
+
+commit 7f1c206a71e4c8834f00b81407a1c578871df1b3
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sun Apr 11 07:51:42 2021 +0700
+
+    Thêm tài khoản mặc định: Doanh thu chưa thực hiện
+
+M	sql/vi_VN-tt133-demo.sql
+M	sql/vi_VN-tt133-new.sql
+M	sql/vi_VN-tt200-demo.sql
+M	sql/vi_VN-tt200-new.sql
+
+commit 3a075a71b84c4f0c2f371551419ccd56c4608015
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sat Apr 10 20:02:30 2021 +0700
+
+    Thêm dữ liệu demo cho hệ thống tài khoản theo Thông tư 133
+
+M	sql/vi_VN-tt133-demo.sql
+M	sql/vi_VN-tt133-new.sql
+M	sql/vi_VN-tt200-demo.sql
+M	sql/vi_VN-tt200-new.sql
+
+commit 8db1eb68c297e19c903caa6d146cc97cd07228fb
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sat Apr 10 15:10:00 2021 +0700
+
+    Nhầm tài khoản mặc định cho nhóm hàng, đã sửa.
+
+M	sql/vi_VN-tt133-demo.sql
+M	sql/vi_VN-tt133-new.sql
+
+commit c96eada13a1cae5c1cb13cd3484fbc3c09eac9a8
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sat Apr 10 14:54:07 2021 +0700
+
+    Cập nhật dữ liệu demo
+
+M	includes/ui/ui_lists.inc
+A	sql/vi_VN-tt133-demo.sql
+M	sql/vi_VN-tt133-new.sql
+A	sql/vi_VN-tt200-demo.sql
+M	sql/vi_VN-tt200-new.sql
+
+commit 7b07e6a0b6f93fdeb63d84fa94ed57eab8ca0926
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sat Apr 10 10:13:05 2021 +0700
+
+    Update dummy data & theme improvement
+
+A	company/0/images/101.jpg
+M	company/0/images/102.jpg
+M	company/0/images/103.jpg
+D	company/0/images/104.jpg
+D	company/0/images/logo_frontaccounting.jpg
+A	company/0/images/quanlyviet.jpg
+A	themes/default/local_style/cost_update.css
+
+commit 3c2c788067c97361f55541bfff4fae9c9a2ac0f7
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Mon Apr 5 23:09:59 2021 +0700
+
+    UI improvements
+
+M	dimensions/dimension_entry.php
+M	inventory/cost_update.php
+M	themes/default/local_style/dimension_entry.css
+A	themes/default/local_style/item_units.css
+M	themes/default/local_style/locations.css
+M	themes/default/local_style/work_order_entry.css
+
+commit 100ea4fb62ab9f1f372ab94627e1f3cb3c15fad3
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Mon Apr 5 09:56:26 2021 +0700
+
+    sales kits entry php 7.4 bug: trying to access array offset on value of type bool. Fixed
+
+M	inventory/manage/sales_kits.php
+
+commit e1dd158b8cf1a745e76b902e65221900321f932a
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sun Apr 4 11:36:16 2021 +0700
+
+    Sai giá trị $_SERVER['REQUEST_URI'] trên nginx server, đã sửa.
+
+M	includes/page/header.inc
+
+commit befcbb20f49aee6456748ed133ce4ce5b2f5aec0
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sat Apr 3 21:12:18 2021 +0700
+
+    Sai dữ liệu khởi tạo cho các nhóm tài khoản, đã sửa.
+
+M	sql/vi_VN-tt133-new.sql
+M	sql/vi_VN-tt200-new.sql
+
+commit db46579b4b90962e24d730a3970da3025b35b19f
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Fri Apr 2 11:50:07 2021 +0700
+
+    html5 migration
+
+M	access/login.php
+M	access/password_reset.php
+M	includes/page/header.inc
+
+commit d00c386efcdc4133cea996876dc0b53b72234672
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Thu Apr 1 07:45:12 2021 +0700
+
+    html5 migration
+
+M	access/login.php
+M	access/password_reset.php
+
+commit 028bf2dc683d3b3fd7f33fe44e385801816077aa
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Wed Mar 31 22:02:37 2021 +0700
+
+    Html5 migration
+
+M	README.md
+M	access/login.php
+M	access/password_reset.php
+M	includes/page/header.inc
+
+commit 67158097c9fffed6a10a65c6b89d899d980dbe00
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Mon Mar 29 21:17:44 2021 +0700
+
+    Print Invoices list gets too long. Fixed by default 180 days in company setup
+
+M	admin/company_preferences.php
+M	reporting/includes/reports_classes.inc
+M	sql/vi_VN-tt133-new.sql
+M	sql/vi_VN-tt200-new.sql
+
+commit 456880570565d1a6469678657582b91d77929bed
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Mon Mar 29 16:05:28 2021 +0700
+
+    Updated forums link and favicon.ico
+
+M	README.md
+M	themes/default/images/favicon.ico
+
+commit b55db114311e1772fe264aa038b5bc000f092905
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sun Mar 28 20:41:49 2021 +0700
+
+    Ra mắt diễn đàn Quản Lý Việt
+
 M	README.md
 
-2021-03-07 07:47 +0700 Trần Anh Phương
-theme improvement
+commit b45600975ace009d2fdb10f3372bd7202edec65d
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sun Mar 28 20:07:15 2021 +0700
+
+    New Logo has launched
+
+M	themes/default/images/favicon.ico
+M	themes/default/images/quanlyviet.jpg
+M	themes/default/images/quanlyviet.png
+
+commit 12276b9dd440fab17fa4fc905793425b1bf50fb1
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sun Mar 21 07:30:29 2021 +0700
+
+    php 7.4 bug Trying to access array offset on value of type bool. Fixed
+
+M	inventory/includes/db/items_units_db.inc
+
+commit aa96a6f56f0fada3c95b896873b00a727a74b886
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sat Mar 20 20:20:34 2021 +0700
+
+    Code cleanup
+
+M	admin/attachments.php
+M	admin/backups.php
+M	admin/change_current_user_password.php
+M	admin/company_preferences.php
+M	admin/dashboard.php
+M	dashboard/includes/dashboard_classes.inc
+M	dashboard/widget102.php
+M	dashboard/widget104.php
+M	dashboard/widget202.php
+M	dashboard/widget701.php
+M	dashboard/widget808.php
+M	dashboard/widget810.php
+
+commit fd46957f42ec5b443b45428c452aa91fea0761b6
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Fri Mar 19 11:17:36 2021 +0700
+
+    Release 0.2
+
+M	CHANGELOG.txt
+M	README.md
+D	themes/canvas/images/logo_frontaccounting.jpg
+D	themes/canvas/images/logo_frontaccounting.png
+D	themes/canvas/images/notrinos_erp.png
+D	themes/dropdown/images/logo_frontaccounting.jpg
+D	themes/dropdown/images/logo_frontaccounting.png
+D	themes/dropdown/images/notrinos_erp.png
+M	version.php
+
+commit e79a368e8c6b7c3f5815e8735396ca91a8cfadf6
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Wed Mar 10 20:32:44 2021 +0700
+
+    Function get_magic_quotes_gpc() is deprecated php7.4. /install/isession.inc. Fixed.
+
+M	install/isession.inc
+
+commit c2627709342eea10aacebdbe2d470d48bcbd7489
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Wed Mar 10 14:49:24 2021 +0700
+
+    Update installation requirements
+
+M	README.md
+
+commit fc51e78ae247383445107d08f7911a1649c00d2e
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Sun Mar 7 07:47:39 2021 +0700
+
+    theme improvement
+
 M	themes/default/local_style/gl_setup.css
 
-2021-03-06 09:54 +0700 Trần Anh Phương
-Continue of redesigning date input
+commit e7795cf3b25a21d207c92e90170c4940eb39386e
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Sat Mar 6 09:54:31 2021 +0700
+
+    Continue of redesigning date input
+
 M	reporting/includes/reports_classes.inc
 M	themes/canvas/default.css
 M	themes/default/default.css
 M	themes/dropdown/default.css
 
-2021-03-05 08:51 +0700 Trần Anh Phương
-Syntax error from last commit, fixed
+commit e76a6a1fe139a7f3f4c50272fb1fe992b2c2d9b5
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Fri Mar 5 08:51:59 2021 +0700
+
+    Syntax error from last commit, fixed
+
 M	js/behaviour.js
 
-2021-03-01 07:47 +0700 Trần Anh Phương
-Wrong Permission for Inventory Purchasing Report (rep306.php). Fixed.
+commit c9bb3d577c04800127f87efec01b8948994a61f8
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Mon Mar 1 07:47:57 2021 +0700
+
+    Wrong Permission for Inventory Purchasing Report (rep306.php). Fixed.
+
 M	reporting/rep306.php
 
-2021-02-28 22:05 +0700 Trần Anh Phương
-Fixed javascript error appearing on themes using SVGElements
+commit 83bd9e53fac3d48c0b88b839013947be581b4f5a
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Sun Feb 28 22:05:06 2021 +0700
+
+    Fixed javascript error appearing on themes using SVGElements
+
 M	js/behaviour.js
 
-2021-02-28 19:57 +0700 Trần Anh Phương
-use datepicker by default
+commit 983b9d59bf0dfb57c5d8f096d338dc3371c48184
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Sun Feb 28 19:57:55 2021 +0700
+
+    use datepicker by default
+
 M	sql/vi_VN-tt133-new.sql
 M	sql/vi_VN-tt200-new.sql
 
-2021-02-14 20:48 +0700 Trần Anh Phương
-Date input redesigned
+commit 03ff86ebe5269eb7406bdfc85ac5b17115765788
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Sun Feb 28 16:57:39 2021 +0700
+
+    Date input redesigned
+
 M	includes/ui/ui_input.inc
 M	themes/canvas/default.css
 M	themes/default/default.css
 M	themes/dropdown/default.css
 
-2021-02-28 14:18 +0700 Trần Anh Phương
-Datepicker ui improvement
+commit fdc710e0d81ee7b5876cab346a959333476e3bff
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Sun Feb 28 14:18:29 2021 +0700
+
+    Datepicker ui improvement
+
 M	includes/ui/ui_view.inc
 M	themes/canvas/default.css
 M	themes/default/default.css
 M	themes/dropdown/default.css
 
-2021-02-28 08:07 +0700 Trần Anh Phương
-Added months selector for datepicker
+commit 67dc3df6045caaf5c805bd4de18364b985cb7a07
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Sun Feb 28 08:07:01 2021 +0700
+
+    Added months selector for datepicker
+
 M	includes/ui/ui_view.inc
 
-2021-02-26 22:52 +0700 Trần Anh Phương
-db_pager improvement: added page selector
+commit 979e3fee972b8170e3273473d8dc7d390b252477
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Fri Feb 26 22:52:44 2021 +0700
+
+    db_pager improvement: added page selector
+
 M	includes/db_pager.inc
 M	includes/ui/db_pager_view.inc
 M	themes/canvas/default.css
 M	themes/default/default.css
 M	themes/dropdown/default.css
 
-2021-02-26 18:01 +0700 Trần Anh Phương
-ui_lists.inc improvement
+commit f737cf6e8582c32a3c5c72c551951fe199baae9d
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Fri Feb 26 18:01:19 2021 +0700
+
+    ui_lists.inc improvement
+
 M	includes/ui/ui_lists.inc
 
-2021-02-24 22:02 +0700 Trần Anh Phương
-Update user last visit
+commit aba1526f35ab76d29b9e58dec7f619bb2390670a
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Wed Feb 24 22:02:08 2021 +0700
+
+    Update user last visit
+
 M	sql/vi_VN-tt133-new.sql
 M	sql/vi_VN-tt200-new.sql
 
-2021-02-24 14:30 +0700 Trần Anh Phương
-Updated extensions repository
+commit b6478bc01d3c4f11eb79bbfd5edc8d0548480d78
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Wed Feb 24 14:30:57 2021 +0700
+
+    Updated extensions repository
+
 M	qlv.pem
 
-2021-02-20 15:50 +0700 Trần Anh Phương
-Wrong enclosure in gl_trans_view.php. fixed
+commit 8498965ca1b362d6a380bde3844e7eb80584562a
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Sat Feb 20 15:50:15 2021 +0700
+
+    Wrong enclosure in gl_trans_view.php. fixed
+
 M	gl/view/gl_trans_view.php
 
-2021-02-19 17:38 +0700 Trần Anh Phương
-Bug 5360: Spelling mistake in ../sales/allocations/customer_allocate.php. Fixed.
+commit 166f30c9c16904337ffc3787069b01971e45aa1a
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Fri Feb 19 17:38:22 2021 +0700
+
+    Bug 5360: Spelling mistake in ../sales/allocations/customer_allocate.php. Fixed.
+
 M	sales/allocations/customer_allocate.php
 
-2021-02-17 07:51 +0700 Trần Anh Phương
-PHP 7.4 Bugs in some reports.
+commit 29c1890361840079de2c7e98a1438cc73c7b8373
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Wed Feb 17 07:51:52 2021 +0700
+
+    PHP 7.4 Bugs in some reports.
+
 M	reporting/rep101.php
 M	reporting/rep115.php
 M	reporting/rep201.php
@@ -90,47 +626,87 @@ M	reporting/rep206.php
 M	reporting/rep306.php
 M	reporting/rep710.php
 
-2021-02-16 08:01 +0700 Trần Anh Phương
-Bug 5352: missing global declaration in reset_form() in attachments.php. Fixed.
+commit b481d23b3fafe97a06d4246aa52f084a2094bb29
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Tue Feb 16 08:01:54 2021 +0700
+
+    Bug 5352: missing global declaration in reset_form() in attachments.php. Fixed.
+
 M	admin/attachments.php
 M	purchasing/includes/db/invoice_db.inc
 
-2021-02-15 15:36 +0700 Trần Anh Phương
-Bug 5351: dim dim2 not defined of purchasing/includes/db/invoice_db.inc. Fixed.
+commit ed6ef170128b7f5cfc7498d60040eb66221ff43a
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Mon Feb 15 15:36:06 2021 +0700
+
+    Bug 5351: dim dim2 not defined of purchasing/includes/db/invoice_db.inc. Fixed.
+
 M	purchasing/includes/db/invoice_db.inc
 
-2021-02-12 17:52 +0700 Trần Anh Phương
-Bug 5332: Rep709, Tax Report, Multiple entries for a sinle tax line. Fixed.
+commit f6f12b5ece4c032254eb9a14ec150c22a8c6150c
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Fri Feb 12 17:52:01 2021 +0700
+
+    Bug 5332: Rep709, Tax Report, Multiple entries for a sinle tax line. Fixed.
+
 M	reporting/rep709.php
 
-2021-02-12 12:53 +0700 Trần Anh Phương
-Bug 5310: DB error when on bank payment/transfer edit if current fiscal year is missing. Fixed
+commit b4609019b812377d7e37433fca6c0621d4d8a96d
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Fri Feb 12 00:53:22 2021 +0700
+
+    Bug 5310: DB error when on bank payment/transfer edit if current fiscal year is missing. Fixed.
+
 M	gl/includes/db/gl_db_banking.inc
 
-2021-02-04 14:27 +0700 Trần Anh Phương
-Bug in Customer/Supplier Payments Recording. Fixed.
+commit f7b61b003842712995fe08d3ea030d9289160b3d
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Thu Feb 4 16:27:10 2021 +0700
+
+    Bug in Customer/Supplier Payments Recording. Fixed.
+
 M	includes/ui/allocation_cart.inc
 
-2021-01-31 22:34 +0700 Trần Anh Phương
-Bug 5326 needs reversion for PHP < 5.5. Fixed
+commit 1cb981559e407eebcd057ab7e8ad1c9fbb3a31e6
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Sun Jan 31 22:34:48 2021 +0700
+
+    Bug 5326 needs reversion for PHP < 5.5. Fixed
+
 M	includes/archive.inc
 
-2021-01-29 17:46 +0700 Trần Anh Phương
-Thiếu font utf8. Đã thêm
+commit f6bcfcb9e91196fc1ba5f503dad8eaafc1e3370e
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Fri Jan 29 17:46:58 2021 +0700
+
+    Thiếu font utf8. Đã thêm
+
 A	reporting/fonts/FreeSans.ttf
 
-2021-01-26 13:39 +0700 Trần Anh Phương
-Thiếu font utf-8. Đã thêm.
+commit 8188f4735885b65ff0484fbf755bdd151c64b722
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jan 26 13:39:25 2021 +0700
+
+    Thiếu font utf-8. Đã thêm.
+
 A	reporting/fonts/dejavu.ctg.z
 A	reporting/fonts/dejavu.php
 A	reporting/fonts/dejavu.z
 
-2021-01-23 23:00 +0700 Trần Anh Phương
-Update hướng dẫn
+commit 4f8e6737f40d4d9a7d144d6a8d41c5c3baf08a60
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Sat Jan 23 23:00:13 2021 +0700
+
+    Update hướng dẫn
+
 M	README.md
 
-2021-01-23 22:32 +0700 Trần Anh Phương
-Upload files
+commit e5334bce2b55431f59dc955c98b4e40dc5d87f20
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Sat Jan 23 22:32:34 2021 +0700
+
+    Upload files
+
 A	.htaccess
 A	CHANGELOG.txt
 A	LICENSE
@@ -894,22 +1470,42 @@ A	themes/dropdown/renderer.php
 A	tmp/index.php
 A	version.php
 
-2021-01-19 17:38 +0700 Trần Anh Phương
-Cập nhật tên gọi
+commit 8c1e826a71476078077b04a8f28ef0c711aa69a6
+Author: Notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jan 19 17:38:16 2021 +0700
+
+    Cập nhật tên gọi
+
 M	README.md
 
-2021-01-14 20:55 +0700 Trần Anh Phương
-Update thông báo
+commit 102ab2c0b84e6cfb1f2617ec333e194731c442be
+Author: Phương <trananhphuong83@gmail.com>
+Date:   Thu Jan 14 20:55:49 2021 +0700
+
+    Update thông báo
+
 M	README.md
 
-2021-01-14 20:49 +0700 Trần Anh Phương
-Update README.md
+commit 8f56b1c99622162c1e927ce53ca8ed361fb417a7
+Author: Phương <trananhphuong83@gmail.com>
+Date:   Thu Jan 14 20:49:55 2021 +0700
+
+    Update README.md
+
 M	README.md
 
-2021-01-14 20:48 +0700 Trần Anh Phương
-Cập nhật thông báo
+commit 9df2a1ee02d826a06aa9f0a5df12d28be97260ed
+Author: Phương <trananhphuong83@gmail.com>
+Date:   Thu Jan 14 20:48:10 2021 +0700
+
+    Cập nhật thông báo
+
 M	README.md
 
-2020-12-27 19:52 +0700 Trần Anh Phương
-Create README.md
+commit 60b57e47a1dd5ba7c4df0636dfaca66f58201283
+Author: aodieu <76651235+aodieu@users.noreply.github.com>
+Date:   Sun Dec 27 19:52:27 2020 +0700
+
+    Create README.md
+
 A	README.md
