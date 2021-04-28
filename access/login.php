@@ -78,7 +78,7 @@ start_table(false, "class='login'");
 start_row();
 echo "<td align='center' colspan=2>";
 if (!$login_timeout) // logo
-	echo "<a target='_blank' href='".$SysPrefs->power_url."'><img src='".$path_to_root."/themes/".$def_theme."/images/notrinos_erp.png' alt='NotrinosERP' height='50' onload='fixPNG(this)' border='0' ></a>";
+	echo "<a target='_blank' href='".$SysPrefs->power_url."'><img src='".$path_to_root."/themes/".$def_theme."/images/quanlyviet.png' alt='NotrinosERP' height='50' onload='fixPNG(this)' border='0' ></a>";
 else
 	echo "<font size=5>"._('Authorization timeout')."</font>";
 echo "</td>\n";
@@ -89,12 +89,12 @@ if (!$login_timeout)
 
 echo "<tr><td colspan='2'></td></tr>";
 
-$value = $login_timeout ? $_SESSION['wa_current_user']->loginname : ($SysPrefs->allow_demo_mode ? 'demouser' : 'admin');
+$value = $login_timeout ? $_SESSION['wa_current_user']->loginname : ($SysPrefs->allow_demo_mode ? 'demouser' : '');
 
 echo "<tr><td class='login_input'><div class='input_container'><i class='fas fa-user' title='"._('User')."'></i>";
 echo "<input required class='input' id='user' name='user_name_entry_field' type='text' placeholder='"._('User name:')."' value='$value'></div></td></tr>";
 
-$password = $SysPrefs->allow_demo_mode ? 'password' : '1111';
+$password = $SysPrefs->allow_demo_mode ? 'password' : '';
 
 echo "<tr><td class='login_input'><div class='input_container'><i class='fas fa-key' title='"._('Password')."'></i>";
 echo "<input required class='input' id='pass' name='password' type='password' placeholder='"._('Password:')."' value='$password'></div></td></tr>";
