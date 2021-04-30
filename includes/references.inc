@@ -79,6 +79,8 @@ class references {
 	}
 
 	function _legacy_line($refline) {
+		if(empty($refline['pattern']))
+			return true;
 		return strpbrk($refline['pattern'], '{}') == false;
 	}
 
@@ -129,23 +131,18 @@ class references {
 						case 'C':
 							$out .= sprintf('%d', $context['customer']);
 							break;
-
 						case 'B':
 							$out .= sprintf('%d', $context['branch']);
 							break;
-
 						case 'S':
 							$out .= sprintf('%d', $context['supplier']);
 							break;
-
 						case 'L':
 							$out .= sprintf('%s', $context['location']);
 							break;
-
 						case 'P':
 							$out .= sprintf('%s', $context['pos']);
 							break;
-
 						case 'UU':
 							$out .= sprintf('%02d', $context['user']);
 						break;
@@ -238,8 +235,9 @@ class references {
 			$refline = db_fetch($refs);
 		}
 
-		if ($this->_legacy_line($refline))
-			return $refline['pattern'];
+		if ($this->_legacy_line($refline)) {
+			return isset($refline['pattern']) ? $refline['pattern'] : null;
+		}
 
 		return $this->_parse_next($type, $refline['prefix'].$refline['pattern'], $context);
 	}
@@ -344,7 +342,7 @@ class references {
 	//
 	//	Save reference (and prepare next) on write transaction.
 	//
-	function save($type, $id, $reference, $line = null) {
+	function save($type, $id, $reference, $line=null) {
 		if ($reference == 'auto')
 			return;
 
