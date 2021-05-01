@@ -1,3 +1,168 @@
+commit ac49c46540c727d1bf27fdb7004ec7a108f94ca8
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sat May 1 20:43:25 2021 +0700
+
+    Updated version level compatibility
+
+M	includes/packages.inc
+
+commit a61a8a67bc85489afcd8cb15dedcb25c2cbbb2b5
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Fri Apr 30 08:31:16 2021 +0700
+
+    php7.4 error Trying to access array offset on value of type null. Fixed
+
+M	includes/references.inc
+
+commit 52487ade9cb12e7cc4b6e3040070e5e2c435082c
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Wed Apr 28 16:49:44 2021 +0700
+
+    Sai tên file logo, đã sửa
+
+M	access/login.php
+M	access/password_reset.php
+
+commit 1f5bd196eca9eaf6cae8f535db7a77346b8692af
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Wed Apr 28 16:43:05 2021 +0700
+
+    Cải thiện giao diện trang đăng nhập
+
+M	access/login.php
+M	access/password_reset.php
+M	themes/default/default.css
+M	themes/default/local_style/access.css
+
+commit 319e8622b81701be64dfd2a7f2aa24ffc3239460
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Tue Apr 27 22:58:07 2021 +0700
+
+    default theme small bug fixes
+
+M	themes/default/default.css
+
+commit 44cc51c3e7ab5fc607fb046c962d9c04893afe84
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Tue Apr 27 10:28:59 2021 +0700
+
+    blurred inactive links in default theme
+
+M	themes/default/default.css
+
+commit a0c304fdd3bb06381cea3a9fb10c71b308fd1372
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Mon Apr 26 15:07:34 2021 +0700
+
+    Cải thiện giao diện default
+
+M	themes/default/default.css
+M	themes/default/local_style/display_prefs.css
+M	themes/default/renderer.php
+
+commit c55bc396bcff8ee4140cb5e67671a8ecece8df85
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Mon Apr 26 09:43:20 2021 +0700
+
+    Thêm css cho theme canvas và dropdơn sau khi chỉnh sửa hệ thống icons
+
+M	libraries/dynamic-menu.js
+M	themes/canvas/default.css
+M	themes/dropdown/default.css
+
+commit 2d44ba5922050fe981700989e2276ef774be5ec0
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sun Apr 25 21:25:26 2021 +0700
+
+    Thiết kế lại giao diện với icons fontawesome
+
+M	includes/types.inc
+M	includes/ui/ui_input.inc
+M	includes/ui/ui_lists.inc
+A	libraries/dynamic-menu.css
+A	libraries/dynamic-menu.js
+M	themes/default/default.css
+M	themes/default/renderer.php
+
+commit faa5f8c8c1f29d369c3e1ab117d36352acde9585
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sat Apr 24 23:05:21 2021 +0700
+
+    changed menu icons to webfont icons
+
+M	themes/default/default.css
+M	themes/default/renderer.php
+
+commit 4532a9f7ce43364a3235b68a6cfb0bed5e274ac3
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Sat Apr 24 10:09:44 2021 +0700
+
+    Thêm fontawesome vào các files css mặc định
+
+M	includes/main.inc
+M	includes/page/header.inc
+A	libraries/fontawesome/LICENSE.txt
+A	libraries/fontawesome/css/all.min.css
+A	libraries/fontawesome/webfonts/fa-brands-400.woff
+A	libraries/fontawesome/webfonts/fa-regular-400.woff
+A	libraries/fontawesome/webfonts/fa-solid-900.woff
+
+commit c176e432594a7cacd549ebff92c090c3be82474c
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Fri Apr 23 20:21:14 2021 +0700
+
+    dropdown lists: added edit link to the bottom
+
+M	includes/ui/ui_lists.inc
+M	libraries/select.js
+M	themes/canvas/default.css
+M	themes/default/default.css
+M	themes/dropdown/default.css
+
+commit 222c223b4a08bd53e5a852678ea7a9434b03b184
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Fri Apr 23 08:08:39 2021 +0700
+
+    Chỉnh sửa giao diện
+
+M	themes/default/local_style/customers.css
+M	themes/default/local_style/items.css
+M	themes/default/local_style/suppliers.css
+
+commit 14c504b9b472ec1312ce7e57e363d935179c276b
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Thu Apr 22 13:25:57 2021 +0700
+
+    giảm độ rộng thanh cuộn
+
+M	themes/canvas/default.css
+M	themes/default/default.css
+M	themes/dropdown/default.css
+
+commit 451ec46ebbea3020350f5509c95f327e4d7600a0
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Wed Apr 21 22:36:18 2021 +0700
+
+    Cải thiện giao diện trang backup
+
+M	admin/backups.php
+A	themes/default/local_style/backups.css
+
+commit 5c0483d3af27abfbd60bfe63cb5a2f29e5adfd9f
+Author: Tran Anh Phuong <trananhphuong83@gmail.com>
+Date:   Tue Apr 20 08:32:06 2021 +0700
+
+    Release 0.3
+
+M	CHANGELOG.txt
+M	sql/vi_VN-tt132-demo.sql
+M	sql/vi_VN-tt132-new.sql
+M	sql/vi_VN-tt133-demo.sql
+M	sql/vi_VN-tt133-new.sql
+M	sql/vi_VN-tt200-demo.sql
+M	sql/vi_VN-tt200-new.sql
+M	version.php
+
 commit 037a815be72795529682fb62d596a66953b4ab5f
 Author: Tran Anh Phuong <trananhphuong83@gmail.com>
 Date:   Mon Apr 19 16:07:00 2021 +0700
