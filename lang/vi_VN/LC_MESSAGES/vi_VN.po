@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FrontAccounting\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-11 11:23+0700\n"
-"PO-Revision-Date: 2021-04-11 11:23+0700\n"
+"POT-Creation-Date: 2021-05-05 05:13+0700\n"
+"PO-Revision-Date: 2021-05-05 06:32+0700\n"
 "Last-Translator: Translation Team <info@frontaccounting.net>\n"
 "Language-Team: Translators <info@frontaccounting.com>\n"
 "Language: vi\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-KeywordsList: _;addLabel\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 2.4.3\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -27,9 +27,8 @@ msgstr "Menu"
 # c:/Apache/htdocs/account/access/logout.php:7
 # c:/Apache/htdocs/account/includes/page/header.inc:53
 #: Quanlyviet.php:69 access/logout.php:23 themes/canvas/renderer.php:37
-#: themes/canvas/renderer.php:48 themes/default/renderer.php:66
-#: themes/default/renderer.php:79 themes/dropdown/renderer.php:73
-#: themes/dropdown/renderer.php:82
+#: themes/canvas/renderer.php:48 themes/default/renderer.php:106
+#: themes/dropdown/renderer.php:73 themes/dropdown/renderer.php:82
 msgid "Logout"
 msgstr "Thoát"
 
@@ -61,44 +60,50 @@ msgstr "Đăng nhập sai quá nhiều lần.<br>Hãy chờ một lúc hoặc th
 msgid "Invalid password or username. Please, try again."
 msgstr "Sai thông tin đăng nhập. Hãy thử lại."
 
-#: access/login.php:51 access/login.php:81
+#: access/login.php:51 access/login.php:83
 msgid "Authorization timeout"
 msgstr "Hết thời gian chờ"
 
-#: access/login.php:51 access/login.php:85
+#: access/login.php:51 access/login.php:88 access/login.php:125
 msgid "Login"
 msgstr "Đăng nhập"
 
 # c:/Apache/htdocs/account/access/login.php:28
-#: access/login.php:85 access/password_reset.php:62
+#: access/login.php:88 access/password_reset.php:64
 msgid "Version"
 msgstr "Phiên bản"
 
-#: access/login.php:89
-msgid "User name"
-msgstr "Người dùng"
+#: access/login.php:94 gl/inquiry/journal_inquiry.php:113
+#: reporting/rep710.php:71 reporting/rep710.php:80
+#: reporting/reports_main.php:549
+msgid "User"
+msgstr "Lập"
+
+#: access/login.php:95
+msgid "User name:"
+msgstr "Người dùng:"
+
+#: access/login.php:99
+msgid "Password"
+msgstr "Mật khẩu"
 
 # c:/Apache/htdocs/account/admin/Users.php:162
-#: access/login.php:93 admin/users.php:181
+#: access/login.php:100 admin/users.php:181
 msgid "Password:"
 msgstr "Mật khẩu:"
 
 # c:/Apache2/htdocs/account/admin/create_coy.php:151
 # c:/Apache2/htdocs/account/admin/create_coy.php:232
-#: access/login.php:102 access/login.php:109 access/password_reset.php:70
-#: access/password_reset.php:77 admin/create_coy.php:227
+#: access/login.php:108 access/login.php:116 access/password_reset.php:72
+#: access/password_reset.php:80 admin/create_coy.php:227
 #: admin/create_coy.php:300 admin/inst_upgrade.php:59 includes/sysnames.inc:210
 msgid "Company"
 msgstr "Công ty"
 
-#: access/login.php:116
-msgid "Login -->"
-msgstr "Đăng Nhập"
-
 # c:/Apache/htdocs/account/admin/display_prefs.php:120
-#: access/login.php:149 access/password_reset.php:109
+#: access/login.php:161 access/password_reset.php:116
 #: admin/display_prefs.php:118 themes/canvas/renderer.php:171
-#: themes/default/renderer.php:116 themes/dropdown/renderer.php:186
+#: themes/default/renderer.php:143 themes/dropdown/renderer.php:186
 msgid "Theme:"
 msgstr "Giao diện:"
 
@@ -112,19 +117,26 @@ msgstr "Cảm ơn đã sử dụng"
 msgid "Click here to Login Again."
 msgstr "Đăng nhập lại."
 
-#: access/password_reset.php:31 access/password_reset.php:62
+#: access/password_reset.php:31 access/password_reset.php:64
 msgid "Password reset"
 msgstr "Khôi phục mật khẩu"
 
 # c:/Apache2/htdocs/account/sales/manage/sales_people.php:87
-#: access/password_reset.php:64 reporting/includes/header2.inc:106
-#: reporting/rep103.php:254 reporting/rep106.php:87 reporting/rep205.php:170
+#: access/password_reset.php:66 modules/FrontHrm/manage/employee.php:235
+#: modules/FrontHrm/reporting/rep_employees.php:69
+#: reporting/includes/header2.inc:106 reporting/rep103.php:254
+#: reporting/rep106.php:87 reporting/rep205.php:170
 #: sales/manage/sales_people.php:87
 msgid "Email"
 msgstr "Email"
 
-#: access/password_reset.php:83
-msgid "Send password -->"
+#: access/password_reset.php:67 reporting/includes/pdf_report.inc:950
+#: reporting/includes/pdf_report.inc:952
+msgid "Email:"
+msgstr "Email:"
+
+#: access/password_reset.php:88
+msgid "Send password"
 msgstr "Gửi mật khẩu"
 
 #: admin/attachments.php:70
@@ -141,31 +153,34 @@ msgstr "Giao dịch đã chọn không tồn tại."
 
 #: admin/attachments.php:87
 msgid "Only graphics,pdf,doc and odt files are supported."
-msgstr ""
+msgstr "Chỉ hỗ trợ các tệp hình ảnh, pdf, doc và odt."
 
 #: admin/attachments.php:90 admin/attachments.php:95
+#: modules/FrontHrm/manage/employee_docs.php:121
+#: modules/FrontHrm/manage/employee_docs.php:128
 msgid "Select attachment file."
 msgstr "Chọn file đính kèm."
 
 #: admin/attachments.php:93 admin/company_preferences.php:66
-#: inventory/manage/items.php:93
+#: inventory/manage/items.php:93 modules/FrontHrm/manage/employee.php:68
+#: modules/FrontHrm/manage/employee_docs.php:126
 msgid "The file size is over the maximum allowed."
 msgstr "Dung lượng file quá mức cho phép."
 
 #: admin/attachments.php:98
 msgid ""
 "File name exceeds maximum of 60 chars. Please change filename and try again."
-msgstr ""
+msgstr "Tên file vượt quá 60 ký tự, hay thử tên khác."
 
-#: admin/attachments.php:133
+#: admin/attachments.php:133 modules/FrontHrm/manage/employee_docs.php:163
 msgid "Attachment has been inserted."
 msgstr "Đã thêm file đính kèm."
 
-#: admin/attachments.php:137
+#: admin/attachments.php:137 modules/FrontHrm/manage/employee_docs.php:167
 msgid "Attachment has been updated."
 msgstr "Đã cập nhật file đính kèm."
 
-#: admin/attachments.php:151
+#: admin/attachments.php:151 modules/FrontHrm/manage/employee_docs.php:181
 msgid "Attachment has been deleted."
 msgstr "Đã xoá file đính kèm."
 
@@ -272,6 +287,16 @@ msgstr "Chọn nhà cung cấp: "
 #: manufacturing/includes/work_order_issue_ui.inc:58
 #: manufacturing/manage/bom_edit.php:58
 #: manufacturing/manage/work_centres.php:104
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:181
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:363
+#: modules/FrontHrm/manage/accounts.php:93
+#: modules/FrontHrm/manage/department.php:90
+#: modules/FrontHrm/manage/doc_type.php:90
+#: modules/FrontHrm/manage/employee_docs.php:238
+#: modules/FrontHrm/manage/grade.php:113
+#: modules/FrontHrm/manage/leave_types.php:90
+#: modules/FrontHrm/manage/overtime.php:89
+#: modules/FrontHrm/manage/position.php:114
 #: purchasing/includes/ui/invoice_ui.inc:296
 #: purchasing/includes/ui/invoice_ui.inc:496
 #: purchasing/includes/ui/po_ui.inc:233
@@ -289,10 +314,12 @@ msgstr "Sửa"
 # c:/Apache/htdocs/account/admin/view_print_transaction.php:114
 # c:/Apache/htdocs/account/admin/view_print_transaction.php:124
 #: admin/attachments.php:193 gl/inquiry/journal_inquiry.php:114
+#: modules/FrontHrm/manage/employee_docs.php:241
 msgid "View"
 msgstr "Xem"
 
 #: admin/attachments.php:197 includes/ui/attachment.inc:97
+#: modules/FrontHrm/manage/employee_docs.php:244
 msgid "Download"
 msgstr "Tải về"
 
@@ -343,7 +370,7 @@ msgstr "Tải về"
 #: gl/manage/gl_account_types.php:139 gl/manage/gl_quick_entries.php:184
 #: gl/manage/gl_quick_entries.php:272 includes/ui/attachment.inc:99
 #: includes/ui/class.crud_view.inc:283 includes/ui/contacts_view.inc:62
-#: includes/ui/simple_crud_class.inc:52 includes/ui/ui_input.inc:282
+#: includes/ui/simple_crud_class.inc:52 includes/ui/ui_input.inc:279
 #: inventory/includes/item_adjustments_ui.inc:105
 #: inventory/includes/stock_transfers_ui.inc:82
 #: inventory/manage/item_categories.php:132 inventory/manage/item_codes.php:136
@@ -353,6 +380,18 @@ msgstr "Tải về"
 #: manufacturing/includes/work_order_issue_ui.inc:59
 #: manufacturing/manage/bom_edit.php:59
 #: manufacturing/manage/work_centres.php:105
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:182
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:364
+#: modules/FrontHrm/manage/accounts.php:94
+#: modules/FrontHrm/manage/department.php:91
+#: modules/FrontHrm/manage/doc_type.php:91
+#: modules/FrontHrm/manage/employee_docs.php:247
+#: modules/FrontHrm/manage/grade.php:114
+#: modules/FrontHrm/manage/leave_types.php:91
+#: modules/FrontHrm/manage/overtime.php:90
+#: modules/FrontHrm/manage/payroll_rules.php:113
+#: modules/FrontHrm/manage/position.php:115
+#: modules/FrontHrm/manage/salary_structure.php:186
 #: purchasing/includes/ui/invoice_ui.inc:294
 #: purchasing/includes/ui/po_ui.inc:234
 #: sales/includes/ui/sales_credit_ui.inc:181
@@ -402,6 +441,7 @@ msgstr "Xoá"
 #: manufacturing/includes/manufacturing_ui.inc:257
 #: manufacturing/includes/manufacturing_ui.inc:302
 #: manufacturing/search_work_orders.php:143
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:210
 #: purchasing/allocations/supplier_allocation_main.php:87
 #: purchasing/inquiry/po_search.php:109
 #: purchasing/inquiry/po_search_completed.php:116
@@ -450,7 +490,7 @@ msgstr "#"
 #: inventory/manage/sales_kits.php:37 inventory/view/view_adjustment.php:51
 #: inventory/view/view_transfer.php:49
 #: manufacturing/includes/manufacturing_ui.inc:25
-#: manufacturing/manage/bom_edit.php:43
+#: manufacturing/manage/bom_edit.php:43 modules/FrontHrm/manage/doc_type.php:77
 #: purchasing/includes/ui/invoice_ui.inc:457
 #: purchasing/includes/ui/invoice_ui.inc:464 purchasing/po_receive_items.php:59
 #: reporting/rep104.php:101 reporting/rep105.php:108 reporting/rep204.php:77
@@ -466,16 +506,18 @@ msgid "Description"
 msgstr "Mô tả"
 
 # c:/Apache/htdocs/account/admin/backups.php:108
-#: admin/attachments.php:209 admin/backups.php:72 admin/backups.php:153
-#: includes/ui/attachment.inc:85
+#: admin/attachments.php:209 admin/backups.php:71 admin/backups.php:152
+#: includes/ui/attachment.inc:85 modules/FrontHrm/manage/employee_docs.php:267
 msgid "Filename"
 msgstr "Tên file"
 
 #: admin/attachments.php:210 includes/ui/attachment.inc:85
+#: modules/FrontHrm/manage/employee_docs.php:268
 msgid "Size"
 msgstr "Size"
 
 #: admin/attachments.php:211 includes/ui/attachment.inc:85
+#: modules/FrontHrm/manage/employee_docs.php:269
 msgid "Filetype"
 msgstr "Kiểu file"
 
@@ -491,37 +533,37 @@ msgstr "Giao dịch #"
 msgid "Attached File"
 msgstr "File đính kèm"
 
-#: admin/backups.php:22 admin/backups.php:50 admin/backups.php:118
-#: admin/backups.php:147 admin/backups.php:160 admin/backups.php:181
+#: admin/backups.php:22 admin/backups.php:49 admin/backups.php:117
+#: admin/backups.php:146 admin/backups.php:159 admin/backups.php:180
 msgid "Select backup file first."
 msgstr "Trước tiên chọn sao lưu file."
 
 # c:/Apache/htdocs/account/admin/backups.php:20
-#: admin/backups.php:53
+#: admin/backups.php:52
 msgid "Backup and Restore Database"
 msgstr "Sao lưu và khôi phục cơ sở dũ liệu"
 
 # c:/Apache/htdocs/account/admin/backups.php:12
-#: admin/backups.php:61
+#: admin/backups.php:60
 msgid "Backup paths have not been set correctly."
 msgstr "Đường dẫn sao lưu không đúng."
 
 # c:/Apache/htdocs/account/admin/backups.php:12
-#: admin/backups.php:61
+#: admin/backups.php:60
 msgid "Please contact System Administrator."
 msgstr "Hãy liên hệ Quản trị hệ thống."
 
 # c:/Apache/htdocs/account/admin/backups.php:179
-#: admin/backups.php:61
+#: admin/backups.php:60
 msgid "cannot find backup directory"
 msgstr "không tìm thấy thư mục sao lưu"
 
 # c:/Apache/htdocs/account/admin/backups.php:107
-#: admin/backups.php:72
+#: admin/backups.php:71
 msgid "Backup successfully generated."
 msgstr "Sao lưu khởi tạo thành công."
 
-#: admin/backups.php:74
+#: admin/backups.php:73
 msgid "Database backup failed."
 msgstr "Lỗi khi xoá sao lưu."
 
@@ -535,13 +577,13 @@ msgstr "Lỗi khi xoá sao lưu."
 # c:/Apache/htdocs/account/includes/ui/UI_Lists.inc:771
 # c:/Apache/htdocs/account/includes/ui/UI_Lists.inc:783
 # c:/Apache/htdocs/account/reporting/includes/reports_classes.inc:217
-#: admin/backups.php:104 admin/create_coy.php:246 admin/fiscalyears.php:135
+#: admin/backups.php:103 admin/create_coy.php:246 admin/fiscalyears.php:135
 #: admin/inst_lang.php:81 admin/inst_lang.php:87
 #: dimensions/inquiry/search_dimensions.php:100 gl/manage/bank_accounts.php:110
 #: gl/manage/currencies.php:137 gl/manage/gl_account_classes.php:117
 #: gl/manage/gl_quick_entries.php:215 includes/system_tests.inc:40
 #: includes/system_tests.inc:108 includes/system_tests.inc:120
-#: includes/ui/class.reflines_crud.inc:53 includes/ui/ui_lists.inc:1661
+#: includes/ui/class.reflines_crud.inc:53 includes/ui/ui_lists.inc:1665
 #: install/index.php:351 purchasing/manage/suppliers.php:206
 #: reporting/rep101.php:114 reporting/rep101.php:126 reporting/rep102.php:101
 #: reporting/rep102.php:103 reporting/rep104.php:95 reporting/rep106.php:75
@@ -556,74 +598,74 @@ msgid "No"
 msgstr "No"
 
 # c:/Apache/htdocs/account/admin/backups.php:119
-#: admin/backups.php:143
+#: admin/backups.php:142
 msgid "Restore backup completed."
 msgstr "Khôi phục đã hoàn tất."
 
 # c:/Apache2/htdocs/account/admin/backups.php:144
-#: admin/backups.php:153
+#: admin/backups.php:152
 msgid "File successfully deleted."
 msgstr "File đã được xoá."
 
-#: admin/backups.php:157
+#: admin/backups.php:156
 msgid "Can't delete backup file."
 msgstr "Không thể xoá file."
 
-#: admin/backups.php:169
+#: admin/backups.php:168
 msgid "You can only upload *.sql backup files"
 msgstr "Bạn chỉ tải lên được file .sql"
 
-#: admin/backups.php:171
+#: admin/backups.php:170
 msgid "Filename contains forbidden chars. Please rename file and try again."
 msgstr "Tên file chứa các ký tự bị cấm. Hãy đổi tên và thử lại."
 
-#: admin/backups.php:174
+#: admin/backups.php:173
 msgid "File uploaded to backup directory"
 msgstr "Đã tải file vào thư mục sao lưu"
 
-#: admin/backups.php:178
+#: admin/backups.php:177
 msgid "File was not uploaded into the system."
 msgstr "File chưa được tải lên hệ thống."
 
-#: admin/backups.php:190
+#: admin/backups.php:189
 msgid "Create backup"
 msgstr "Tạo sao lưu"
 
 # c:/Apache2/htdocs/account/sales/includes/ui/sales_order_ui.inc:374
-#: admin/backups.php:191 sales/includes/ui/sales_order_ui.inc:537
+#: admin/backups.php:190 sales/includes/ui/sales_order_ui.inc:537
 #: sales/includes/ui/sales_order_ui.inc:581
 msgid "Comments:"
 msgstr "Bình luận:"
 
-#: admin/backups.php:192
+#: admin/backups.php:191
 msgid "Compression:"
 msgstr "Nén:"
 
 # c:/Apache/htdocs/account/admin/backups.php:60
-#: admin/backups.php:194
+#: admin/backups.php:193
 msgid "Create Backup"
 msgstr "Tạo sao lưu"
 
-#: admin/backups.php:196
+#: admin/backups.php:195
 msgid "Backup scripts maintenance"
 msgstr "Thiết lập kịch bản sao lưu"
 
 # c:/Apache2/htdocs/account/admin/backups.php:85
-#: admin/backups.php:202
+#: admin/backups.php:201
 msgid "View Backup"
 msgstr "Xem sao lưu"
 
 # c:/Apache/htdocs/account/admin/backups.php:62
-#: admin/backups.php:203
+#: admin/backups.php:202
 msgid "Download Backup"
 msgstr "Download sao lưu"
 
 # c:/Apache/htdocs/account/admin/backups.php:61
-#: admin/backups.php:204
+#: admin/backups.php:203
 msgid "Restore Backup"
 msgstr "Khôi phục sao lưu"
 
-#: admin/backups.php:205
+#: admin/backups.php:204
 msgid ""
 "You are about to restore database from backup file.\n"
 "Do you want to continue?"
@@ -632,11 +674,11 @@ msgstr ""
 "Tiếp tục chứ?"
 
 # c:/Apache2/htdocs/account/admin/backups.php:86
-#: admin/backups.php:207
+#: admin/backups.php:206
 msgid "Delete Backup"
 msgstr "Xoá sao lưu"
 
-#: admin/backups.php:209
+#: admin/backups.php:208
 #, php-format
 msgid ""
 "You are about to remove selected backup file.\n"
@@ -645,21 +687,21 @@ msgstr ""
 "Bạn đang gỡ bỏ file sao lưu.\n"
 "Tiếp tục chứ?"
 
-#: admin/backups.php:214
+#: admin/backups.php:213
 msgid "Update security settings"
 msgstr "Cập nhật cài đặt an ninh"
 
-#: admin/backups.php:214
+#: admin/backups.php:213
 msgid "Protect security settings"
 msgstr "Bảo vệ cài đăt an ninh"
 
-#: admin/backups.php:218
+#: admin/backups.php:217
 msgid "Upload file"
 msgstr "Tải lên"
 
 #: admin/change_current_user_password.php:17
 #: admin/change_current_user_password.php:88 themes/canvas/renderer.php:44
-#: themes/default/renderer.php:74 themes/dropdown/renderer.php:78
+#: themes/default/renderer.php:101 themes/dropdown/renderer.php:78
 msgid "Change password"
 msgstr "Đổi mật khẩu"
 
@@ -743,7 +785,7 @@ msgstr "Giá trị nhập vào mục Làm Tròn phải lớn hơn không."
 
 #: admin/company_preferences.php:55
 msgid "Max day range in Documents must be a positive number."
-msgstr ""
+msgstr "Khoảng ngày tài lieu phải là số lớn hơn 0."
 
 #: admin/company_preferences.php:60
 msgid "Add Price from Std Cost field must be number."
@@ -761,19 +803,21 @@ msgstr "Chỉ hỗ trợ file định dạng JPG hoặc PNG"
 
 # c:/Apache2/htdocs/account/inventory/manage/items.php:57
 #: admin/company_preferences.php:86 inventory/manage/items.php:116
+#: modules/FrontHrm/manage/employee.php:93
 msgid ""
 "The file size is over the maximum allowed. The maximum size allowed in KB is"
 msgstr "Dung lượng file quá mức cho phép. Lớn nhất chỉ tính bằng Kb"
 
 # c:/Apache2/htdocs/account/inventory/manage/items.php:62
 #: admin/company_preferences.php:90 inventory/manage/items.php:108
-#: inventory/manage/items.php:120
+#: inventory/manage/items.php:120 modules/FrontHrm/manage/employee.php:83
+#: modules/FrontHrm/manage/employee.php:98
 msgid "Only graphics files can be uploaded"
 msgstr "Chỉ các file đồ hoạ mới tải lên được"
 
 # c:/Apache2/htdocs/account/inventory/manage/items.php:71
 #: admin/company_preferences.php:96 admin/company_preferences.php:123
-#: inventory/manage/items.php:126
+#: inventory/manage/items.php:126 modules/FrontHrm/manage/employee.php:105
 msgid "The existing image could not be removed"
 msgstr "Không thể xoá hình ảnh"
 
@@ -803,6 +847,8 @@ msgstr "Tên (trên báo cáo):"
 # c:/Apache/htdocs/account/sales/manage/customers.php:238
 #: admin/company_preferences.php:233 admin/shipping_companies.php:126
 #: includes/ui/contacts_view.inc:103 inventory/manage/locations.php:186
+#: modules/FrontHrm/manage/employee.php:322
+#: modules/FrontHrm/reporting/rep889.php:204
 #: sales/includes/ui/sales_order_ui.inc:575 sales/manage/customers.php:199
 msgid "Address:"
 msgstr "Địa chỉ:"
@@ -867,31 +913,31 @@ msgstr "Xoá Logo:"
 
 #: admin/company_preferences.php:250
 msgid "Time Zone on Reports:"
-msgstr ""
+msgstr "Múi giờ trên báo cáo:"
 
 #: admin/company_preferences.php:251
 msgid "Company Logo on Reports:"
-msgstr ""
+msgstr "Logo công ty trên báo cáo:"
 
 #: admin/company_preferences.php:252
 msgid "Use Barcodes on Stocks:"
-msgstr ""
+msgstr "Dùng mã vạch:"
 
 #: admin/company_preferences.php:253
 msgid "Auto Increase of Document References:"
-msgstr ""
+msgstr "Tự động tạo mã tham chiếu:"
 
 #: admin/company_preferences.php:254
 msgid "Use Dimensions on Recurrent Invoices:"
-msgstr ""
+msgstr "Khoản mục trong Hóa đơn định kỳ:"
 
 #: admin/company_preferences.php:255
 msgid "Use Long Descriptions on Invoices:"
-msgstr ""
+msgstr "Mô tả chi tiết trên hóa đơn:"
 
 #: admin/company_preferences.php:256
 msgid "Database Scheme Version:"
-msgstr ""
+msgstr "Phiên bản dữ liệu:"
 
 #: admin/company_preferences.php:260
 msgid "General Ledger Settings"
@@ -928,7 +974,7 @@ msgstr ""
 
 #: admin/company_preferences.php:265
 msgid "Suppress Tax Rates on Docs:"
-msgstr ""
+msgstr "Bỏ thuế khỏi tài liệu:"
 
 #: admin/company_preferences.php:266
 msgid "Automatic Revaluation Currency Accounts:"
@@ -936,7 +982,7 @@ msgstr ""
 
 #: admin/company_preferences.php:268 themes/canvas/renderer.php:97
 msgid "Sales Pricing"
-msgstr "Giá bán hàng"
+msgstr "Giá bán"
 
 #: admin/company_preferences.php:269
 msgid "Base for auto price calculations:"
@@ -960,7 +1006,7 @@ msgstr "Chọn Modules"
 
 #: admin/company_preferences.php:278
 msgid "Manufacturing:"
-msgstr ""
+msgstr "Sản xuất"
 
 #: admin/company_preferences.php:279 admin/dashboard.php:69
 #: dashboard/widget502.php:40 inventory/manage/items.php:26
@@ -979,23 +1025,23 @@ msgstr "Giao diện người dùng"
 
 #: admin/company_preferences.php:284
 msgid "Short Name and Name in List:"
-msgstr ""
+msgstr "Tên đầy đủ trong danh sách:"
 
 #: admin/company_preferences.php:285
 msgid "Open Print Dialog Direct on Reports:"
-msgstr ""
+msgstr "Bật in báo cáo tự động:"
 
 #: admin/company_preferences.php:286
 msgid "Search Item List:"
-msgstr ""
+msgstr "Tìm kiếm hàng hóa:"
 
 #: admin/company_preferences.php:287
 msgid "Search Customer List:"
-msgstr ""
+msgstr "Tìm kiếm khách hàng:"
 
 #: admin/company_preferences.php:288
 msgid "Search Supplier List:"
-msgstr ""
+msgstr "Tìm kiếm nhà cung cấp:"
 
 #: admin/company_preferences.php:289
 msgid "Login Timeout:"
@@ -1007,11 +1053,11 @@ msgstr "giây"
 
 #: admin/company_preferences.php:290
 msgid "Max day range in documents:"
-msgstr ""
+msgstr "Khoảng ngày tài liệu:"
 
 #: admin/company_preferences.php:290
 msgid "days."
-msgstr ""
+msgstr "ngày."
 
 # c:/Apache/htdocs/account/admin/company_preferences.php:93
 # c:/Apache/htdocs/account/admin/display_prefs.php:53
@@ -1049,7 +1095,7 @@ msgstr ""
 #: gl/manage/gl_quick_entries.php:58 includes/ui/attachment.inc:170
 #: includes/ui/class.crud_view.inc:285 includes/ui/db_pager_view.inc:174
 #: includes/ui/simple_crud_class.inc:53 includes/ui/simple_crud_class.inc:211
-#: includes/ui/ui_input.inc:212 includes/ui/ui_input.inc:866
+#: includes/ui/ui_input.inc:212 includes/ui/ui_input.inc:863
 #: inventory/adjustments.php:241 inventory/cost_update.php:141
 #: inventory/includes/item_adjustments_ui.inc:200
 #: inventory/includes/stock_transfers_ui.inc:143
@@ -1057,6 +1103,12 @@ msgstr ""
 #: inventory/transfers.php:223
 #: manufacturing/includes/work_order_issue_ui.inc:120
 #: manufacturing/work_order_entry.php:376
+#: modules/FrontHrm/includes/hrm_classes.inc:156
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:449
+#: modules/FrontHrm/manage/default_setup.php:97
+#: modules/FrontHrm/manage/employee_bank_entry.php:469
+#: modules/FrontHrm/manage/payroll_rules.php:111
+#: modules/FrontHrm/manage/salary_structure.php:185
 #: purchasing/includes/ui/invoice_ui.inc:175
 #: purchasing/includes/ui/po_ui.inc:263 purchasing/includes/ui/po_ui.inc:407
 #: purchasing/po_receive_items.php:282 sales/credit_note_entry.php:274
@@ -1234,7 +1286,7 @@ msgstr "Mặc định"
 #: gl/manage/gl_quick_entries.php:215 includes/system_tests.inc:40
 #: includes/system_tests.inc:108 includes/system_tests.inc:120
 #: includes/ui/class.reflines_crud.inc:53
-#: includes/ui/class.reflines_crud.inc:97 includes/ui/ui_lists.inc:1662
+#: includes/ui/class.reflines_crud.inc:97 includes/ui/ui_lists.inc:1666
 #: install/index.php:351 purchasing/manage/suppliers.php:206
 #: reporting/rep101.php:112 reporting/rep101.php:124 reporting/rep102.php:100
 #: reporting/rep102.php:102 reporting/rep104.php:97 reporting/rep106.php:77
@@ -1301,6 +1353,7 @@ msgstr "Database Collation:"
 #: admin/inst_theme.php:73 admin/inst_theme.php:74
 #: gl/manage/gl_account_types.php:172 includes/db/audit_trail_db.inc:125
 #: includes/ui/allocation_cart.inc:286 inventory/manage/items.php:404
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:230
 msgid "None"
 msgstr "Không"
 
@@ -1372,8 +1425,7 @@ msgid "Category Description:"
 msgstr "Mô tả loại:"
 
 #: admin/dashboard.php:26 themes/canvas/renderer.php:139
-#: themes/default/renderer.php:63 themes/default/renderer.php:71
-#: themes/dropdown/renderer.php:114
+#: themes/default/renderer.php:99 themes/dropdown/renderer.php:114
 msgid "Dashboard"
 msgstr "Bảng tin"
 
@@ -1505,13 +1557,13 @@ msgstr "Kế toán"
 
 #: admin/dashboard.php:83
 msgid "Setup"
-msgstr ""
+msgstr "Cài đặt"
 
 #: admin/dashboard.php:102
 msgid "Mising context data"
-msgstr ""
+msgstr "Thiếu ngữ cảnh"
 
-#: admin/db/attachments_db.inc:59
+#: admin/db/attachments_db.inc:59 modules/FrontHrm/manage/employee_docs.php:318
 msgid "Attached File:"
 msgstr "File đính kèm:"
 
@@ -1899,6 +1951,8 @@ msgid ""
 "Warning: Deleting a fiscal year all transactions are removed and converted "
 "into relevant balances. This process is irreversible!"
 msgstr ""
+"Chú ý: Xóa năm tài chính sẽ xóa các giao dịch và tự động chuyển sang các tài "
+"khoản lien quan. Quy trình không thể phục hồi!"
 
 # c:/Apache/htdocs/account/admin/fiscalyears.php:108
 #: admin/fiscalyears.php:122
@@ -1916,7 +1970,7 @@ msgstr "Kết thúc"
 # c:/Apache/htdocs/account/includes/ui/UI_Lists.inc:257
 # c:/Apache/htdocs/account/reporting/includes/PDFReport.inc:142
 #: admin/fiscalyears.php:122 dimensions/inquiry/search_dimensions.php:126
-#: dimensions/inquiry/search_dimensions.php:133 includes/ui/ui_lists.inc:682
+#: dimensions/inquiry/search_dimensions.php:133 includes/ui/ui_lists.inc:685
 #: includes/ui/ui_view.inc:1500 manufacturing/search_work_orders.php:109
 #: reporting/includes/excel_report.inc:219
 #: reporting/includes/pdf_report.inc:240 reporting/rep402.php:125
@@ -2013,7 +2067,8 @@ msgid "The general GL setup has been updated."
 msgstr "Đã cập nhật thiết lập tài khoản."
 
 # c:/Apache/htdocs/account/admin/gl_setup.php:102
-#: admin/gl_setup.php:158 themes/canvas/renderer.php:132
+#: admin/gl_setup.php:158 modules/FrontHrm/manage/default_setup.php:80
+#: themes/canvas/renderer.php:132
 msgid "General GL"
 msgstr "Tài khoản chung"
 
@@ -2027,7 +2082,13 @@ msgstr "Số ngày quá hạn:"
 # c:/Apache/htdocs/account/admin/payment_terms.php:130
 #: admin/gl_setup.php:160 admin/gl_setup.php:170 admin/gl_setup.php:189
 #: admin/gl_setup.php:190 admin/gl_setup.php:202 admin/gl_setup.php:228
-#: admin/payment_terms.php:124
+#: admin/payment_terms.php:124 modules/FrontHrm/includes/ui/payslip_ui.inc:73
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:106
+#: modules/FrontHrm/manage/default_setup.php:88
+#: modules/FrontHrm/manage/doc_type.php:88
+#: modules/FrontHrm/manage/doc_type.php:114
+#: modules/FrontHrm/reporting/rep889.php:102
+#: modules/FrontHrm/reporting/rep_payslip.php:138
 msgid "days"
 msgstr "ngày"
 
@@ -2341,8 +2402,9 @@ msgstr "Chi phí khấu hao :"
 msgid "Depreciation Period:"
 msgstr "Kỳ khấu hao:"
 
-#: admin/gl_setup.php:224 gl/accruals.php:182
+#: admin/gl_setup.php:224 gl/accruals.php:177
 #: gl/includes/ui/gl_journal_ui.inc:65 gl/manage/gl_quick_entries.php:221
+#: modules/FrontHrm/manage/position.php:107
 #: sales/create_recurrent_invoices.php:192
 #: sales/manage/recurrent_invoices.php:114
 msgid "Monthly"
@@ -2495,6 +2557,8 @@ msgstr "Cài đặt / Cập nhật ngôn ngữ"
 #: inventory/manage/item_categories.php:106
 #: inventory/manage/item_categories.php:108
 #: manufacturing/manage/work_centres.php:92
+#: modules/FrontHrm/manage/employee.php:231
+#: modules/FrontHrm/manage/position.php:99
 #: purchasing/includes/ui/invoice_ui.inc:259
 #: purchasing/includes/ui/invoice_ui.inc:261
 #: purchasing/includes/ui/invoice_ui.inc:263 reporting/rep115.php:150
@@ -2607,7 +2671,7 @@ msgstr "Cài đặt mở rộng bên thứ 3."
 
 # c:/Apache2/htdocs/account/reporting/includes/pdf_report.inc:166
 #: admin/inst_module.php:171 fixed_assets/inquiry/stock_inquiry.php:108
-#: includes/ui/ui_lists.inc:682 includes/ui/ui_lists.inc:2096
+#: includes/ui/ui_lists.inc:685 includes/ui/ui_lists.inc:2106
 #: reporting/includes/excel_report.inc:217
 #: reporting/includes/pdf_report.inc:238
 msgid "Active"
@@ -2798,6 +2862,7 @@ msgstr "Đã xoá điều khoản thanh toán"
 #: manufacturing/includes/manufacturing_ui.inc:257
 #: manufacturing/includes/manufacturing_ui.inc:302
 #: manufacturing/search_work_orders.php:145
+#: modules/FrontHrm/inquiry/emp_inquiry.php:94
 #: purchasing/inquiry/supplier_allocation_inquiry.php:119
 #: purchasing/inquiry/supplier_inquiry.php:155
 #: reporting/includes/doctext.inc:157 reporting/includes/doctext.inc:199
@@ -3003,8 +3068,8 @@ msgstr "Vai trò:"
 
 #: admin/security_roles.php:170 fixed_assets/inquiry/stock_inquiry.php:39
 #: gl/manage/gl_accounts.php:172 inventory/inquiry/stock_movements.php:63
-#: inventory/manage/items.php:508 purchasing/manage/suppliers.php:274
-#: sales/manage/customers.php:284
+#: inventory/manage/items.php:508 modules/FrontHrm/manage/payroll_rules.php:146
+#: purchasing/manage/suppliers.php:274 sales/manage/customers.php:284
 msgid "Show inactive:"
 msgstr "Chưa kích hoạt:"
 
@@ -3062,7 +3127,9 @@ msgstr "Xoá vai trò"
 #: includes/ui/ui_input.inc:215 inventory/includes/item_adjustments_ui.inc:201
 #: inventory/includes/stock_transfers_ui.inc:144 inventory/manage/items.php:493
 #: manufacturing/includes/work_order_issue_ui.inc:121
-#: purchasing/includes/ui/po_ui.inc:408 sales/create_recurrent_invoices.php:180
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:450
+#: modules/FrontHrm/manage/payslip.php:422 purchasing/includes/ui/po_ui.inc:408
+#: sales/create_recurrent_invoices.php:180
 #: sales/includes/ui/sales_credit_ui.inc:267
 #: sales/includes/ui/sales_order_ui.inc:511
 msgid "Cancel"
@@ -3143,6 +3210,7 @@ msgstr "Địa chỉ"
 #: admin/shipping_companies.php:122 gl/includes/ui/gl_bank_ui.inc:54
 #: gl/manage/gl_account_types.php:170 inventory/manage/items.php:331
 #: manufacturing/manage/work_centres.php:127
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:56
 msgid "Name:"
 msgstr "Tên:"
 
@@ -3436,6 +3504,10 @@ msgstr "đến #:"
 #: fixed_assets/inquiry/stock_inquiry.php:40 gl/inquiry/accounts_list.php:36
 #: gl/inquiry/journal_inquiry.php:59 inventory/inquiry/stock_list.php:42
 #: manufacturing/search_work_orders.php:84
+#: modules/FrontHrm/inquiry/emp_inquiry.php:58
+#: modules/FrontHrm/inquiry/time_sheet.php:43
+#: modules/FrontHrm/manage/employee.php:224
+#: modules/FrontHrm/manage/employee_docs.php:221
 #: purchasing/includes/ui/invoice_ui.inc:441
 #: purchasing/inquiry/po_search.php:75
 #: purchasing/inquiry/po_search_completed.php:105
@@ -3505,8 +3577,8 @@ msgstr "Giao dịch cuối phải là số và lớn hơn 0."
 #: dashboard/widget102.php:23 dashboard/widget202.php:23
 #: dimensions/inquiry/search_dimensions.php:124
 #: dimensions/view/view_dimension.php:51
-#: fixed_assets/process_depreciation.php:97 gl/accruals.php:97
-#: gl/accruals.php:195 gl/bank_account_reconcile.php:251
+#: fixed_assets/process_depreciation.php:97 gl/accruals.php:92
+#: gl/accruals.php:190 gl/bank_account_reconcile.php:251
 #: gl/inquiry/bank_inquiry.php:71 gl/inquiry/gl_account_inquiry.php:125
 #: gl/inquiry/journal_inquiry.php:105 gl/view/accrual_trans.php:51
 #: gl/view/bank_transfer_view.php:78 gl/view/gl_deposit_view.php:61
@@ -3525,6 +3597,8 @@ msgstr "Giao dịch cuối phải là số và lớn hơn 0."
 #: manufacturing/view/wo_production_view.php:41
 #: manufacturing/work_order_entry.php:342
 #: manufacturing/work_order_entry.php:347
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:210
+#: modules/FrontHrm/inquiry/emp_inquiry.php:92
 #: purchasing/allocations/supplier_allocation_main.php:89
 #: purchasing/includes/ui/invoice_ui.inc:106
 #: purchasing/includes/ui/po_ui.inc:289
@@ -3560,7 +3634,7 @@ msgstr "Vô hiêu hoá giao dịch"
 
 #: admin/void_transaction.php:126 admin/void_transaction.php:185
 #: gl/inquiry/accounts_list.php:60 includes/ui/ui_input.inc:134
-#: includes/ui/ui_input.inc:279 includes/ui/ui_lists.inc:21
+#: includes/ui/ui_input.inc:276 includes/ui/ui_lists.inc:21
 #: inventory/inquiry/stock_list.php:65 inventory/inquiry/stock_list.php:68
 #: purchasing/inquiry/suppliers_list.php:61
 #: purchasing/inquiry/suppliers_list.php:64
@@ -3612,6 +3686,7 @@ msgstr "Ngày vô hiệu:"
 #: manufacturing/work_order_costs.php:137
 #: manufacturing/work_order_entry.php:369
 #: manufacturing/work_order_release.php:94
+#: modules/FrontHrm/inquiry/emp_inquiry.php:45
 #: purchasing/includes/ui/invoice_ui.inc:179
 #: purchasing/includes/ui/po_ui.inc:430 purchasing/po_entry_items.php:448
 #: purchasing/supplier_payment.php:314 sales/customer_invoice.php:624
@@ -3671,12 +3746,17 @@ msgstr ""
 # c:/Apache/htdocs/account/purchasing/po_receive_items.php:148
 # c:/Apache/htdocs/account/purchasing/supplier_payment.php:134
 # c:/Apache/htdocs/account/sales/customer_credit_invoice.php:45
-#: admin/void_transaction.php:256 gl/accruals.php:42 gl/bank_transfer.php:145
+#: admin/void_transaction.php:256 gl/accruals.php:37 gl/bank_transfer.php:145
 #: gl/gl_journal.php:207 gl/gl_journal.php:217 gl/gl_journal.php:222
 #: gl/gl_journal.php:238 gl/manage/close_period.php:33
 #: gl/manage/exchange_rates.php:32 gl/manage/revaluate_currencies.php:42
 #: manufacturing/work_order_add_finished.php:82
-#: manufacturing/work_order_costs.php:74 purchasing/po_receive_items.php:155
+#: manufacturing/work_order_costs.php:74
+#: modules/FrontHrm/manage/attendance.php:33
+#: modules/FrontHrm/manage/attendance.php:38
+#: modules/FrontHrm/manage/payslip.php:158
+#: modules/FrontHrm/manage/payslip.php:163
+#: modules/FrontHrm/manage/payslip.php:237 purchasing/po_receive_items.php:155
 #: purchasing/supplier_payment.php:171 sales/customer_credit_invoice.php:89
 #: sales/manage/recurrent_invoices.php:56
 #: sales/manage/recurrent_invoices.php:61
@@ -3684,12 +3764,14 @@ msgstr ""
 msgid "The entered date is invalid."
 msgstr "Ngày nhập vào không hợp lệ."
 
-#: admin/void_transaction.php:261 gl/accruals.php:47 gl/bank_transfer.php:150
+#: admin/void_transaction.php:261 gl/accruals.php:42 gl/bank_transfer.php:150
 #: gl/gl_bank.php:236 gl/gl_journal.php:212 gl/gl_journal.php:243
 #: gl/manage/revaluate_currencies.php:47 inventory/adjustments.php:116
 #: inventory/transfers.php:111 manufacturing/work_order_add_finished.php:87
 #: manufacturing/work_order_costs.php:79 manufacturing/work_order_entry.php:132
-#: manufacturing/work_order_issue.php:79 purchasing/po_entry_items.php:326
+#: manufacturing/work_order_issue.php:79
+#: modules/FrontHrm/manage/employee_bank_entry.php:281
+#: modules/FrontHrm/manage/payslip.php:242 purchasing/po_entry_items.php:326
 #: purchasing/po_receive_items.php:160 purchasing/supplier_credit.php:169
 #: purchasing/supplier_invoice.php:175 purchasing/supplier_payment.php:176
 #: sales/create_recurrent_invoices.php:87
@@ -3731,8 +3813,8 @@ msgstr "Bán hàng"
 #: applications/customers.php:17 applications/dimensions.php:19
 #: applications/fixed_assets.php:17 applications/generalledger.php:17
 #: applications/inventory.php:17 applications/manufacturing.php:17
-#: applications/suppliers.php:17 themes/canvas/renderer.php:79
-#: themes/canvas/renderer.php:89
+#: applications/suppliers.php:17 modules/FrontHrm/hooks.php:20
+#: themes/canvas/renderer.php:79 themes/canvas/renderer.php:89
 msgid "Transactions"
 msgstr "Thao tác / Giao dịch"
 
@@ -3797,7 +3879,7 @@ msgstr "Phân bổ thanh toán"
 #: applications/customers.php:35 applications/dimensions.php:23
 #: applications/fixed_assets.php:27 applications/generalledger.php:26
 #: applications/inventory.php:21 applications/manufacturing.php:21
-#: applications/suppliers.php:29
+#: applications/suppliers.php:29 modules/FrontHrm/hooks.php:28
 msgid "Inquiries and Reports"
 msgstr "Các báo cáo"
 
@@ -3830,6 +3912,7 @@ msgstr "Khách hàng, bán hàng"
 #: applications/fixed_assets.php:34 applications/generalledger.php:38
 #: applications/inventory.php:26 applications/manufacturing.php:27
 #: applications/setup.php:37 applications/suppliers.php:36
+#: modules/FrontHrm/hooks.php:34
 msgid "Maintenance"
 msgstr "Thiết lập"
 
@@ -3941,8 +4024,18 @@ msgstr "Nhóm tài sản"
 msgid "Fixed Assets Cl&asses"
 msgstr "Loại tài sản"
 
+# c:/Apache/htdocs/account/reporting/reports_main.php:47
+# c:/Apache/htdocs/account/reporting/reports_main.php:48
+# c:/Apache/htdocs/account/reporting/reports_main.php:49
+# c:/Apache/htdocs/account/reporting/reports_main.php:50
+# c:/Apache/htdocs/account/reporting/reports_main.php:51
+# c:/Apache/htdocs/account/reporting/reports_main.php:52
+# c:/Apache/htdocs/account/reporting/reports_main.php:53
+# c:/Apache/htdocs/account/reporting/reports_main.php:54
+# c:/Apache/htdocs/account/reporting/reports_main.php:55
+# c:/Apache/htdocs/account/reporting/reports_main.php:56
 #: applications/generalledger.php:15
-msgid "&Banking and General Ledger"
+msgid "&General Ledger"
 msgstr "Kế toán"
 
 #: applications/generalledger.php:18
@@ -4050,8 +4143,12 @@ msgstr "Khoá sổ giao dịch"
 msgid "&Revaluation of Currency Accounts"
 msgstr "Xác nhận tỷ giá"
 
+# c:/Apache/htdocs/account/reporting/reports_main.php:32
+# c:/Apache/htdocs/account/reporting/reports_main.php:33
+# c:/Apache/htdocs/account/reporting/reports_main.php:34
+# c:/Apache/htdocs/account/reporting/reports_main.php:35
 #: applications/inventory.php:15
-msgid "&Items and Inventory"
+msgid "&Inventory"
 msgstr "Kho hàng"
 
 #: applications/inventory.php:18
@@ -4360,7 +4457,7 @@ msgstr ""
 #: dashboard/widget703.php:46 dashboard/widget801.php:27
 #: dashboard/widget804.php:28 dashboard/widget807.php:27
 #: dashboard/widget809.php:46 dashboard/widget810.php:27
-#: dashboard/widget811.php:27 gl/accruals.php:208 gl/gl_budget.php:84
+#: dashboard/widget811.php:27 gl/accruals.php:203 gl/gl_budget.php:84
 #: gl/gl_budget.php:86 gl/includes/ui/gl_bank_ui.inc:135
 #: gl/includes/ui/gl_bank_ui.inc:138 gl/includes/ui/gl_bank_ui.inc:141
 #: gl/inquiry/journal_inquiry.php:111 gl/inquiry/tax_inquiry.php:75
@@ -4372,8 +4469,13 @@ msgstr ""
 #: gl/view/gl_payment_view.php:58 gl/view/gl_payment_view.php:90
 #: gl/view/gl_payment_view.php:92 gl/view/gl_payment_view.php:94
 #: includes/sysnames.inc:138 includes/ui/allocation_cart.inc:262
-#: includes/ui/ui_lists.inc:1210
+#: includes/ui/ui_lists.inc:1214
 #: manufacturing/includes/manufacturing_ui.inc:219
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:152
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:154
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:156
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:210
+#: modules/FrontHrm/inquiry/emp_inquiry.php:100
 #: purchasing/includes/ui/invoice_ui.inc:259
 #: purchasing/includes/ui/invoice_ui.inc:261
 #: purchasing/includes/ui/invoice_ui.inc:263
@@ -4550,6 +4652,7 @@ msgstr "Tiền tệ"
 #: inventory/includes/item_adjustments_ui.inc:56
 #: inventory/includes/item_adjustments_ui.inc:118
 #: manufacturing/includes/manufacturing_ui.inc:171
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:190
 #: purchasing/allocations/supplier_allocation_main.php:92
 #: purchasing/includes/ui/invoice_ui.inc:318
 #: purchasing/includes/ui/invoice_ui.inc:457
@@ -4741,6 +4844,7 @@ msgstr "Chi phí"
 #: manufacturing/includes/manufacturing_ui.inc:302
 #: manufacturing/includes/work_order_issue_ui.inc:33
 #: manufacturing/manage/bom_edit.php:43 manufacturing/view/wo_issue_view.php:69
+#: modules/FrontHrm/reporting/rep_payslip.php:80
 #: purchasing/includes/ui/invoice_ui.inc:464
 #: purchasing/includes/ui/po_ui.inc:199 purchasing/view/view_grn.php:39
 #: purchasing/view/view_po.php:44 reporting/includes/doctext.inc:32
@@ -4795,8 +4899,8 @@ msgstr "Top %s khoản mục"
 # c:/Apache/htdocs/account/includes/types.inc:25
 # c:/Apache/htdocs/account/includes/types.inc:121
 #: dashboard/widget601.php:27 dashboard/widget602.php:40
-#: dashboard/widget807.php:27 gl/accruals.php:99 gl/accruals.php:101
-#: gl/accruals.php:203 gl/accruals.php:205 gl/gl_budget.php:66
+#: dashboard/widget807.php:27 gl/accruals.php:94 gl/accruals.php:96
+#: gl/accruals.php:198 gl/accruals.php:200 gl/gl_budget.php:66
 #: gl/gl_budget.php:67 gl/gl_budget.php:70 gl/includes/ui/gl_bank_ui.inc:134
 #: gl/includes/ui/gl_bank_ui.inc:135 gl/includes/ui/gl_bank_ui.inc:137
 #: gl/includes/ui/gl_journal_ui.inc:104 gl/includes/ui/gl_journal_ui.inc:106
@@ -4814,7 +4918,10 @@ msgstr "Top %s khoản mục"
 #: includes/sysnames.inc:42 includes/sysnames.inc:180
 #: inventory/manage/item_categories.php:234
 #: inventory/manage/item_categories.php:236 inventory/manage/items.php:414
-#: inventory/manage/items.php:416 purchasing/includes/ui/invoice_ui.inc:130
+#: inventory/manage/items.php:416
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:154
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:332
+#: purchasing/includes/ui/invoice_ui.inc:130
 #: purchasing/includes/ui/invoice_ui.inc:259
 #: purchasing/includes/ui/invoice_ui.inc:261
 #: purchasing/includes/ui/po_ui.inc:163 purchasing/manage/suppliers.php:230
@@ -4873,10 +4980,11 @@ msgstr "Số dư ngân hàng"
 # c:/Apache/htdocs/account/reporting/Rep708.php:94
 # c:/Apache/htdocs/account/purchasing/includes/ui/invoice_ui.inc:184
 #: dashboard/widget702.php:26 dimensions/includes/dimensions_ui.inc:28
-#: fixed_assets/process_depreciation.php:97 gl/accruals.php:97
+#: fixed_assets/process_depreciation.php:97 gl/accruals.php:92
 #: gl/inquiry/gl_account_inquiry.php:128 gl/inquiry/gl_trial_balance.php:221
 #: gl/manage/gl_quick_entries.php:222 gl/manage/gl_quick_entries.php:306
-#: includes/sysnames.inc:179 purchasing/includes/ui/invoice_ui.inc:259
+#: includes/sysnames.inc:179 modules/FrontHrm/manage/payroll_rules.php:92
+#: purchasing/includes/ui/invoice_ui.inc:259
 #: purchasing/includes/ui/invoice_ui.inc:261
 #: purchasing/includes/ui/invoice_ui.inc:263 reporting/rep701.php:97
 #: reporting/rep705.php:228 reporting/rep706.php:166 reporting/rep707.php:188
@@ -5101,7 +5209,7 @@ msgstr "Số dư khoản mục"
 # c:/Apache/htdocs/account/gl/includes/ui/gl_journal_ui.inc:43
 # c:/Apache/htdocs/account/projects/includes/projects_ui.inc:24
 #: dimensions/includes/dimensions_ui.inc:28
-#: fixed_assets/process_depreciation.php:97 gl/accruals.php:105
+#: fixed_assets/process_depreciation.php:97 gl/accruals.php:100
 #: gl/bank_account_reconcile.php:252 gl/includes/ui/gl_journal_ui.inc:104
 #: gl/includes/ui/gl_journal_ui.inc:106 gl/includes/ui/gl_journal_ui.inc:108
 #: gl/inquiry/bank_inquiry.php:71 gl/inquiry/gl_account_inquiry.php:140
@@ -5110,6 +5218,9 @@ msgstr "Số dư khoản mục"
 #: gl/view/accrual_trans.php:59 gl/view/gl_trans_view.php:86
 #: gl/view/gl_trans_view.php:88 gl/view/gl_trans_view.php:90
 #: manufacturing/view/wo_costs_view.php:56
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:330
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:332
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:334
 #: purchasing/inquiry/supplier_allocation_inquiry.php:127
 #: reporting/rep115.php:150 reporting/rep206.php:104 reporting/rep402.php:129
 #: reporting/rep601.php:74 reporting/rep602.php:72 reporting/rep702.php:48
@@ -5135,7 +5246,7 @@ msgstr "Nợ"
 # c:/Apache/htdocs/account/gl/includes/ui/gl_journal_ui.inc:44
 # c:/Apache/htdocs/account/projects/includes/projects_ui.inc:25
 #: dimensions/includes/dimensions_ui.inc:28
-#: fixed_assets/process_depreciation.php:97 gl/accruals.php:105
+#: fixed_assets/process_depreciation.php:97 gl/accruals.php:100
 #: gl/bank_account_reconcile.php:253 gl/includes/ui/gl_journal_ui.inc:104
 #: gl/includes/ui/gl_journal_ui.inc:106 gl/includes/ui/gl_journal_ui.inc:108
 #: gl/inquiry/bank_inquiry.php:71 gl/inquiry/gl_account_inquiry.php:140
@@ -5144,6 +5255,9 @@ msgstr "Nợ"
 #: gl/view/accrual_trans.php:59 gl/view/gl_trans_view.php:86
 #: gl/view/gl_trans_view.php:88 gl/view/gl_trans_view.php:90
 #: includes/sysnames.inc:90 manufacturing/view/wo_costs_view.php:56
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:330
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:332
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:334
 #: purchasing/inquiry/supplier_allocation_inquiry.php:128
 #: reporting/rep115.php:150 reporting/rep206.php:104 reporting/rep402.php:129
 #: reporting/rep601.php:74 reporting/rep602.php:72 reporting/rep702.php:48
@@ -5193,6 +5307,9 @@ msgstr "Tìm các khoản mục"
 #: manufacturing/work_order_costs.php:124
 #: manufacturing/work_order_entry.php:304
 #: manufacturing/work_order_entry.php:311
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:25
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:48
+#: modules/FrontHrm/inquiry/emp_inquiry.php:44
 #: purchasing/includes/ui/invoice_ui.inc:108
 #: purchasing/includes/ui/po_ui.inc:149 purchasing/includes/ui/po_ui.inc:152
 #: purchasing/supplier_payment.php:276 sales/customer_payments.php:335
@@ -5202,7 +5319,8 @@ msgstr "Tham chiếu:"
 # c:/Apache/htdocs/account/purchasing/allocations/supplier_allocate.php:216
 # c:/Apache/htdocs/account/sales/allocations/customer_allocate.php:211
 #: dimensions/inquiry/search_dimensions.php:73
-#: includes/ui/allocation_cart.inc:284 includes/ui/ui_lists.inc:1884
+#: includes/ui/allocation_cart.inc:284 includes/ui/ui_lists.inc:1889
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:229
 #: reporting/includes/reports_classes.inc:269 reporting/rep101.php:106
 #: reporting/rep102.php:84 reporting/rep104.php:87 reporting/rep104.php:91
 #: reporting/rep105.php:89 reporting/rep105.php:93 reporting/rep115.php:118
@@ -5234,6 +5352,11 @@ msgstr "Tất cả"
 #: gl/includes/ui/gl_bank_ui.inc:103 gl/inquiry/bank_inquiry.php:50
 #: gl/inquiry/gl_trial_balance.php:61 gl/inquiry/journal_inquiry.php:49
 #: gl/inquiry/profit_loss.php:159 inventory/inquiry/stock_movements.php:82
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:72
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:49
+#: modules/FrontHrm/inquiry/emp_inquiry.php:46
+#: modules/FrontHrm/inquiry/time_sheet.php:40
+#: modules/FrontHrm/reporting/rep_payslip.php:127
 #: purchasing/inquiry/supplier_allocation_inquiry.php:47
 #: purchasing/inquiry/supplier_inquiry.php:128
 #: sales/inquiry/customer_inquiry.php:145
@@ -5251,6 +5374,12 @@ msgstr "Từ :"
 #: dimensions/inquiry/search_dimensions.php:75 gl/inquiry/bank_inquiry.php:51
 #: gl/inquiry/gl_trial_balance.php:62 gl/inquiry/journal_inquiry.php:50
 #: gl/inquiry/profit_loss.php:160 inventory/inquiry/stock_movements.php:83
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:50
+#: modules/FrontHrm/inquiry/emp_inquiry.php:47
+#: modules/FrontHrm/inquiry/time_sheet.php:41
+#: modules/FrontHrm/manage/employee_docs.php:218
+#: modules/FrontHrm/manage/employee_docs.php:220
+#: modules/FrontHrm/reporting/rep_payslip.php:132
 #: purchasing/inquiry/supplier_allocation_inquiry.php:48
 #: purchasing/inquiry/supplier_inquiry.php:129
 #: sales/inquiry/customer_inquiry.php:146
@@ -5378,6 +5507,7 @@ msgstr "Loại tài sản:"
 #: inventory/manage/items.php:333 inventory/manage/sales_kits.php:195
 #: inventory/manage/sales_kits.php:219
 #: manufacturing/manage/work_centres.php:128
+#: modules/FrontHrm/manage/doc_type.php:112
 #: sales/create_recurrent_invoices.php:167 sales/manage/credit_status.php:130
 #: sales/manage/recurrent_invoices.php:170 taxes/item_tax_types.php:153
 #: taxes/tax_groups.php:149 taxes/tax_types.php:150
@@ -5532,24 +5662,24 @@ msgstr "tháng"
 msgid "Reference line:"
 msgstr "Tham chiếu:"
 
-#: fixed_assets/process_depreciation.php:173 gl/accruals.php:216
+#: fixed_assets/process_depreciation.php:173 gl/accruals.php:211
 #: reporting/rep402.php:142 reporting/reports_main.php:329
 msgid "Show GL Rows"
 msgstr "Xem bút toán"
 
-#: gl/accruals.php:31 includes/access_levels.inc:267
+#: gl/accruals.php:25 includes/access_levels.inc:267
 msgid "Revenue / Cost Accruals"
 msgstr "Trích trước các khoản thu chi"
 
-#: gl/accruals.php:52
+#: gl/accruals.php:47
 msgid "The amount can not be 0."
 msgstr "Số lượng phải khác 0."
 
-#: gl/accruals.php:57
+#: gl/accruals.php:52
 msgid "The periods must be greater than 0."
 msgstr "Giai đoạn phải lớn hơn 0."
 
-#: gl/accruals.php:76
+#: gl/accruals.php:71
 msgid ""
 "Some of the period dates are outside the fiscal year or are closed for "
 "further data entry. Create a new fiscal year first!"
@@ -5557,7 +5687,7 @@ msgstr ""
 "Một số ngày trong giai đoạn là không thuộc năm tài chính hoặc đã đóng các "
 "giao dịch. Trước tiên tạo năm tài chính mới!"
 
-#: gl/accruals.php:90
+#: gl/accruals.php:85
 #, php-format
 msgid "Accruals for %s"
 msgstr "Trích trước %s"
@@ -5578,7 +5708,7 @@ msgstr "Trích trước %s"
 # c:/Apache/htdocs/account/inventory/includes/stock_transfers_ui.inc:160
 # c:/Apache/htdocs/account/purchasing/includes/ui/invoice_ui.inc:187
 # c:/Apache/htdocs/account/sales/includes/ui/sales_credit_ui.inc:261
-#: gl/accruals.php:105 gl/accruals.php:213 gl/bank_account_reconcile.php:255
+#: gl/accruals.php:100 gl/accruals.php:208 gl/bank_account_reconcile.php:255
 #: gl/includes/ui/gl_bank_ui.inc:135 gl/includes/ui/gl_bank_ui.inc:138
 #: gl/includes/ui/gl_bank_ui.inc:141 gl/includes/ui/gl_bank_ui.inc:265
 #: gl/includes/ui/gl_journal_ui.inc:104 gl/includes/ui/gl_journal_ui.inc:106
@@ -5596,6 +5726,13 @@ msgstr "Trích trước %s"
 #: inventory/includes/stock_transfers_ui.inc:160
 #: manufacturing/includes/work_order_issue_ui.inc:150
 #: manufacturing/view/wo_costs_view.php:56
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:152
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:154
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:156
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:330
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:332
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:334
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:464
 #: purchasing/includes/ui/invoice_ui.inc:259
 #: purchasing/includes/ui/invoice_ui.inc:261
 #: purchasing/includes/ui/invoice_ui.inc:263 reporting/rep402.php:129
@@ -5604,55 +5741,55 @@ msgstr "Trích trước %s"
 msgid "Memo"
 msgstr "Ghi chú"
 
-#: gl/accruals.php:164
+#: gl/accruals.php:159
 msgid "Revenue / Cost Accruals have been processed."
 msgstr "Trích trước Doanh thu/Chi phí đã thực hiện."
 
-#: gl/accruals.php:169
+#: gl/accruals.php:164
 msgid "Showing GL Transactions."
 msgstr "Hiển thị giao dịch trên sổ cái"
 
-#: gl/accruals.php:180
+#: gl/accruals.php:175
 msgid "Weekly"
 msgstr "Hàng tuần"
 
-#: gl/accruals.php:181
+#: gl/accruals.php:176
 msgid "Bi-weekly"
 msgstr "2 lần/tuần"
 
-#: gl/accruals.php:183
+#: gl/accruals.php:178
 msgid "Quarterly"
 msgstr "Hàng quý"
 
-#: gl/accruals.php:195
+#: gl/accruals.php:190
 msgid "First date of Accruals"
 msgstr "Trích trước từ ngày"
 
-#: gl/accruals.php:197
+#: gl/accruals.php:192
 msgid "Accrued Balance Account"
 msgstr "Tài khoản trích trước"
 
-#: gl/accruals.php:200
+#: gl/accruals.php:195
 msgid "Revenue / Cost Account"
 msgstr "Tài khoản thu nhập/chi phí"
 
-#: gl/accruals.php:208
+#: gl/accruals.php:203
 msgid "Search Amount"
 msgstr "Tìm số lượng"
 
-#: gl/accruals.php:210
+#: gl/accruals.php:205
 msgid "Frequency"
 msgstr "Tần suất"
 
-#: gl/accruals.php:212
+#: gl/accruals.php:207
 msgid "Periods"
 msgstr "Số giai đoạn"
 
-#: gl/accruals.php:217
+#: gl/accruals.php:212
 msgid "Process Accruals"
 msgstr "Thực hiện trích"
 
-#: gl/accruals.php:218
+#: gl/accruals.php:213
 msgid "Are you sure you want to post accruals?"
 msgstr "Bạn có chắc muốn thực hiện trích trước này?"
 
@@ -5667,8 +5804,9 @@ msgstr "Đối chiếu số dư ngân hàng"
 # c:/Apache/htdocs/account/purchasing/supplier_payment.php:24
 # c:/Apache/htdocs/account/sales/customer_payments.php:20
 #: gl/bank_account_reconcile.php:36 gl/bank_transfer.php:36 gl/gl_bank.php:52
-#: gl/inquiry/bank_inquiry.php:32 purchasing/supplier_payment.php:40
-#: sales/customer_payments.php:37
+#: gl/inquiry/bank_inquiry.php:32
+#: modules/FrontHrm/manage/employee_bank_entry.php:83
+#: purchasing/supplier_payment.php:40 sales/customer_payments.php:37
 msgid "There are no bank accounts defined in the system."
 msgstr "Chưa định nghĩa các tài khoản ngân hàng."
 
@@ -5684,6 +5822,7 @@ msgstr "Đối chiếu giao dịch này"
 # c:/Apache/htdocs/account/gl/inquiry/gl_account_inquiry.php:32
 #: gl/bank_account_reconcile.php:188 gl/inquiry/bank_inquiry.php:48
 #: gl/inquiry/gl_account_inquiry.php:69
+#: modules/FrontHrm/manage/accounts.php:120
 msgid "Account:"
 msgstr "Tài khoản:"
 
@@ -5779,6 +5918,7 @@ msgstr "Ngày chuyển:"
 # c:/Apache/htdocs/account/purchasing/supplier_trans_gl.php:91
 # c:/Apache/htdocs/account/includes/ui/ui_view.inc:359
 #: gl/bank_transfer.php:116 gl/bank_transfer.php:121
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:79
 #: sales/customer_payments.php:373
 msgid "Amount:"
 msgstr "Số lượng:"
@@ -5807,6 +5947,7 @@ msgid "The entered amount is invalid or less than zero."
 msgstr "Số lượng nhập vào không hợp lệ hoặc nhỏ hơn 0."
 
 #: gl/bank_transfer.php:160 gl/gl_bank.php:205
+#: modules/FrontHrm/manage/employee_bank_entry.php:250
 msgid "The total bank amount cannot be 0."
 msgstr "Số lượng chuyển phải khác 0."
 
@@ -5866,11 +6007,11 @@ msgstr "Tài khoản thanh toán"
 msgid "Bank Account Deposit Entry"
 msgstr "Nhận thanh toán vào tài khoản ngân hàng"
 
-#: gl/gl_bank.php:41
+#: gl/gl_bank.php:41 modules/FrontHrm/manage/employee_bank_entry.php:50
 msgid "Modify Bank Account Entry"
 msgstr "Sửa tài khoản ngân hàng"
 
-#: gl/gl_bank.php:45
+#: gl/gl_bank.php:45 modules/FrontHrm/manage/employee_bank_entry.php:54
 msgid "Modify Bank Deposit Entry"
 msgstr "Sửa tiền gửi vào ngân hàng"
 
@@ -5880,19 +6021,27 @@ msgid "Payment %d has been entered"
 msgstr "Thanh toán %d đã được nhập"
 
 #: gl/gl_bank.php:86 gl/gl_bank.php:97
+#: modules/FrontHrm/manage/employee_bank_entry.php:117
+#: modules/FrontHrm/manage/employee_bank_entry.php:134
 msgid "&View the GL Postings for this Payment"
 msgstr "Xem các bút toán cho thanh toán này"
 
 #: gl/gl_bank.php:87 gl/gl_bank.php:98
+#: modules/FrontHrm/manage/employee_bank_entry.php:119
+#: modules/FrontHrm/manage/employee_bank_entry.php:136
 msgid "Enter Another &Payment"
 msgstr "Nhập thanh toán đầu ra khác"
 
 #: gl/gl_bank.php:88 gl/gl_bank.php:99
+#: modules/FrontHrm/manage/employee_bank_entry.php:121
+#: modules/FrontHrm/manage/employee_bank_entry.php:138
 msgid "Enter A &Deposit"
 msgstr "Nhập thanh toán đầu vào"
 
 #: gl/gl_bank.php:89 gl/gl_journal.php:66 inventory/adjustments.php:65
-#: manufacturing/work_order_entry.php:61 purchasing/po_entry_items.php:121
+#: manufacturing/work_order_entry.php:61
+#: modules/FrontHrm/manage/employee_bank_entry.php:123
+#: modules/FrontHrm/manage/payslip.php:63 purchasing/po_entry_items.php:121
 #: purchasing/po_entry_items.php:141 purchasing/supplier_credit.php:82
 #: purchasing/supplier_invoice.php:74 sales/credit_note_entry.php:76
 #: sales/customer_credit_invoice.php:61 sales/customer_invoice.php:71
@@ -5910,15 +6059,15 @@ msgstr "Thanh toán đầu ra %d đã được chỉnh sửa"
 msgid "Deposit %d has been entered"
 msgstr "Thanh toán đầu vào %d đã được nhập"
 
-#: gl/gl_bank.php:107
+#: gl/gl_bank.php:107 modules/FrontHrm/manage/employee_bank_entry.php:148
 msgid "View the GL Postings for this Deposit"
 msgstr "Xem các bút toán cho nghiệp vụ này"
 
-#: gl/gl_bank.php:108
+#: gl/gl_bank.php:108 modules/FrontHrm/manage/employee_bank_entry.php:150
 msgid "Enter Another Deposit"
 msgstr "Nhập thanh toán đầu vào khác"
 
-#: gl/gl_bank.php:109
+#: gl/gl_bank.php:109 modules/FrontHrm/manage/employee_bank_entry.php:152
 msgid "Enter A Payment"
 msgstr "Nhập thanh toán đầu ra"
 
@@ -5927,28 +6076,29 @@ msgstr "Nhập thanh toán đầu ra"
 msgid "Deposit %d has been modified"
 msgstr "Thanh toán đầu vào %d đã được chỉnh sửa"
 
-#: gl/gl_bank.php:117
+#: gl/gl_bank.php:117 modules/FrontHrm/manage/employee_bank_entry.php:162
 msgid "&View the GL Postings for this Deposit"
 msgstr "Xem các bút toán cho nghiệp vụ này"
 
-#: gl/gl_bank.php:118
+#: gl/gl_bank.php:118 modules/FrontHrm/manage/employee_bank_entry.php:164
 msgid "Enter Another &Deposit"
 msgstr "Nhập thanh toán đầu vào khác"
 
-#: gl/gl_bank.php:119
+#: gl/gl_bank.php:119 modules/FrontHrm/manage/employee_bank_entry.php:166
 msgid "Enter A &Payment"
 msgstr "Nhập thanh toán đầu ra"
 
-#: gl/gl_bank.php:200
+#: gl/gl_bank.php:200 modules/FrontHrm/manage/employee_bank_entry.php:245
 msgid "You must enter at least one payment line."
 msgstr "Bạn phải nhập vào các thanh toán."
 
-#: gl/gl_bank.php:214 purchasing/supplier_payment.php:184
+#: gl/gl_bank.php:214 modules/FrontHrm/manage/employee_bank_entry.php:260
+#: purchasing/supplier_payment.php:184
 #, php-format
 msgid "The total bank amount exceeds allowed limit (%s)."
 msgstr "Số tiền vượt quá giới hạn (%s)."
 
-#: gl/gl_bank.php:221
+#: gl/gl_bank.php:221 modules/FrontHrm/manage/employee_bank_entry.php:266
 #, php-format
 msgid ""
 "The bank transaction would result in exceed of authorized overdraft limit "
@@ -5956,7 +6106,7 @@ msgid ""
 msgstr ""
 "Thao tác sẽ làm vượt hạn mức thấu chi cho phép của giao dịch: %s #%s là %s."
 
-#: gl/gl_bank.php:231
+#: gl/gl_bank.php:231 modules/FrontHrm/manage/employee_bank_entry.php:276
 msgid "The entered date for the payment is invalid."
 msgstr "Ngày nhập vào không hợp lệ."
 
@@ -5968,32 +6118,33 @@ msgstr "Bạn phải chọn khách hàng và chi nhánh của họ."
 msgid "You have to select supplier."
 msgstr "Bạn phải chọn nhà cung cấp."
 
-#: gl/gl_bank.php:254
+#: gl/gl_bank.php:254 modules/FrontHrm/manage/employee_bank_entry.php:299
 msgid "Settled amount have to be positive number."
 msgstr "Số sau quy đổi phải là số lớn hơn 0."
 
-#: gl/gl_bank.php:294
+#: gl/gl_bank.php:294 modules/FrontHrm/manage/employee_bank_entry.php:388
 msgid "The amount entered is not a valid number or is less than zero."
 msgstr "Số nhập vào không hợp lệ."
 
 # c:/Apache/htdocs/account/gl/manage/exchange_rates.php:34
 #: gl/gl_bank.php:299 gl/manage/exchange_rates.php:37
+#: modules/FrontHrm/manage/employee_bank_entry.php:393
 msgid "The exchange rate cannot be zero or a negative number."
 msgstr "Tỷ giá phải lớn hơn 0."
 
-#: gl/gl_bank.php:362
+#: gl/gl_bank.php:362 modules/FrontHrm/manage/employee_bank_entry.php:462
 msgid "Payment Items"
 msgstr "Các thanh toán"
 
-#: gl/gl_bank.php:362
+#: gl/gl_bank.php:362 modules/FrontHrm/manage/employee_bank_entry.php:462
 msgid "Deposit Items"
 msgstr "Các khoản"
 
-#: gl/gl_bank.php:369
+#: gl/gl_bank.php:369 modules/FrontHrm/manage/employee_bank_entry.php:471
 msgid "Process Payment"
 msgstr "Thanh toán"
 
-#: gl/gl_bank.php:369
+#: gl/gl_bank.php:369 modules/FrontHrm/manage/employee_bank_entry.php:471
 msgid "Process Deposit"
 msgstr "Gửi tiền"
 
@@ -6039,7 +6190,7 @@ msgid "Last Year"
 msgstr "Kỳ trước"
 
 # c:/Apache/htdocs/account/includes/ui/ui_input.inc:70
-#: gl/gl_budget.php:127
+#: gl/gl_budget.php:127 modules/FrontHrm/manage/payroll_rules.php:109
 msgid "Save"
 msgstr "Lưu"
 
@@ -6061,6 +6212,7 @@ msgid "Journal entry has been entered"
 msgstr "Mục nhật ký chung đã được thêm"
 
 #: gl/gl_journal.php:61 gl/gl_journal.php:76
+#: modules/FrontHrm/manage/payslip.php:76
 msgid "&View this Journal Entry"
 msgstr "Xem lại mục vừa thêm"
 
@@ -6076,22 +6228,22 @@ msgstr "Mục nhật ký đã được cập nhật"
 msgid "Return to Journal &Inquiry"
 msgstr "Quay lại Xem nhật ký chung"
 
-#: gl/gl_journal.php:91
+#: gl/gl_journal.php:91 modules/FrontHrm/manage/payslip.php:91
 msgid ""
 "You can edit directly only journal entries created via Journal Entry page."
 msgstr ""
 "Bạn chỉ có thể chỉnh sửa trực tiếp các nhật ký chung được tạo từ trang nhật "
 "ký chung."
 
-#: gl/gl_journal.php:92
+#: gl/gl_journal.php:92 modules/FrontHrm/manage/payslip.php:92
 msgid "Entry &New Journal Entry"
 msgstr "Thêm mới nhật ký chung"
 
-#: gl/gl_journal.php:197
+#: gl/gl_journal.php:197 modules/FrontHrm/manage/payslip.php:227
 msgid "You must enter at least one journal line."
 msgstr "Bạn phải nhập vào ít nhất 1 dòng nhật ký."
 
-#: gl/gl_journal.php:202
+#: gl/gl_journal.php:202 modules/FrontHrm/manage/payslip.php:232
 msgid ""
 "The journal must balance (debits equal to credits) before it can be "
 "processed."
@@ -6126,23 +6278,26 @@ msgid "You must select subledger account."
 msgstr "Bạn phải chọn sổ phụ (sổ chi tiết)."
 
 #: gl/gl_journal.php:342 gl/gl_journal.php:347
+#: modules/FrontHrm/manage/payslip.php:303
+#: modules/FrontHrm/manage/payslip.php:308
 msgid "Dimension is closed."
 msgstr "Khoản mục đã đóng."
 
-#: gl/gl_journal.php:352
+#: gl/gl_journal.php:352 modules/FrontHrm/manage/payslip.php:313
 msgid "You must enter either a debit amount or a credit amount."
 msgstr "Bạn phải nhập vào nợ hoặc có."
 
-#: gl/gl_journal.php:357
+#: gl/gl_journal.php:357 modules/FrontHrm/manage/payslip.php:318
 msgid "The debit amount entered is not a valid number or is less than zero."
 msgstr "Số nợ nhập vào không hợp lệ hoặc nhỏ hơn 0."
 
-#: gl/gl_journal.php:362
+#: gl/gl_journal.php:362 modules/FrontHrm/manage/payslip.php:323
 msgid "The credit amount entered is not a valid number or is less than zero."
 msgstr "Số có nhập vào không hợp lệ hoặc nhỏ hơn 0."
 
 #: gl/gl_journal.php:367 includes/ui/ui_view.inc:586
-#: purchasing/supplier_credit.php:136 purchasing/supplier_invoice.php:144
+#: modules/FrontHrm/manage/payslip.php:328 purchasing/supplier_credit.php:136
+#: purchasing/supplier_invoice.php:144
 msgid "Cannot post to GL account used by more than one tax type."
 msgstr ""
 "Không thể thực hiện bút toán, tài khoản đã được sử dụng cho nhiều loại thuế."
@@ -6163,7 +6318,7 @@ msgstr "Ghi sổ"
 msgid "&Tax register"
 msgstr "Mục thuế"
 
-#: gl/gl_journal.php:488
+#: gl/gl_journal.php:488 modules/FrontHrm/manage/payslip.php:415
 msgid "Rows"
 msgstr "Các dòng"
 
@@ -6193,7 +6348,7 @@ msgstr "Thành tiền"
 msgid "Process Journal Entry"
 msgstr "Ghi sổ"
 
-#: gl/gl_journal.php:520
+#: gl/gl_journal.php:520 modules/FrontHrm/manage/payslip.php:421
 msgid "Process journal entry only if debits equal to credits"
 msgstr "Chỉ thực hiện ghi sổ khi số tiền bên Nợ bằng bên Có"
 
@@ -6205,6 +6360,8 @@ msgstr "Chênh lệch tỷ giá"
 
 # c:/Apache/htdocs/account/gl/view/gl_deposit_view.php:48
 #: gl/includes/db/gl_db_banking.inc:210 gl/view/gl_deposit_view.php:64
+#: modules/FrontHrm/manage/attendance.php:125
+#: modules/FrontHrm/reporting/reports_custom.php:42
 #: reporting/reports_main.php:111 reporting/reports_main.php:121
 #: reporting/reports_main.php:129 reporting/reports_main.php:143
 #: reporting/reports_main.php:151 reporting/reports_main.php:158
@@ -6214,16 +6371,21 @@ msgid "From"
 msgstr "Từ"
 
 # c:/Apache2/htdocs/account/reporting/reports_main.php:22
-#: gl/includes/db/gl_db_banking.inc:210 reporting/reports_main.php:112
-#: reporting/reports_main.php:122 reporting/reports_main.php:130
-#: reporting/reports_main.php:144 reporting/reports_main.php:152
-#: reporting/reports_main.php:159 reporting/reports_main.php:218
-#: reporting/reports_main.php:225 reporting/reports_main.php:335
+#: gl/includes/db/gl_db_banking.inc:210
+#: modules/FrontHrm/manage/attendance.php:126
+#: modules/FrontHrm/reporting/reports_custom.php:43
+#: reporting/reports_main.php:112 reporting/reports_main.php:122
+#: reporting/reports_main.php:130 reporting/reports_main.php:144
+#: reporting/reports_main.php:152 reporting/reports_main.php:159
+#: reporting/reports_main.php:218 reporting/reports_main.php:225
+#: reporting/reports_main.php:335
 msgid "To"
 msgstr "Đến"
 
 #: gl/includes/db/gl_db_banking.inc:317 gl/includes/db/gl_db_banking.inc:457
-#: gl/includes/db/gl_journal.inc:102 purchasing/includes/db/invoice_db.inc:141
+#: gl/includes/db/gl_journal.inc:102
+#: modules/FrontHrm/includes/db/employee_db_banking.inc:113
+#: purchasing/includes/db/invoice_db.inc:141
 msgid "Document reentered."
 msgstr "Đã nhập lại tài liệu."
 
@@ -6246,6 +6408,9 @@ msgstr "Lỗi làm tròn ‘%s’ cho loại giao dịch:%s,giao dịch:%s"
 #: inventory/includes/stock_transfers_ui.inc:42
 #: manufacturing/work_order_add_finished.php:166
 #: manufacturing/work_order_costs.php:123
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:23
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:47
+#: modules/FrontHrm/reporting/rep889.php:203
 #: purchasing/allocations/supplier_allocate.php:55
 #: sales/allocations/customer_allocate.php:56
 #: sales/includes/ui/sales_credit_ui.inc:110
@@ -6254,10 +6419,13 @@ msgstr "Ngày:"
 
 # c:/Apache2/htdocs/account/gl/includes/ui/gl_payment_ui.inc:40
 #: gl/includes/ui/gl_bank_ui.inc:50
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:52
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:54
 msgid "Pay To:"
 msgstr "Trả cho:"
 
 #: gl/includes/ui/gl_bank_ui.inc:54
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:56
 msgid "To the Order of:"
 msgstr "Chứng từ gốc:"
 
@@ -6310,6 +6478,7 @@ msgid "Go"
 msgstr "Bắt đầu"
 
 #: gl/includes/ui/gl_bank_ui.inc:103
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:72
 msgid "Into:"
 msgstr "Đến:"
 
@@ -6327,7 +6496,14 @@ msgstr "Đến:"
 #: gl/view/gl_payment_view.php:90 gl/view/gl_payment_view.php:92
 #: gl/view/gl_payment_view.php:94 gl/view/gl_trans_view.php:86
 #: gl/view/gl_trans_view.php:88 gl/view/gl_trans_view.php:90
-#: manufacturing/view/wo_costs_view.php:56 reporting/rep402.php:129
+#: manufacturing/view/wo_costs_view.php:56
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:152
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:154
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:156
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:330
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:332
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:334
+#: modules/FrontHrm/manage/accounts.php:81 reporting/rep402.php:129
 #: reporting/rep701.php:97
 msgid "Account Code"
 msgstr "Mã sổ cái TK"
@@ -6343,6 +6519,12 @@ msgstr "Mã sổ cái TK"
 #: gl/view/gl_deposit_view.php:92 gl/view/gl_deposit_view.php:94
 #: gl/view/gl_deposit_view.php:96 gl/view/gl_payment_view.php:90
 #: gl/view/gl_payment_view.php:92 gl/view/gl_payment_view.php:94
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:152
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:154
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:156
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:330
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:332
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:334
 msgid "Account Description"
 msgstr "Mô tả tài khoản"
 
@@ -6351,6 +6533,7 @@ msgstr "Mô tả tài khoản"
 #: inventory/includes/item_adjustments_ui.inc:100
 #: inventory/includes/stock_transfers_ui.inc:81
 #: manufacturing/includes/work_order_issue_ui.inc:58
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:181
 #: purchasing/includes/ui/invoice_ui.inc:496
 #: purchasing/includes/ui/po_ui.inc:233
 #: sales/includes/ui/sales_credit_ui.inc:180
@@ -6363,6 +6546,7 @@ msgstr "Sửa tài liệu"
 #: inventory/includes/item_adjustments_ui.inc:105
 #: inventory/includes/stock_transfers_ui.inc:82
 #: manufacturing/includes/work_order_issue_ui.inc:59
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:182
 #: purchasing/includes/ui/invoice_ui.inc:295
 #: purchasing/includes/ui/po_ui.inc:234
 #: sales/includes/ui/sales_credit_ui.inc:182
@@ -6375,6 +6559,7 @@ msgstr "Xoá dòng tài liệu"
 #: inventory/includes/item_adjustments_ui.inc:200
 #: inventory/includes/stock_transfers_ui.inc:143
 #: manufacturing/includes/work_order_issue_ui.inc:120
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:449
 #: purchasing/includes/ui/po_ui.inc:407
 #: sales/includes/ui/sales_credit_ui.inc:266
 #: sales/includes/ui/sales_order_ui.inc:510
@@ -6386,6 +6571,7 @@ msgstr "Xác nhận thay đổi"
 #: inventory/includes/item_adjustments_ui.inc:201
 #: inventory/includes/stock_transfers_ui.inc:144
 #: manufacturing/includes/work_order_issue_ui.inc:121
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:450
 #: purchasing/includes/ui/po_ui.inc:408
 #: sales/includes/ui/sales_credit_ui.inc:267
 #: sales/includes/ui/sales_order_ui.inc:511
@@ -6403,6 +6589,7 @@ msgstr "Huỷ thay đổi"
 #: inventory/includes/item_adjustments_ui.inc:206
 #: inventory/includes/stock_transfers_ui.inc:149
 #: manufacturing/includes/work_order_issue_ui.inc:126
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:454
 #: purchasing/includes/ui/po_ui.inc:413
 #: sales/includes/ui/sales_credit_ui.inc:272
 #: sales/includes/ui/sales_order_ui.inc:516
@@ -6474,10 +6661,12 @@ msgid "Counterparty"
 msgstr "Đối tác"
 
 #: gl/includes/ui/gl_journal_ui.inc:147
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:363
 msgid "Edit journal line"
 msgstr "Sửa dòng nhật ký"
 
 #: gl/includes/ui/gl_journal_ui.inc:149
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:364
 msgid "Remove line from journal"
 msgstr "Xoá dòng nhật ký"
 
@@ -6486,6 +6675,7 @@ msgid "[Select account]"
 msgstr "Chọn tài khoản"
 
 #: gl/includes/ui/gl_journal_ui.inc:257
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:454
 msgid "Add new line to journal"
 msgstr "Thêm dòng nhật ký mới"
 
@@ -6573,6 +6763,7 @@ msgid "All Accounts"
 msgstr "Tất cả tài khoản"
 
 #: gl/inquiry/gl_account_inquiry.php:82 gl/inquiry/journal_inquiry.php:54
+#: modules/FrontHrm/inquiry/emp_inquiry.php:45
 msgid "Enter memo fragment or leave empty"
 msgstr "Nhập ký tự hoặc bỏ trống"
 
@@ -6610,7 +6801,7 @@ msgstr "Chỉ có số dư"
 
 #: gl/inquiry/gl_trial_balance.php:69
 msgid "Group totals only"
-msgstr ""
+msgstr "Chỉ tổng nhóm"
 
 #: gl/inquiry/gl_trial_balance.php:209
 msgid "The from date cannot be bigger than the fiscal year end."
@@ -6624,9 +6815,9 @@ msgstr "Ngày bắt đầu không được sau ngày kết thúc năm tài chín
 #: gl/inquiry/gl_trial_balance.php:222 gl/manage/bank_accounts.php:91
 #: gl/view/gl_trans_view.php:86 gl/view/gl_trans_view.php:88
 #: gl/view/gl_trans_view.php:90 manufacturing/view/wo_costs_view.php:56
-#: reporting/rep402.php:129 reporting/rep701.php:97 reporting/rep702.php:47
-#: reporting/rep705.php:228 reporting/rep706.php:166 reporting/rep707.php:188
-#: reporting/rep708.php:175
+#: modules/FrontHrm/manage/accounts.php:81 reporting/rep402.php:129
+#: reporting/rep701.php:97 reporting/rep702.php:47 reporting/rep705.php:228
+#: reporting/rep706.php:166 reporting/rep707.php:188 reporting/rep708.php:175
 msgid "Account Name"
 msgstr "Tên tài khoản"
 
@@ -6655,6 +6846,7 @@ msgid "Journal Inquiry"
 msgstr "Xem nhật ký chung"
 
 #: gl/inquiry/journal_inquiry.php:46
+#: modules/FrontHrm/inquiry/emp_inquiry.php:44
 msgid "Enter reference fragment or leave empty"
 msgstr "Nhập ký tự hoặc bỏ trống"
 
@@ -6671,6 +6863,7 @@ msgid "Show closed:"
 msgstr "Đã đóng:"
 
 #: gl/inquiry/journal_inquiry.php:107
+#: modules/FrontHrm/inquiry/emp_inquiry.php:93
 msgid "Trans #"
 msgstr "Giao dịch"
 
@@ -6692,11 +6885,6 @@ msgstr "Giao dịch"
 #: reporting/includes/doctext.inc:182
 msgid "Supplier's Reference"
 msgstr "Đối chiếu"
-
-#: gl/inquiry/journal_inquiry.php:113 reporting/rep710.php:71
-#: reporting/rep710.php:80 reporting/reports_main.php:549
-msgid "User"
-msgstr "Lập"
 
 #: gl/inquiry/profit_loss.php:28
 msgid "Profit & Loss Drilldown"
@@ -7250,6 +7438,7 @@ msgid "Subgroup Of"
 msgstr "Nhóm con của"
 
 #: gl/manage/gl_account_types.php:169
+#: modules/FrontHrm/reporting/rep_payslip.php:125
 msgid "ID:"
 msgstr "ID:"
 
@@ -7354,7 +7543,7 @@ msgid ""
 "Lines."
 msgstr "Không thể xoá tài khoản vì đã được sử dụng cho các mục tạp phí."
 
-#: gl/manage/gl_accounts.php:153
+#: gl/manage/gl_accounts.php:153 modules/FrontHrm/manage/accounts.php:64
 msgid "Selected account has been deleted"
 msgstr "Tài khoản đã được xoá."
 
@@ -7513,7 +7702,7 @@ msgstr "Ghi sổ các nghiệp vụ"
 #: gl/manage/revaluate_currencies.php:31
 #, php-format
 msgid "%d Journal Entries for Bank Accounts have been added"
-msgstr ""
+msgstr "%d mục nhật ký cho các tài khoản ngân hàng đã được thêm"
 
 #: gl/manage/revaluate_currencies.php:32
 #, php-format
@@ -7522,7 +7711,7 @@ msgstr "Đã thêm %d dòng nhật ký cho các tài khoản phải thu/phải t
 
 #: gl/manage/revaluate_currencies.php:35
 msgid "No revaluation was needed."
-msgstr ""
+msgstr "Không có mục nào cần vào sổ."
 
 #: gl/manage/revaluate_currencies.php:74
 msgid "Date for Revaluation:"
@@ -7630,6 +7819,7 @@ msgstr "Thanh toán"
 # c:/Apache/htdocs/account/gl/view/gl_payment_view.php:48
 # c:/Apache/htdocs/account/projects/inquiry/search_projects.php:112
 #: gl/view/gl_payment_view.php:62
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:50
 msgid "Pay To"
 msgstr "Trả cho"
 
@@ -8389,17 +8579,17 @@ msgstr ""
 #: includes/db/class.data_set.inc:117
 #, php-format
 msgid "Parameter '%s' cannot be empty."
-msgstr ""
+msgstr "Tham số '%s' không được trống."
 
 #: includes/db/class.data_set.inc:124
 #, php-format
 msgid "Parameter '%s' contains invalid characters."
-msgstr ""
+msgstr "Tham số '%s' có ký tự không hợp lệ."
 
 #: includes/db/class.data_set.inc:130
 #, php-format
 msgid "Parameter '%s' has invalid value."
-msgstr ""
+msgstr "'%s' giá trị không hợp lệ."
 
 #: includes/db/class.data_set.inc:263
 #, php-format
@@ -8490,7 +8680,7 @@ msgstr "Chi phí "
 
 #: includes/db/inventory_db.inc:305
 msgid " changed to "
-msgstr "thay đổi thành"
+msgstr "đổi thành"
 
 #: includes/db/inventory_db.inc:305
 msgid " for item "
@@ -8533,16 +8723,16 @@ msgstr "Thông tin nhập vào đã bị trùng lặp. Hãy nhập lại giá tr
 msgid "This page is usable only with javascript enabled browsers."
 msgstr "Bạn phải bật Javascript trên trình duyệt mới sử dụng được trang này."
 
-#: includes/packages.inc:183
+#: includes/packages.inc:182
 #, php-format
 msgid "No key field '%s' in file '%s'"
 msgstr "Không có từ khoá ‘%s’ trong file ‘%s’"
 
-#: includes/packages.inc:287
+#: includes/packages.inc:285
 msgid "Cannot download repo index file."
 msgstr "Cannot download repo index file."
 
-#: includes/packages.inc:296 includes/system_tests.inc:378
+#: includes/packages.inc:294 includes/system_tests.inc:378
 msgid ""
 "OpenSSL have to be available on your server to use extension repository "
 "system."
@@ -8550,25 +8740,25 @@ msgstr ""
 "OpenSSL have to be available on your server to use extension repository "
 "system."
 
-#: includes/packages.inc:302 includes/packages.inc:343
+#: includes/packages.inc:300 includes/packages.inc:341
 #, php-format
 msgid "Cannot delete outdated '%s' file."
 msgstr "Không thể xoá outdated ‘%s’ file"
 
-#: includes/packages.inc:307
+#: includes/packages.inc:305
 msgid "Release file in repository is invalid, or public key is outdated."
 msgstr "Release file in repository is invalid, or public key is outdated."
 
-#: includes/packages.inc:327
+#: includes/packages.inc:325
 msgid "Repository version does not match application version."
 msgstr "Repository version does not match application version."
 
-#: includes/packages.inc:335 includes/packages.inc:379
+#: includes/packages.inc:333 includes/packages.inc:376
 #, php-format
 msgid "Cannot download '%s' file."
 msgstr "Không thể download file '%s'."
 
-#: includes/packages.inc:348
+#: includes/packages.inc:346
 #, php-format
 msgid ""
 "Security alert: broken index file in repository '%s'. Please inform "
@@ -8577,7 +8767,7 @@ msgstr ""
 "Security alert: broken index file in repository '%s'. Please inform "
 "repository administrator about this issue."
 
-#: includes/packages.inc:385
+#: includes/packages.inc:382
 #, php-format
 msgid ""
 "Security alert: broken package '%s' in repository. Please inform repository "
@@ -8586,21 +8776,21 @@ msgstr ""
 "Security alert: broken package '%s' in repository. Please inform repository "
 "administrator about this issue."
 
-#: includes/packages.inc:634 includes/packages.inc:689
+#: includes/packages.inc:633 includes/packages.inc:688
 #, php-format
 msgid "Package '%s' not found."
 msgstr "Không tìm thấy gói '%s'."
 
-#: includes/references.inc:104
+#: includes/references.inc:106
 msgid "Invalid refline template."
 msgstr "Mấu tham chiếu không hợp lệ."
 
-#: includes/references.inc:113
+#: includes/references.inc:115
 #, php-format
 msgid "Missing refline context data: '%s'"
 msgstr "Missing refline context data: '%s'"
 
-#: includes/references.inc:161
+#: includes/references.inc:158
 msgid "Missing numeric placeholder in refline definition."
 msgstr "Missing numeric placeholder in refline definition."
 
@@ -9336,6 +9526,7 @@ msgstr "Debugging mode"
 #: includes/system_tests.inc:122
 msgid "To switch debugging on set $go_debug > 0 in config.php file"
 msgstr ""
+"Để bật trình báo lỗi hay đặt biến $go_debug trong file config.php lớn hơn 0"
 
 #: includes/system_tests.inc:131
 msgid "Error logging"
@@ -9406,7 +9597,7 @@ msgstr "File cấu hình chính"
 #: includes/system_tests.inc:281 includes/system_tests.inc:303
 #, php-format
 msgid "Can't write '%s' file. Check Quanlyviet directory write permissions."
-msgstr ""
+msgstr "Không thể ghi file '%s'. Kiểm tra phân quyền cho các thư mục."
 
 #: includes/system_tests.inc:282 includes/system_tests.inc:304
 #, php-format
@@ -9486,7 +9677,9 @@ msgstr "Loại thử nghiệm"
 # c:/Apache/htdocs/account/reporting/reports_main.php:55
 # c:/Apache/htdocs/account/reporting/reports_main.php:56
 # c:/Apache/htdocs/account/sales/view/view_sales_order.php:49
-#: includes/system_tests.inc:400 reporting/includes/excel_report.inc:275
+#: includes/system_tests.inc:400
+#: modules/FrontHrm/reporting/reports_custom.php:44
+#: reporting/includes/excel_report.inc:275
 #: reporting/includes/excel_report.inc:395
 #: reporting/includes/pdf_report.inc:326 reporting/includes/pdf_report.inc:569
 #: reporting/reports_main.php:44 reporting/reports_main.php:55
@@ -9527,6 +9720,7 @@ msgid "Ok"
 msgstr "Ok"
 
 #: includes/ui/allocation_cart.inc:260
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:208
 #, php-format
 msgid "Allocated amounts in %s:"
 msgstr "Phân bổ số tiền với %s:"
@@ -9536,6 +9730,7 @@ msgstr "Phân bổ số tiền với %s:"
 # c:/Apache/htdocs/account/sales/allocations/customer_allocate.php:178
 # c:/Apache/htdocs/account/sales/allocations/customer_allocation_main.php:57
 #: includes/ui/allocation_cart.inc:262
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:210
 #: purchasing/allocations/supplier_allocation_main.php:86
 #: sales/allocations/customer_allocation_main.php:86
 msgid "Transaction Type"
@@ -9548,9 +9743,10 @@ msgstr "Đối chiếu"
 # c:/Apache/htdocs/account/sales/view/view_credit.php:53
 # c:/Apache/htdocs/account/sales/view/view_sales_order.php:55
 # c:/Apache/htdocs/account/sales/view/view_sales_order.php:89
-#: includes/ui/allocation_cart.inc:262 reporting/rep704.php:69
-#: reporting/rep704.php:75 reporting/rep704.php:81 reporting/rep709.php:108
-#: sales/inquiry/customer_branches_list.php:44
+#: includes/ui/allocation_cart.inc:262
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:210
+#: reporting/rep704.php:69 reporting/rep704.php:75 reporting/rep704.php:81
+#: reporting/rep709.php:108 sales/inquiry/customer_branches_list.php:44
 #: sales/inquiry/sales_orders_view.php:195
 #: sales/inquiry/sales_orders_view.php:232
 #: sales/inquiry/sales_orders_view.php:246 sales/view/view_credit.php:65
@@ -9562,6 +9758,7 @@ msgstr "Tham chiếu"
 # c:/Apache/htdocs/account/purchasing/allocations/supplier_allocate.php:188
 # c:/Apache/htdocs/account/sales/allocations/customer_allocate.php:183
 #: includes/ui/allocation_cart.inc:263
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:210
 msgid "Other Allocations"
 msgstr "Phân bổ khác"
 
@@ -9572,6 +9769,7 @@ msgstr "Phân bổ khác"
 # c:/Apache/htdocs/account/includes/ui/ui_view.inc:393
 #: includes/ui/allocation_cart.inc:263 includes/ui/allocation_cart.inc:306
 #: includes/ui/ui_view.inc:494
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:210
 #: purchasing/allocations/supplier_allocation_main.php:93
 #: reporting/includes/doctext.inc:162 reporting/includes/doctext.inc:204
 #: reporting/rep112.php:147 reporting/rep210.php:143
@@ -9583,6 +9781,7 @@ msgstr "Còn thiếu"
 # c:/Apache/htdocs/account/sales/allocations/customer_allocate.php:184
 # c:/Apache/htdocs/account/includes/ui/ui_view.inc:394
 #: includes/ui/allocation_cart.inc:263 includes/ui/ui_view.inc:494
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:210
 #: reporting/includes/doctext.inc:162 reporting/includes/doctext.inc:204
 msgid "This Allocation"
 msgstr "Hiện tại"
@@ -9614,34 +9813,35 @@ msgstr ""
 "Phân bổ không thể thực hiện vì số tiền phân bổ lớn hơn tổng số tiền còn lại "
 "cần được phần bổ."
 
-#: includes/ui/attachment.inc:85 sales/manage/sales_groups.php:78
+#: includes/ui/attachment.inc:85 modules/FrontHrm/manage/attendance.php:133
+#: modules/FrontHrm/manage/employee.php:229 sales/manage/sales_groups.php:78
 #: sales/manage/sales_groups.php:110
 msgid "ID"
 msgstr "ID"
 
 #: includes/ui/attachment.inc:85 includes/ui/attachment.inc:138
 msgid "Docs Title"
-msgstr ""
+msgstr "Tiêu đề"
 
 #: includes/ui/attachment.inc:85
 msgid "Date Updated"
-msgstr ""
+msgstr "Ngày cập nhật"
 
 #: includes/ui/attachment.inc:113
 msgid "Attachment Detail"
-msgstr ""
+msgstr "Chi tiết"
 
 #: includes/ui/attachment.inc:132
 msgid "Customer ID"
-msgstr ""
+msgstr "ID khách hàng"
 
 #: includes/ui/attachment.inc:134
 msgid "Supplier ID"
-msgstr ""
+msgstr "ID nhà cung cấp"
 
 #: includes/ui/attachment.inc:140
 msgid "File:"
-msgstr ""
+msgstr "Tệp:"
 
 #: includes/ui/attachment.inc:140
 #, php-format
@@ -9654,7 +9854,7 @@ msgstr ""
 
 #: includes/ui/attachment.inc:141
 msgid "Select file"
-msgstr ""
+msgstr "Chọn tệp"
 
 #: includes/ui/attachment.inc:170 includes/ui/class.crud_view.inc:285
 #: includes/ui/simple_crud_class.inc:211 includes/ui/ui_input.inc:212
@@ -9734,11 +9934,11 @@ msgstr "email"
 msgid "Contact data"
 msgstr "Thông tin liên hệ"
 
-#: includes/ui/contacts_view.inc:86
+#: includes/ui/contacts_view.inc:86 modules/FrontHrm/manage/employee.php:319
 msgid "First Name:"
 msgstr "Họ :"
 
-#: includes/ui/contacts_view.inc:87
+#: includes/ui/contacts_view.inc:87 modules/FrontHrm/manage/employee.php:320
 msgid "Last Name:"
 msgstr "Tên :"
 
@@ -9746,7 +9946,8 @@ msgstr "Tên :"
 msgid "Contact active for:"
 msgstr "Thuộc loại:"
 
-#: includes/ui/contacts_view.inc:96 sales/manage/customers.php:216
+#: includes/ui/contacts_view.inc:96 modules/FrontHrm/reporting/rep889.php:205
+#: sales/manage/customers.php:216
 msgid "Phone:"
 msgstr "Điện thoại:"
 
@@ -9766,7 +9967,7 @@ msgstr "Ngôn ngữ tài liệu:"
 msgid "Customer default"
 msgstr "Mặc định khách hàng"
 
-#: includes/ui/contacts_view.inc:106
+#: includes/ui/contacts_view.inc:106 modules/FrontHrm/manage/employee.php:337
 msgid "Notes:"
 msgstr "Ghi chú:"
 
@@ -9782,32 +9983,35 @@ msgstr "Tham chiếu liên hệ không được trống."
 msgid "You have to select at least one category."
 msgstr "Bạn phải chọn ít nhất một loại."
 
-#: includes/ui/db_pager_view.inc:166 includes/ui/ui_input.inc:864
+#: includes/ui/db_pager_view.inc:166 includes/ui/ui_input.inc:861
+#: modules/FrontHrm/includes/hrm_classes.inc:147
 msgid "Show also Inactive"
 msgstr "Hiện cả chưa kích hoạt"
 
 #: includes/ui/db_pager_view.inc:175
 msgid "<<"
-msgstr ""
+msgstr "<<"
 
 #: includes/ui/db_pager_view.inc:176
 msgid "<"
-msgstr ""
+msgstr "<"
 
 #: includes/ui/db_pager_view.inc:178
 msgid ">"
-msgstr ""
+msgstr ">"
 
 #: includes/ui/db_pager_view.inc:179
 msgid ">>"
-msgstr ""
+msgstr ">>"
 
 #: includes/ui/db_pager_view.inc:188
+#: modules/FrontHrm/includes/hrm_classes.inc:169
 #, php-format
 msgid "Records %d-%d of %d"
 msgstr "%d-%d trong tổng số %d dòng"
 
 #: includes/ui/db_pager_view.inc:193
+#: modules/FrontHrm/includes/hrm_classes.inc:174
 msgid "No records"
 msgstr "Không có"
 
@@ -9894,11 +10098,7 @@ msgstr ""
 "Dữ liệu nhập vàochưa được lưu.\n"
 "Bạn vẫn tiếp tục ?"
 
-#: includes/ui/ui_input.inc:593 reporting/includes/reports_classes.inc:211
-msgid "Click Here to Pick up the date"
-msgstr "Bấm để chọn ngày"
-
-#: includes/ui/ui_input.inc:876 includes/ui/ui_lists.inc:2096
+#: includes/ui/ui_input.inc:873 includes/ui/ui_lists.inc:2106
 #: reporting/rep301.php:205 reporting/rep302.php:157 reporting/rep303.php:276
 #: reporting/rep304.php:172 reporting/rep304.php:176 reporting/rep306.php:217
 #: reporting/rep306.php:223 reporting/rep310.php:177 reporting/rep310.php:184
@@ -9906,11 +10106,11 @@ msgstr "Bấm để chọn ngày"
 msgid "Inactive"
 msgstr "Tắt"
 
-#: includes/ui/ui_input.inc:884 includes/ui/ui_input.inc:895
+#: includes/ui/ui_input.inc:881 includes/ui/ui_input.inc:892
 msgid "Current Credit:"
 msgstr "Tín dụng còn:"
 
-#: includes/ui/ui_input.inc:908
+#: includes/ui/ui_input.inc:905
 msgid "Bank Balance:"
 msgstr "Số Dư:"
 
@@ -9930,41 +10130,53 @@ msgstr "Nhập ký tự rồi nhấn Enter để tìm hoặc nhập * để ra t
 msgid "Enter description fragment to search or * for all"
 msgstr "Nhập ký tự rồi nhấn Enter để tìm hoặc nhập * để ra toàn bộ"
 
+#: includes/ui/ui_lists.inc:318
+msgid "Advanced search"
+msgstr "Tìm nâng cao"
+
+#: includes/ui/ui_lists.inc:467
+msgid "Add/Edit"
+msgstr "Thêm / Sửa"
+
+#: includes/ui/ui_lists.inc:467
+msgid "Add or edit"
+msgstr "Thêm / Sửa"
+
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:28
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:32
-#: includes/ui/ui_lists.inc:489 includes/ui/ui_lists.inc:1363
+#: includes/ui/ui_lists.inc:492 includes/ui/ui_lists.inc:1367
 msgid "All Suppliers"
 msgstr "Tất cả nhà cung cấp"
 
-#: includes/ui/ui_lists.inc:493
+#: includes/ui/ui_lists.inc:496
 msgid "Press Space tab to filter by name fragment"
 msgstr "Nhấn Space(dấu cách) để tìm kiếm theo ký tự"
 
-#: includes/ui/ui_lists.inc:493
+#: includes/ui/ui_lists.inc:496
 msgid "Select supplier"
 msgstr "Chọn nhà cung cấp"
 
-#: includes/ui/ui_lists.inc:538
+#: includes/ui/ui_lists.inc:541
 msgid "All Customers"
 msgstr "Tất cả khách hàng"
 
-#: includes/ui/ui_lists.inc:542
+#: includes/ui/ui_lists.inc:545
 msgid "Press Space tab to filter by name fragment; F2 - entry new customer"
 msgstr "Nhấn phím Space để tìm theo ký tự; F2 để tạo mới khách hàng"
 
-#: includes/ui/ui_lists.inc:542
+#: includes/ui/ui_lists.inc:545
 msgid "Select customer"
 msgstr "Chọn khách hàng"
 
-#: includes/ui/ui_lists.inc:579
+#: includes/ui/ui_lists.inc:582
 msgid "All branches"
 msgstr "Tất cả chi nhánh"
 
-#: includes/ui/ui_lists.inc:582
+#: includes/ui/ui_lists.inc:585
 msgid "Select customer branch"
 msgstr "Chọn chi nhánh khách"
 
-#: includes/ui/ui_lists.inc:613
+#: includes/ui/ui_lists.inc:616
 msgid "All Locations"
 msgstr "Tất Cả Phân Bổ"
 
@@ -9976,38 +10188,38 @@ msgstr "Tất Cả Phân Bổ"
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:757
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:770
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:799
-#: includes/ui/ui_lists.inc:752 includes/ui/ui_lists.inc:817
+#: includes/ui/ui_lists.inc:755 includes/ui/ui_lists.inc:820
 msgid "All Items"
 msgstr "Tất cả mặt hàng"
 
-#: includes/ui/ui_lists.inc:1308
+#: includes/ui/ui_lists.inc:1312
 msgid "All Sales Types"
 msgstr "Tất cả kiểu bán"
 
-#: includes/ui/ui_lists.inc:1625
+#: includes/ui/ui_lists.inc:1629
 msgid "Use Item Sales Accounts"
 msgstr "Dùng tài khoản bán của mặt hàng"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1850
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1863
-#: includes/ui/ui_lists.inc:1899 includes/ui/ui_lists.inc:1914
-#: includes/ui/ui_lists.inc:1929
+#: includes/ui/ui_lists.inc:1904 includes/ui/ui_lists.inc:1919
+#: includes/ui/ui_lists.inc:1934
 msgid "All Types"
 msgstr "Tất cả"
 
 # c:/Apache/htdocs/account/sales/inquiry/customer_allocation_inquiry.php:35
 # c:/Apache/htdocs/account/sales/inquiry/customer_inquiry.php:37
 # c:/Apache/htdocs/account/sales/view/view_sales_order.php:30
-#: includes/ui/ui_lists.inc:1900 sales/view/view_sales_order.php:134
+#: includes/ui/ui_lists.inc:1905 sales/view/view_sales_order.php:134
 msgid "Sales Invoices"
 msgstr "Hoá đơn bán"
 
-#: includes/ui/ui_lists.inc:1901 includes/ui/ui_lists.inc:1931
+#: includes/ui/ui_lists.inc:1906 includes/ui/ui_lists.inc:1936
 msgid "Unsettled transactions"
 msgstr "Giao dịch chưa xong"
 
-#: includes/ui/ui_lists.inc:1902 includes/ui/ui_lists.inc:1917
-#: includes/ui/ui_lists.inc:1932 includes/ui/ui_view.inc:550
+#: includes/ui/ui_lists.inc:1907 includes/ui/ui_lists.inc:1922
+#: includes/ui/ui_lists.inc:1937 includes/ui/ui_view.inc:550
 #: includes/ui/ui_view.inc:554 themes/canvas/renderer.php:77
 #: themes/canvas/renderer.php:88 themes/canvas/renderer.php:120
 msgid "Payments"
@@ -10018,42 +10230,42 @@ msgstr "Thanh toán"
 # c:/Apache/htdocs/account/sales/inquiry/customer_allocation_inquiry.php:38
 # c:/Apache/htdocs/account/sales/inquiry/customer_inquiry.php:40
 # c:/Apache/htdocs/account/sales/view/view_sales_order.php:32
-#: includes/ui/ui_lists.inc:1903 includes/ui/ui_lists.inc:1918
-#: includes/ui/ui_lists.inc:1933 sales/view/view_sales_order.php:169
+#: includes/ui/ui_lists.inc:1908 includes/ui/ui_lists.inc:1923
+#: includes/ui/ui_lists.inc:1938 sales/view/view_sales_order.php:169
 msgid "Credit Notes"
 msgstr "Điều chỉnh"
 
-#: includes/ui/ui_lists.inc:1904 sales/view/view_sales_order.php:101
+#: includes/ui/ui_lists.inc:1909 sales/view/view_sales_order.php:101
 msgid "Delivery Notes"
 msgstr "Phiếu giao hàng"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1864
-#: includes/ui/ui_lists.inc:1915 includes/ui/ui_lists.inc:1930
+#: includes/ui/ui_lists.inc:1920 includes/ui/ui_lists.inc:1935
 msgid "Invoices"
 msgstr "Hóa đơn"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1852
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1865
-#: includes/ui/ui_lists.inc:1916
+#: includes/ui/ui_lists.inc:1921
 msgid "Overdue Invoices"
 msgstr "Hoá đơn quá hạn"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1868
-#: includes/ui/ui_lists.inc:1919 includes/ui/ui_lists.inc:1934
+#: includes/ui/ui_lists.inc:1924 includes/ui/ui_lists.inc:1939
 msgid "Overdue Credit Notes"
 msgstr "Hoá đơn điều chỉnh quá hạn"
 
-#: includes/ui/ui_lists.inc:1935
+#: includes/ui/ui_lists.inc:1940
 msgid "GRNs"
 msgstr "Biên nhận"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1883
-#: includes/ui/ui_lists.inc:1947
+#: includes/ui/ui_lists.inc:1952
 msgid "Automatically put balance on back order"
 msgstr "Tự động đặt số dư khi chậm đơn hàng"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1884
-#: includes/ui/ui_lists.inc:1948
+#: includes/ui/ui_lists.inc:1953
 msgid "Cancel any quantites not delivered"
 msgstr "Huỷ số lượng không được giao"
 
@@ -10062,7 +10274,7 @@ msgstr "Huỷ số lượng không được giao"
 # c:/Apache/htdocs/account/sales/customer_credit_invoice.php:335
 # c:/Apache/htdocs/account/sales/includes/ui/sales_credit_ui.inc:240
 # c:/Apache/htdocs/account/sales/includes/ui/sales_credit_ui.inc:243
-#: includes/ui/ui_lists.inc:1963
+#: includes/ui/ui_lists.inc:1968
 msgid "Items Returned to Inventory Location"
 msgstr "Hàng trả lại nhập kho"
 
@@ -10070,80 +10282,80 @@ msgstr "Hàng trả lại nhập kho"
 # c:/Apache/htdocs/account/sales/customer_credit_invoice.php:323
 # c:/Apache/htdocs/account/sales/includes/ui/sales_credit_ui.inc:241
 # c:/Apache/htdocs/account/sales/includes/ui/sales_credit_ui.inc:244
-#: includes/ui/ui_lists.inc:1964
+#: includes/ui/ui_lists.inc:1969
 msgid "Items Written Off"
 msgstr "Các mục đã xoá"
 
-#: includes/ui/ui_lists.inc:2115
+#: includes/ui/ui_lists.inc:2125
 msgid "New role"
 msgstr "Vai trò mới"
 
-#: includes/ui/ui_lists.inc:2161
+#: includes/ui/ui_lists.inc:2171
 msgid "No tags defined."
 msgstr "Không có thẻ."
 
-#: includes/ui/ui_lists.inc:2161
+#: includes/ui/ui_lists.inc:2171
 msgid "No active tags defined."
 msgstr "Không có thẻ đang chạy."
 
-#: includes/ui/ui_lists.inc:2196
+#: includes/ui/ui_lists.inc:2206
 #, php-format
 msgid "Activated for '%s'"
 msgstr "Kích hoạt cho ‘%s’"
 
-#: includes/ui/ui_lists.inc:2199
+#: includes/ui/ui_lists.inc:2209
 msgid "Available and/or installed"
 msgstr "Có sẵn và/hoặc đã cài"
 
-#: includes/ui/ui_lists.inc:2264
+#: includes/ui/ui_lists.inc:2274
 msgid "Hệ thống tài khoản theo Thông tư 200 mới"
 msgstr "Hệ thống tài khoản theo Thông tư 200 mới"
 
-#: includes/ui/ui_lists.inc:2266
+#: includes/ui/ui_lists.inc:2276
 msgid "Hệ thống tài khoản theo Thông tư 200 có dữ liệu demo"
 msgstr "Hệ thống tài khoản theo Thông tư 200 có dữ liệu demo"
 
-#: includes/ui/ui_lists.inc:2268
+#: includes/ui/ui_lists.inc:2278
 msgid "Hệ thống tài khoản theo Thông tư 133 mới"
 msgstr "Hệ thống tài khoản theo Thông tư 133 mới"
 
-#: includes/ui/ui_lists.inc:2270
+#: includes/ui/ui_lists.inc:2280
 msgid "Hệ thống tài khoản theo Thông tư 133 có dữ liệu demo"
-msgstr ""
+msgstr "Hệ thống tài khoản theo Thông tư 133 có dữ liệu demo"
 
-#: includes/ui/ui_lists.inc:2272
+#: includes/ui/ui_lists.inc:2282
 msgid "Hệ thống tài khoản theo Thông tư 132 mới"
-msgstr ""
+msgstr "Hệ thống tài khoản theo Thông tư 132 mới"
 
-#: includes/ui/ui_lists.inc:2274
+#: includes/ui/ui_lists.inc:2284
 msgid "Hệ thống tài khoản theo Thông tư 132 có dữ liệu demo"
-msgstr ""
+msgstr "Hệ thống tài khoản theo Thông tư 132 có dữ liệu demo"
 
-#: includes/ui/ui_lists.inc:2276
+#: includes/ui/ui_lists.inc:2286
 msgid "Standard new company American COA (4 digit)"
 msgstr "Hệ thống tài khoản Mỹ - American COA (4 digit)"
 
-#: includes/ui/ui_lists.inc:2278
+#: includes/ui/ui_lists.inc:2288
 msgid "Standard American COA (4 digit) with demo data"
 msgstr "Hệ thống tài khoản Mỹ American COA (4 digit) có dữ liệu demo"
 
-#: includes/ui/ui_lists.inc:2298
+#: includes/ui/ui_lists.inc:2308
 msgid "No payment Link"
 msgstr "Không liên kết"
 
-#: includes/ui/ui_lists.inc:2408
+#: includes/ui/ui_lists.inc:2418
 msgid "Numeric"
 msgstr "Dạng số"
 
-#: includes/ui/ui_lists.inc:2408
+#: includes/ui/ui_lists.inc:2418
 msgid "Alpha Numeric"
 msgstr "Số và chữ cái"
 
-#: includes/ui/ui_lists.inc:2408
+#: includes/ui/ui_lists.inc:2418
 msgid "ALPHA NUMERIC"
 msgstr "SỐ VÀ CHỮ CÁI"
 
-#: includes/ui/ui_lists.inc:2423
+#: includes/ui/ui_lists.inc:2433
 msgid "All users"
 msgstr "Tất cả người dùng"
 
@@ -10409,7 +10621,7 @@ msgstr "Chọn cài đặt ngôn ngữ:"
 
 #: install/index.php:328
 msgid "All application requirements seems to be correct. Press Continue."
-msgstr ""
+msgstr "Các yêu cầu dường như đã được đáp ứng đầy đủ. Nhấn tiếp tục."
 
 #: install/index.php:329 install/index.php:361 install/index.php:368
 #: install/index.php:375
@@ -10419,6 +10631,7 @@ msgstr "Tiếp tục >>"
 #: install/index.php:332
 msgid "Application cannot be installed, fix problems listed then press Refresh"
 msgstr ""
+"Không thể cài đặt ứng dụng, khắc phục các lỗi trong danh sách rồi bấm Tải lại"
 
 #: install/index.php:333 purchasing/allocations/supplier_allocate.php:71
 #: purchasing/includes/ui/invoice_ui.inc:175
@@ -10458,51 +10671,56 @@ msgstr "Dùng tiền tố '0_':"
 
 #: install/index.php:352
 msgid "Install Additional Language Packs from Quanlyviet Repository:"
-msgstr ""
+msgstr "Cài thêm các gói ngôn ngữ:"
 
 #: install/index.php:353
 msgid "Install Additional COAs from Quanlyviet Repository:"
-msgstr ""
+msgstr "Cài thêm các hệ thống tài khoản từ kho QuanlyViet"
 
 #: install/index.php:355
 msgid "Use database user/password with permissions to create new database,"
 msgstr ""
+"Sử dung thông tin đăng nhập cơ sở dữ liệu với quyền tạo cơ sở dữ liệu mới,"
 
 #: install/index.php:355
 msgid " or use proper credentials for previously created empty database."
 msgstr ""
+" hoặc sử dụng thông tin đăng nhập cho một cơ sở dữ liệu trống đã tạo trước "
+"đó."
 
 #: install/index.php:356
 msgid "Select collation you want to use."
-msgstr ""
+msgstr "Chọn mã hóa bạn muốn sử dụng."
 
 #: install/index.php:356
 msgid " If you are unsure or you will use various languages,"
-msgstr ""
+msgstr " Nếu bạn không chắc chắn hoặc bạn sẽ sử dụng nhiều ngôn ngữ khác nhau,"
 
 #: install/index.php:356
 msgid " select unicode collation."
-msgstr ""
+msgstr " hãy chọn unicode."
 
 #: install/index.php:357
 msgid "Use table prefix if you share selected database for"
-msgstr ""
+msgstr "Sử dụng tiền tố của bảng nếu bạn cài đặt"
 
 #: install/index.php:357
 msgid " more than one company using the same collation."
 msgstr ""
+" nhiều công ty trên cùng một cơ sở dữ liệu, các tiền tố sẽ phân biệt dữ liệu "
+"của từng công ty."
 
 #: install/index.php:358
 msgid "Do not select additional langs nor COAs"
-msgstr ""
+msgstr "Không chọn cài thêm các gói ngôn ngữ và hệ thống tài khoản"
 
 #: install/index.php:358
 msgid " if you have no working internet connection right now."
-msgstr ""
+msgstr " nếu bạn không có kết nối internet lúc này."
 
 #: install/index.php:358
 msgid " You can install them later."
-msgstr ""
+msgstr " Bạn có thể cài đặt chúng sau."
 
 #: install/index.php:360 install/index.php:367 install/index.php:374
 #: install/index.php:398
@@ -10551,7 +10769,7 @@ msgstr "Bất đầu quá trình cài đặt"
 
 #: install/index.php:403
 msgid "Quanlyviet has been installed successsfully."
-msgstr ""
+msgstr "Quản Lý Việt đã được cài đặt thành công."
 
 #: install/index.php:404
 msgid "Please do not forget to remove install wizard folder."
@@ -10718,7 +10936,7 @@ msgstr "Mã hàng:"
 
 #: inventory/cost_update.php:126
 msgid "Unit cost:"
-msgstr ""
+msgstr "Chi phí/Đơn vị"
 
 # c:/Apache/htdocs/account/inventory/cost_update.php:94
 #: inventory/cost_update.php:129
@@ -11303,11 +11521,11 @@ msgstr "Tên đơn vị:"
 msgid "Decimal Places:"
 msgstr "Số lẻ(thập phân):"
 
-#: inventory/manage/items.php:97
+#: inventory/manage/items.php:97 modules/FrontHrm/manage/employee.php:73
 msgid "Error uploading file."
 msgstr "Tải lên bị lỗi."
 
-#: inventory/manage/items.php:112
+#: inventory/manage/items.php:112 modules/FrontHrm/manage/employee.php:88
 msgid ""
 "Only graphics files are supported - a file extension of .jpg, .png or .gif "
 "is expected"
@@ -11431,6 +11649,11 @@ msgid "Last Depreciation"
 msgstr "Kỳ khấu hao trước"
 
 #: inventory/manage/items.php:449
+#: modules/FrontHrm/includes/ui/employee_ui.inc:56
+#: modules/FrontHrm/includes/ui/employee_ui.inc:61
+#: modules/FrontHrm/includes/ui/employee_ui.inc:66
+#: modules/FrontHrm/manage/employee.php:196
+#: modules/FrontHrm/reporting/reports_custom.php:33
 msgid "Other"
 msgstr "Khác"
 
@@ -11443,7 +11666,7 @@ msgstr "Ảnh (.jpg)"
 msgid "No image"
 msgstr "Không có ảnh"
 
-#: inventory/manage/items.php:469
+#: inventory/manage/items.php:469 modules/FrontHrm/manage/employee.php:312
 msgid "Delete Image:"
 msgstr "Xoá hình ảnh:"
 
@@ -12262,7 +12485,7 @@ msgstr "Mã"
 
 #: manufacturing/manage/bom_edit.php:67
 msgid "Copy BOM to another manufacturable item"
-msgstr ""
+msgstr "Copy định mức cho mặt hàng sản xuất khác"
 
 #: manufacturing/manage/bom_edit.php:96
 msgid "Selected component has been updated"
@@ -12290,7 +12513,7 @@ msgstr ""
 
 #: manufacturing/manage/bom_edit.php:144
 msgid "BOM copied to "
-msgstr ""
+msgstr "Định mức sao chép đến "
 
 # c:/Apache/htdocs/account/manufacturing/manage/bom_edit.php:241
 #: manufacturing/manage/bom_edit.php:204
@@ -12905,6 +13128,1686 @@ msgstr "Tham chiếu lệnh SX:"
 msgid "Release Work Order"
 msgstr "Phát lệnh SX"
 
+#: modules/FrontHrm/hooks.php:18
+msgid "&Human Resource"
+msgstr "Nhân Sự"
+
+#: modules/FrontHrm/hooks.php:21
+msgid "Attenda&nce"
+msgstr "Chấm công"
+
+#: modules/FrontHrm/hooks.php:22
+msgid "Pay&slip Entry"
+msgstr "Tính lương"
+
+#: modules/FrontHrm/hooks.php:24
+msgid "Document E&xpiration"
+msgstr "Tài liệu nhân viên"
+
+#: modules/FrontHrm/hooks.php:25
+msgid "&Payment Advice"
+msgstr "Trả lương"
+
+#: modules/FrontHrm/hooks.php:26
+msgid "Employee &Advances"
+msgstr "Tạm ứng"
+
+#: modules/FrontHrm/hooks.php:29
+msgid "&Timesheet"
+msgstr "Bảng chấm công"
+
+#: modules/FrontHrm/hooks.php:30
+msgid "Employee Transaction In&quiry"
+msgstr "Các giao dịch nhân viên"
+
+#: modules/FrontHrm/hooks.php:31
+msgid "Employee Document Inq&uiry"
+msgstr "Các tài liệu nhân viên"
+
+#: modules/FrontHrm/hooks.php:32
+msgid "Employee &Reports"
+msgstr "Các Báo Cáo"
+
+#: modules/FrontHrm/hooks.php:35
+msgid "&Employees"
+msgstr "Quản lý nhân viên"
+
+#: modules/FrontHrm/hooks.php:36
+msgid "Document T&ypes"
+msgstr "Loại tài liệu"
+
+#: modules/FrontHrm/hooks.php:37
+msgid "&Departments"
+msgstr "Phòng ban"
+
+#: modules/FrontHrm/hooks.php:38
+msgid "Manage &Overtime"
+msgstr "Thêm giờ"
+
+#: modules/FrontHrm/hooks.php:39
+msgid "Lea&ve Types"
+msgstr "Kiểu nghỉ"
+
+#: modules/FrontHrm/hooks.php:40
+msgid "De&fault Settings"
+msgstr "Các thiết lập"
+
+#: modules/FrontHrm/hooks.php:42
+msgid "&Job Positions"
+msgstr "Vị trí công việc"
+
+#: modules/FrontHrm/hooks.php:43
+msgid "Manage &Grades"
+msgstr "Bậc lương"
+
+#: modules/FrontHrm/hooks.php:44
+msgid "Pay Ele&ments"
+msgstr "Các khoản thu nhập, giảm trừ"
+
+#: modules/FrontHrm/hooks.php:45
+msgid "Pay Elements Allo&cation"
+msgstr "Phân bổ thu nhập, giam trừ"
+
+#: modules/FrontHrm/hooks.php:46
+msgid "Sa&lary Structure"
+msgstr "Cấu trúc lương"
+
+#: modules/FrontHrm/hooks.php:61
+#: modules/FrontHrm/reporting/reports_custom.php:38
+msgid "Human Resource"
+msgstr "Nhân Sự - Lương"
+
+#: modules/FrontHrm/hooks.php:62
+msgid "Employee entry"
+msgstr "Quản lý thông tin nhân viên"
+
+#: modules/FrontHrm/hooks.php:63
+msgid "Attendance entry"
+msgstr "Mục chấm công"
+
+#: modules/FrontHrm/hooks.php:64
+msgid "Payslip entry"
+msgstr "Mục tính lương"
+
+#: modules/FrontHrm/hooks.php:65
+msgid "Hrm setup"
+msgstr "Cài đặt"
+
+#: modules/FrontHrm/includes/db/account_db.inc:120
+msgid "could not get payroll structure"
+msgstr "không tìm thấy dữ liệu cấu trúc lương"
+
+#: modules/FrontHrm/includes/db/employee_db_banking.inc:63
+msgid "invalid payment entered. Cannot pay to another bank account"
+msgstr "invalid payment entered. Cannot pay to another bank account"
+
+#: modules/FrontHrm/includes/db/grade_db.inc:50
+msgid "Could not delete grade table"
+msgstr "Could not delete grade table"
+
+#: modules/FrontHrm/includes/hrm_classes.inc:157
+msgid "First"
+msgstr "|<"
+
+#: modules/FrontHrm/includes/hrm_classes.inc:158
+msgid "Prev"
+msgstr "<"
+
+#: modules/FrontHrm/includes/hrm_classes.inc:159
+msgid "Next"
+msgstr ">"
+
+#: modules/FrontHrm/includes/hrm_classes.inc:160
+msgid "Last"
+msgstr ">|"
+
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:52
+msgid "Select Employee"
+msgstr "Chọn nhân viên"
+
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:77
+msgid "Pay Slip:"
+msgstr "Phiếu lương:"
+
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:77
+msgid "Select payslip"
+msgstr "Chọn khoản lương"
+
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:152
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:330
+msgid "Dimension 1"
+msgstr "Khoản mục 1"
+
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:152
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:330
+#: purchasing/includes/ui/invoice_ui.inc:133
+#: purchasing/includes/ui/po_ui.inc:165
+msgid "Dimension 2"
+msgstr "Khoản mục 2"
+
+#: modules/FrontHrm/includes/ui/employee_bank_ui.inc:236
+msgid "Total Amount:"
+msgstr "Tổng:"
+
+#: modules/FrontHrm/includes/ui/employee_ui.inc:54
+#: modules/FrontHrm/includes/ui/employee_ui.inc:59
+#: modules/FrontHrm/includes/ui/employee_ui.inc:64
+#: modules/FrontHrm/manage/employee.php:194
+#: modules/FrontHrm/reporting/rep_employees.php:42
+#: modules/FrontHrm/reporting/reports_custom.php:33
+msgid "Male"
+msgstr "Nam"
+
+#: modules/FrontHrm/includes/ui/employee_ui.inc:55
+#: modules/FrontHrm/includes/ui/employee_ui.inc:60
+#: modules/FrontHrm/includes/ui/employee_ui.inc:65
+#: modules/FrontHrm/manage/employee.php:192
+#: modules/FrontHrm/reporting/rep_employees.php:42
+#: modules/FrontHrm/reporting/reports_custom.php:33
+msgid "Female"
+msgstr "Nữ"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:49
+msgid "Pay From"
+msgstr "Từ"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:54
+#: modules/FrontHrm/manage/employee_docs.php:199
+msgid "Select employee"
+msgstr "Chọn nhân viên"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:61
+#: modules/FrontHrm/manage/position.php:142
+msgid "Pay Basis:"
+msgstr "Loại lương:"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:61
+#: modules/FrontHrm/manage/position.php:142
+msgid "Monthly salary"
+msgstr "Lương tháng"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:61
+msgid "Daily wages"
+msgstr "Công nhật"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:62
+msgid "Payslip No:"
+msgstr "Phiếu lương:"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:73
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:106
+msgid "day"
+msgstr "ngày"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:74
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:84
+#: modules/FrontHrm/manage/default_setup.php:89
+#: modules/FrontHrm/reporting/rep889.php:103
+#: modules/FrontHrm/reporting/rep_payslip.php:139
+#: modules/FrontHrm/reporting/rep_payslip.php:159
+msgid "hours"
+msgstr "giờ"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:74
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:84
+msgid "hour"
+msgstr "giờ"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:75
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:93
+msgid "Work days:"
+msgstr "Số ngày làm:"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:76
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:94
+msgid "Leave hours:"
+msgstr "Số giờ nghỉ:"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:171
+msgid "This employee does not belong to any department"
+msgstr "Nhân viên không thuộc phòng ban nào"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:175
+msgid "Basic account has not been set for department"
+msgstr "Tài khoản tính lương chưa thiết lập cho bộ phận"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:179
+msgid "Basic account has not been set for job position"
+msgstr "Tài khoản tính lương chưa thiết lập cho vị trí công việc"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:308
+#, php-format
+msgid "non-working period of staff #%d"
+msgstr "nhân viên #%d không làm việc trong giai đoạn này"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:374
+#: modules/FrontHrm/reporting/rep_payslip.php:178
+msgid "Total Salary"
+msgstr "Tổng"
+
+#: modules/FrontHrm/includes/ui/payslip_ui.inc:486
+msgid "All Payslip"
+msgstr "Tất cả phiếu lương"
+
+#: modules/FrontHrm/inquiry/emp_inquiry.php:32
+msgid "Employee Transaction"
+msgstr "Các giao dịch với nhân viên"
+
+#: modules/FrontHrm/inquiry/emp_inquiry.php:55
+#: modules/FrontHrm/inquiry/time_sheet.php:37
+#: modules/FrontHrm/manage/attendance.php:127
+#: modules/FrontHrm/manage/employee.php:220
+msgid "All departments"
+msgstr "Tất cả bộ phận:"
+
+#: modules/FrontHrm/inquiry/emp_inquiry.php:56
+#: modules/FrontHrm/inquiry/time_sheet.php:38
+#: modules/FrontHrm/manage/employee_docs.php:208
+msgid "All employees"
+msgstr "Tất cả nhân viên"
+
+#: modules/FrontHrm/inquiry/emp_inquiry.php:57
+msgid "Only unpaid:"
+msgstr "Chỉ chưa thanh toán:"
+
+#: modules/FrontHrm/inquiry/emp_inquiry.php:71
+#: modules/FrontHrm/reporting/rep889.php:208
+#: modules/FrontHrm/reporting/rep_payslip.php:74
+msgid "Payslip"
+msgstr "Phiếu lương"
+
+#: modules/FrontHrm/inquiry/emp_inquiry.php:73
+msgid "Employee advance"
+msgstr "Tạm ứng"
+
+#: modules/FrontHrm/inquiry/emp_inquiry.php:75
+msgid "Payment advice"
+msgstr "Thanh toán"
+
+#: modules/FrontHrm/inquiry/emp_inquiry.php:83
+#: modules/FrontHrm/manage/employee_bank_entry.php:115
+msgid "Print this Payslip"
+msgstr "In Phiếu Lương Này"
+
+#: modules/FrontHrm/inquiry/emp_inquiry.php:95
+msgid "Employee ID"
+msgstr "Mã nhân viên"
+
+#: modules/FrontHrm/inquiry/emp_inquiry.php:96
+#: modules/FrontHrm/inquiry/time_sheet.php:50
+msgid "Employee Name"
+msgstr "Tên nhân viên"
+
+#: modules/FrontHrm/inquiry/emp_inquiry.php:97
+msgid "Payslip No"
+msgstr "Phiếu lương số"
+
+#: modules/FrontHrm/inquiry/emp_inquiry.php:98
+msgid "Pay from"
+msgstr "Từ ngày"
+
+#: modules/FrontHrm/inquiry/emp_inquiry.php:99
+msgid "Pay to"
+msgstr "Đến ngày"
+
+# c:/Apache/htdocs/account/purchasing/view/view_po.php:87
+# c:/Apache/htdocs/account/sales/inquiry/sales_orders_view.php:172
+#: modules/FrontHrm/inquiry/emp_inquiry.php:105
+#: purchasing/inquiry/supplier_allocation_inquiry.php:142
+#: purchasing/inquiry/supplier_inquiry.php:180 purchasing/view/view_po.php:92
+#: sales/inquiry/customer_allocation_inquiry.php:142
+#: sales/inquiry/customer_inquiry.php:203
+#: sales/inquiry/sales_deliveries_view.php:181
+#: sales/inquiry/sales_orders_view.php:297
+msgid "Marked items are overdue."
+msgstr "Các dòng được tô màu đỏ là các đối tượng quá hạn."
+
+#: modules/FrontHrm/inquiry/time_sheet.php:31
+msgid "Timesheet Inquiry"
+msgstr "Bảng chấm công"
+
+#: modules/FrontHrm/inquiry/time_sheet.php:42
+#: modules/FrontHrm/manage/attendance.php:133
+#: modules/FrontHrm/reporting/rep_payslip.php:137
+msgid "Regular time"
+msgstr "Giờ hành chính"
+
+#: modules/FrontHrm/inquiry/time_sheet.php:50
+#: modules/FrontHrm/manage/department.php:73
+#: modules/FrontHrm/manage/department.php:75
+#: modules/FrontHrm/manage/doc_type.php:77
+#: modules/FrontHrm/manage/leave_types.php:77
+#: modules/FrontHrm/manage/overtime.php:77
+#: modules/FrontHrm/manage/position.php:99
+#: modules/FrontHrm/reporting/rep_employees.php:69
+msgid "Id"
+msgstr "Id"
+
+#: modules/FrontHrm/manage/accounts.php:24
+msgid "Manage Pay Elements"
+msgstr "Quản lý thu nhập, giảm trừ"
+
+#: modules/FrontHrm/manage/accounts.php:33
+msgid "Element Name cannot be empty."
+msgstr "Tên khoản không được bỏ trống"
+
+#: modules/FrontHrm/manage/accounts.php:38
+msgid "Selected account has already exists."
+msgstr "Tài khoản này đã tồn tại."
+
+#: modules/FrontHrm/manage/accounts.php:45
+msgid "Pay element has been added."
+msgstr "Khoản thu nhập, giảm trừ đã được thêm."
+
+#: modules/FrontHrm/manage/accounts.php:49
+msgid "The selected pay element has been updated."
+msgstr "Đã cập nhật khoản thu nhập/giảm trừ."
+
+# c:/Apache/htdocs/account/gl/manage/gl_accounts.php:63
+#: modules/FrontHrm/manage/accounts.php:61
+msgid ""
+"Cannot delete this account because payroll rules have been created using it."
+msgstr "Không thể xoá tài khoản vì đã được sử dụng vào cấu trúc lương."
+
+#: modules/FrontHrm/manage/accounts.php:81
+msgid "Element"
+msgstr "Khoản"
+
+#: modules/FrontHrm/manage/accounts.php:115
+msgid "Element Name:"
+msgstr "Tên khoản:"
+
+#: modules/FrontHrm/manage/accounts.php:118
+msgid "Select Account:"
+msgstr "Tài khoản:"
+
+#: modules/FrontHrm/manage/attendance.php:44
+#: modules/FrontHrm/manage/attendance.php:50
+msgid "Cannot make attendance for the date in the future."
+msgstr "Không thể chấm công cho một ngày trong tương lai."
+
+#: modules/FrontHrm/manage/attendance.php:58
+msgid ""
+"Attendance input data must be greater than 0, less than 24 hours and "
+"formatted in <b>HH:MM</b> or <b>Integer</b>, example - 02:25 , 2:25, 8, "
+"23:59 ..."
+msgstr ""
+"Dữ liệu chấm công phải lớn hơn 0, nhỏ hơn 24 giờ và định dạng <b>Giờ:Phút</"
+"b> hoặc <b>Số </>, ví dụ - 02:25, 2:25, 8, 23:59 ..."
+
+#: modules/FrontHrm/manage/attendance.php:119
+msgid "Employees Attendance"
+msgstr "Chấm công"
+
+#: modules/FrontHrm/manage/attendance.php:125
+msgid "Attendance date begin"
+msgstr "Từ ngày"
+
+#: modules/FrontHrm/manage/attendance.php:126
+msgid "Aattendance date end"
+msgstr "Đến ngày"
+
+#: modules/FrontHrm/manage/attendance.php:127
+msgid "For department"
+msgstr "Cho bộ phận"
+
+#: modules/FrontHrm/manage/attendance.php:128
+msgid "Bulk"
+msgstr "Tất Cả"
+
+#: modules/FrontHrm/manage/attendance.php:128
+msgid "Record all as regular work"
+msgstr "Chấm công là làm việc bình thường cho tất cả"
+
+#: modules/FrontHrm/manage/attendance.php:133
+msgid "Employee"
+msgstr "Nhân viên"
+
+#: modules/FrontHrm/manage/attendance.php:143
+msgid "Leave Type"
+msgstr "Kiểu nghỉ"
+
+#: modules/FrontHrm/manage/attendance.php:181
+msgid "Select Leave Type"
+msgstr "Chọn kiểu nghỉ"
+
+#: modules/FrontHrm/manage/attendance.php:187
+msgid "Save attendance"
+msgstr "Lưu chấm công"
+
+# c:/Apache/htdocs/account/gl/view/gl_deposit_view.php:61
+#: modules/FrontHrm/manage/attendance.php:192
+msgid "There are no employees for attendance."
+msgstr "Không có nhân viên để chấm công."
+
+#: modules/FrontHrm/manage/attendance.php:204
+msgid ""
+"The selected date range includes a date that has been approved, please "
+"select another date range."
+msgstr ""
+"Khoảng ngày được chọn bao gồm một ngày đã được phê duyệt, hãy chọn khoảng "
+"ngày khác."
+
+#: modules/FrontHrm/manage/attendance.php:230
+msgid "Attendance has been saved."
+msgstr "Đã lưu chấm công."
+
+#: modules/FrontHrm/manage/attendance.php:232
+msgid "Nothing added"
+msgstr "Không có gì thêm mới"
+
+#: modules/FrontHrm/manage/default_setup.php:33
+msgid "The number of month working days must be between 0 and 31."
+msgstr "Số ngày làm trong tháng phải trong khoảng từ 0 đến 31."
+
+#: modules/FrontHrm/manage/default_setup.php:38
+msgid "The number of working hours must be between 0 and 24."
+msgstr "Số giờ làm trong ngày phải trong khoảng từ 0 đến 24."
+
+#: modules/FrontHrm/manage/default_setup.php:43
+#, php-format
+msgid "Grade %s is being used by employees, cannot select a lower grade"
+msgstr "Bậc Lương %s đang được sử dung không thể chọn số thấp hơn"
+
+#: modules/FrontHrm/manage/default_setup.php:57
+msgid "The Payroll setup has been updated."
+msgstr "Đã cập nhật các thiết lập."
+
+#: modules/FrontHrm/manage/default_setup.php:62
+msgid "Payroll default Settings"
+msgstr "Các thông số mặc định"
+
+#: modules/FrontHrm/manage/default_setup.php:82
+msgid "Payroll payable account:"
+msgstr "Phải trả nhân viên:"
+
+#: modules/FrontHrm/manage/default_setup.php:83
+msgid "Deductible account:"
+msgstr "Tài khoản giảm trừ:"
+
+#: modules/FrontHrm/manage/default_setup.php:83
+#: modules/FrontHrm/manage/default_setup.php:84
+msgid "Use Salary Basic Account"
+msgstr "Dùng tài khoản lương"
+
+#: modules/FrontHrm/manage/default_setup.php:84
+msgid "Overtime account:"
+msgstr "Tài khoản thêm giờ:"
+
+#: modules/FrontHrm/manage/default_setup.php:86
+msgid "Working time parameters"
+msgstr "Thời gian làm việc"
+
+#: modules/FrontHrm/manage/default_setup.php:88
+msgid "Work days per month:"
+msgstr "Số công 1 tháng:"
+
+#: modules/FrontHrm/manage/default_setup.php:89
+msgid "Work hours per day:"
+msgstr "Số giờ hành chính:"
+
+#: modules/FrontHrm/manage/default_setup.php:91
+msgid "Others"
+msgstr "Khác"
+
+#: modules/FrontHrm/manage/default_setup.php:92
+msgid "Salary based on department:"
+msgstr "Tính lương theo bộ phận:"
+
+#: modules/FrontHrm/manage/default_setup.php:93
+msgid "Number of Grades:"
+msgstr "Số bậc lương:"
+
+#: modules/FrontHrm/manage/department.php:24
+msgid "Manage Department"
+msgstr "Phòng ban"
+
+# c:/Apache/htdocs/account/gl/manage/gl_accounts.php:38
+#: modules/FrontHrm/manage/department.php:30
+msgid "The Department name cannot be empty."
+msgstr "Tên phòng ban không được trống."
+
+#: modules/FrontHrm/manage/department.php:34
+msgid "Please select basic account"
+msgstr "Chọn tài khoản"
+
+#: modules/FrontHrm/manage/department.php:38
+#: modules/FrontHrm/manage/position.php:38
+msgid "Salary Basic Account must be an expenses account."
+msgstr "Tài Khoản Lương phải là loại tài khoản chi phí."
+
+#: modules/FrontHrm/manage/department.php:45
+msgid "Selected department has been updated"
+msgstr "Đã cập nhật phòng ban"
+
+# c:/Apache/htdocs/account/admin/Users.php:23
+#: modules/FrontHrm/manage/department.php:47
+msgid "New department has been added"
+msgstr "Đã thêm phòng ban mới"
+
+# c:/Apache/htdocs/account/gl/manage/gl_accounts.php:38
+#: modules/FrontHrm/manage/department.php:56
+msgid "The Department cannot be deleted."
+msgstr "Không thể xoá bộ phận."
+
+#: modules/FrontHrm/manage/department.php:59
+msgid "Selected department has been deleted"
+msgstr "Đã xoá bộ phận (phòng ban)"
+
+#: modules/FrontHrm/manage/department.php:73
+#: modules/FrontHrm/manage/department.php:75
+msgid "Department Name"
+msgstr "Tên phòng ban:"
+
+#: modules/FrontHrm/manage/department.php:73
+#: modules/FrontHrm/manage/department.php:113
+msgid "Salary Basic Account"
+msgstr "Tài khoản lương"
+
+#: modules/FrontHrm/manage/department.php:110
+msgid "Department Name:"
+msgstr "Tên bộ phận:"
+
+#: modules/FrontHrm/manage/department.php:113
+msgid "Select basic account"
+msgstr "Chọn tài khoản"
+
+#: modules/FrontHrm/manage/doc_type.php:24
+msgid "Manage Document Categories"
+msgstr "Quản Lý các Loại Tài Liệu"
+
+# c:/Apache/htdocs/account/sales/manage/sales_types.php:22
+#: modules/FrontHrm/manage/doc_type.php:33
+msgid "The document type description cannot be empty."
+msgstr "Tên loại tài liệu không được bỏ trống."
+
+# c:/Apache/htdocs/account/inventory/prices.php:67
+# c:/Apache/htdocs/account/purchasing/po_entry_items.php:146
+#: modules/FrontHrm/manage/doc_type.php:38
+msgid "Days before expiry must be a number."
+msgstr "Số ngày trước hết hạn phải là số."
+
+#: modules/FrontHrm/manage/doc_type.php:44
+msgid "Selected document type has been updated"
+msgstr "Đã cập nhật loại tài liệu"
+
+#: modules/FrontHrm/manage/doc_type.php:46
+msgid "New document type item has been added"
+msgstr "Đã them loại tài liệu mới"
+
+# c:/Apache/htdocs/account/sales/manage/customers.php:27
+#: modules/FrontHrm/manage/doc_type.php:56
+msgid "This document category cannot be deleted."
+msgstr "Không thể xóa loại tài liệu này."
+
+#: modules/FrontHrm/manage/doc_type.php:59
+msgid "Selected document category has been deleted"
+msgstr "Loại tài liệu đã được xóa"
+
+#: modules/FrontHrm/manage/doc_type.php:77
+msgid "Alert Before Expiry"
+msgstr "Báo Trước Hết Hạn"
+
+#: modules/FrontHrm/manage/doc_type.php:114
+msgid "Alert before expiry:"
+msgstr "Báo trước hết hạn:"
+
+# c:/Apache/htdocs/account/purchasing/manage/suppliers.php:36
+#: modules/FrontHrm/manage/employee.php:120
+msgid "The employee first name must be entered."
+msgstr "Phải nhập họ nhân viên."
+
+#: modules/FrontHrm/manage/employee.php:125
+msgid "Employee last name must be entered."
+msgstr "Chưa nhập Tên nhân viên"
+
+#: modules/FrontHrm/manage/employee.php:130
+msgid "Invalid email."
+msgstr "Email không hợp lệ"
+
+#: modules/FrontHrm/manage/employee.php:135
+msgid "Invalid birth date."
+msgstr "Ngày không hợp lệ"
+
+#: modules/FrontHrm/manage/employee.php:140
+msgid "Invalid hire date."
+msgstr "Sai định dạng ngày."
+
+#: modules/FrontHrm/manage/employee.php:145
+msgid "Hire date can not be before Birth date."
+msgstr "Ngày vào làm không thể trước ngày sinh."
+
+#: modules/FrontHrm/manage/employee.php:150
+msgid "Basic salary amount must be a positive number"
+msgstr "Lương cơ bản phải lớn hơn không"
+
+#: modules/FrontHrm/manage/employee.php:155
+msgid "Staff's Job Position must be selected to use Personal Salary Structure"
+msgstr "Phải chọn chức vụ cho nhân viên để sử dung cấu trúc lương cá nhân"
+
+#: modules/FrontHrm/manage/employee.php:161
+msgid "Invalid release date."
+msgstr "Ngày không hợp lệ:"
+
+#: modules/FrontHrm/manage/employee.php:199
+msgid "Not hired"
+msgstr "Chưa tuyển dụng"
+
+#: modules/FrontHrm/manage/employee.php:204
+#: modules/FrontHrm/manage/employee.php:342
+#: modules/FrontHrm/manage/employee.php:349
+#: modules/FrontHrm/manage/employee.php:351
+msgid "Not selected"
+msgstr "Chưa chọn"
+
+#: modules/FrontHrm/manage/employee.php:219
+msgid "Enter Search String:"
+msgstr "Chuỗi tìm kiếm:"
+
+#: modules/FrontHrm/manage/employee.php:219
+#: modules/FrontHrm/manage/employee_docs.php:207
+msgid "Enter fragment or leave empty"
+msgstr "Nhập ký tự hoặc bỏ trống"
+
+# c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:256
+#: modules/FrontHrm/manage/employee.php:221
+msgid "All Positions"
+msgstr "Tất Cả Chức Vụ"
+
+#: modules/FrontHrm/manage/employee.php:222
+msgid "All Grades"
+msgstr "Tất cả bậc"
+
+#: modules/FrontHrm/manage/employee.php:223
+msgid "Show resigned:"
+msgstr "Đã nghỉ việc:"
+
+#: modules/FrontHrm/manage/employee.php:232
+#: modules/FrontHrm/reporting/rep_employees.php:69
+#: modules/FrontHrm/reporting/reports_custom.php:40
+msgid "Gender"
+msgstr "Giới tính"
+
+#: modules/FrontHrm/manage/employee.php:234
+#: modules/FrontHrm/reporting/rep_employees.php:69
+msgid "Mobile"
+msgstr "Điện thoại"
+
+#: modules/FrontHrm/manage/employee.php:236
+msgid "Birth"
+msgstr "Ngày sinh"
+
+#: modules/FrontHrm/manage/employee.php:238
+msgid "Hired Date"
+msgstr "Ngày vào"
+
+#: modules/FrontHrm/manage/employee.php:239
+#: modules/FrontHrm/reporting/reports_custom.php:41
+msgid "Department"
+msgstr "Bộ phận"
+
+#: modules/FrontHrm/manage/employee.php:250
+msgid "No employee defined."
+msgstr "Chưa có nhân viên nào."
+
+#: modules/FrontHrm/manage/employee.php:300
+msgid "Image File:"
+msgstr "Image File:"
+
+#: modules/FrontHrm/manage/employee.php:314
+#: modules/FrontHrm/manage/employee.php:329
+msgid "Personal Information"
+msgstr "Thông tin cá nhân"
+
+#: modules/FrontHrm/manage/employee.php:317
+msgid "Employee Id:"
+msgstr "Id nhân viên:"
+
+#: modules/FrontHrm/manage/employee.php:321
+msgid "Gender:"
+msgstr "Giới tính:"
+
+#: modules/FrontHrm/manage/employee.php:323
+msgid "Mobile:"
+msgstr "Điện thoại *:"
+
+#: modules/FrontHrm/manage/employee.php:324
+msgid "e-Mail:"
+msgstr "Email:"
+
+#: modules/FrontHrm/manage/employee.php:325
+msgid "Birth Date:"
+msgstr "Ngày sinh:"
+
+#: modules/FrontHrm/manage/employee.php:330
+msgid "National ID:"
+msgstr "CCCD:"
+
+#: modules/FrontHrm/manage/employee.php:331
+msgid "Passport:"
+msgstr "Hộ chiếu:"
+
+#: modules/FrontHrm/manage/employee.php:332 purchasing/manage/suppliers.php:195
+msgid "Bank Name/Account:"
+msgstr "Tên TK ngân hàng:"
+
+#: modules/FrontHrm/manage/employee.php:333
+msgid "Tax ID Number:"
+msgstr "Mã số thuế:"
+
+#: modules/FrontHrm/manage/employee.php:335
+msgid "Job Information"
+msgstr "Thông tin công việc"
+
+#: modules/FrontHrm/manage/employee.php:338
+msgid "Hire Date:"
+msgstr "Ngày vào:"
+
+#: modules/FrontHrm/manage/employee.php:342
+#: modules/FrontHrm/manage/employee.php:344
+#: modules/FrontHrm/manage/employee.php:349
+#: modules/FrontHrm/reporting/rep_payslip.php:130
+msgid "Department:"
+msgstr "Phòng ban"
+
+#: modules/FrontHrm/manage/employee.php:344
+msgid "Set hire date first"
+msgstr "Chọn ngày vào làm trước"
+
+#: modules/FrontHrm/manage/employee.php:351
+#: modules/FrontHrm/manage/grade.php:137
+#: modules/FrontHrm/manage/salary_structure.php:201
+msgid "Job Position:"
+msgstr "Vị trí:"
+
+#: modules/FrontHrm/manage/employee.php:353
+msgid "Salary Grade:"
+msgstr "Bậc lương:"
+
+#: modules/FrontHrm/manage/employee.php:353
+#: modules/FrontHrm/manage/salary_structure.php:209
+msgid "Basic"
+msgstr "Cơ Bản"
+
+#: modules/FrontHrm/manage/employee.php:355
+msgid "Resigned:"
+msgstr "Thôi việc:"
+
+#: modules/FrontHrm/manage/employee.php:356
+msgid "Release Date:"
+msgstr "Ngày thôi việc:"
+
+#: modules/FrontHrm/manage/employee.php:364
+msgid "Pay Elements"
+msgstr "Thành Phần Lương"
+
+#: modules/FrontHrm/manage/employee.php:367
+msgid "(?)"
+msgstr "(?)"
+
+#: modules/FrontHrm/manage/employee.php:367
+msgid "Enter negative amount for deduction, positive for earning"
+msgstr "Nhập số âm cho giảm trừ, số dương cho thu nhập"
+
+#: modules/FrontHrm/manage/employee.php:370
+msgid "Use Personal Salary Structure:"
+msgstr "Cấu Trúc Lương Riêng:"
+
+#: modules/FrontHrm/manage/employee.php:372
+msgid "Basic Salary Amount:"
+msgstr "Lương Cơ Bản:"
+
+#: modules/FrontHrm/manage/employee.php:386
+msgid "Update Employee"
+msgstr "Cập nhật"
+
+#: modules/FrontHrm/manage/employee.php:386
+msgid "Update employee details"
+msgstr "Cập nhật"
+
+#: modules/FrontHrm/manage/employee.php:387
+msgid "Select this employee and return to document entry."
+msgstr "Chọn nhân viên này và trở lại tài liệu."
+
+#: modules/FrontHrm/manage/employee.php:388
+msgid "Delete Employee"
+msgstr "Xoá nhân viên"
+
+#: modules/FrontHrm/manage/employee.php:388
+msgid "Delete employee data if have been never used"
+msgstr "Xoá thông tin nhân viên nếu không sử dụng"
+
+# c:/Apache/htdocs/account/purchasing/manage/suppliers.php:179
+#: modules/FrontHrm/manage/employee.php:391
+msgid "Add New Employee Details"
+msgstr "Thêm mới chi tiết nhân viên"
+
+#: modules/FrontHrm/manage/employee.php:473
+msgid "Employee details has been updated."
+msgstr "Đã cập nhật hồ sơ nhân viên."
+
+#: modules/FrontHrm/manage/employee.php:478
+msgid "A new employee has been added."
+msgstr "Đã thêm nhân viên mới"
+
+#: modules/FrontHrm/manage/employee.php:488
+msgid "Employee details has been deleted."
+msgstr "Đã xoá thông tin nhân viên."
+
+#: modules/FrontHrm/manage/employee.php:494
+msgid "Manage Employees"
+msgstr "Quản lý nhân viên"
+
+#: modules/FrontHrm/manage/employee.php:501
+msgid "Employees &List"
+msgstr "Danh Sách Nhân Viên"
+
+#: modules/FrontHrm/manage/employee.php:502
+msgid "&Add/Edit Employee"
+msgstr "Thêm / Sửa"
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:37
+msgid "Employee Payment Entry"
+msgstr "Thanh Toán Lương"
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:42
+msgid "Employee Advance Entry"
+msgstr "Tạm Ứng"
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:46
+msgid "Employee Deposit Entry"
+msgstr "Nhận Thanh Toán Từ Nhân Viên"
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:64
+msgid "Payment advice already exists"
+msgstr "Phiếulương đã tồn tại"
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:65
+#: modules/FrontHrm/manage/employee_bank_entry.php:70
+msgid "Payment Advices"
+msgstr "Các phiếu báo lương"
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:69
+#: modules/FrontHrm/manage/payslip.php:66
+msgid "Payslip number does not exist"
+msgstr "Phiếu lương không tồn tại"
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:112
+#, php-format
+msgid "Employee Payment Advice #%d has been entered"
+msgstr "Đã nhập phiếu báo lương cho nhân viên #%d"
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:132
+#, php-format
+msgid "Payment #%d has been modified"
+msgstr "Thanh toán #'%d' đã được chỉnh sửa"
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:146
+#, php-format
+msgid "Deposit #%d has been entered"
+msgstr "Thanh toán #'%d' đã được thêm"
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:160
+#, php-format
+msgid "Deposit #%d has been modified"
+msgstr "Thanh toán #'%d' đã được chỉnh sửa"
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:222
+msgid "Payment advice gl entry For Payslip #"
+msgstr "Các bút toán giao dịch của phiếu lương #"
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:286
+msgid "You have to select a payslip."
+msgstr "Bạn phải chọn phiếu lương."
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:291
+#: modules/FrontHrm/manage/employee_bank_entry.php:317
+msgid "You have to select an employee."
+msgstr "Phải chọn nhân viên."
+
+# c:/Apache/htdocs/account/purchasing/allocations/supplier_allocate.php:60
+# c:/Apache/htdocs/account/sales/allocations/customer_allocate.php:55
+#: modules/FrontHrm/manage/employee_bank_entry.php:304
+msgid ""
+"Payment cannot be processed because the amount allocated is more than the "
+"total payslip amount"
+msgstr ""
+"Thanh toán không thực hiện được vì số tiền tạm ứng được phân bổ lớn hơn tổng "
+"tiền lương"
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:313
+msgid "Pay amount have to be positive number."
+msgstr "Số tiền phải là số dương."
+
+#: modules/FrontHrm/manage/employee_bank_entry.php:347
+msgid "Employee advances have been allocated, no bank payment has been made."
+msgstr ""
+"Đã phân bổ tạm ứng của nhân viên, không có giao dịch ngân hàng nào thực hiện."
+
+# c:/Apache/htdocs/account/purchasing/supplier_payment.php:95
+#: modules/FrontHrm/manage/employee_bank_entry.php:450
+msgid "Generate Payment Items"
+msgstr "Xuất các mục thanh toán"
+
+# c:/Apache/htdocs/account/purchasing/supplier_payment.php:95
+#: modules/FrontHrm/manage/employee_bank_entry.php:450
+msgid "Generate Payment GL Items"
+msgstr "Xuất các mục thanh toán"
+
+#: modules/FrontHrm/manage/employee_docs.php:79
+msgid "Employee Attach Documents"
+msgstr "Đính Kèm Tài Liệu"
+
+# c:/Apache/htdocs/account/sales/customer_payments.php:18
+#: modules/FrontHrm/manage/employee_docs.php:82
+msgid "There are no <b>Document Types</b> defined in the system"
+msgstr "Chưa có các <b>Kiểu Tài Liệu</b> trong hệ thống"
+
+#: modules/FrontHrm/manage/employee_docs.php:101
+msgid "Select an employee."
+msgstr "Chọn nhân viên."
+
+#: modules/FrontHrm/manage/employee_docs.php:106
+msgid "Select a document type."
+msgstr "Chọn kiểu tài liệu."
+
+#: modules/FrontHrm/manage/employee_docs.php:111
+msgid "The document description cannot be empty."
+msgstr "Tên tài liệu không được bỏ trống."
+
+# c:/Apache/htdocs/account/sales/manage/customers.php:27
+#: modules/FrontHrm/manage/employee_docs.php:116
+msgid "Issue date cannot be after expiry date."
+msgstr "Ngày có hiệu lực không được sau ngày hết hạn."
+
+#: modules/FrontHrm/manage/employee_docs.php:207
+msgid "Enter search string:"
+msgstr "Nhập ký tự tìm kiếm:"
+
+#: modules/FrontHrm/manage/employee_docs.php:209
+msgid "All document type"
+msgstr "Tất cả các loại tài liệu"
+
+#: modules/FrontHrm/manage/employee_docs.php:210
+#: modules/FrontHrm/manage/employee_docs.php:319
+msgid "Alert:"
+msgstr "Thông Báo:"
+
+#: modules/FrontHrm/manage/employee_docs.php:211
+msgid "Not Alert:"
+msgstr "Không Thông Báo:"
+
+#: modules/FrontHrm/manage/employee_docs.php:217
+msgid "Expired:"
+msgstr "Hết hạn:"
+
+#: modules/FrontHrm/manage/employee_docs.php:219
+msgid "Issued:"
+msgstr "Hiệu lực:"
+
+#: modules/FrontHrm/manage/employee_docs.php:232
+#: modules/FrontHrm/manage/employee_docs.php:266
+msgid "Alert"
+msgstr "Thông Báo"
+
+#: modules/FrontHrm/manage/employee_docs.php:236
+msgid "Click to edit this document"
+msgstr "Bấm để chỉnh sửa tài liệu"
+
+#: modules/FrontHrm/manage/employee_docs.php:261
+msgid "Doc No"
+msgstr "Số Tài Liệu"
+
+#: modules/FrontHrm/manage/employee_docs.php:262
+msgid "Document Type"
+msgstr "Loại Tài Liệu"
+
+#: modules/FrontHrm/manage/employee_docs.php:263
+msgid "Document Title"
+msgstr "Tên Tài Liệu"
+
+# c:/Apache2/htdocs/account/manufacturing/includes/work_order_issue_ui.inc:155
+#: modules/FrontHrm/manage/employee_docs.php:264
+msgid "Issue Date"
+msgstr "Ngày Hiệu Lực"
+
+#: modules/FrontHrm/manage/employee_docs.php:265
+msgid "Expiry Date"
+msgstr "Hết Hạn"
+
+#: modules/FrontHrm/manage/employee_docs.php:279
+msgid "Marked rows are nearly expired"
+msgstr "Các dòng được đánh dấu là sắp hết hạn"
+
+#: modules/FrontHrm/manage/employee_docs.php:280
+msgid "Marked rows are expired"
+msgstr "Các dòng được đánh dấu là đã quá hạn"
+
+#: modules/FrontHrm/manage/employee_docs.php:313
+msgid "Document Number:"
+msgstr "Số Tài Liệu:"
+
+#: modules/FrontHrm/manage/employee_docs.php:314
+msgid "Document type:"
+msgstr "Loại tài liệu:"
+
+#: modules/FrontHrm/manage/employee_docs.php:314
+msgid "Select document type"
+msgstr "Chọn loại tài liệu"
+
+#: modules/FrontHrm/manage/employee_docs.php:315
+msgid "Document title:"
+msgstr "Tên tài liệu:"
+
+# c:/Apache2/htdocs/account/manufacturing/includes/work_order_issue_ui.inc:155
+#: modules/FrontHrm/manage/employee_docs.php:316
+msgid "Issue date:"
+msgstr "Ngày hiệu lực:"
+
+# c:/Apache/htdocs/account/reporting/reports_main.php:45
+# c:/Apache/htdocs/account/reporting/reports_main.php:51
+# c:/Apache/htdocs/account/reporting/reports_main.php:53
+# c:/Apache/htdocs/account/reporting/reports_main.php:54
+# c:/Apache/htdocs/account/reporting/reports_main.php:55
+# c:/Apache/htdocs/account/reporting/reports_main.php:56
+#: modules/FrontHrm/manage/employee_docs.php:317
+msgid "Expiry date:"
+msgstr "Hết hạn:"
+
+#: modules/FrontHrm/manage/grade.php:24
+msgid "Manage Grades"
+msgstr "Cấp học"
+
+# c:/Apache/htdocs/account/gl/manage/exchange_rates.php:34
+#: modules/FrontHrm/manage/grade.php:37
+msgid "Pay amount cannot be a negative number"
+msgstr "Số tiền không được là số âm"
+
+#: modules/FrontHrm/manage/grade.php:56
+msgid "Grade table has been updated"
+msgstr "Đã cập nhật sơ đồ mức lương"
+
+#: modules/FrontHrm/manage/grade.php:64
+msgid "Grade table for selected job position cannot be deleted."
+msgstr "Không thể xóa bang mức lương cho chức vụ này."
+
+#: modules/FrontHrm/manage/grade.php:67
+msgid "Grade table of selected job position has been deleted"
+msgstr "Đã xóa bang mức lương cho chức vụ được chọn"
+
+#: modules/FrontHrm/manage/grade.php:82
+msgid "Please define Job Positions First"
+msgstr "Hãy tạo vị trí công việc trước"
+
+# c:/Apache/htdocs/account/inventory/view/view_transfer.php:32
+#: modules/FrontHrm/manage/grade.php:88
+#: modules/FrontHrm/reporting/rep_employees.php:69
+msgid "Job Position"
+msgstr "Chức Vụ"
+
+#: modules/FrontHrm/manage/grade.php:88
+msgid "Basic Amount"
+msgstr "Lương Cơ Bản"
+
+#: modules/FrontHrm/manage/grade.php:90 modules/FrontHrm/manage/grade.php:145
+msgid "Grade"
+msgstr "Bậc Lương"
+
+#: modules/FrontHrm/manage/grade.php:141
+msgid "Basic Amount:"
+msgstr "Cơ Bản:"
+
+#: modules/FrontHrm/manage/leave_types.php:24
+msgid "Leave Types"
+msgstr "Kiểu nghỉ"
+
+#: modules/FrontHrm/manage/leave_types.php:30
+msgid "Salary rate must be a number."
+msgstr "Hệ số lương phải là số."
+
+#: modules/FrontHrm/manage/leave_types.php:34
+msgid "The Leave type name cannot be empty."
+msgstr "Tên kiểu nghỉ không được bỏ trống."
+
+#: modules/FrontHrm/manage/leave_types.php:38
+msgid "The Leave type code cannot be empty and only allows alphabet letters."
+msgstr "Mã kiểu nghỉ không được bỏ trống và chỉ chap nhận ký tự chữ cái."
+
+#: modules/FrontHrm/manage/leave_types.php:44
+msgid "Selected leave type has been updated"
+msgstr "Đã cập nhật kiểu nghỉ"
+
+#: modules/FrontHrm/manage/leave_types.php:46
+msgid "New leave type has been added"
+msgstr "Đã thêm kiểu nghỉ mới"
+
+#: modules/FrontHrm/manage/leave_types.php:56
+msgid "This leave type cannot be deleted."
+msgstr "Không thể xóa kiểu nghỉ"
+
+#: modules/FrontHrm/manage/leave_types.php:59
+msgid "Selected leave type has been deleted"
+msgstr "Đã xóa kiểu nghỉ"
+
+#: modules/FrontHrm/manage/leave_types.php:77
+msgid "Leave Type Name"
+msgstr "Tên kiểu"
+
+#: modules/FrontHrm/manage/leave_types.php:77
+msgid "Leave Type Code"
+msgstr "Mã kiểu"
+
+#: modules/FrontHrm/manage/leave_types.php:77
+msgid "Salary Rate (%)"
+msgstr "Hệ số lương(%)"
+
+#: modules/FrontHrm/manage/leave_types.php:111
+msgid "Salary rate:"
+msgstr "Hệ số lương:"
+
+#: modules/FrontHrm/manage/leave_types.php:112
+msgid "Leave Type Name:"
+msgstr "Tên kiểu nghỉ:"
+
+#: modules/FrontHrm/manage/leave_types.php:113
+msgid "Leave Type Code:"
+msgstr "Mã kiểu nghỉ:"
+
+#: modules/FrontHrm/manage/overtime.php:24
+msgid "Manage Overtime"
+msgstr "Quản lý thêm giờ"
+
+# c:/Apache/htdocs/account/sales/manage/customers.php:27
+#: modules/FrontHrm/manage/overtime.php:30
+msgid "The overtime rate cannot be empty."
+msgstr "Hệ số công của loại giờ làm thêm không được trống."
+
+# c:/Apache/htdocs/account/inventory/prices.php:67
+# c:/Apache/htdocs/account/purchasing/po_entry_items.php:146
+#: modules/FrontHrm/manage/overtime.php:34
+msgid "Overtime rate must be a number."
+msgstr "Hệ số công phải là số."
+
+# c:/Apache/htdocs/account/sales/manage/customers.php:27
+#: modules/FrontHrm/manage/overtime.php:38
+msgid "The overtime name cannot be empty."
+msgstr "Tên loại giờ làm thêm không được trống."
+
+#: modules/FrontHrm/manage/overtime.php:44
+msgid "Selected overtime has been updated"
+msgstr "Đã cập nhật loại giờ làm thêm"
+
+#: modules/FrontHrm/manage/overtime.php:46
+msgid "New overtime item has been added"
+msgstr "Đã thêm nhắc loại giờ làm thêm"
+
+# c:/Apache/htdocs/account/sales/manage/customers.php:27
+#: modules/FrontHrm/manage/overtime.php:56
+msgid "This overtime cannot be deleted."
+msgstr "Không thể xóa loại giờ làm thêm này."
+
+#: modules/FrontHrm/manage/overtime.php:59
+msgid "Selected overtime item has been deleted"
+msgstr "Đã xóa loại giờ làm thêm"
+
+# c:/Apache/htdocs/account/sales/delivery_details.php:208
+# c:/Apache/htdocs/account/sales/sales_order_entry.php:199
+# c:/Apache/htdocs/account/purchasing/includes/ui/po_ui.inc:96
+#: modules/FrontHrm/manage/overtime.php:77
+msgid "Overtime Name"
+msgstr "Tên giờ làm thêm"
+
+# c:/Apache/htdocs/account/sales/delivery_details.php:208
+# c:/Apache/htdocs/account/sales/sales_order_entry.php:199
+# c:/Apache/htdocs/account/purchasing/includes/ui/po_ui.inc:96
+#: modules/FrontHrm/manage/overtime.php:77
+msgid "Overtime Rate"
+msgstr "Hệ số tính lương"
+
+# c:/Apache/htdocs/account/sales/delivery_details.php:208
+# c:/Apache/htdocs/account/sales/sales_order_entry.php:199
+# c:/Apache/htdocs/account/purchasing/includes/ui/po_ui.inc:96
+#: modules/FrontHrm/manage/overtime.php:114
+msgid "Overtime rate:"
+msgstr "Hệ số :"
+
+# c:/Apache/htdocs/account/sales/delivery_details.php:208
+# c:/Apache/htdocs/account/sales/sales_order_entry.php:199
+# c:/Apache/htdocs/account/purchasing/includes/ui/po_ui.inc:96
+#: modules/FrontHrm/manage/overtime.php:115
+msgid "Overtime Name:"
+msgstr "Tên loại :"
+
+#: modules/FrontHrm/manage/payroll_rules.php:56
+msgid ""
+"Accounts have been updated, some accounts might not have been deleted "
+"because Salary Structure using them."
+msgstr "Đã cập nhật các tài khoản."
+
+#: modules/FrontHrm/manage/payroll_rules.php:59
+msgid "Select Job Position first."
+msgstr "Chọn vị trí trước."
+
+#: modules/FrontHrm/manage/payroll_rules.php:92
+#: modules/FrontHrm/manage/salary_structure.php:159
+#: modules/FrontHrm/manage/salary_structure.php:161
+#: modules/FrontHrm/reporting/rep_payslip.php:80
+msgid "Pay Element"
+msgstr "Thu nhập/Giảm trừ"
+
+#: modules/FrontHrm/manage/payroll_rules.php:109
+msgid "Save payroll structure"
+msgstr "Lưu cấu trúc lương"
+
+#: modules/FrontHrm/manage/payroll_rules.php:111
+msgid "Update payroll rules data"
+msgstr "Cập nhật cấu trúc lương"
+
+#: modules/FrontHrm/manage/payroll_rules.php:112
+msgid "Select this job position and return to document entry."
+msgstr "Chọn chức vụ và quay lại tài liệu."
+
+#: modules/FrontHrm/manage/payroll_rules.php:113
+msgid "Delete payroll rules if have been never used"
+msgstr "Xoá các tài khoản tính lương nếu chưa sử dụng"
+
+#: modules/FrontHrm/manage/payroll_rules.php:128
+msgid "Selected payroll rules have been deleted."
+msgstr "Đã xoá các tài khoản tính lương."
+
+#: modules/FrontHrm/manage/payroll_rules.php:136
+msgid "Manage Payroll Rule"
+msgstr "Quản lý cấu trúc lương"
+
+# c:/Apache/htdocs/account/inventory/view/view_transfer.php:32
+#: modules/FrontHrm/manage/payroll_rules.php:145
+#: modules/FrontHrm/manage/salary_structure.php:201
+msgid "Select Job Position"
+msgstr "Chọn Chức Vụ"
+
+# c:/Apache/htdocs/account/inventory/view/view_transfer.php:32
+#: modules/FrontHrm/manage/payroll_rules.php:160
+msgid "Define Job Positions first."
+msgstr "Cần định nghĩa Chức Vụ trước."
+
+#: modules/FrontHrm/manage/payslip.php:31
+#, php-format
+msgid "Modifying Employee Payslip #%d."
+msgstr "Sửa phiếu lương số #%d."
+
+#: modules/FrontHrm/manage/payslip.php:32
+msgid "Modifying Employee Payslip"
+msgstr "Chỉnh sửa phiếu lương"
+
+#: modules/FrontHrm/manage/payslip.php:35
+msgid "Employee Payslip Entry"
+msgstr "Hạch toán lương"
+
+#: modules/FrontHrm/manage/payslip.php:56
+#, php-format
+msgid "Payslip #%d has been entered"
+msgstr "Đã nhập phiếu lương số #%d"
+
+#: modules/FrontHrm/manage/payslip.php:57
+msgid "&View this Transaction"
+msgstr "Xem giao dịch này"
+
+#: modules/FrontHrm/manage/payslip.php:60
+msgid "Make Payment &Advice for this Payslip"
+msgstr "Lập phiếu báo lương cho phiếu lương này"
+
+#: modules/FrontHrm/manage/payslip.php:61
+msgid "Enter &New Payslip"
+msgstr "Tính Lương Mới"
+
+#: modules/FrontHrm/manage/payslip.php:75
+msgid "Employee Payslip has been updated #"
+msgstr "Đã cập nhật phiếu lương #"
+
+#: modules/FrontHrm/manage/payslip.php:78
+msgid "Return to Payslip &Inquiry"
+msgstr "Quay lại các phiếu lương"
+
+#: modules/FrontHrm/manage/payslip.php:153
+msgid "Employee not selected"
+msgstr "Chưa chọn nhân viên"
+
+#: modules/FrontHrm/manage/payslip.php:168
+#: modules/FrontHrm/manage/payslip.php:173
+msgid "Selected date has already paid for this person"
+msgstr "Đã thanh toán cho ngày này rồi"
+
+#: modules/FrontHrm/manage/payslip.php:178
+msgid ""
+"Selected period contains a period that has already been paid for this person"
+msgstr ""
+"Khoảng ngày được chọn bao gồm một ngày mà đã được thanh toán cho người này"
+
+#: modules/FrontHrm/manage/payslip.php:183
+msgid "End date cannot be before the start date"
+msgstr "Ngày kết thúc không thể trước ngày bắt đầu"
+
+#: modules/FrontHrm/manage/payslip.php:188
+#: modules/FrontHrm/manage/payslip.php:193
+msgid "Cannot pay for the date in the future."
+msgstr "Không thể thanh toán cho tương lai."
+
+#: modules/FrontHrm/manage/payslip.php:198
+msgid "Cannot pay for the date before hired date"
+msgstr "Không thể thanh toán cho tương lai"
+
+#: modules/FrontHrm/manage/payslip.php:204
+msgid "Selected Employee does not have a Job Position, please define it first."
+msgstr "Nhân Viên này không có Chức Vụ, hãy xác định chức vụ trước."
+
+#: modules/FrontHrm/manage/payslip.php:209
+msgid ""
+"the Employee's Job Position does not have a structure, please define Salary "
+"Structure"
+msgstr ""
+"Chức Vụ của nhân viên này không có cấu trúc lương, hay khởi tạo cấu trúc "
+"lương"
+
+#: modules/FrontHrm/manage/payslip.php:251
+msgid "Employee cannot getting paid for non-working period."
+msgstr "Không thể thanh toán cho một giai đoạn không làm việc."
+
+#: modules/FrontHrm/manage/payslip.php:333
+msgid ""
+"Cannot make a journal entry for a bank account. Use banking functions for "
+"bank transactions."
+msgstr ""
+"Không thể ghi nhật ký cho tài khoản ngân hàng. Hãy sử dụng các chức năng "
+"riêng cho tài khoản ngân hàng."
+
+#: modules/FrontHrm/manage/payslip.php:404
+msgid "Generate Payslip"
+msgstr "Tính lương"
+
+#: modules/FrontHrm/manage/payslip.php:404
+msgid "Generate Payslip For Process"
+msgstr "Tính lương"
+
+#: modules/FrontHrm/manage/payslip.php:421
+msgid "Process PaySlip"
+msgstr "Thực hiện"
+
+#: modules/FrontHrm/manage/payslip.php:422
+msgid "Cancels document entry or removes Gl items"
+msgstr "Hủy thao tác hoặc xóa các mục"
+
+# c:/Apache/htdocs/account/inventory/view/view_transfer.php:32
+#: modules/FrontHrm/manage/position.php:24
+msgid "Manage Job Positions"
+msgstr "Quản Lý Chức Vụ"
+
+#: modules/FrontHrm/manage/position.php:30
+msgid "Name field cannot be empty."
+msgstr "Tên không được để trống."
+
+# c:/Apache/htdocs/account/inventory/transfers.php:112
+#: modules/FrontHrm/manage/position.php:34
+msgid "Amount field value must be a positive number."
+msgstr "Số lượng nhập vào phải lớn hơn 0."
+
+#: modules/FrontHrm/manage/position.php:69
+msgid "Selected job position has been updated"
+msgstr "Đã cập nhật chức vụ"
+
+#: modules/FrontHrm/manage/position.php:71
+msgid "New job position has been added"
+msgstr "Đã thêm chức vụ mới"
+
+# c:/Apache/htdocs/account/sales/manage/customers.php:27
+#: modules/FrontHrm/manage/position.php:80
+msgid "This job position cannot be deleted."
+msgstr "Không thể xóa chức vụ này."
+
+#: modules/FrontHrm/manage/position.php:83
+msgid "Selected job position has been deleted"
+msgstr "Chức vụ đã được xóa"
+
+#: modules/FrontHrm/manage/position.php:99
+msgid "Salary amount"
+msgstr "Số tiền"
+
+#: modules/FrontHrm/manage/position.php:99
+msgid "Pay basis"
+msgstr "Lương cơ bản"
+
+#: modules/FrontHrm/manage/position.php:107
+msgid "Daily"
+msgstr "Hàng ngày"
+
+#: modules/FrontHrm/manage/position.php:136
+msgid "Position Name:"
+msgstr "Tên vị trí:"
+
+#: modules/FrontHrm/manage/position.php:138
+msgid "Salary Basic Account:"
+msgstr "Tài Khoản Lương:"
+
+#: modules/FrontHrm/manage/position.php:141
+msgid "Salary Basic Amount"
+msgstr "Lương Cơ Bản"
+
+#: modules/FrontHrm/manage/position.php:142
+msgid "Daily wage"
+msgstr "Công nhật"
+
+#: modules/FrontHrm/manage/salary_structure.php:30
+msgid "Manage Salary Structure"
+msgstr "Cấu trúc lương"
+
+#: modules/FrontHrm/manage/salary_structure.php:38
+msgid "Select job position"
+msgstr "Chọn chức vụ"
+
+#: modules/FrontHrm/manage/salary_structure.php:48
+msgid "Only one amount(Earning or Deduction) is allowed per rule"
+msgstr "Mỗi tài khoản chỉ nhận số lượng cho một vế"
+
+#: modules/FrontHrm/manage/salary_structure.php:92
+msgid "Salary structure has been updated."
+msgstr "Đã cập nhật cấu trúc lương."
+
+#: modules/FrontHrm/manage/salary_structure.php:103
+msgid "Selected structure has been deleted."
+msgstr "Đã xoá cấu trúc lương."
+
+#: modules/FrontHrm/manage/salary_structure.php:159
+msgid "Monthly Earnings"
+msgstr "Phụ cấp tháng"
+
+#: modules/FrontHrm/manage/salary_structure.php:159
+msgid "Monthly Deductions"
+msgstr "Giảm trừ tháng"
+
+#: modules/FrontHrm/manage/salary_structure.php:161
+msgid "Daily Earnings"
+msgstr "Phụ cấp ngày"
+
+#: modules/FrontHrm/manage/salary_structure.php:161
+msgid "Daily Deductions"
+msgstr "Giảm trừ ngày"
+
+#: modules/FrontHrm/manage/salary_structure.php:165
+msgid "Basic Salary"
+msgstr "Lương"
+
+#: modules/FrontHrm/manage/salary_structure.php:183
+msgid "Save salary structure"
+msgstr "Lưu cấu trúc lương"
+
+#: modules/FrontHrm/manage/salary_structure.php:185
+msgid "Update salary structure data"
+msgstr "Cập nhật dữ liệu cấu trúc lương"
+
+#: modules/FrontHrm/manage/salary_structure.php:186
+msgid "Delete salary structure if have been never used"
+msgstr "Xóa cấu trúc lương nếu chưa sử dụng"
+
+#: modules/FrontHrm/manage/salary_structure.php:191
+msgid "Selected job position has not been assigned any pay element yet"
+msgstr "Vị trí chưa được gán các khoản thu nhập/giảm trừ"
+
+#: modules/FrontHrm/manage/salary_structure.php:206
+msgid ""
+"Before this function can be run, Job Positions must be defined and Pay "
+"Elements must be added."
+msgstr ""
+"Để chạy tính năng này cần tạo các vị trí công việc và gán các khoản thu nhập/"
+"giảm trừ."
+
+#: modules/FrontHrm/manage/salary_structure.php:212
+msgid "Grade "
+msgstr "Bậc Lương "
+
+#: modules/FrontHrm/manage/salary_structure.php:220
+msgid "Please define grade amount for the selected job position first."
+msgstr "Hãy xác định mức lương của bậc lương cho vị trí công việc này trước."
+
+#: modules/FrontHrm/reporting/forms/payslip_layout.php:77
+msgid "Printout Date"
+msgstr "Ngày in"
+
+#: modules/FrontHrm/reporting/forms/payslip_layout.php:78
+msgid "Printed by"
+msgstr "In bởi"
+
+#: modules/FrontHrm/reporting/forms/payslip_layout.php:86
+msgid " - Phone1:"
+msgstr " - Phone1:"
+
+#: modules/FrontHrm/reporting/forms/payslip_layout.php:87
+msgid " - Fax:"
+msgstr " - Fax:"
+
+#: modules/FrontHrm/reporting/forms/payslip_layout.php:88
+msgid " - Email:"
+msgstr " - Email:"
+
+#: modules/FrontHrm/reporting/redirect.php:34
+msgid "Report"
+msgstr "Báo cáo"
+
+#: modules/FrontHrm/reporting/redirect.php:34
+msgid "could not be found."
+msgstr "không tìm thấy."
+
+#: modules/FrontHrm/reporting/rep889.php:44
+#: modules/FrontHrm/reporting/rep_payslip.php:92
+msgid "Not set"
+msgstr "Chưa đặt"
+
+#: modules/FrontHrm/reporting/rep889.php:144
+#: modules/FrontHrm/reporting/rep_payslip.php:174
+msgid "Advance Deduction"
+msgstr "Trừ Tạm Ứng"
+
+#: modules/FrontHrm/reporting/rep889.php:153
+#: modules/FrontHrm/reporting/rep_payslip.php:23
+msgid "Could not get payslip details"
+msgstr "Không tìm thấy chi tiết phiếu lương"
+
+#: modules/FrontHrm/reporting/rep889.php:185
+#: modules/FrontHrm/reporting/rep_payslip.php:54
+msgid "could not get employee allocations amount"
+msgstr "không thể lấy dữ liệu phân bổ"
+
+#: modules/FrontHrm/reporting/rep889.php:202
+msgid "Company:"
+msgstr "Công ty:"
+
+#: modules/FrontHrm/reporting/rep_employees.php:25
+msgid "could not get employee"
+msgstr "không tìm thấy dữ liệu nhân viên"
+
+#: modules/FrontHrm/reporting/rep_employees.php:69
+msgid "Employee name"
+msgstr "Tên nhân viên"
+
+#: modules/FrontHrm/reporting/rep_employees.php:69
+msgid "Birth date"
+msgstr "Ngày sinh"
+
+#: modules/FrontHrm/reporting/rep_employees.php:69
+msgid "Hired date"
+msgstr "Ngày vào"
+
+#: modules/FrontHrm/reporting/rep_employees.php:75
+msgid "Employees List"
+msgstr "Danh Sách Nhân Viên"
+
+#: modules/FrontHrm/reporting/rep_employees.php:88
+msgid "could not get department data"
+msgstr "Không tìm thấy dữ liệu bộ phận"
+
+#: modules/FrontHrm/reporting/rep_payslip.php:80
+msgid "Leaves"
+msgstr "Nghỉ"
+
+#: modules/FrontHrm/reporting/rep_payslip.php:80
+msgid "Earnings"
+msgstr "Thu nhập"
+
+#: modules/FrontHrm/reporting/rep_payslip.php:120
+msgid "Employee:"
+msgstr "Nhân viên"
+
+#: modules/FrontHrm/reporting/rep_payslip.php:122
+msgid "Payslip #:"
+msgstr "Phiếu lương#:"
+
+#: modules/FrontHrm/reporting/reports_custom.php:19
+msgid "No employee filter"
+msgstr "Không lọc nhân viên"
+
+#: modules/FrontHrm/reporting/reports_custom.php:26
+msgid "No department filter"
+msgstr "Không lọc bộ phận"
+
+#: modules/FrontHrm/reporting/reports_custom.php:33
+msgid "No gender filter"
+msgstr "Không lọc giới tính"
+
+#: modules/FrontHrm/reporting/reports_custom.php:39
+msgid "List of Employees"
+msgstr "Danh Sách Nhân Viên"
+
+#: modules/FrontHrm/reporting/reports_custom.php:45
+#: reporting/reports_main.php:45 reporting/reports_main.php:56
+#: reporting/reports_main.php:67 reporting/reports_main.php:76
+#: reporting/reports_main.php:83 reporting/reports_main.php:92
+#: reporting/reports_main.php:101 reporting/reports_main.php:108
+#: reporting/reports_main.php:118 reporting/reports_main.php:127
+#: reporting/reports_main.php:134 reporting/reports_main.php:141
+#: reporting/reports_main.php:149 reporting/reports_main.php:156
+#: reporting/reports_main.php:163 reporting/reports_main.php:174
+#: reporting/reports_main.php:185 reporting/reports_main.php:194
+#: reporting/reports_main.php:202 reporting/reports_main.php:207
+#: reporting/reports_main.php:214 reporting/reports_main.php:222
+#: reporting/reports_main.php:229 reporting/reports_main.php:238
+#: reporting/reports_main.php:244 reporting/reports_main.php:255
+#: reporting/reports_main.php:265 reporting/reports_main.php:271
+#: reporting/reports_main.php:281 reporting/reports_main.php:289
+#: reporting/reports_main.php:297 reporting/reports_main.php:304
+#: reporting/reports_main.php:314 reporting/reports_main.php:323
+#: reporting/reports_main.php:331 reporting/reports_main.php:338
+#: reporting/reports_main.php:348 reporting/reports_main.php:358
+#: reporting/reports_main.php:368 reporting/reports_main.php:381
+#: reporting/reports_main.php:388 reporting/reports_main.php:400
+#: reporting/reports_main.php:408 reporting/reports_main.php:420
+#: reporting/reports_main.php:432 reporting/reports_main.php:442
+#: reporting/reports_main.php:453 reporting/reports_main.php:460
+#: reporting/reports_main.php:471 reporting/reports_main.php:482
+#: reporting/reports_main.php:491 reporting/reports_main.php:501
+#: reporting/reports_main.php:507 reporting/reports_main.php:517
+#: reporting/reports_main.php:527 reporting/reports_main.php:535
+#: reporting/reports_main.php:543 reporting/reports_main.php:551
+msgid "Orientation"
+msgstr "Chiều"
+
 # c:/Apache/htdocs/account/purchasing/allocations/supplier_allocate.php:9
 #: purchasing/allocations/supplier_allocate.php:30
 msgid "Allocate Supplier Payment or Credit Note"
@@ -13081,11 +14984,6 @@ msgstr "Tham chiếu NCC:"
 msgid "Terms:"
 msgstr "Điều khoản:"
 
-#: purchasing/includes/ui/invoice_ui.inc:133
-#: purchasing/includes/ui/po_ui.inc:165
-msgid "Dimension 2"
-msgstr "Khoản mục 2"
-
 # c:/Apache/htdocs/account/purchasing/manage/suppliers.php:156
 # c:/Apache/htdocs/account/purchasing/manage/suppliers.php:159
 # c:/Apache/htdocs/account/purchasing/includes/ui/invoice_ui.inc:98
@@ -13154,7 +15052,7 @@ msgstr "Tạp phí:"
 
 #: purchasing/includes/ui/invoice_ui.inc:297
 msgid "Edit line from document"
-msgstr ""
+msgstr "Sửa dòng tài liệu"
 
 # c:/Apache/htdocs/account/purchasing/supplier_invoice_grns.php:193
 #: purchasing/includes/ui/invoice_ui.inc:385
@@ -13494,17 +15392,6 @@ msgstr "Đối chiếu"
 msgid "Allocated"
 msgstr "Phân bổ"
 
-# c:/Apache/htdocs/account/purchasing/view/view_po.php:87
-# c:/Apache/htdocs/account/sales/inquiry/sales_orders_view.php:172
-#: purchasing/inquiry/supplier_allocation_inquiry.php:142
-#: purchasing/inquiry/supplier_inquiry.php:180 purchasing/view/view_po.php:92
-#: sales/inquiry/customer_allocation_inquiry.php:142
-#: sales/inquiry/customer_inquiry.php:203
-#: sales/inquiry/sales_deliveries_view.php:181
-#: sales/inquiry/sales_orders_view.php:297
-msgid "Marked items are overdue."
-msgstr "Các dòng được tô màu đỏ là các đối tượng quá hạn."
-
 # c:/Apache/htdocs/account/purchasing/inquiry/supplier_inquiry.php:7
 #: purchasing/inquiry/supplier_inquiry.php:26
 msgid "Supplier Inquiry"
@@ -13555,7 +15442,7 @@ msgstr "Số thuế"
 
 #: purchasing/inquiry/suppliers_list.php:49 sales/inquiry/customers_list.php:49
 msgid "Phone 2"
-msgstr ""
+msgstr "Điện thoại 2"
 
 # c:/Apache/htdocs/account/purchasing/manage/suppliers.php:14
 # c:/Apache/htdocs/account/sales/manage/customer_branches.php:22
@@ -13629,10 +15516,6 @@ msgstr "Mã tự đặt:"
 #: purchasing/manage/suppliers.php:194
 msgid "Purchasing"
 msgstr "Thu mua"
-
-#: purchasing/manage/suppliers.php:195
-msgid "Bank Name/Account:"
-msgstr "Tên TK ngân hàng:"
 
 # c:/Apache/htdocs/account/sales/manage/customers.php:250
 #: purchasing/manage/suppliers.php:196 sales/manage/customers.php:229
@@ -13750,7 +15633,7 @@ msgstr "Đơn hàng thu mua"
 
 #: purchasing/manage/suppliers.php:293 sales/manage/customers.php:305
 msgid "Attachments"
-msgstr ""
+msgstr "Đính kèm"
 
 # c:/Apache/htdocs/account/purchasing/po_entry_items.php:11
 #: purchasing/po_entry_items.php:42
@@ -14130,7 +16013,7 @@ msgstr "Nhận hàng"
 #: purchasing/supplier_credit.php:35
 #, php-format
 msgid "Modifying Supplier Credit # %d"
-msgstr ""
+msgstr "Sửa đơn hàng # %d"
 
 # c:/Apache/htdocs/account/purchasing/supplier_credit.php:30
 #: purchasing/supplier_credit.php:76
@@ -14428,7 +16311,7 @@ msgstr "Chi tiết"
 
 #: purchasing/view/view_grn.php:39
 msgid "Required by"
-msgstr ""
+msgstr "Yêu cầu"
 
 # c:/Apache/htdocs/account/purchasing/view/view_supp_credit.php:52
 # c:/Apache/htdocs/account/purchasing/view/view_supp_invoice.php:56
@@ -14909,10 +16792,6 @@ msgstr "Kính gửi"
 msgid "Sending document by email failed"
 msgstr "Lỗi gửi tài liệu qua email"
 
-#: reporting/includes/pdf_report.inc:950 reporting/includes/pdf_report.inc:952
-msgid "Email:"
-msgstr "Email:"
-
 #: reporting/includes/pdf_report.inc:952
 msgid "has been sent by email to destination."
 msgstr "đã gửi đến."
@@ -14972,6 +16851,10 @@ msgstr "Không xác định tham số loại báo cáo:"
 #: reporting/includes/reports_classes.inc:170
 msgid "No Currency Filter"
 msgstr "Không lọc tiền tệ"
+
+#: reporting/includes/reports_classes.inc:211
+msgid "Click Here to Pick up the date"
+msgstr "Bấm để chọn ngày"
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:167
 #: reporting/includes/reports_classes.inc:241
@@ -15929,38 +17812,6 @@ msgstr "Số dư của khách hàng"
 #: reporting/reports_main.php:219 reporting/reports_main.php:226
 msgid "Currency Filter"
 msgstr "Lọc theo tiền tệ"
-
-#: reporting/reports_main.php:45 reporting/reports_main.php:56
-#: reporting/reports_main.php:67 reporting/reports_main.php:76
-#: reporting/reports_main.php:83 reporting/reports_main.php:92
-#: reporting/reports_main.php:101 reporting/reports_main.php:108
-#: reporting/reports_main.php:118 reporting/reports_main.php:127
-#: reporting/reports_main.php:134 reporting/reports_main.php:141
-#: reporting/reports_main.php:149 reporting/reports_main.php:156
-#: reporting/reports_main.php:163 reporting/reports_main.php:174
-#: reporting/reports_main.php:185 reporting/reports_main.php:194
-#: reporting/reports_main.php:202 reporting/reports_main.php:207
-#: reporting/reports_main.php:214 reporting/reports_main.php:222
-#: reporting/reports_main.php:229 reporting/reports_main.php:238
-#: reporting/reports_main.php:244 reporting/reports_main.php:255
-#: reporting/reports_main.php:265 reporting/reports_main.php:271
-#: reporting/reports_main.php:281 reporting/reports_main.php:289
-#: reporting/reports_main.php:297 reporting/reports_main.php:304
-#: reporting/reports_main.php:314 reporting/reports_main.php:323
-#: reporting/reports_main.php:331 reporting/reports_main.php:338
-#: reporting/reports_main.php:348 reporting/reports_main.php:358
-#: reporting/reports_main.php:368 reporting/reports_main.php:381
-#: reporting/reports_main.php:388 reporting/reports_main.php:400
-#: reporting/reports_main.php:408 reporting/reports_main.php:420
-#: reporting/reports_main.php:432 reporting/reports_main.php:442
-#: reporting/reports_main.php:453 reporting/reports_main.php:460
-#: reporting/reports_main.php:471 reporting/reports_main.php:482
-#: reporting/reports_main.php:491 reporting/reports_main.php:501
-#: reporting/reports_main.php:507 reporting/reports_main.php:517
-#: reporting/reports_main.php:527 reporting/reports_main.php:535
-#: reporting/reports_main.php:543 reporting/reports_main.php:551
-msgid "Orientation"
-msgstr "Chiều"
 
 #: reporting/reports_main.php:46 reporting/reports_main.php:57
 #: reporting/reports_main.php:68 reporting/reports_main.php:77
@@ -17093,7 +18944,7 @@ msgstr "In biên nhận"
 
 #: sales/customer_payments.php:103
 msgid "&Email This Receipt"
-msgstr ""
+msgstr "&Email biên nhận"
 
 #: sales/customer_payments.php:105
 msgid "&View this Customer Payment"
@@ -17129,7 +18980,7 @@ msgstr "Khách hàng này chưa có chi nhánh."
 
 #: sales/customer_payments.php:151 sales/sales_order_entry.php:367
 msgid "The selected branch is not a branch of the selected customer."
-msgstr ""
+msgstr "Chi nhánh và khách hàng không khớp."
 
 # c:/Apache/htdocs/account/sales/customer_payments.php:51
 #: sales/customer_payments.php:156
@@ -17426,6 +19277,9 @@ msgid ""
 "\t\t\tselect at least one delivery. All items must be dispatched to\n"
 "\t\t\tthe same customer branch."
 msgstr ""
+"Để lập hóa đơn\n"
+"\t\t\tchọn ít nhất một mục giao hàng. Tất cả các mục phải được giao đến\n"
+"\t\t\tcùng một chi nhánh khách hàng."
 
 #: sales/inquiry/sales_deliveries_view.php:155
 msgid "Delivery #"
@@ -18961,25 +20815,24 @@ msgstr "Sổ cái thu mua:"
 # c:/Apache/htdocs/account/lang/en_UK/LC_FILES/themes/default/Renderer.php:7
 # c:/Apache/htdocs/account/lang/en_US/LC_FILES/themes/default/Renderer.php:7
 # c:/Apache/htdocs/account/lang/sv_SE/LC_FILES/themes/default/Renderer.php:7
-#: themes/canvas/renderer.php:16 themes/default/renderer.php:26
+#: themes/canvas/renderer.php:16 themes/default/renderer.php:44
 #: themes/dropdown/renderer.php:51
 msgid "Main Menu"
 msgstr "Menu"
 
 #: themes/canvas/renderer.php:38 themes/canvas/renderer.php:43
-#: themes/default/renderer.php:64 themes/default/renderer.php:73
-#: themes/dropdown/renderer.php:71 themes/dropdown/renderer.php:77
+#: themes/default/renderer.php:100 themes/dropdown/renderer.php:71
+#: themes/dropdown/renderer.php:77
 msgid "Preferences"
 msgstr "Sắp xếp"
 
-#: themes/canvas/renderer.php:39 themes/default/renderer.php:65
-#: themes/dropdown/renderer.php:72
+#: themes/canvas/renderer.php:39 themes/dropdown/renderer.php:72
 msgid "Change Password"
 msgstr "Đổi mật khẩu"
 
 #: themes/canvas/renderer.php:40 themes/canvas/renderer.php:47
-#: themes/default/renderer.php:67 themes/default/renderer.php:77
-#: themes/dropdown/renderer.php:74 themes/dropdown/renderer.php:81
+#: themes/default/renderer.php:104 themes/dropdown/renderer.php:74
+#: themes/dropdown/renderer.php:81
 msgid "Help"
 msgstr "Hướng dẫn"
 
@@ -19031,6 +20884,25 @@ msgstr "Cài đặt Forms"
 msgid "Backup and Restore"
 msgstr "Sao Lưu và Khôi Phục"
 
+#: themes/default/renderer.php:86
+msgid "MORE"
+msgstr "THÊM"
+
+#~ msgid "User name"
+#~ msgstr "Người dùng"
+
+#~ msgid "Login -->"
+#~ msgstr "Đăng Nhập"
+
+#~ msgid "Send password -->"
+#~ msgstr "Gửi mật khẩu"
+
+#~ msgid "&Banking and General Ledger"
+#~ msgstr "Kế toán"
+
+#~ msgid "&Items and Inventory"
+#~ msgstr "Kho hàng"
+
 #~ msgid "Please define a customer to add customer branches."
 #~ msgstr "Hãy tạo khách hàng trước khi thêm các chi nhánh."
 
@@ -19079,18 +20951,6 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Search Supplier List"
 #~ msgstr "Tìm nhà cung cấp"
 
-#~ msgid "First"
-#~ msgstr "|<"
-
-#~ msgid "Prev"
-#~ msgstr "<"
-
-#~ msgid "Next"
-#~ msgstr ">"
-
-#~ msgid "Last"
-#~ msgstr ">|"
-
 #~ msgid "Unit cost"
 #~ msgstr "Đơn giá"
 
@@ -19101,9 +20961,6 @@ msgstr "Sao Lưu và Khôi Phục"
 # c:/Apache2/htdocs/account/includes/session.inc:35
 #~ msgid "Forgot password?"
 #~ msgstr "Quên mật khẩu?"
-
-#~ msgid "Send password"
-#~ msgstr "Gửi mật khẩu"
 
 #~ msgid "New password will be sent to your Email."
 #~ msgstr "Mật khẩu mới sẽ được gửi đến hộp thư của bạn."
@@ -19177,9 +21034,6 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "FrontAccounting ERP has been installed successsfully."
 #~ msgstr "Polymer đã cài đặt hoàn tất."
 
-#~ msgid "Human Resource"
-#~ msgstr "Nhân Sự - Lương"
-
 #~ msgid "Attendance"
 #~ msgstr "Chấm công"
 
@@ -19210,9 +21064,6 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Employee Document Inquiry"
 #~ msgstr "Xem Các Tài Liệu Nhân Viên"
 
-#~ msgid "Employee &Reports"
-#~ msgstr "Các Báo Cáo"
-
 #~ msgid "Employees"
 #~ msgstr "Nhân Viên"
 
@@ -19222,21 +21073,12 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Departments"
 #~ msgstr "Phòng Ban"
 
-#~ msgid "Manage Overtime"
-#~ msgstr "Quản lý thêm giờ"
-
 #~ msgid "Default Settings"
 #~ msgstr "Thông Số Mặc Định"
 
 # c:/Apache/htdocs/account/inventory/view/view_transfer.php:32
 #~ msgid "Job Positions"
 #~ msgstr "Chức Vụ"
-
-#~ msgid "Manage Grades"
-#~ msgstr "Cấp học"
-
-#~ msgid "Pay Elements"
-#~ msgstr "Thành Phần Lương"
 
 #~ msgid "Pay Elements Allocation"
 #~ msgstr "Chọn Thành Phần Lương"
@@ -19246,57 +21088,6 @@ msgstr "Sao Lưu và Khôi Phục"
 
 #~ msgid "Hrm entry"
 #~ msgstr "Sửa Thông Tin"
-
-#~ msgid "Hrm setup"
-#~ msgstr "Cài đặt"
-
-#~ msgid "Employee Transaction"
-#~ msgstr "Các giao dịch với nhân viên"
-
-#~ msgid "All departments"
-#~ msgstr "Tất cả bộ phận:"
-
-#~ msgid "All employees"
-#~ msgstr "Tất cả nhân viên"
-
-#~ msgid "Only unpaid:"
-#~ msgstr "Chỉ chưa thanh toán:"
-
-#~ msgid "Payslip"
-#~ msgstr "Phiếu lương"
-
-#~ msgid "Employee advance"
-#~ msgstr "Tạm ứng"
-
-#~ msgid "Payment advice"
-#~ msgstr "Thanh toán"
-
-#~ msgid "Print this Payslip"
-#~ msgstr "In Phiếu Lương Này"
-
-#~ msgid "Employee ID"
-#~ msgstr "Mã nhân viên"
-
-#~ msgid "Employee Name"
-#~ msgstr "Tên nhân viên"
-
-#~ msgid "Payslip No"
-#~ msgstr "Phiếu lương số"
-
-#~ msgid "Pay from"
-#~ msgstr "Từ ngày"
-
-#~ msgid "Pay to"
-#~ msgstr "Đến ngày"
-
-#~ msgid "Timesheet Inquiry"
-#~ msgstr "Bảng chấm công"
-
-#~ msgid "Department"
-#~ msgstr "Bộ phận"
-
-#~ msgid "Employee"
-#~ msgstr "Nhân viên"
 
 #~ msgid "Select time type"
 #~ msgstr "Chọn loại thời gian"
@@ -19313,20 +21104,11 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Account has been added."
 #~ msgstr "Đã thêm tài khoản."
 
-# c:/Apache/htdocs/account/gl/manage/gl_accounts.php:63
-#~ msgid ""
-#~ "Cannot delete this account because payroll rules have been created using "
-#~ "it."
-#~ msgstr "Không thể xoá tài khoản vì đã được sử dụng vào cấu trúc lương."
-
 #~ msgid "Select account"
 #~ msgstr "Chọn tài khoản"
 
 #~ msgid "Show inactive"
 #~ msgstr "Chưa kích hoạt"
-
-#~ msgid "Cannot make attendance for the date in the future."
-#~ msgstr "Không thể chấm công cho một ngày trong tương lai."
 
 #~ msgid ""
 #~ "Attendance input data must be less than 24 hours and formatted in <b>HH:"
@@ -19334,34 +21116,6 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgstr ""
 #~ "Dữ liệu chấm công phải nhỏ hơn 24 giờ và thuộc 1 trong các định dạng "
 #~ "<b>GIỜ:PHÚT</b> hoặc <b>Số nguyên</b>, ví dụ - 02:25 , 2:25, 8, 23:59 ..."
-
-#~ msgid "Employees Attendance"
-#~ msgstr "Chấm công"
-
-#~ msgid "Attendance date begin"
-#~ msgstr "Từ ngày"
-
-#~ msgid "Aattendance date end"
-#~ msgstr "Đến ngày"
-
-#~ msgid "For department"
-#~ msgstr "Cho bộ phận"
-
-#~ msgid "Bulk"
-#~ msgstr "Tất Cả"
-
-#~ msgid "Record all as regular work"
-#~ msgstr "Chấm công là làm việc bình thường cho tất cả"
-
-#~ msgid "Regular time"
-#~ msgstr "Giờ hành chính"
-
-#~ msgid "Save attendance"
-#~ msgstr "Lưu chấm công"
-
-# c:/Apache/htdocs/account/gl/view/gl_deposit_view.php:61
-#~ msgid "There are no employees for attendance."
-#~ msgstr "Không có nhân viên để chấm công."
 
 #~ msgid ""
 #~ "The selected date range includes a date that has been approved, cannot be "
@@ -19373,42 +21127,14 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Selected date has already paid for Employee "
 #~ msgstr "Ngày được chọn đã được thanh toán cho Nhân Viên "
 
-#~ msgid "Attendance has been saved."
-#~ msgstr "Đã lưu chấm công."
-
-#~ msgid "Nothing added"
-#~ msgstr "Không có gì thêm mới"
-
-#~ msgid "The number of month working days must be between 0 and 31."
-#~ msgstr "Số ngày làm trong tháng phải trong khoảng từ 0 đến 31."
-
-#~ msgid "The number of working hours must be between 0 and 24."
-#~ msgstr "Số giờ làm trong ngày phải trong khoảng từ 0 đến 24."
-
-#, php-format
-#~ msgid "Grade %s is being used by employees, cannot select a lower grade"
-#~ msgstr "Bậc Lương %s đang được sử dung không thể chọn số thấp hơn"
-
-#~ msgid "The Payroll setup has been updated."
-#~ msgstr "Đã cập nhật các thiết lập."
-
-#~ msgid "Payroll default Settings"
-#~ msgstr "Các thông số mặc định"
-
 #~ msgid "Payroll payable account"
 #~ msgstr "Tài khoản phải trả"
 
 #~ msgid "Deductible account"
 #~ msgstr "Tài khoản giảm trừ"
 
-#~ msgid "Use Salary Basic Account"
-#~ msgstr "Dùng tài khoản lương"
-
 #~ msgid "Overtime account"
 #~ msgstr "Tài khoản làm thêm giờ"
-
-#~ msgid "Working time parameters"
-#~ msgstr "Thời gian làm việc"
 
 #~ msgid "Work days per month"
 #~ msgstr "Số ngày công/tháng"
@@ -19416,137 +21142,14 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Work hours per day"
 #~ msgstr "Số giờ hành chính"
 
-#~ msgid "hours"
-#~ msgstr "giờ"
-
-#~ msgid "Others"
-#~ msgstr "Khác"
-
 #~ msgid "Salary based on department"
 #~ msgstr "Hạch toán theo bộ phận (phòng ban)"
 
 #~ msgid "Number of Grades"
 #~ msgstr "Số Bậc Lương"
 
-#~ msgid "Manage Department"
-#~ msgstr "Phòng ban"
-
-# c:/Apache/htdocs/account/gl/manage/gl_accounts.php:38
-#~ msgid "The Department name cannot be empty."
-#~ msgstr "Tên phòng ban không được trống."
-
-#~ msgid "Please select basic account"
-#~ msgstr "Chọn tài khoản"
-
-#~ msgid "Salary Basic Account must be an expenses account."
-#~ msgstr "Tài Khoản Lương phải là loại tài khoản chi phí."
-
-#~ msgid "Selected department has been updated"
-#~ msgstr "Đã cập nhật phòng ban"
-
-# c:/Apache/htdocs/account/admin/Users.php:23
-#~ msgid "New department has been added"
-#~ msgstr "Đã thêm phòng ban mới"
-
-# c:/Apache/htdocs/account/gl/manage/gl_accounts.php:38
-#~ msgid "The Department cannot be deleted."
-#~ msgstr "Không thể xoá bộ phận."
-
-#~ msgid "Selected department has been deleted"
-#~ msgstr "Đã xoá bộ phận (phòng ban)"
-
-#~ msgid "Id"
-#~ msgstr "Id"
-
-#~ msgid "Department Name"
-#~ msgstr "Tên phòng ban:"
-
-#~ msgid "Salary Basic Account"
-#~ msgstr "Tài khoản lương"
-
-#~ msgid "Select basic account"
-#~ msgstr "Chọn tài khoản"
-
-#~ msgid "Manage Document Categories"
-#~ msgstr "Quản Lý các Loại Tài Liệu"
-
-# c:/Apache/htdocs/account/sales/manage/sales_types.php:22
-#~ msgid "The document type description cannot be empty."
-#~ msgstr "Tên loại tài liệu không được bỏ trống."
-
-# c:/Apache/htdocs/account/inventory/prices.php:67
-# c:/Apache/htdocs/account/purchasing/po_entry_items.php:146
-#~ msgid "Days before expiry must be a number."
-#~ msgstr "Số ngày trước hết hạn phải là số."
-
-#~ msgid "Selected document type has been updated"
-#~ msgstr "Đã cập nhật loại tài liệu"
-
-#~ msgid "New document type item has been added"
-#~ msgstr "Đã them loại tài liệu mới"
-
-# c:/Apache/htdocs/account/sales/manage/customers.php:27
-#~ msgid "This document category cannot be deleted."
-#~ msgstr "Không thể xóa loại tài liệu này."
-
-#~ msgid "Selected document category has been deleted"
-#~ msgstr "Loại tài liệu đã được xóa"
-
-#~ msgid "Alert Before Expiry"
-#~ msgstr "Báo Trước Hết Hạn"
-
-#~ msgid "Alert before expiry:"
-#~ msgstr "Báo trước hết hạn:"
-
-# c:/Apache/htdocs/account/purchasing/manage/suppliers.php:36
-#~ msgid "The employee first name must be entered."
-#~ msgstr "Phải nhập họ nhân viên."
-
-#~ msgid "Employee last name must be entered."
-#~ msgstr "Chưa nhập Tên nhân viên"
-
-#~ msgid "Invalid email."
-#~ msgstr "Email không hợp lệ"
-
-#~ msgid "Invalid birth date."
-#~ msgstr "Ngày không hợp lệ"
-
-#~ msgid "Invalid hire date."
-#~ msgstr "Sai định dạng ngày."
-
-#~ msgid "Basic salary amount must be a positive number"
-#~ msgstr "Lương cơ bản phải lớn hơn không"
-
-#~ msgid ""
-#~ "Staff's Job Position must be selected to use Personal Salary Structure"
-#~ msgstr "Phải chọn chức vụ cho nhân viên để sử dung cấu trúc lương cá nhân"
-
-#~ msgid "Invalid release date."
-#~ msgstr "Ngày không hợp lệ:"
-
-#~ msgid "Not hired"
-#~ msgstr "Chưa tuyển dụng"
-
-#~ msgid "Not selected"
-#~ msgstr "Chưa chọn"
-
 #~ msgid "Show resigned"
 #~ msgstr "Đã nghỉ việc"
-
-#~ msgid "Gender"
-#~ msgstr "Giới tính"
-
-#~ msgid "Mobile"
-#~ msgstr "Điện thoại"
-
-#~ msgid "Birth"
-#~ msgstr "Ngày sinh"
-
-#~ msgid "Hired Date"
-#~ msgstr "Ngày vào"
-
-#~ msgid "No employee defined."
-#~ msgstr "Chưa có nhân viên nào."
 
 # c:/Apache2/htdocs/account/inventory/manage/items.php:301
 #~ msgid "Image File"
@@ -19554,9 +21157,6 @@ msgstr "Sao Lưu và Khôi Phục"
 
 #~ msgid "Delete Image"
 #~ msgstr "Xóa ảnh"
-
-#~ msgid "Personal Information"
-#~ msgstr "Thông tin cá nhân"
 
 #~ msgid "Employee Id"
 #~ msgstr "ID nhân viên"
@@ -19589,27 +21189,14 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Tax ID Number"
 #~ msgstr "Mã Số Thuế TNCN"
 
-#~ msgid "Job Information"
-#~ msgstr "Thông tin công việc"
-
 #~ msgid "Notes"
 #~ msgstr "Ghi chú"
 
 #~ msgid "Hire Date"
 #~ msgstr "Ngày vào làm"
 
-#~ msgid "Set hire date first"
-#~ msgstr "Chọn ngày vào làm trước"
-
-# c:/Apache/htdocs/account/inventory/view/view_transfer.php:32
-#~ msgid "Job Position"
-#~ msgstr "Chức Vụ"
-
 #~ msgid "Salary Grade"
 #~ msgstr "Mức Lơng"
-
-#~ msgid "Basic"
-#~ msgstr "Cơ Bản"
 
 #~ msgid "Resigned"
 #~ msgstr "Đã nghỉ"
@@ -19617,266 +21204,12 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Release Date"
 #~ msgstr "Ngày nghỉ"
 
-#~ msgid "Enter negative amount for deduction, positive for earning"
-#~ msgstr "Nhập số âm cho giảm trừ, số dương cho thu nhập"
-
-#~ msgid "Use Personal Salary Structure:"
-#~ msgstr "Cấu Trúc Lương Riêng:"
-
-#~ msgid "Basic Salary Amount:"
-#~ msgstr "Lương Cơ Bản:"
-
-#~ msgid "Update Employee"
-#~ msgstr "Cập nhật"
-
-#~ msgid "Update employee details"
-#~ msgstr "Cập nhật"
-
-#~ msgid "Select this employee and return to document entry."
-#~ msgstr "Chọn nhân viên này và trở lại tài liệu."
-
-#~ msgid "Delete Employee"
-#~ msgstr "Xoá nhân viên"
-
-#~ msgid "Delete employee data if have been never used"
-#~ msgstr "Xoá thông tin nhân viên nếu không sử dụng"
-
-# c:/Apache/htdocs/account/purchasing/manage/suppliers.php:179
-#~ msgid "Add New Employee Details"
-#~ msgstr "Thêm mới chi tiết nhân viên"
-
-#~ msgid "Employee details has been updated."
-#~ msgstr "Đã cập nhật hồ sơ nhân viên."
-
-#~ msgid "A new employee has been added."
-#~ msgstr "Đã thêm nhân viên mới"
-
-#~ msgid "Employee details has been deleted."
-#~ msgstr "Đã xoá thông tin nhân viên."
-
-#~ msgid "Manage Employees"
-#~ msgstr "Quản lý nhân viên"
-
-#~ msgid "Employees &List"
-#~ msgstr "Danh Sách Nhân Viên"
-
-#~ msgid "&Add/Edit Employee"
-#~ msgstr "Thêm / Sửa"
-
-#~ msgid "Employee Payment Entry"
-#~ msgstr "Thanh Toán Lương"
-
-#~ msgid "Employee Advance Entry"
-#~ msgstr "Tạm Ứng"
-
-#~ msgid "Employee Deposit Entry"
-#~ msgstr "Nhận Thanh Toán Từ Nhân Viên"
-
-#~ msgid "Payment advice already exists"
-#~ msgstr "Phiếulương đã tồn tại"
-
-#~ msgid "Payment Advices"
-#~ msgstr "Các phiếu báo lương"
-
-#~ msgid "Payslip number does not exist"
-#~ msgstr "Phiếu lương không tồn tại"
-
-#, php-format
-#~ msgid "Employee Payment Advice #%d has been entered"
-#~ msgstr "Đã nhập phiếu báo lương cho nhân viên #%d"
-
-#~ msgid "Payment advice gl entry For Payslip #"
-#~ msgstr "Các bút toán giao dịch của phiếu lương #"
-
-#~ msgid "You have to select a payslip."
-#~ msgstr "Bạn phải chọn phiếu lương."
-
-#~ msgid "You have to select an employee."
-#~ msgstr "Phải chọn nhân viên."
-
-# c:/Apache/htdocs/account/purchasing/allocations/supplier_allocate.php:60
-# c:/Apache/htdocs/account/sales/allocations/customer_allocate.php:55
-#~ msgid ""
-#~ "Payment cannot be processed because the amount allocated is more than the "
-#~ "total payslip amount"
-#~ msgstr ""
-#~ "Thanh toán không thực hiện được vì số tiền tạm ứng được phân bổ lớn hơn "
-#~ "tổng tiền lương"
-
-#~ msgid "Pay amount have to be positive number."
-#~ msgstr "Số tiền phải là số dương."
-
-#~ msgid ""
-#~ "Employee advances have been allocated, no bank payment has been made."
-#~ msgstr ""
-#~ "Đã phân bổ tạm ứng của nhân viên, không có giao dịch ngân hàng nào thực "
-#~ "hiện."
-
-# c:/Apache/htdocs/account/purchasing/supplier_payment.php:95
-#~ msgid "Generate Payment Items"
-#~ msgstr "Xuất các mục thanh toán"
-
-# c:/Apache/htdocs/account/purchasing/supplier_payment.php:95
-#~ msgid "Generate Payment GL Items"
-#~ msgstr "Xuất các mục thanh toán"
-
-#~ msgid "Employee Attach Documents"
-#~ msgstr "Đính Kèm Tài Liệu"
-
-# c:/Apache/htdocs/account/sales/customer_payments.php:18
-#~ msgid "There are no <b>Document Types</b> defined in the system"
-#~ msgstr "Chưa có các <b>Kiểu Tài Liệu</b> trong hệ thống"
-
-#~ msgid "Select an employee."
-#~ msgstr "Chọn nhân viên."
-
-#~ msgid "Select a document type."
-#~ msgstr "Chọn kiểu tài liệu."
-
-#~ msgid "The document description cannot be empty."
-#~ msgstr "Tên tài liệu không được bỏ trống."
-
-# c:/Apache/htdocs/account/sales/manage/customers.php:27
-#~ msgid "Issue date cannot be after expiry date."
-#~ msgstr "Ngày có hiệu lực không được sau ngày hết hạn."
-
-#~ msgid "Select employee"
-#~ msgstr "Chọn nhân viên"
-
-#~ msgid "Enter search string:"
-#~ msgstr "Nhập ký tự tìm kiếm:"
-
-#~ msgid "Enter fragment or leave empty"
-#~ msgstr "Nhập ký tự hoặc bỏ trống"
-
-#~ msgid "All document type"
-#~ msgstr "Tất cả các loại tài liệu"
-
-#~ msgid "Alert:"
-#~ msgstr "Thông Báo:"
-
-#~ msgid "Not Alert:"
-#~ msgstr "Không Thông Báo:"
-
 #~ msgid "Expired"
 #~ msgstr "Đã Hết Hạn"
 
 # c:/Apache/htdocs/account/manufacturing/view/work_order_view.php:44
 #~ msgid "Issued"
 #~ msgstr "Hiệu Lực"
-
-#~ msgid "Alert"
-#~ msgstr "Thông Báo"
-
-#~ msgid "Click to edit this document"
-#~ msgstr "Bấm để chỉnh sửa tài liệu"
-
-#~ msgid "Doc No"
-#~ msgstr "Số Tài Liệu"
-
-#~ msgid "Document Type"
-#~ msgstr "Loại Tài Liệu"
-
-#~ msgid "Document Title"
-#~ msgstr "Tên Tài Liệu"
-
-# c:/Apache2/htdocs/account/manufacturing/includes/work_order_issue_ui.inc:155
-#~ msgid "Issue Date"
-#~ msgstr "Ngày Hiệu Lực"
-
-#~ msgid "Expiry Date"
-#~ msgstr "Hết Hạn"
-
-#~ msgid "Marked rows are nearly expired"
-#~ msgstr "Các dòng được đánh dấu là sắp hết hạn"
-
-#~ msgid "Marked rows are expired"
-#~ msgstr "Các dòng được đánh dấu là đã quá hạn"
-
-#~ msgid "Document Number:"
-#~ msgstr "Số Tài Liệu:"
-
-#~ msgid "Document type:"
-#~ msgstr "Loại tài liệu:"
-
-#~ msgid "Select document type"
-#~ msgstr "Chọn loại tài liệu"
-
-#~ msgid "Document title:"
-#~ msgstr "Tên tài liệu:"
-
-# c:/Apache2/htdocs/account/manufacturing/includes/work_order_issue_ui.inc:155
-#~ msgid "Issue date:"
-#~ msgstr "Ngày hiệu lực:"
-
-# c:/Apache/htdocs/account/reporting/reports_main.php:45
-# c:/Apache/htdocs/account/reporting/reports_main.php:51
-# c:/Apache/htdocs/account/reporting/reports_main.php:53
-# c:/Apache/htdocs/account/reporting/reports_main.php:54
-# c:/Apache/htdocs/account/reporting/reports_main.php:55
-# c:/Apache/htdocs/account/reporting/reports_main.php:56
-#~ msgid "Expiry date:"
-#~ msgstr "Hết hạn:"
-
-# c:/Apache/htdocs/account/gl/manage/exchange_rates.php:34
-#~ msgid "Pay amount cannot be a negative number"
-#~ msgstr "Số tiền không được là số âm"
-
-#~ msgid "Grade table has been updated"
-#~ msgstr "Đã cập nhật sơ đồ mức lương"
-
-#~ msgid "Grade table for selected job position cannot be deleted."
-#~ msgstr "Không thể xóa bang mức lương cho chức vụ này."
-
-#~ msgid "Grade table of selected job position has been deleted"
-#~ msgstr "Đã xóa bang mức lương cho chức vụ được chọn"
-
-#~ msgid "Basic Amount"
-#~ msgstr "Lương Cơ Bản"
-
-#~ msgid "Grade"
-#~ msgstr "Bậc Lương"
-
-#~ msgid "Basic Amount:"
-#~ msgstr "Cơ Bản:"
-
-# c:/Apache/htdocs/account/sales/manage/customers.php:27
-#~ msgid "The overtime rate cannot be empty."
-#~ msgstr "Hệ số công của loại giờ làm thêm không được trống."
-
-# c:/Apache/htdocs/account/inventory/prices.php:67
-# c:/Apache/htdocs/account/purchasing/po_entry_items.php:146
-#~ msgid "Overtime rate must be a number."
-#~ msgstr "Hệ số công phải là số."
-
-# c:/Apache/htdocs/account/sales/manage/customers.php:27
-#~ msgid "The overtime name cannot be empty."
-#~ msgstr "Tên loại giờ làm thêm không được trống."
-
-#~ msgid "Selected overtime has been updated"
-#~ msgstr "Đã cập nhật loại giờ làm thêm"
-
-#~ msgid "New overtime item has been added"
-#~ msgstr "Đã thêm nhắc loại giờ làm thêm"
-
-# c:/Apache/htdocs/account/sales/manage/customers.php:27
-#~ msgid "This overtime cannot be deleted."
-#~ msgstr "Không thể xóa loại giờ làm thêm này."
-
-#~ msgid "Selected overtime item has been deleted"
-#~ msgstr "Đã xóa loại giờ làm thêm"
-
-# c:/Apache/htdocs/account/sales/delivery_details.php:208
-# c:/Apache/htdocs/account/sales/sales_order_entry.php:199
-# c:/Apache/htdocs/account/purchasing/includes/ui/po_ui.inc:96
-#~ msgid "Overtime Name"
-#~ msgstr "Tên giờ làm thêm"
-
-# c:/Apache/htdocs/account/sales/delivery_details.php:208
-# c:/Apache/htdocs/account/sales/sales_order_entry.php:199
-# c:/Apache/htdocs/account/purchasing/includes/ui/po_ui.inc:96
-#~ msgid "Overtime Rate"
-#~ msgstr "Hệ số tính lương"
 
 #~ msgid "Overtime rate"
 #~ msgstr "Hệ số công"
@@ -19887,9 +21220,6 @@ msgstr "Sao Lưu và Khôi Phục"
 #, php-format
 #~ msgid "%d Payslips have been entered"
 #~ msgstr "Đã tạo %d phiếu lương"
-
-#~ msgid "Enter &New Payslip"
-#~ msgstr "Tính Lương Mới"
 
 #~ msgid "Enter &New Payslip Batches"
 #~ msgstr "Loạt Tính Lương Mới"
@@ -19903,12 +21233,6 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ "Khoảng ngày được chọn bao gồm một ngày mà đã được thanh toán cho nhân "
 #~ "viên #"
 
-#~ msgid "End date cannot be before the start date"
-#~ msgstr "Ngày kết thúc không thể trước ngày bắt đầu"
-
-#~ msgid "Cannot pay for the date in the future."
-#~ msgstr "Không thể thanh toán cho tương lai."
-
 #~ msgid ""
 #~ "The Employee's Job Position does not have a structure, please define "
 #~ "Salary Structure"
@@ -19920,10 +21244,6 @@ msgstr "Sao Lưu và Khôi Phục"
 
 #~ msgid "Please select employees"
 #~ msgstr "Chọn nhân viên"
-
-# c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:256
-#~ msgid "All Positions"
-#~ msgstr "Tất Cả Chức Vụ"
 
 #~ msgid "All Departments"
 #~ msgstr "Tất cả bộ phận"
@@ -19941,11 +21261,6 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Process payslip for selected Staffs"
 #~ msgstr "Tạo phiếu lương cho các nhân viên đã chọn"
 
-#~ msgid ""
-#~ "Accounts have been updated, some accounts might not have been deleted "
-#~ "because Salary Structure using them."
-#~ msgstr "Đã cập nhật các tài khoản."
-
 #~ msgid "Select accounts first."
 #~ msgstr "Chọn tài khoản trước."
 
@@ -19953,196 +21268,18 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Select Payroll Rules"
 #~ msgstr "Chọn cấu trúc lương"
 
-#~ msgid "Save payroll structure"
-#~ msgstr "Lưu cấu trúc lương"
-
-#~ msgid "Update payroll rules data"
-#~ msgstr "Cập nhật cấu trúc lương"
-
-#~ msgid "Select this job position and return to document entry."
-#~ msgstr "Chọn chức vụ và quay lại tài liệu."
-
-#~ msgid "Delete payroll rules if have been never used"
-#~ msgstr "Xoá các tài khoản tính lương nếu chưa sử dụng"
-
-#~ msgid "Selected payroll rules have been deleted."
-#~ msgstr "Đã xoá các tài khoản tính lương."
-
-#~ msgid "Manage Payroll Rule"
-#~ msgstr "Quản lý cấu trúc lương"
-
-# c:/Apache/htdocs/account/inventory/view/view_transfer.php:32
-#~ msgid "Select Job Position"
-#~ msgstr "Chọn Chức Vụ"
-
-# c:/Apache/htdocs/account/inventory/view/view_transfer.php:32
-#~ msgid "Define Job Positions first."
-#~ msgstr "Cần định nghĩa Chức Vụ trước."
-
-#, php-format
-#~ msgid "Modifying Employee Payslip #%d."
-#~ msgstr "Sửa phiếu lương số #%d."
-
-#~ msgid "Employee Payslip Entry"
-#~ msgstr "Hạch toán lương"
-
-#, php-format
-#~ msgid "Payslip #%d has been entered"
-#~ msgstr "Đã nhập phiếu lương số #%d"
-
-#~ msgid "&View this Transaction"
-#~ msgstr "Xem giao dịch này"
-
-#~ msgid "Make Payment &Advice for this Payslip"
-#~ msgstr "Lập phiếu báo lương cho phiếu lương này"
-
-#~ msgid "Employee Payslip has been updated #"
-#~ msgstr "Đã cập nhật phiếu lương #"
-
-#~ msgid "Return to Payslip &Inquiry"
-#~ msgstr "Quay lại các phiếu lương"
-
-#~ msgid "Employee not selected"
-#~ msgstr "Chưa chọn nhân viên"
-
-#~ msgid "Selected date has already paid for this person"
-#~ msgstr "Đã thanh toán cho ngày này rồi"
-
-#~ msgid ""
-#~ "Selected period contains a period that has already been paid for this "
-#~ "person"
-#~ msgstr ""
-#~ "Khoảng ngày được chọn bao gồm một ngày mà đã được thanh toán cho người này"
-
-#~ msgid "Cannot pay for the date before hired date"
-#~ msgstr "Không thể thanh toán cho tương lai"
-
-#~ msgid ""
-#~ "Selected Employee does not have a Job Position, please define it first."
-#~ msgstr "Nhân Viên này không có Chức Vụ, hãy xác định chức vụ trước."
-
-#~ msgid ""
-#~ "the Employee's Job Position does not have a structure, please define "
-#~ "Salary Structure"
-#~ msgstr ""
-#~ "Chức Vụ của nhân viên này không có cấu trúc lương, hay khởi tạo cấu trúc "
-#~ "lương"
-
-#~ msgid "Employee cannot getting paid for non-working period."
-#~ msgstr "Không thể thanh toán cho một giai đoạn không làm việc."
-
-#~ msgid ""
-#~ "Cannot make a journal entry for a bank account. Use banking functions for "
-#~ "bank transactions."
-#~ msgstr ""
-#~ "Không thể ghi nhật ký cho tài khoản ngân hàng. Hãy sử dụng các chức năng "
-#~ "riêng cho tài khoản ngân hàng."
-
-#~ msgid "Generate Payslip"
-#~ msgstr "Tính lương"
-
-#~ msgid "Generate Payslip For Process"
-#~ msgstr "Tính lương"
-
-#~ msgid "Process PaySlip"
-#~ msgstr "Thực hiện"
-
-#~ msgid "Cancels document entry or removes Gl items"
-#~ msgstr "Hủy thao tác hoặc xóa các mục"
-
-# c:/Apache/htdocs/account/inventory/view/view_transfer.php:32
-#~ msgid "Manage Job Positions"
-#~ msgstr "Quản Lý Chức Vụ"
-
-#~ msgid "Name field cannot be empty."
-#~ msgstr "Tên không được để trống."
-
-# c:/Apache/htdocs/account/inventory/transfers.php:112
-#~ msgid "Amount field value must be a positive number."
-#~ msgstr "Số lượng nhập vào phải lớn hơn 0."
-
-#~ msgid "Selected job position has been updated"
-#~ msgstr "Đã cập nhật chức vụ"
-
-#~ msgid "New job position has been added"
-#~ msgstr "Đã thêm chức vụ mới"
-
-# c:/Apache/htdocs/account/sales/manage/customers.php:27
-#~ msgid "This job position cannot be deleted."
-#~ msgstr "Không thể xóa chức vụ này."
-
-#~ msgid "Selected job position has been deleted"
-#~ msgstr "Chức vụ đã được xóa"
-
-#~ msgid "Salary amount"
-#~ msgstr "Số tiền"
-
-#~ msgid "Pay basis"
-#~ msgstr "Lương cơ bản"
-
-#~ msgid "Daily"
-#~ msgstr "Hàng ngày"
-
 # c:/Apache/htdocs/account/inventory/manage/locations.php:109
 #~ msgid "Position Name"
 #~ msgstr "Tên Chức Vụ"
 
-#~ msgid "Salary Basic Account:"
-#~ msgstr "Tài Khoản Lương:"
-
-#~ msgid "Salary Basic Amount"
-#~ msgstr "Lương Cơ Bản"
-
 #~ msgid "Pay Basis"
 #~ msgstr "Loại Lương"
-
-#~ msgid "Monthly salary"
-#~ msgstr "Lương tháng"
-
-#~ msgid "Daily wage"
-#~ msgstr "Công nhật"
-
-#~ msgid "Manage Salary Structure"
-#~ msgstr "Cấu trúc lương"
-
-#~ msgid "Select job position"
-#~ msgstr "Chọn chức vụ"
-
-#~ msgid "Only one amount(Earning or Deduction) is allowed per rule"
-#~ msgstr "Mỗi tài khoản chỉ nhận số lượng cho một vế"
-
-#~ msgid "Salary structure has been updated."
-#~ msgstr "Đã cập nhật cấu trúc lương."
-
-#~ msgid "Selected structure has been deleted."
-#~ msgstr "Đã xoá cấu trúc lương."
 
 #~ msgid "Payroll Rules"
 #~ msgstr "Tài khoản tính lương"
 
-#~ msgid "Monthly Earnings"
-#~ msgstr "Phụ cấp tháng"
-
-#~ msgid "Monthly Deductions"
-#~ msgstr "Giảm trừ tháng"
-
-#~ msgid "Daily Earnings"
-#~ msgstr "Phụ cấp ngày"
-
-#~ msgid "Daily Deductions"
-#~ msgstr "Giảm trừ ngày"
-
 #~ msgid "Salary Amount"
 #~ msgstr "Số Tiền"
-
-#~ msgid "Save salary structure"
-#~ msgstr "Lưu cấu trúc lương"
-
-#~ msgid "Update salary structure data"
-#~ msgstr "Cập nhật dữ liệu cấu trúc lương"
-
-#~ msgid "Delete salary structure if have been never used"
-#~ msgstr "Xóa cấu trúc lương nếu chưa sử dụng"
 
 #~ msgid "Payroll rules not defined for this job position"
 #~ msgstr "Chức vụ chưa có các thành phần lương"
@@ -20153,66 +21290,6 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgstr ""
 #~ "Cần phải tạo ra các Chức Vụ và các Thành Phần Lương trước khi sử dụng "
 #~ "chức năng này."
-
-#~ msgid "Grade "
-#~ msgstr "Bậc Lương "
-
-#~ msgid "Report"
-#~ msgstr "Báo cáo"
-
-#~ msgid "could not be found."
-#~ msgstr "không tìm thấy."
-
-#~ msgid "Not set"
-#~ msgstr "Chưa đặt"
-
-#~ msgid "Advance Deduction"
-#~ msgstr "Trừ Tạm Ứng"
-
-#~ msgid "Could not get payslip details"
-#~ msgstr "Không tìm thấy chi tiết phiếu lương"
-
-#~ msgid "could not get employee allocations amount"
-#~ msgstr "không thể lấy dữ liệu phân bổ"
-
-#~ msgid "Company:"
-#~ msgstr "Công ty:"
-
-#~ msgid "could not get employee"
-#~ msgstr "không tìm thấy dữ liệu nhân viên"
-
-#~ msgid "Male"
-#~ msgstr "Nam"
-
-#~ msgid "Female"
-#~ msgstr "Nữ"
-
-#~ msgid "Employee name"
-#~ msgstr "Tên nhân viên"
-
-#~ msgid "Birth date"
-#~ msgstr "Ngày sinh"
-
-#~ msgid "Hired date"
-#~ msgstr "Ngày vào"
-
-#~ msgid "Employees List"
-#~ msgstr "Danh Sách Nhân Viên"
-
-#~ msgid "could not get department data"
-#~ msgstr "Không tìm thấy dữ liệu bộ phận"
-
-#~ msgid "No employee filter"
-#~ msgstr "Không lọc nhân viên"
-
-#~ msgid "No department filter"
-#~ msgstr "Không lọc bộ phận"
-
-#~ msgid "No gender filter"
-#~ msgstr "Không lọc giới tính"
-
-#~ msgid "List of Employees"
-#~ msgstr "Danh Sách Nhân Viên"
 
 #~ msgid "GRM"
 #~ msgstr "GRM"
@@ -21054,9 +22131,6 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "could not reset payroll rules"
 #~ msgstr "không thể khôi phục cấu trúc tài khoản"
 
-#~ msgid "could not get payroll structure"
-#~ msgstr "không tìm thấy dữ liệu cấu trúc lương"
-
 #~ msgid "Could not add time clock"
 #~ msgstr "Không thể lưu dữ liệu"
 
@@ -21105,9 +22179,6 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "could not get employee data"
 #~ msgstr "không thể đọc dữ liệu nhân viên"
 
-#~ msgid "invalid payment entered. Cannot pay to another bank account"
-#~ msgstr "invalid payment entered. Cannot pay to another bank account"
-
 #~ msgid "employee trans could not be inserted"
 #~ msgstr "không thể lưu giao dịch"
 
@@ -21134,9 +22205,6 @@ msgstr "Sao Lưu và Khôi Phục"
 
 #~ msgid "could not read grade table data"
 #~ msgstr "could not read grade table data"
-
-#~ msgid "Could not delete grade table"
-#~ msgstr "Could not delete grade table"
 
 #~ msgid "Could not write salary structure data"
 #~ msgstr "Không thể lữu dữ liệu cấu trúc lương"
@@ -21195,26 +22263,11 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Could not get employee salary structure"
 #~ msgstr "Không tìm thấy cấu trúc lương"
 
-#~ msgid "Select Employee"
-#~ msgstr "Chọn nhân viên"
-
-#~ msgid "Pay Slip:"
-#~ msgstr "Phiếu lương:"
-
-#~ msgid "Select payslip"
-#~ msgstr "Chọn khoản lương"
-
-#~ msgid "Total Amount:"
-#~ msgstr "Tổng:"
-
 #~ msgid "From Date"
 #~ msgstr "Từ"
 
 #~ msgid "To Date"
 #~ msgstr "Đến"
-
-#~ msgid "Daily wages"
-#~ msgstr "Công nhật"
 
 #~ msgid "Work days"
 #~ msgstr "Số ngày làm"
@@ -21222,20 +22275,8 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Leave hours"
 #~ msgstr "Số giờ nghỉ"
 
-#~ msgid "This employee does not belong to any department"
-#~ msgstr "Nhân viên không thuộc phòng ban nào"
-
-#~ msgid "Basic account has not been set for department"
-#~ msgstr "Tài khoản tính lương chưa thiết lập cho bộ phận"
-
 #~ msgid "non-working period"
 #~ msgstr "giai đoạn không làm việc"
-
-#~ msgid "Total Salary"
-#~ msgstr "Tổng"
-
-#~ msgid "All Payslip"
-#~ msgstr "Tất cả phiếu lương"
 
 #~ msgid "could not get api data"
 #~ msgstr "could not get api data"
@@ -21574,28 +22615,8 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Banking and General Ledger"
 #~ msgstr "Kế toán và ngân hàng"
 
-# c:/Apache/htdocs/account/reporting/reports_main.php:47
-# c:/Apache/htdocs/account/reporting/reports_main.php:48
-# c:/Apache/htdocs/account/reporting/reports_main.php:49
-# c:/Apache/htdocs/account/reporting/reports_main.php:50
-# c:/Apache/htdocs/account/reporting/reports_main.php:51
-# c:/Apache/htdocs/account/reporting/reports_main.php:52
-# c:/Apache/htdocs/account/reporting/reports_main.php:53
-# c:/Apache/htdocs/account/reporting/reports_main.php:54
-# c:/Apache/htdocs/account/reporting/reports_main.php:55
-# c:/Apache/htdocs/account/reporting/reports_main.php:56
-#~ msgid "&General Ledger"
-#~ msgstr "Kế toán"
-
 #~ msgid "Items And Inventory"
 #~ msgstr "Kho Hàng"
-
-# c:/Apache/htdocs/account/reporting/reports_main.php:32
-# c:/Apache/htdocs/account/reporting/reports_main.php:33
-# c:/Apache/htdocs/account/reporting/reports_main.php:34
-# c:/Apache/htdocs/account/reporting/reports_main.php:35
-#~ msgid "&Inventory"
-#~ msgstr "Kho hàng"
 
 #~ msgid "Journal #"
 #~ msgstr "Nhật ký"
@@ -21611,9 +22632,6 @@ msgstr "Sao Lưu và Khôi Phục"
 
 #~ msgid "Basic account type"
 #~ msgstr "Kiểu hạch toán lương"
-
-#~ msgid "Department Name:"
-#~ msgstr "Tên bộ phận:"
 
 # c:/Apache/htdocs/account/sales/allocations/customer_allocation_main.php:28
 # c:/Apache/htdocs/account/sales/inquiry/customer_allocation_inquiry.php:23
@@ -21817,41 +22835,8 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Today's Absentee"
 #~ msgstr "Vắng mặt"
 
-#~ msgid "Department:"
-#~ msgstr "Phòng ban"
-
-#~ msgid "Employee:"
-#~ msgstr "Nhân viên"
-
 #~ msgid "For department:"
 #~ msgstr "Cho bộ phận:"
-
-#~ msgid "Payroll payable account:"
-#~ msgstr "Phải trả nhân viên:"
-
-#~ msgid "Deductible account:"
-#~ msgstr "Tài khoản giảm trừ:"
-
-#~ msgid "Overtime account:"
-#~ msgstr "Tài khoản thêm giờ:"
-
-#~ msgid "Work days per month:"
-#~ msgstr "Số công 1 tháng:"
-
-#~ msgid "Work hours per day:"
-#~ msgstr "Số giờ hành chính:"
-
-# c:/Apache/htdocs/account/sales/delivery_details.php:208
-# c:/Apache/htdocs/account/sales/sales_order_entry.php:199
-# c:/Apache/htdocs/account/purchasing/includes/ui/po_ui.inc:96
-#~ msgid "Overtime rate:"
-#~ msgstr "Hệ số :"
-
-# c:/Apache/htdocs/account/sales/delivery_details.php:208
-# c:/Apache/htdocs/account/sales/sales_order_entry.php:199
-# c:/Apache/htdocs/account/purchasing/includes/ui/po_ui.inc:96
-#~ msgid "Overtime Name:"
-#~ msgstr "Tên loại :"
 
 #~ msgid "Modifying Employee Payslip # %d."
 #~ msgstr "Chỉnh sửa phiếu lương #%d."
@@ -21895,35 +22880,11 @@ msgstr "Sao Lưu và Khôi Phục"
 #~ msgid "Invalid date."
 #~ msgstr "Ngày không hợp lệ"
 
-#~ msgid "Show resigned:"
-#~ msgstr "Đã nghỉ việc:"
-
 #~ msgid "Press Id to edit employee details."
 #~ msgstr "Bấm vào ID để chỉnh sửa chi tiết nhân viên."
 
-#~ msgid "Employee Id:"
-#~ msgstr "Id nhân viên:"
-
-#~ msgid "Gender:"
-#~ msgstr "Giới tính:"
-
-#~ msgid "Mobile:"
-#~ msgstr "Điện thoại *:"
-
-#~ msgid "e-Mail:"
-#~ msgstr "Email:"
-
-#~ msgid "Birth Date:"
-#~ msgstr "Ngày sinh:"
-
-#~ msgid "Hire Date:"
-#~ msgstr "Ngày vào:"
-
 #~ msgid "Salary:"
 #~ msgstr "Mức lương:"
-
-#~ msgid "Release Date:"
-#~ msgstr "Ngày thôi việc:"
 
 #~ msgid "Employee Payment Advice has been entered"
 #~ msgstr "Đã nhập phiếu báo lương"
@@ -21965,15 +22926,6 @@ msgstr "Sao Lưu và Khôi Phục"
 
 #~ msgid "To Date:"
 #~ msgstr "Đến:"
-
-#~ msgid "Payslip No:"
-#~ msgstr "Phiếu lương:"
-
-#~ msgid "Work days:"
-#~ msgstr "Số ngày làm:"
-
-#~ msgid "Leave hours:"
-#~ msgstr "Số giờ nghỉ:"
 
 #~ msgid "Cash invoice"
 #~ msgstr "Hoá đơn bán lẻ"
@@ -24452,9 +25404,6 @@ msgstr "Sao Lưu và Khôi Phục"
 
 #~ msgid "General contact data for supplier"
 #~ msgstr "Thông tin chung liên hệ nhà cung cấp"
-
-#~ msgid "User name:"
-#~ msgstr "Người dùng:"
 
 #~ msgid "Password    :"
 #~ msgstr "Mật khẩu:"
