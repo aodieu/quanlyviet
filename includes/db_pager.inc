@@ -383,7 +383,9 @@ class db_pager {
 	//	Set check function to mark some rows.
 	//	
 	function set_marker($func, $notice='', $markercl='overduebg', $msgclass='overduefg' ) {
-		$this->marker[] = array('func'=>$func, 'txt'=>$notice, 'class'=>$markercl, 'txt_class'=>$msgclass);
+		// add a marker only when it is not exist
+		if(array_search($func, array_column($this->marker, 'func')) === false)
+			$this->marker[] = array('func'=>$func, 'txt'=>$notice, 'class'=>$markercl, 'txt_class'=>$msgclass);
 	}
 	//
 	//	Set handler to display additional row between titles and pager body.
