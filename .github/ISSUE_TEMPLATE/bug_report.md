@@ -1,9 +1,9 @@
 ---
-Tên-name: Báo cáo lỗi
-Chủ đề-about: Tạo báo cáo lỗi để giúp QuanlyViet khắc phục lỗi bạn đã gặp
-Tiêu đề-title: ''
-Nhãn-labels: Bug
-Giao cho-assignees: ''
+name: Báo cáo lỗi
+about: Tạo báo cáo lỗi để giúp QuanlyViet khắc phục lỗi bạn đã gặp
+title: ''
+labels: Lỗi
+assignees: ''
 
 ---
 
