@@ -10,7 +10,7 @@
 	NĂNG KHAI THÁC THƯƠNG MẠI HAY PHÙ HỢP VỚI MỤC ĐÍCH SỬ DỤNG CỤ THỂ NÀO.
 	Chi tiết về giấy phép <http://www.gnu.org/licenses/gpl-3.0.html>.
 *************************************************************************/
-class inventory_app extends application {
+class InventoryApp extends application {
 	function __construct() {
 		parent::__construct('stock', _($this->help_context = '&Inventory'));
 
@@ -40,5 +40,3 @@ class inventory_app extends application {
 		$this->add_extensions();
 	}
 }
-
-

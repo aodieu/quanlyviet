@@ -10,7 +10,7 @@
 	NĂNG KHAI THÁC THƯƠNG MẠI HAY PHÙ HỢP VỚI MỤC ĐÍCH SỬ DỤNG CỤ THỂ NÀO.
 	Chi tiết về giấy phép <http://www.gnu.org/licenses/gpl-3.0.html>.
 *************************************************************************/
-class suppliers_app extends application {
+class SuppliersApp extends application {
 	function __construct() {
 		parent::__construct('AP', _($this->help_context = '&Purchases'));
 
@@ -39,5 +39,3 @@ class suppliers_app extends application {
 		$this->add_extensions();
 	}
 }
-
-

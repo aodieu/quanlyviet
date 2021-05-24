@@ -10,7 +10,7 @@
 	NĂNG KHAI THÁC THƯƠNG MẠI HAY PHÙ HỢP VỚI MỤC ĐÍCH SỬ DỤNG CỤ THỂ NÀO.
 	Chi tiết về giấy phép <http://www.gnu.org/licenses/gpl-3.0.html>.
 *************************************************************************/
-class general_ledger_app extends application {
+class GeneralLedgerApp extends application {
 	function __construct() {
 		parent::__construct('GL', _($this->help_context = '&General Ledger'));
 
@@ -52,5 +52,3 @@ class general_ledger_app extends application {
 		$this->add_extensions();
 	}
 }
-
-

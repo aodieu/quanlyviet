@@ -40,8 +40,8 @@ class menu {
 	}
 	
 	function add_item($label, $link) {
-		$item = new menu_item($label,$link);
-		array_push($this->items,$item);
+		$item = new menu_item($label, $link);
+		array_push($this->items, $item);
 		return $item;
 	}
 }
@@ -52,7 +52,7 @@ class app_function {
 	var $access;
 	var $category;
 	
-	function __construct($label,$link,$access='SA_OPEN',$category='') {
+	function __construct($label, $link, $access='SA_OPEN', $category='') {
 		$this->label = $label;
 		$this->link = $link;
 		$this->access = $access;
@@ -66,21 +66,21 @@ class module {
 	var $lappfunctions;
 	var $rappfunctions;
 	
-	function __construct($name,$icon = null) {
+	function __construct($name, $icon=null) {
 		$this->name = $name;
 		$this->icon = $icon;
 		$this->lappfunctions = array();
 		$this->rappfunctions = array();
 	}
 	
-	function add_lapp_function($label,$link='',$access='SA_OPEN',$category='') {
-		$appfunction = new app_function($label,$link,$access,$category);
+	function add_lapp_function($label, $link='', $access='SA_OPEN', $category='') {
+		$appfunction = new app_function($label, $link, $access, $category);
 		$this->lappfunctions[] = $appfunction;
 		return $appfunction;
 	}
 
-	function add_rapp_function($label,$link='',$access='SA_OPEN',$category='') {
-		$appfunction = new app_function($label,$link,$access,$category);
+	function add_rapp_function($label, $link='', $access='SA_OPEN', $category='') {
+		$appfunction = new app_function($label, $link, $access, $category);
 		$this->rappfunctions[] = $appfunction;
 		return $appfunction;
 	}
@@ -101,16 +101,16 @@ class application {
 	}
 	
 	function add_module($name, $icon = null) {
-		$module = new module($name,$icon);
+		$module = new module($name, $icon);
 		$this->modules[] = $module;
 		return $module;
 	}
 	
-	function add_lapp_function($level, $label,$link='',$access='SA_OPEN',$category='') {
+	function add_lapp_function($level, $label, $link='', $access='SA_OPEN', $category='') {
 		$this->modules[$level]->lappfunctions[] = new app_function($label, $link, $access, $category);
 	}
 	
-	function add_rapp_function($level, $label,$link='',$access='SA_OPEN',$category='') {
+	function add_rapp_function($level, $label, $link='', $access='SA_OPEN', $category='') {
 		$this->modules[$level]->rappfunctions[] = new app_function($label, $link, $access, $category);
 	}
 	
