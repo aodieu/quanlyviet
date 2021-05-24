@@ -15,7 +15,7 @@ function add_user($user_id, $real_name, $password, $phone, $email, $role_id, $la
 	$sql = "INSERT INTO ".TB_PREF."users (user_id, real_name, password"
 		.", phone, email, role_id, language, pos, print_profile, rep_popup)
 		VALUES (".db_escape($user_id).", 
-		".db_escape($real_name).", ".db_escape($password) .",".db_escape($phone)
+		".db_escape($real_name).", ".db_escape($password).",".db_escape($phone)
 		.",".db_escape($email).", ".db_escape($role_id).", ".db_escape($language)
 		.", ".db_escape($pos).",".db_escape($profile).",".db_escape($rep_popup)
 		." )";
@@ -26,8 +26,7 @@ function add_user($user_id, $real_name, $password, $phone, $email, $role_id, $la
 //-----------------------------------------------------------------------------------------------
 
 function update_user_password($id, $user_id, $password) {
-	$sql = "UPDATE ".TB_PREF."users SET password=".db_escape($password) . ",
-		user_id = ".db_escape($user_id). " WHERE id=".db_escape($id);
+	$sql = "UPDATE ".TB_PREF."users SET password=".db_escape($password).",user_id = ".db_escape($user_id)." WHERE id=".db_escape($id);
 
 	return db_query($sql, 'could not update user password for '.$user_id);
 }
@@ -53,9 +52,9 @@ function update_user($id, $user_id, $real_name, $phone, $email, $role_id, $langu
 function update_user_prefs($id, $prefs) {
 	$sql = "UPDATE ".TB_PREF."users SET ";
 	foreach($prefs as $name => $value) {
-		$prefs[$name] = $name.'='. db_escape($value);
+		$prefs[$name] = $name.'='.db_escape($value);
 	}
-	$sql .= implode(',', $prefs) . " WHERE id=".db_escape($id);
+	$sql .= implode(',', $prefs)." WHERE id=".db_escape($id);
 
 	return db_query($sql, 'could not update user display prefs for '.$id);
 }
@@ -107,7 +106,7 @@ function get_user_by_email($email) {
 //-----------------------------------------------------------------------------------------------
 
 function delete_user($id) {
-	$sql="DELETE FROM ".TB_PREF."users WHERE id=".db_escape($id);
+	$sql = "DELETE FROM ".TB_PREF."users WHERE id=".db_escape($id);
 
 	db_query($sql, 'could not delete user '.$id);
 }
@@ -147,8 +146,7 @@ function check_user_activity($id)  {
 function show_users_online() {
 	global $db, $GetText, $SysPrefs;
 
-	if (!isset($SysPrefs->show_users_online) || $SysPrefs->show_users_online == 0 || !defined('TB_PREF') || 
-		!isset($GetText) || !isset($db))
+	if (!isset($SysPrefs->show_users_online) || $SysPrefs->show_users_online == 0 || !defined('TB_PREF') || !isset($GetText) || !isset($db))
 		return '';
 	$result = db_query("SHOW TABLES LIKE '".TB_PREF."useronline'");	
 	if (db_num_rows($result) == 1) {

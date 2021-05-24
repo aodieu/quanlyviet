@@ -11,8 +11,6 @@
 	Chi tiết về giấy phép <http://www.gnu.org/licenses/gpl-3.0.html>.
 *************************************************************************/
 
-//--------------------------------------------------------------------------------------
-
 function get_sql_for_view_transactions($filtertype, $from, $to, &$trans_ref) {
 	$db_info = get_systype_db_info($filtertype);
 
@@ -38,9 +36,9 @@ function get_sql_for_view_transactions($filtertype, $from, $to, &$trans_ref) {
 	$sql .= " FROM $table_name t LEFT JOIN ".TB_PREF."voided v ON"." t.$trans_no_name=v.id AND v.type=".db_escape($filtertype);
 
 	$sql .= " WHERE ISNULL(v.`memo_`)";
+
 	if ($from != null && $to != null) {
-		$sql .= " AND t.$trans_no_name >= ".db_escape($from). "
-			AND  t.$trans_no_name <= ".db_escape($to);
+		$sql .= " AND t.$trans_no_name >= ".db_escape($from)." AND  t.$trans_no_name <= ".db_escape($to);
 		if ($type_name != null)
 			$sql .= " AND t.`$type_name` = ".db_escape($filtertype);
 	}
@@ -123,7 +121,8 @@ function get_counterparty_name($trans_type, $trans_no, $full=true) {
 		case ST_MANURECEIVE :
 		case ST_COSTUPDATE :
 		*/
-			return null;
+
+		return null;
 	}
 
 	$result = db_query($sql, 'cannot retrieve counterparty name');
@@ -135,12 +134,11 @@ function get_counterparty_name($trans_type, $trans_no, $full=true) {
 	return '';
 }
 
-
 //-----------------------------------------------------------------------------------------
+
 //	Returns next transaction number.
 //	Used only for transactions stored in tables without autoincremented key.
 //
-
 function get_next_trans_no ($trans_type) {
 
 	$st = get_systype_db_info($trans_type);
@@ -197,5 +195,5 @@ function get_systype_db_info($type) {
 		case    ST_SUPPLIER    : return array(TB_PREF."suppliers", null, "supplier_id", "supp_ref", null);
 	}
 
-	display_db_error("invalid type ($type) sent to get_systype_db_info", "", true);
+	display_db_error("invalid type ($type) sent to get_systype_db_info", '', true);
 }
