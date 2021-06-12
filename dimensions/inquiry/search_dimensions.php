@@ -63,12 +63,12 @@ if (isset($_GET['stock_id']))
 
 //--------------------------------------------------------------------------------------
 
-start_form(false, false, $_SERVER['PHP_SELF'] .'?outstanding_only='.$outstanding_only);
+start_form(false, $_SERVER['PHP_SELF'].'?outstanding_only='.$outstanding_only);
 
 start_table(TABLESTYLE_NOBORDER);
 start_row();
 
-ref_cells(_('Reference:'), 'OrderNumber', '',null, '', true);
+ref_cells(_('Reference:'), 'OrderNumber', '', null, '', true);
 
 number_list_cells(_('Type'), 'type_', null, 1, 2, _('All'));
 date_cells(_('From:'), 'FromDate', '', null, 0, 0, -5);
@@ -93,7 +93,7 @@ function view_link($row) {
 }
 
 function sum_dimension($row) {
-	return get_dimension_balance($row['id'], $_POST['FromDate'], $_POST['ToDate']); 
+	return get_dimension_balance($row['id'], $_POST['FromDate'], $_POST['ToDate']);
 }
 
 function is_closed($row) {
@@ -105,8 +105,7 @@ function is_overdue($row) {
 }
 
 function edit_link($row) {
-	return pager_link(_('Edit'),
-			'/dimensions/dimension_entry.php?trans_no=' . $row['id'], ICON_EDIT);
+	return pager_link(_('Edit'), '/dimensions/dimension_entry.php?trans_no='.$row['id'], ICON_EDIT);
 }
 
 function prt_link($row) {
@@ -141,4 +140,3 @@ display_db_pager($table);
 
 end_form();
 end_page();
-
