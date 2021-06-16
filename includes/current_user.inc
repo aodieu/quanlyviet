@@ -128,7 +128,7 @@ class current_user {
 				$this->email = @$myrow['email'];
 				update_user_visitdate($this->username);
 				$this->logged = true;
-				$this->login_attempt=0;
+				$this->login_attempt = 0;
 				$this->last_act = time();
 				$this->timeout = session_timeout();
 				flush_dir(user_js_cache()); // refresh cache on login
@@ -330,9 +330,7 @@ if (!function_exists('money_format')) {
 	} 
 }	
 
-// 2008-06-15. Added extra parameter $stock_id and reference for $dec
-//--------------------------------------------------------------------
-function qty_format($number, $stock_id=null, &$dec) {
+function qty_format($number, $stock_id, &$dec) {
 	$dec = get_qty_dec($stock_id);
 	return number_format2($number, $dec);
 }
@@ -388,7 +386,6 @@ function user_numeric($input) {
 
 function user_company() {
 	global $def_coy;
-	
 	return isset($_SESSION['wa_current_user']) ? $_SESSION['wa_current_user']->company : $def_coy;
 }
 
@@ -406,19 +403,16 @@ function user_qty_dec() {
 
 function user_price_dec() {
 	global $SysPrefs;
-
 	return isset($_SESSION['wa_current_user']) ? $_SESSION['wa_current_user']->prefs->price_dec() : 2;
 }
 
 function user_exrate_dec() {
 	global $SysPrefs;
-
 	return isset($_SESSION['wa_current_user']) ? $_SESSION['wa_current_user']->prefs->exrate_dec() : 4;
 }
 
 function user_percent_dec() {
 	global $SysPrefs;
-
 	return isset($_SESSION['wa_current_user']) ? $_SESSION['wa_current_user']->prefs->percent_dec() : 1;
 }
 
@@ -432,15 +426,13 @@ function user_show_codes() {
 
 function user_date_format() {
 	global $SysPrefs;
-
 	return isset($_SESSION['wa_current_user']) ? $_SESSION['wa_current_user']->prefs->date_format() : $SysPrefs->dflt_date_fmt;
 }
 
 function user_date_display() {
 	$fmt ='m/d/Y';
-	if (isset($_SESSION['wa_current_user'])) {
+	if (isset($_SESSION['wa_current_user']))
 		$fmt = $_SESSION['wa_current_user']->prefs->date_display();
-	}
 	else {
 		$sep = user_date_sep();
 		$user_date_fmt = user_date_format();
@@ -463,7 +455,6 @@ function user_date_display() {
 
 function user_date_sep() {
 	global $SysPrefs;
-
 	return isset($_SESSION['wa_current_user']->prefs->date_sep) ? $_SESSION['wa_current_user']->prefs->date_sep() : $SysPrefs->dflt_date_sep;
 }
 
@@ -557,7 +548,7 @@ function add_user_js_data() {
 	  . "ds: '$ds',\n"
 	  . "pdec : " . user_price_dec() . "}\n";
 
-  add_js_source($js);
+	  add_js_source($js);
 }
 
 function user_js_cache($id=null) {
@@ -605,10 +596,11 @@ function array_append(&$array, $elements) {
 			$array[$key] = $el;
 	}
 }
-//
-//	Search $needle in $haystack or in $haystack[][$valuekey]
-//	returns $needle found or null.
-//
+
+/*
+*	Search $needle in $haystack or in $haystack[][$valuekey]
+*	returns $needle found or null.
+*/
 function array_search_value($needle, $haystack, $valuekey=null) {
 	if (is_array($haystack)) {
 		foreach($haystack as $key => $value) {
@@ -620,10 +612,11 @@ function array_search_value($needle, $haystack, $valuekey=null) {
 	}
 	return null;
 }
-//
-//	Search $needle in $haystack or in $haystack[][$valuekey]
-//	returns array of keys of $haystack elements found
-//
+
+/*
+*	Search $needle in $haystack or in $haystack[][$valuekey]
+*	returns array of keys of $haystack elements found
+*/
 function array_search_keys($needle, $haystack, $valuekey=null) {
 	$keys = array();
 	if (is_array($haystack)) {
@@ -636,10 +629,11 @@ function array_search_keys($needle, $haystack, $valuekey=null) {
 	}	
 	return $keys;
 }
-//
-//	Find first (single) $needle in $haystack or in $haystack[][$valuekey]
-//	returns $haystack element found or null
-//
+
+/*
+*	Find first (single) $needle in $haystack or in $haystack[][$valuekey]
+*	returns $haystack element found or null
+*/
 function array_search_key($needle, $haystack, $valuekey=null) {
 	$keys = array_search_keys($needle, $haystack, $valuekey);
 	return @$keys[0];
@@ -669,6 +663,7 @@ function flush_dir($path, $wipe = false) {
 			@unlink($path.'/'.$fname);
 	}
 }
+
 /*
 	Returns current path to company private folder.
 	(Current path can change after chdir).
@@ -678,13 +673,11 @@ function company_path($comp=null) {
 
 	$comp_path = $SysPrefs->comp_path;
 
-
 	if (!isset($comp))
 		$comp = user_company();
 
 	// if path is relative, set current path_to_root
-	return ($comp_path[0]=='.' ? $path_to_root.'/'.basename($comp_path) : $comp_path)
-			. '/'.$comp;
+	return ($comp_path[0] == '.' ? $path_to_root.'/'.basename($comp_path) : $comp_path).'/'.$comp;
 }
 
 function is_admin_company() {
