@@ -10,9 +10,9 @@
 	NĂNG KHAI THÁC THƯƠNG MẠI HAY PHÙ HỢP VỚI MỤC ĐÍCH SỬ DỤNG CỤ THỂ NÀO.
 	Chi tiết về giấy phép <http://www.gnu.org/licenses/gpl-3.0.html>.
 *************************************************************************/
-//-----------------------------------------------------------------------------
-//	Add or update Sales Invoice
-//
+/*
+	Add or update Sales Invoice
+*/
 function write_sales_invoice(&$invoice) {
 	global $Refs;
 
@@ -203,10 +203,8 @@ function write_sales_invoice(&$invoice) {
 					$payment_info .= ' ' . $invoice->payment_info;
 				$pmtno = write_customer_payment(0, $invoice->customer_id, 
 					$invoice->Branch, $invoice->pos['pos_account'], $date_,
-					$Refs->get_next(ST_CUSTPAYMENT, null, array('customer' => $invoice->customer_id,
-						'branch' => $invoice->Branch, 'date' => $date_)),
-					$amount-$discount, $discount, $payment_info,
-					0,0,0,$invoice->dimension_id, $invoice->dimension2_id);
+					$Refs->get_next(ST_CUSTPAYMENT, null, array('customer' => $invoice->customer_id, 'branch' => $invoice->Branch, 'date' => $date_)),
+					$amount-$discount, $discount, $payment_info, 0, 0, $invoice->dimension_id, $invoice->dimension2_id);
 				add_cust_allocation($amount, ST_CUSTPAYMENT, $pmtno, ST_SALESINVOICE, $invoice_no, $invoice->customer_id, $date_);
 
 				update_debtor_trans_allocation(ST_SALESINVOICE, $invoice_no, $invoice->customer_id);
