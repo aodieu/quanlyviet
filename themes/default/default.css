@@ -25,6 +25,9 @@ tr, td, th {
 table {
 	text-align: left;
 }
+html[dir="rtl"] table {
+	text-align: right;
+}
 textarea {
 	font-size: 12px;
 }
@@ -212,6 +215,9 @@ div.logoutBar {
 }
 .logoutBarRight {
 	text-align: right;
+}
+html[dir="rtl"] .logoutBarRight {
+	text-align: left;
 }
 .logoutBarRight a {
 	margin-right: 1em;
