@@ -55,8 +55,6 @@ function process_fixed_asset_depreciation($stock_id, $gl_rows, $refline, $memo_)
 	return $trans_no;
 }
 
-//--------------------------------------------------------------------------------------------------
-
 function get_fixed_asset_move($stock_id, $tran_type) {
 
 	$sql = "SELECT * FROM ".TB_PREF."stock_moves WHERE stock_id=".db_escape($stock_id)." AND type=".db_escape($tran_type);
@@ -66,8 +64,7 @@ function get_fixed_asset_move($stock_id, $tran_type) {
 	if (db_num_rows($result) == 0)
 		return false;
 
-	$row = db_fetch_assoc($result);
-	return $row;
+	return db_fetch_assoc($result);
 }
 
 function get_fixed_asset_disposal($stock_id) {
@@ -79,8 +76,7 @@ function get_fixed_asset_disposal($stock_id) {
 	if (db_num_rows($result) == 0)
 		return false;
 
-	$row = db_fetch_assoc($result);
-	return $row;
+	return db_fetch_assoc($result);
 }
 
 function get_fixed_asset_purchase($stock_id) {
@@ -91,11 +87,8 @@ function get_fixed_asset_purchase($stock_id) {
 	if (db_num_rows($result) == 0)
 		return false;
 
-	$row = db_fetch_assoc($result);
-	return $row;
+	return db_fetch_assoc($result);
 }
-
-//--------------------------------------------------------------------------------------------------
 
 function get_fixed_asset_class($id) {
 	$sql = "SELECT * FROM ".TB_PREF."stock_fa_class WHERE fa_class_id=".db_escape($id);
@@ -104,8 +97,6 @@ function get_fixed_asset_class($id) {
 
 	return db_fetch($result);
 }
-
-//--------------------------------------------------------------------------------------------------
 
 function get_sql_for_fixed_assets($show_inactive = false) {
 	$sql = "SELECT s.stock_id, c.description, s.units, s.description as name, s.depreciation_rate, s.depreciation_method, s.inactive, s.material_cost, s.purchase_cost, s.depreciation_factor FROM ".TB_PREF."stock_master s LEFT JOIN ".TB_PREF."stock_fa_class c ON s.fa_class_id=c.fa_class_id WHERE s.mb_flag='F'";
