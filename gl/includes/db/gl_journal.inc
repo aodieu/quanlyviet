@@ -98,6 +98,8 @@ function write_journal_entries(&$cart) {
 
 	begin_transaction();
 
+	hook_db_prewrite($cart, ST_JOURNAL);
+
 	if (!$new) {
 		$msg = void_transaction($trans_type, $cart->order_id, Today(), _('Document reentered.'));
 		if ($msg) {
@@ -120,6 +122,8 @@ function write_journal_entries(&$cart) {
 		update_comments($trans_type, $trans_id, null, $memo_);
 
 	add_audit_trail($trans_type, $trans_id, $date_);
+
+	hook_db_postwrite($cart, ST_JOURNAL);
 
 	commit_transaction();
 
