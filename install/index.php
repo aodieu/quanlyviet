@@ -333,7 +333,6 @@ switch(@$_POST['Page']) {
 		}
 		div_end();
 		break;
-
 	case '2':
 		if (!isset($_POST['host'])) {
 			foreach($_SESSION['inst_set'] as $name => $val)
@@ -359,21 +358,18 @@ switch(@$_POST['Page']) {
 		submit_center_first('back', _('<< Back'));
 		submit_center_last('db_test', _('Continue >>'));
 		break;
-
 	case '3': // select langauges
 		subpage_title(_('User Interface Languages Selection'));
 		display_langs();
 		submit_center_first('back', _('<< Back'));
 		submit_center_last('install_langs', _('Continue >>'));
 		break;
-
 	case '4': // select COA
 		subpage_title(_('Charts of Accounts Selection'));
 		display_coas();
 		submit_center_first('back', _('<< Back'));
 		submit_center_last('install_coas', _('Continue >>'));
 		break;
-
 	case '5':
 		if (!isset($_POST['name'])) {
 			foreach($_SESSION['inst_set'] as $name => $val)
@@ -384,7 +380,6 @@ switch(@$_POST['Page']) {
 			$installed_extensions = array();
 			update_extensions($installed_extensions);
 		}
-
 		subpage_title(_('Company Settings'));
 		start_table(TABLESTYLE);
 		text_row_ex(_('Company Name:'), 'name', 30);
@@ -397,7 +392,6 @@ switch(@$_POST['Page']) {
 		submit_center_first('back', _('<< Back'));
 		submit_center_last('set_admin', _('Install'), _('Start installation process'), 'default nonajax');
 		break;
-
 	case '6': // final screen
 		subpage_title(_('Quanlyviet has been installed successsfully.'));
 		display_note(_('Please do not forget to remove install wizard folder.'));
