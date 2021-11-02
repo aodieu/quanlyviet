@@ -76,15 +76,15 @@ if (!isset($path_to_root))
 if (isset($_GET['path_to_root']) || isset($_POST['path_to_root']))
 	die('Restricted access');
 
-include_once($path_to_root . '/includes/errors.inc');
+include_once($path_to_root.'/includes/errors.inc');
 // collect all error msgs
 set_error_handler('error_handler' /*, errtypes */);
 
-include_once($path_to_root . '/includes/current_user.inc');
-include_once($path_to_root . '/includes/lang/language.inc');
-include_once($path_to_root . '/includes/ajax.inc');
-include_once($path_to_root . '/includes/ui/ui_msgs.inc');
-include_once($path_to_root . '/includes/prefs/sysprefs.inc');
+include_once($path_to_root.'/includes/current_user.inc');
+include_once($path_to_root.'/includes/lang/language.inc');
+include_once($path_to_root.'/includes/ajax.inc');
+include_once($path_to_root.'/includes/ui/ui_msgs.inc');
+include_once($path_to_root.'/includes/prefs/sysprefs.inc');
 
 session_name('FAinstall');
 session_start();
@@ -92,7 +92,7 @@ session_start();
 // this is to fix the "back-do-you-want-to-refresh" issue - thanx PHPFreaks
 header('Cache-control: private');
 
-include_once($path_to_root . '/config.default.php');
+include_once($path_to_root.'/config.default.php');
 
 $_SESSION['SysPrefs'] = new sys_prefs();
 $SysPrefs = &$_SESSION['SysPrefs'];
@@ -101,6 +101,11 @@ $inst_langs = array(
 	'vi_VN' => array ( 'name' => 'Tiếng Việt',	'code' => 'vi_VN',	'encoding' => 'utf-8'),
 	'C' => array ( 'name' => 'English',	'code' => 'C', 'encoding' => 'utf-8'),
 );
+
+$cur_error_level = $SysPrefs->go_debug > 0 ? -1 : E_USER_WARNING|E_USER_ERROR|E_USER_NOTICE;
+
+error_reporting($cur_error_level);
+ini_set('display_errors', 'On');
 
 $Ajax = new Ajax();
 
