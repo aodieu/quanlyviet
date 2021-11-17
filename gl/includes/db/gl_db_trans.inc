@@ -75,11 +75,13 @@ function add_gl_trans_std_cost($type, $trans_id, $date_, $account, $dimension, $
 
 	if ($amount != 0)
 		return add_gl_trans($type, $trans_id, $date_, $account, $dimension, $dimension2, $memo_, $amount, null, $person_type_id, $person_id, $err_msg);
-	else
-		return 0;
+
+	return 0;
 }
 
-// Function for even out rounding problems
+/*
+	Function for even out rounding problems
+*/
 function add_gl_balance($type, $trans_id, $date_, $amount, $person_type_id=null, $person_id=null) {
 	$amount = round2($amount, user_price_dec());
 
@@ -226,6 +228,7 @@ function get_gl_wo_issue_trans($trans_id, $person_id=-1, $all_gl=false) {
 		$sql .= " AND gl.person_id=".db_escape($person_id);
 	$sql .= $all_gl ? " AND amount != 0" : " AND amount < 0";
 	$sql .= " ORDER BY type, type_no";
+
 	return db_query($sql, 'The gl transactions could not be retrieved');
 }
 
@@ -260,7 +263,7 @@ function get_gl_balance_from_to($from_date, $to_date, $account, $dimension=0, $d
 	if ($dimension2 != 0)
 		$sql .= " AND dimension2_id = ".($dimension2<0 ? 0 : db_escape($dimension2));
 
-	$result = db_query($sql, 'The starting balance for account $account could not be calculated');
+	$result = db_query($sql, "The starting balance for account $account could not be calculated");
 
 	$row = db_fetch_row($result);
 	return round2($row[0], user_price_dec());
@@ -281,7 +284,7 @@ function get_gl_trans_from_to($from_date, $to_date, $account, $dimension=0, $dim
 	if ($dimension2 != 0)
 		$sql .= " AND dimension2_id = ".($dimension2<0 ? 0 : db_escape($dimension2));
 
-	$result = db_query($sql, 'Transactions for account $account could not be calculated');
+	$result = db_query($sql, "Transactions for account $account could not be calculated");
 
 	$row = db_fetch_row($result);
 	return round2($row[0], user_price_dec());
@@ -411,7 +414,7 @@ function add_gl_tax_details($gl_code, $trans_type, $trans_no, $amount, $ex_rate,
 function add_trans_tax_details($trans_type, $trans_no, $tax_id, $rate, $included, $amount, $net_amount, $ex_rate, $tran_date, $memo, $reg_type=null) {
 	// guess tax register if not set
 	if (!isset($reg_type))
-		$reg_type = in_array($trans_type, array(ST_SUPPINVOICE, ST_SUPPCREDIT)) ? TR_OUTPUT : (in_array($trans_type, array(ST_SALESINVOICE, ST_CUSTCREDIT)) ? TR_INPUT : null);
+		$reg_type = in_array($trans_type, array(ST_SUPPINVOICE, ST_SUPPCREDIT)) ? TR_INPUT : (in_array($trans_type, array(ST_SALESINVOICE, ST_CUSTCREDIT)) ? TR_OUTPUT : null);
 
 	$sql = "INSERT INTO ".TB_PREF."trans_tax_details 
 		(trans_type, trans_no, tran_date, tax_type_id, rate, ex_rate, included_in_price, net_amount, amount, memo, reg_type)
@@ -461,22 +464,22 @@ function get_tax_summary($from, $to, $also_zero_purchases=false) {
 	$sql = "SELECT 
 		SUM(IF(trans_type=".ST_CUSTCREDIT.",-1,1)*
 		IF((reg_type=".TR_OUTPUT.")"
-			." || ((trans_type IN(".ST_SALESINVOICE.",".ST_CUSTCREDIT.") OR (trans_type=".ST_JOURNAL." AND reg_type=".TR_INPUT."))
+			." || ((trans_type IN(".ST_SALESINVOICE.",".ST_CUSTCREDIT.",".ST_BANKDEPOSIT."))
 			), net_amount*ex_rate,0)
 		) net_output,
 
 		SUM(IF(trans_type=".ST_CUSTCREDIT.",-1,1)*
 		IF((reg_type=".TR_OUTPUT.")"
-			." || ((trans_type IN(".ST_SALESINVOICE.",".ST_CUSTCREDIT.") OR (trans_type=".ST_JOURNAL." AND reg_type=".TR_INPUT."))
+			." || ((trans_type IN(".ST_SALESINVOICE.",".ST_CUSTCREDIT.",".ST_BANKDEPOSIT."))
 			), amount*ex_rate,0)) payable,
 
-		SUM(IF(trans_type IN(".ST_SUPPCREDIT."),-1,1)*
-		IF(reg_type=".TR_INPUT
+		SUM(IF(trans_type IN(".ST_SUPPCREDIT.",".ST_BANKPAYMENT."),-1,1)*
+		IF((reg_type=".TR_INPUT." OR trans_type IN (".ST_SUPPINVOICE.",".ST_BANKPAYMENT."))"
 			. ($also_zero_purchases ? '': " AND tax_type_id AND taxrec.rate")
 			.", net_amount*ex_rate, 0)) net_input,
 
-		SUM(IF(trans_type IN(".ST_SUPPCREDIT."),-1,1)*
-		IF(reg_type=".TR_INPUT
+		SUM(IF(trans_type IN(".ST_SUPPCREDIT.",".ST_BANKPAYMENT."),-1,1)*
+		IF((reg_type=".TR_INPUT." OR trans_type IN (".ST_SUPPINVOICE.",".ST_BANKPAYMENT."))"
 			. ($also_zero_purchases ? '': " AND tax_type_id AND taxrec.rate ") 
 			.", amount*ex_rate, 0)) collectible,
 		taxrec.rate,

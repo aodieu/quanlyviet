@@ -11,15 +11,14 @@
 	Chi tiết về giấy phép <http://www.gnu.org/licenses/gpl-3.0.html>.
 *************************************************************************/
 $page_security = 'SA_TAXREP';
-$path_to_root='..';
+$path_to_root = '..';
 
-include_once($path_to_root . '/includes/session.inc');
-include_once($path_to_root . '/includes/date_functions.inc');
-include_once($path_to_root . '/includes/data_checks.inc');
-include_once($path_to_root . '/gl/includes/gl_db.inc');
+include_once($path_to_root.'/includes/session.inc');
+include_once($path_to_root.'/includes/date_functions.inc');
+include_once($path_to_root.'/includes/data_checks.inc');
+include_once($path_to_root.'/gl/includes/gl_db.inc');
 
 //------------------------------------------------------------------
-
 
 print_tax_report();
 
@@ -88,20 +87,18 @@ function print_tax_report() {
 	$dec = user_price_dec();
 
 	$rep = new FrontReport(_('Tax Report'), 'TaxReport', user_pagesize(), 9, $orientation);
-	if ($summaryOnly == 1)
-		$summary = _('Summary Only');
-	else
-		$summary = _('Detailed Report');
+
+	$summary = $summaryOnly == 1 ? _('Summary Only') : _('Detailed Report');
 
 	$res = getTaxTypes();
-
 	$taxes[0] = array('in'=>0, 'out'=>0, 'taxin'=>0, 'taxout'=>0);
+
 	while ($tax=db_fetch($res))
 		$taxes[$tax['id']] = array('in'=>0, 'out'=>0, 'taxin'=>0, 'taxout'=>0);
 
-	$params =   array( 	0 => $comments,
-						1 => array('text' => _('Period'), 'from' => $from, 'to' => $to),
-						2 => array('text' => _('Type'), 'from' => $summary, 'to' => ''));
+	$params = array(0 => $comments,
+					1 => array('text' => _('Period'), 'from' => $from, 'to' => $to),
+					2 => array('text' => _('Type'), 'from' => $summary, 'to' => ''));
 
 	$cols = array(0, 80, 130, 180, 270, 350, 400, 430, 480, 485, 520);
 
@@ -121,7 +118,7 @@ function print_tax_report() {
 	$transactions = getTaxTransactions($from, $to);
 
 	while ($trans=db_fetch($transactions)) {
-		if (in_array($trans['trans_type'], array(ST_CUSTCREDIT,ST_SUPPINVOICE,ST_JOURNAL))) {
+		if (in_array($trans['trans_type'], array(ST_CUSTCREDIT,ST_SUPPINVOICE)) || ($trans['trans_type'] == ST_JOURNAL && $trans['reg_type'] == TR_INPUT)) {
 			$trans['net_amount'] *= -1;
 			$trans['amount'] *= -1;
 		}
@@ -188,7 +185,7 @@ function print_tax_report() {
 	foreach( $taxes as $id=>$sum) {
 		if ($id) {
 			$tx = getTaxInfo($id);
-			$rep->TextCol(0, 1, $tx['name'] . ' ' . number_format2($tx['rate'], $dec) . '%');
+			$rep->TextCol(0, 1, $tx['name'].' '.number_format2($tx['rate'], $dec) . '%');
 		}
 		else
 			$rep->TextCol(0, 1, _('Exempt'));
