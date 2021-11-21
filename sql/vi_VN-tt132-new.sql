@@ -1,7 +1,4 @@
 
-SET NAMES utf8;
-
-
 -- Structure of table `0_areas` --
 
 DROP TABLE IF EXISTS `0_areas`;

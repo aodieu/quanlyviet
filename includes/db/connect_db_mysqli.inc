@@ -39,6 +39,7 @@ function set_global_connection($company=-1) {
 	///// our sessions.
 	///// We are, however, investigating the existing code to be compatible in the future.
 	db_query("SET sql_mode = '".SQL_MODE."'");
+	db_query("SET NAMES 'utf8'");
 	/////
 	$SysPrefs->refresh();
 	return $db;
