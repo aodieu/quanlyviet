@@ -10,9 +10,9 @@
 	NĂNG KHAI THÁC THƯƠNG MẠI HAY PHÙ HỢP VỚI MỤC ĐÍCH SỬ DỤNG CỤ THỂ NÀO.
 	Chi tiết về giấy phép <http://www.gnu.org/licenses/gpl-3.0.html>.
 *************************************************************************/
-//
-//	Template for simple table editors
-//
+/*
+*	Template for simple table editors
+*/
 class simple_crud {
 	var $name;
 	var $Mode;
@@ -25,8 +25,7 @@ class simple_crud {
 	var $tool_buttons;
 	var $options;
 	var $dec;
-	//
-	//
+	
 	function __construct($name, $fields = null) {
 		$this->name = $name;
 		$this->pre_handlers = array(
@@ -56,9 +55,8 @@ class simple_crud {
 		$this->fields = $fields;
 		$this->selected_id = $this->_none;
 	}
-	/*
-		Input/output formatters - convert values between php/user domains.
-	*/
+	
+	//	Input/output formatters - convert values between php/user domains.
 	function _format_input($value, $fmt) {
 		switch($fmt) {
 			case 'stock':
@@ -118,9 +116,7 @@ class simple_crud {
 		return '';
 	}
 
-	//
 	//	Set record for edition
-	//
 	function _edit($mode) {
 		if ($this->Mode != $mode) {
 			if ($this->selected_id != $this->_none)
@@ -130,9 +126,8 @@ class simple_crud {
 		}
 		$this->Mode = $mode;
 	}
-	//
+	
 	//	Update record after edition
-	//
 	function _update($mode) {
 		$this->get_posts();
 		if ($this->update_check()) {
@@ -144,9 +139,8 @@ class simple_crud {
 		}
 		$this->Mode = $mode;
 	}
-	//
+	
 	//	Add new record
-	//
 	function _add($mode) {
 		$this->get_posts();
 		if ($this->insert_check()) {
@@ -156,33 +150,29 @@ class simple_crud {
 		}
 		$this->Mode = $mode;
 	}
-	//
+	
 	//	Delete selected  record
-	//
 	function _delete() {
 		if ($this->delete_check())
 			$this->db_delete();
 		$this->_cancel();
 	}
-	//
+	
 	//	Return to listing view
-	//
 	function _cancel() {
 		$this->selected_id = $this->_none;
 		$this->db_cancel();
 		$this->Mode = '';
 	}
-	//
+	
 	// Clone record for new edition
-	//
 	function _cloning() {
 		$this->Mode = '';
 		$this->_edit('Edit');
 		$this->selected_id = $this->_none;
 	}
-	/*
-		Generate form controls
-	*/
+	
+	// Generate form controls
 	function _bottom_controls() {
 		$clone = $this->selected_id != $this->_none;
 
@@ -216,6 +206,7 @@ class simple_crud {
 		}
 		echo "</center>";
 	}
+
 	//===========================================================================
 	// Public functions
 	//
@@ -223,7 +214,7 @@ class simple_crud {
 	function tool_button($name, $selected_id=null, $params='') {
 		$b = $this->tool_buttons[$name];
 
-		return "<td align='center' $params>".button( "{$this->name}$name".($selected_id === null || $selected_id === $this->_none ? '': "[$selected_id]"), $b[0], $b[1], $b[2], $b[3])."</td>";
+		return "<td align='center' $params>".button( "{$this->name}$name".($selected_id === null || $selected_id === $this->_none ? '' : "[$selected_id]"), $b[0], $b[1], $b[2], $b[3])."</td>";
 	}
 	
 	function set_posts() {
@@ -235,15 +226,13 @@ class simple_crud {
 			$post = isset($fmt['post']) ? $fmt['post'] : $name;
 			$fld = isset($fmt['fld']) ? $fmt['fld'] : $name;
 
-			$value = $this->selected_id == $this->_none ? @$fmt['dflt'] : (is_array($this->data) ? $this->data[$fld]: $this->data->$fld);
+			$value = $this->selected_id == $this->_none ? (isset($fmt['dflt']) ? $fmt['dflt'] : null) : (is_array($this->data) ? $this->data[$fld]: $this->data->$fld);
 
-			$_POST[$post] = $this->_format_output($value, @$fmt['fmt']);
+			$_POST[$post] = $this->_format_output($value, isset($fmt['fmt']) ? $fmt['fmt'] : null);
 		}
 	}
-	//--------------------------
-	//
+	
 	//	Get editor POST variables. 
-	//
 	function get_posts() {
 		foreach ($this->fields as $name => $fmt) {
 			if (is_int($name)) {
@@ -260,8 +249,8 @@ class simple_crud {
 				$this->data->$fld = $value;
 		}
 	}
+
 	//	Main function - display current CRUD editor content
-	//
 	function show() {
 		if (!isset($_POST[$this->name.'Mode']))
 			$this->set_posts();
@@ -288,41 +277,35 @@ class simple_crud {
 	//===========================================================================
 	//	Database functions placeholders
 	
-	//
 	//	Read record from db for edition
-	//
 	function db_read() {
-		display_notification(__FUNCTION__. ' is not defined...');
+		display_notification(__FUNCTION__.' is not defined...');
 		return array();
 	}
-	//
+	
 	//	Update record in db after edition
-	//
 	function db_update() {
 		$this->db_insert();
 	}
-	//
+	
 	//	Delete record
-	//
 	function db_delete() {
-		display_notification(__FUNCTION__. ' is not defined...');
+		display_notification(__FUNCTION__.' is not defined...');
 	}
-	//
+	
 	//	Insert record
-	//
 	function db_insert() {
-		display_notification(__FUNCTION__. ' is not defined...');
+		display_notification(__FUNCTION__.' is not defined...');
 	}
-	//
+	
 	//	Cancel edition
 	//	Optional things like focus set.
-	//
 	function db_cancel() {
 	}
 
 
 	function delete_check() {
-		display_notification(__FUNCTION__. ' is not defined...');
+		display_notification(__FUNCTION__.' is not defined...');
 		return true; 
 	}
 
@@ -334,17 +317,13 @@ class simple_crud {
 		return $this->insert_check(); 
 	}
 
-	//
 	//	Show database content in pager/table
-	//
 	function list_view() {
-		display_notification(__FUNCTION__. ' is not defined...');
+		display_notification(__FUNCTION__.' is not defined...');
 	}
 
-	//
 	//	Show record editor screen content
-	//
 	function editor_view() {
-		display_notification(__FUNCTION__. ' is not defined...');
+		display_notification(__FUNCTION__.' is not defined...');
 	}
-};
+}
