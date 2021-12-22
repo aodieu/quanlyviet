@@ -3,18 +3,18 @@ msgstr ""
 "Project-Id-Version: FrontAccounting\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-05 05:13+0700\n"
-"PO-Revision-Date: 2021-05-05 06:32+0700\n"
+"PO-Revision-Date: 2021-12-23 02:22+0700\n"
 "Last-Translator: Translation Team <info@frontaccounting.net>\n"
 "Language-Team: Translators <info@frontaccounting.com>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-KeywordsList: _;addLabel\n"
-"X-Generator: Poedit 2.4.3\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Poedit-SearchPath-0: .\n"
 
 # c:/Apache/htdocs/account/OpenAccounting.php:59
@@ -214,7 +214,7 @@ msgstr "Kiểu / Loại:"
 #: sales/inquiry/sales_orders_view.php:212
 #: sales/manage/customer_branches.php:243 sales/manage/customers.php:283
 msgid "Select a customer: "
-msgstr "Chọn khách:"
+msgstr "Chọn khách: "
 
 # c:/Apache/htdocs/account/purchasing/allocations/supplier_allocation_main.php:32
 # c:/Apache/htdocs/account/purchasing/inquiry/supplier_allocation_inquiry.php:29
@@ -1006,7 +1006,7 @@ msgstr "Chọn Modules"
 
 #: admin/company_preferences.php:278
 msgid "Manufacturing:"
-msgstr "Sản xuất"
+msgstr "Sản xuất:"
 
 #: admin/company_preferences.php:279 admin/dashboard.php:69
 #: dashboard/widget502.php:40 inventory/manage/items.php:26
@@ -1572,8 +1572,8 @@ msgid ""
 "The Retained Earnings Account or the Profit and Loss Year Account has not "
 "been set in System and General GL Setup"
 msgstr ""
-"Tài khoản thu nhập giữ lại hoặc Tài khoản xác định kết quả kinh doanh chưa "
-"được thiết lập trong hệ thống."
+"Tài khoản thu nhập giữ lại hoặc tài khoản xác định kết quả kinh doanh chưa "
+"được thiết lập trong hệ thống"
 
 #: admin/db/fiscalyears_db.inc:130 admin/gl_setup.php:84
 msgid ""
@@ -2473,7 +2473,7 @@ msgstr "Lỗi đồng bộ database. Database nguyên bản đã khôi phục tr
 #: admin/includes/fa_patch.class.inc:191
 #, php-format
 msgid "Upgrade for company %s finished."
-msgstr "Đã hoàn thành nâng cấp cho công ty %s"
+msgstr "Đã hoàn thành nâng cấp cho công ty %s."
 
 #: admin/inst_chart.php:21
 msgid "Install Charts of Accounts"
@@ -2827,7 +2827,7 @@ msgid ""
 "referring to this term"
 msgstr ""
 "Không thể xoá điều khoản thanh toán vì có tài khoản nhà cung cấp liên kết "
-"đến nó."
+"đến nó"
 
 #: admin/payment_terms.php:92
 msgid "Selected payment terms have been deleted"
@@ -2983,7 +2983,7 @@ msgstr "Tên máy in không được trống."
 
 #: admin/printers.php:36
 msgid "You have selected printing to server at user IP."
-msgstr "Bạn đã chọn in tại server của IP người dùng"
+msgstr "Bạn đã chọn in tại server của IP người dùng."
 
 #: admin/printers.php:40
 msgid "Timeout cannot be less than zero nor longer than 60 (sec)."
@@ -3056,7 +3056,7 @@ msgstr "Vai trò an ninh đã được cập nhật."
 
 #: admin/security_roles.php:118
 msgid "This role is currently assigned to some users and cannot be deleted"
-msgstr "Vai trò này đã được uỷ quyền cho người dùng và không thể xoá."
+msgstr "Vai trò này đã được gán cho người dùng và không thể xoá"
 
 #: admin/security_roles.php:121
 msgid "Security role has been sucessfully deleted."
@@ -5058,7 +5058,7 @@ msgstr "Khoản mục đã được đóng. Không thay đổi được nữa."
 
 #: dimensions/dimension_entry.php:68
 msgid "The dimension has been re-opened. "
-msgstr "Khoản mục đã được mở lại."
+msgstr "Khoản mục đã được mở lại. "
 
 #: dimensions/dimension_entry.php:77
 msgid "Enter a &new dimension"
@@ -5611,7 +5611,7 @@ msgstr ""
 
 #: fixed_assets/process_depreciation.php:72
 msgid "The fixed asset has been depreciated for this year"
-msgstr "Tài sản đã được khấu hao cho năm hiện tại."
+msgstr "Tài sản đã được khấu hao cho năm hiện tại"
 
 #: fixed_assets/process_depreciation.php:74
 msgid "View the GL &Postings for this Depreciation"
@@ -5747,7 +5747,7 @@ msgstr "Trích trước Doanh thu/Chi phí đã thực hiện."
 
 #: gl/accruals.php:164
 msgid "Showing GL Transactions."
-msgstr "Hiển thị giao dịch trên sổ cái"
+msgstr "Hiển thị giao dịch kế toán."
 
 #: gl/accruals.php:175
 msgid "Weekly"
@@ -6183,7 +6183,7 @@ msgstr "Lấy"
 
 #: gl/gl_budget.php:84
 msgid "Dim. incl."
-msgstr "Gồm KM"
+msgstr "Gồm KM."
 
 #: gl/gl_budget.php:84 gl/gl_budget.php:86
 msgid "Last Year"
@@ -6197,7 +6197,7 @@ msgstr "Lưu"
 #: gl/gl_journal.php:33
 #, php-format
 msgid "Modifying Journal Transaction # %d."
-msgstr "Chỉnh sửa nhật ký giao dịch # %d"
+msgstr "Chỉnh sửa nhật ký giao dịch # %d."
 
 # c:/Apache/htdocs/account/applications/GeneralLedger.php:11
 # c:/Apache/htdocs/account/gl/gl_journal.php:9
@@ -6441,7 +6441,7 @@ msgstr "Chứng từ gốc:"
 #: purchasing/includes/ui/invoice_ui.inc:92
 #: purchasing/includes/ui/po_ui.inc:104 purchasing/includes/ui/po_ui.inc:108
 msgid "Supplier:"
-msgstr "Nhà cung cấp"
+msgstr "Nhà cung cấp:"
 
 # c:/Apache2/htdocs/account/gl/includes/ui/gl_deposit_ui.inc:54
 # c:/Apache2/htdocs/account/gl/includes/ui/gl_payment_ui.inc:54
@@ -6778,7 +6778,7 @@ msgstr "Cao nhất:"
 #: gl/inquiry/gl_account_inquiry.php:223
 msgid ""
 "No general ledger transactions have been created for the specified criteria."
-msgstr "Không có bút toán nào được tạo ra cho the specified criteria"
+msgstr "Không có bút toán nào được tạo ra cho các tiêu chí lọc đã chỉ định."
 
 # c:/Apache/htdocs/account/applications/GeneralLedger.php:17
 # c:/Apache/htdocs/account/gl/inquiry/gl_trial_balance.php:8
@@ -7449,7 +7449,7 @@ msgstr "Nhóm con của:"
 
 #: gl/manage/gl_account_types.php:175 gl/manage/gl_account_types.php:177
 msgid "Class:"
-msgstr "Loại"
+msgstr "Loại:"
 
 # c:/Apache/htdocs/account/gl/manage/gl_accounts.php:7
 # c:/Apache/htdocs/account/reporting/reports_main.php:48
@@ -7545,7 +7545,7 @@ msgstr "Không thể xoá tài khoản vì đã được sử dụng cho các m�
 
 #: gl/manage/gl_accounts.php:153 modules/FrontHrm/manage/accounts.php:64
 msgid "Selected account has been deleted"
-msgstr "Tài khoản đã được xoá."
+msgstr "Tài khoản đã được xoá"
 
 #: gl/manage/gl_accounts.php:169 gl/manage/gl_accounts.php:171
 msgid "New account"
@@ -7723,7 +7723,7 @@ msgstr "Vào sổ"
 
 #: gl/view/accrual_trans.php:17
 msgid "Search General Ledger Transactions for account: "
-msgstr "Tìm các nghiệp vụ kế toán của tài khoản:"
+msgstr "Tìm các nghiệp vụ kế toán của tài khoản: "
 
 # c:/Apache/htdocs/account/gl/view/gl_trans_view.php:16
 #: gl/view/accrual_trans.php:40 gl/view/gl_trans_view.php:25
@@ -7790,7 +7790,7 @@ msgstr "Kiểu gửi"
 # c:/Apache/htdocs/account/gl/view/gl_deposit_view.php:56
 #: gl/view/gl_deposit_view.php:78
 msgid "This deposit has been voided."
-msgstr "Đã vô hiệu hoá giao dịch gửi tiền"
+msgstr "Đã vô hiệu hoá giao dịch gửi tiền."
 
 # c:/Apache/htdocs/account/gl/view/gl_deposit_view.php:61
 #: gl/view/gl_deposit_view.php:83
@@ -8463,7 +8463,7 @@ msgstr "Đối chiếu ngân hàng"
 
 #: includes/access_levels.inc:263
 msgid "Manual journal entries"
-msgstr "Ghi nhật ký "
+msgstr "Ghi nhật ký"
 
 #: includes/access_levels.inc:264
 msgid "Journal entries to bank related accounts"
@@ -8534,7 +8534,7 @@ msgstr ""
 
 #: includes/data_checks.inc:556
 msgid "The entered reference is invalid."
-msgstr "Tham chiếu nhập vào không hợp lệ"
+msgstr "Tham chiếu nhập vào không hợp lệ."
 
 # c:/Apache/htdocs/account/gl/bank_transfer.php:114
 # c:/Apache/htdocs/account/gl/gl_deposit.php:63
@@ -8680,11 +8680,11 @@ msgstr "Chi phí "
 
 #: includes/db/inventory_db.inc:305
 msgid " changed to "
-msgstr "đổi thành"
+msgstr " đổi thành "
 
 #: includes/db/inventory_db.inc:305
 msgid " for item "
-msgstr "cho mặt hàng"
+msgstr " cho mặt hang "
 
 #: includes/db/inventory_db.inc:359
 msgid "Zero/negative inventory handling"
@@ -8701,7 +8701,7 @@ msgstr "trong file"
 
 #: includes/errors.inc:129
 msgid "at line "
-msgstr "tại dòng"
+msgstr "tại dòng "
 
 #: includes/errors.inc:181
 msgid "Debug mode database warning:"
@@ -8743,7 +8743,7 @@ msgstr ""
 #: includes/packages.inc:300 includes/packages.inc:341
 #, php-format
 msgid "Cannot delete outdated '%s' file."
-msgstr "Không thể xoá outdated ‘%s’ file"
+msgstr "Không thể xoá outdated ‘%s’ file."
 
 #: includes/packages.inc:305
 msgid "Release file in repository is invalid, or public key is outdated."
@@ -9638,7 +9638,7 @@ msgstr "Thư mục ‘%s’ không thể ghi"
 msgid ""
 "OpenSSL PHP extension have to be enabled to use extension repository system."
 msgstr ""
-"Phần mở rộng OpenSSL của PHP cần kích hoạt để sử dụng hệ thống kho module"
+"Phần mở rộng OpenSSL của PHP cần kích hoạt để sử dụng hệ thống kho module."
 
 #: includes/system_tests.inc:400
 msgid "Test"
@@ -9872,7 +9872,7 @@ msgstr "Không thể gỡ bỏ tài liệu"
 
 #: includes/ui/attachment.inc:222
 msgid "A New Attachment Added Successfully"
-msgstr "Đính kèm file thành công."
+msgstr "Đính kèm file thành công"
 
 #: includes/ui/attachment.inc:281
 msgid "Description cannot be empty."
@@ -10643,7 +10643,7 @@ msgstr "Tải lại"
 
 #: install/index.php:343
 msgid "Database Server Settings"
-msgstr "Thiết lập Database Server."
+msgstr "Thiết lập Database Server"
 
 #: install/index.php:345
 msgid "Server Host:"
@@ -10675,7 +10675,7 @@ msgstr "Cài thêm các gói ngôn ngữ:"
 
 #: install/index.php:353
 msgid "Install Additional COAs from Quanlyviet Repository:"
-msgstr "Cài thêm các hệ thống tài khoản từ kho QuanlyViet"
+msgstr "Cài thêm các hệ thống tài khoản từ kho QuanlyViet:"
 
 #: install/index.php:355
 msgid "Use database user/password with permissions to create new database,"
@@ -10936,7 +10936,7 @@ msgstr "Mã hàng:"
 
 #: inventory/cost_update.php:126
 msgid "Unit cost:"
-msgstr "Chi phí/Đơn vị"
+msgstr "Chi phí/Đơn vị:"
 
 # c:/Apache/htdocs/account/inventory/cost_update.php:94
 #: inventory/cost_update.php:129
@@ -11379,7 +11379,7 @@ msgstr "Đơn vị:"
 
 #: inventory/manage/item_categories.php:204 inventory/manage/items.php:367
 msgid "Exclude from sales:"
-msgstr "Hàng không bán"
+msgstr "Hàng không bán:"
 
 #: inventory/manage/item_categories.php:206 inventory/manage/items.php:368
 msgid "Exclude from purchases:"
@@ -11573,7 +11573,7 @@ msgstr "Chưa nhập tên mặt hàng."
 # c:/Apache/htdocs/account/inventory/manage/items.php:57
 #: inventory/manage/items.php:184
 msgid "The item code cannot be empty"
-msgstr "Mã hàng không được trống."
+msgstr "Mã hàng không được trống"
 
 # c:/Apache/htdocs/account/inventory/manage/items.php:60
 #: inventory/manage/items.php:189
@@ -11690,7 +11690,7 @@ msgstr "Thêm hàng mới"
 # c:/Apache/htdocs/account/inventory/manage/items.php:289
 #: inventory/manage/items.php:489
 msgid "Update Item"
-msgstr "Cập nhật "
+msgstr "Cập Nhật"
 
 #: inventory/manage/items.php:490
 msgid "Select this items and return to document entry."
@@ -11857,7 +11857,7 @@ msgstr ""
 
 #: inventory/manage/sales_kits.php:103
 msgid "New alias code has been created."
-msgstr "Đã tạo định danh mới"
+msgstr "Đã tạo định danh mới."
 
 #: inventory/manage/sales_kits.php:106
 msgid "New component has been added to selected kit."
@@ -12093,7 +12093,7 @@ msgstr "Mô tả của NCC"
 # c:/Apache/htdocs/account/inventory/purchasing_data.php:191
 #: inventory/purchasing_data.php:190
 msgid "Suppliers Unit of Measure:"
-msgstr "Đơn vị theo NCC"
+msgstr "Đơn vị theo NCC:"
 
 # c:/Apache/htdocs/account/inventory/purchasing_data.php:196
 #: inventory/purchasing_data.php:195
@@ -12589,14 +12589,14 @@ msgstr "Đơn hàng số #:"
 # c:/Apache/htdocs/account/manufacturing/search_work_orders.php:31
 #: manufacturing/search_work_orders.php:70
 msgid "at Location:"
-msgstr "Địa điểm:"
+msgstr "địa điểm:"
 
 # c:/Apache/htdocs/account/manufacturing/search_work_orders.php:43
 # c:/Apache/htdocs/account/purchasing/inquiry/po_search_completed.php:28
 #: manufacturing/search_work_orders.php:82
 #: purchasing/inquiry/po_search_completed.php:98
 msgid "for item:"
-msgstr "Cho mặt hàng:"
+msgstr "cho mặt hàng:"
 
 #: manufacturing/search_work_orders.php:84 purchasing/inquiry/po_search.php:75
 #: purchasing/inquiry/po_search_completed.php:105
@@ -12626,7 +12626,7 @@ msgstr "Yêu cầu"
 
 #: manufacturing/search_work_orders.php:161
 msgid "Marked orders are overdue."
-msgstr "Các dòng được đánh dấu là các đối tượng đã quá hạn"
+msgstr "Các dòng được đánh dấu là các đối tượng đã quá hạn."
 
 #: manufacturing/view/wo_costs_view.php:21
 msgid "View Work Order Costs"
@@ -12957,8 +12957,7 @@ msgid ""
 "The work order cannot be processed because there is an insufficient quantity "
 "for component:"
 msgstr ""
-"Lệnh sản xuất không thể thực hiện vì không đủ số lượng các thành phần đầu "
-"vào."
+"Lệnh sản xuất không thể thực hiện vì không đủ số lượng mặt hàng đầu vào:"
 
 # c:/Apache/htdocs/account/manufacturing/work_order_entry.php:161
 #: manufacturing/work_order_entry.php:179
@@ -13398,7 +13397,7 @@ msgstr "Các giao dịch với nhân viên"
 #: modules/FrontHrm/manage/attendance.php:127
 #: modules/FrontHrm/manage/employee.php:220
 msgid "All departments"
-msgstr "Tất cả bộ phận:"
+msgstr "Tất cả bộ phận"
 
 #: modules/FrontHrm/inquiry/emp_inquiry.php:56
 #: modules/FrontHrm/inquiry/time_sheet.php:38
@@ -13489,7 +13488,7 @@ msgstr "Quản lý thu nhập, giảm trừ"
 
 #: modules/FrontHrm/manage/accounts.php:33
 msgid "Element Name cannot be empty."
-msgstr "Tên khoản không được bỏ trống"
+msgstr "Tên khoản không được bỏ trống."
 
 #: modules/FrontHrm/manage/accounts.php:38
 msgid "Selected account has already exists."
@@ -13697,7 +13696,7 @@ msgstr "Đã xoá bộ phận (phòng ban)"
 #: modules/FrontHrm/manage/department.php:73
 #: modules/FrontHrm/manage/department.php:75
 msgid "Department Name"
-msgstr "Tên phòng ban:"
+msgstr "Tên phòng ban"
 
 #: modules/FrontHrm/manage/department.php:73
 #: modules/FrontHrm/manage/department.php:113
@@ -13759,15 +13758,15 @@ msgstr "Phải nhập họ nhân viên."
 
 #: modules/FrontHrm/manage/employee.php:125
 msgid "Employee last name must be entered."
-msgstr "Chưa nhập Tên nhân viên"
+msgstr "Chưa nhập tên nhân vein."
 
 #: modules/FrontHrm/manage/employee.php:130
 msgid "Invalid email."
-msgstr "Email không hợp lệ"
+msgstr "Email không hợp lệ."
 
 #: modules/FrontHrm/manage/employee.php:135
 msgid "Invalid birth date."
-msgstr "Ngày không hợp lệ"
+msgstr "Ngày không hợp lệ."
 
 #: modules/FrontHrm/manage/employee.php:140
 msgid "Invalid hire date."
@@ -13787,7 +13786,7 @@ msgstr "Phải chọn chức vụ cho nhân viên để sử dung cấu trúc l�
 
 #: modules/FrontHrm/manage/employee.php:161
 msgid "Invalid release date."
-msgstr "Ngày không hợp lệ:"
+msgstr "Ngày không hợp lệ."
 
 #: modules/FrontHrm/manage/employee.php:199
 msgid "Not hired"
@@ -13873,7 +13872,7 @@ msgstr "Điện thoại *:"
 
 #: modules/FrontHrm/manage/employee.php:324
 msgid "e-Mail:"
-msgstr "Email:"
+msgstr "e-Mail:"
 
 #: modules/FrontHrm/manage/employee.php:325
 msgid "Birth Date:"
@@ -13908,7 +13907,7 @@ msgstr "Ngày vào:"
 #: modules/FrontHrm/manage/employee.php:349
 #: modules/FrontHrm/reporting/rep_payslip.php:130
 msgid "Department:"
-msgstr "Phòng ban"
+msgstr "Phòng ban:"
 
 #: modules/FrontHrm/manage/employee.php:344
 msgid "Set hire date first"
@@ -13988,7 +13987,7 @@ msgstr "Đã cập nhật hồ sơ nhân viên."
 
 #: modules/FrontHrm/manage/employee.php:478
 msgid "A new employee has been added."
-msgstr "Đã thêm nhân viên mới"
+msgstr "Đã thêm nhân viên mới."
 
 #: modules/FrontHrm/manage/employee.php:488
 msgid "Employee details has been deleted."
@@ -14283,7 +14282,7 @@ msgstr "Đã thêm kiểu nghỉ mới"
 
 #: modules/FrontHrm/manage/leave_types.php:56
 msgid "This leave type cannot be deleted."
-msgstr "Không thể xóa kiểu nghỉ"
+msgstr "Không thể xóa kiểu nghỉ."
 
 #: modules/FrontHrm/manage/leave_types.php:59
 msgid "Selected leave type has been deleted"
@@ -14505,7 +14504,7 @@ msgid ""
 "the Employee's Job Position does not have a structure, please define Salary "
 "Structure"
 msgstr ""
-"Chức Vụ của nhân viên này không có cấu trúc lương, hay khởi tạo cấu trúc "
+"chức vụ của nhân viên này không có cấu trúc lương, hay khởi tạo cấu trúc "
 "lương"
 
 #: modules/FrontHrm/manage/payslip.php:251
@@ -14741,7 +14740,7 @@ msgstr "Danh Sách Nhân Viên"
 
 #: modules/FrontHrm/reporting/rep_employees.php:88
 msgid "could not get department data"
-msgstr "Không tìm thấy dữ liệu bộ phận"
+msgstr "không tìm thấy dữ liệu bộ phận"
 
 #: modules/FrontHrm/reporting/rep_payslip.php:80
 msgid "Leaves"
@@ -14753,7 +14752,7 @@ msgstr "Thu nhập"
 
 #: modules/FrontHrm/reporting/rep_payslip.php:120
 msgid "Employee:"
-msgstr "Nhân viên"
+msgstr "Nhân vein:"
 
 #: modules/FrontHrm/reporting/rep_payslip.php:122
 msgid "Payslip #:"
@@ -15127,7 +15126,7 @@ msgstr "Phiếu giao"
 # c:/Apache/htdocs/account/purchasing/supplier_invoice_grns.php:120
 #: purchasing/includes/ui/invoice_ui.inc:457
 msgid "P.O."
-msgstr "Đơn"
+msgstr "Đơn."
 
 # c:/Apache/htdocs/account/purchasing/supplier_invoice_grns.php:123
 #: purchasing/includes/ui/invoice_ui.inc:457
@@ -15213,11 +15212,11 @@ msgstr "Ngày hoá đơn:"
 # c:/Apache2/htdocs/account/purchasing/includes/ui/po_ui.inc:80
 #: purchasing/includes/ui/po_ui.inc:143
 msgid "Supplier Currency:"
-msgstr "Tiền tệ NCC"
+msgstr "Tiền tệ NCC:"
 
 #: purchasing/includes/ui/po_ui.inc:158
 msgid "Due Date:"
-msgstr "Hạn cuối"
+msgstr "Hạn cuối:"
 
 # c:/Apache2/htdocs/account/purchasing/includes/ui/po_ui.inc:111
 #: purchasing/includes/ui/po_ui.inc:160
@@ -15462,11 +15461,11 @@ msgstr "Phải nhập tên nhà cung cấp."
 
 #: purchasing/manage/suppliers.php:50
 msgid "The supplier short name must be entered."
-msgstr "Phải nhập tên viết tắt nhà cung cấp"
+msgstr "Phải nhập tên viết tắt nhà cung cấp."
 
 #: purchasing/manage/suppliers.php:68
 msgid "Supplier has been updated."
-msgstr "Nhà cung cấp đã cập nhật"
+msgstr "Nhà cung cấp đã cập nhật."
 
 #: purchasing/manage/suppliers.php:79
 msgid "A new supplier has been added."
@@ -15824,7 +15823,7 @@ msgstr "Chưa chọn nhà cùng cấp."
 # c:/Apache/htdocs/account/sales/sales_order_entry.php:28
 #: purchasing/po_entry_items.php:320
 msgid "The entered order date is invalid."
-msgstr "Ngày nhập vào không hợp lệ"
+msgstr "Ngày nhập vào không hợp lệ."
 
 #: purchasing/po_entry_items.php:331
 msgid "The entered due date is invalid."
@@ -15834,7 +15833,7 @@ msgstr "Ngày đến hạn không hợp lệ."
 #: purchasing/po_entry_items.php:343 purchasing/supplier_credit.php:179
 #: purchasing/supplier_invoice.php:185
 msgid "You must enter a supplier's invoice reference."
-msgstr "Bạn phải nhập vào tham chiếu hoá đơn của nhà cung cấp"
+msgstr "Bạn phải nhập vào tham chiếu hoá đơn của nhà cung cấp."
 
 #: purchasing/po_entry_items.php:348 purchasing/supplier_credit.php:184
 #: purchasing/supplier_invoice.php:190
@@ -16018,7 +16017,7 @@ msgstr "Sửa đơn hàng # %d"
 # c:/Apache/htdocs/account/purchasing/supplier_credit.php:30
 #: purchasing/supplier_credit.php:76
 msgid "Supplier credit note has been processed."
-msgstr "Đã làm hoá đơn điều chỉnh nhà cung cấp"
+msgstr "Đã làm hoá đơn điều chỉnh nhà cung cấp."
 
 # c:/Apache/htdocs/account/purchasing/supplier_credit.php:31
 #: purchasing/supplier_credit.php:77
@@ -16075,7 +16074,7 @@ msgstr "Không thể thực hiện hoá đơn điều chỉnh vì ngày nhập v
 msgid ""
 "The invoice as entered cannot be processed because the due date is in an "
 "incorrect format."
-msgstr "Không thể thực hiện hoá đơn. Ngày đến hạn không hợp lệ"
+msgstr "Không thể thực hiện hoá đơn. Ngày đến hạn không hợp lệ."
 
 #: purchasing/supplier_credit.php:194
 msgid ""
@@ -16714,7 +16713,7 @@ msgstr "Bạn có thể thanh toán qua"
 
 #: reporting/includes/doctext.inc:269
 msgid "* Subject to Realisation of the Cheque."
-msgstr " *Tiêu đề séc."
+msgstr "*Tiêu đề séc."
 
 #: reporting/includes/excel_report.inc:67 reporting/includes/pdf_report.inc:80
 msgid ""
@@ -16836,12 +16835,12 @@ msgstr "Các lớp báo cáo:"
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:35
 #: reporting/includes/reports_classes.inc:77
 msgid "Reports For Class: "
-msgstr "Lớp báo cáo:"
+msgstr "Lớp báo cáo: "
 
 # c:/Apache2/htdocs/account/reporting/includes/reports_classes.inc:112
 #: reporting/includes/reports_classes.inc:95
 msgid "Display: "
-msgstr "Hiện:"
+msgstr "Hiện: "
 
 #: reporting/includes/reports_classes.inc:145
 msgid "Unknown report parameter type:"
@@ -17404,7 +17403,7 @@ msgstr "Qty Recd"
 
 #: reporting/rep204.php:77
 msgid "qty Inv"
-msgstr "SL HĐ"
+msgstr "sl hđ"
 
 #: reporting/rep204.php:78
 msgid "Act Price"
