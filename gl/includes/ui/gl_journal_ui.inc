@@ -10,8 +10,8 @@
 	NĂNG KHAI THÁC THƯƠNG MẠI HAY PHÙ HỢP VỚI MỤC ĐÍCH SỬ DỤNG CỤ THỂ NÀO.
 	Chi tiết về giấy phép <http://www.gnu.org/licenses/gpl-3.0.html>.
 *************************************************************************/
-include_once($path_to_root . '/includes/ui.inc');
-include_once($path_to_root . '/includes/ui/items_cart.inc');
+include_once($path_to_root.'/includes/ui.inc');
+include_once($path_to_root.'/includes/ui/items_cart.inc');
 
 //--------------------------------------------------------------------------------
 
@@ -23,7 +23,7 @@ function display_order_header(&$Order) {
 	start_outer_table(TABLESTYLE2, "width='90%'");
 	table_section(1);
 
-	date_row(_('Journal Date:'), 'date_', '', $new, 0,0,0,null, true);
+	date_row(_('Journal Date:'), 'date_', '', $new, 0, 0, 0, null, true);
 	if (input_changed('date_')) {
 		unset($_POST['ref']);
 		$Ajax->activate('ref');
@@ -85,8 +85,6 @@ function display_order_header(&$Order) {
 	end_outer_table(1);
 }
 
-//---------------------------------------------------------------------------------
-
 function display_gl_items($title, &$order) {
 	global $path_to_root;
 
@@ -143,10 +141,8 @@ function display_gl_items($title, &$order) {
 			}	
 			label_cell($item->reference);
 
-			edit_button_cell('Edit'.$line, _('Edit'),
-				_('Edit journal line'));
-			delete_button_cell('Delete'.$line, _('Delete'),
-				_('Remove line from journal'));
+			edit_button_cell('Edit'.$line, _('Edit'), _('Edit journal line'));
+			delete_button_cell('Delete'.$line, _('Delete'), _('Remove line from journal'));
 			end_row();
 		} 
 		else 
@@ -169,8 +165,6 @@ function display_gl_items($title, &$order) {
 	end_table();
 	div_end();
 }
-
-//---------------------------------------------------------------------------------
 
 function gl_edit_item_controls(&$order, $dim, $sub_accounts, $Index=null) {
 	global $Ajax;
@@ -205,8 +199,7 @@ function gl_edit_item_controls(&$order, $dim, $sub_accounts, $Index=null) {
 
 		if (is_subledger_account(get_post('code_id'))) { // for home currency postings show all customers
 			$sel_cur = get_post('currency', $order->currency);
-			subledger_list_cells(null, 'person_id', get_post('code_id'), null, false, false,
-				get_company_currency() == $sel_cur  ? null : $sel_cur);
+			subledger_list_cells(null, 'person_id', get_post('code_id'), null);
 		}
 		elseif ($order->has_sub_accounts())
 			label_cell('');
@@ -222,8 +215,7 @@ function gl_edit_item_controls(&$order, $dim, $sub_accounts, $Index=null) {
 		if ($sub_accounts) {
 			// for home currency postings show all customers
 			$sel_cur = get_post('currency', $order->currency);
-			subledger_list_cells(null, 'person_id', get_post('code_id'), null, false, false,
-				get_company_currency() == $sel_cur  ? null : $sel_cur);
+			subledger_list_cells(null, 'person_id', get_post('code_id'), null);
 		}
 		elseif ($order->has_sub_accounts())
 			label_cell('');
@@ -258,8 +250,6 @@ function gl_edit_item_controls(&$order, $dim, $sub_accounts, $Index=null) {
 
 	end_row();
 }
-
-//---------------------------------------------------------------------------------
 
 function gl_options_controls() {
 	echo "<br><table align='center'>";
