@@ -84,8 +84,8 @@ CREATE TABLE `0_bank_accounts` (
 -- Data of table `0_bank_accounts` --
 
 INSERT INTO `0_bank_accounts` VALUES
-('11211', 0, 'ACB', 'N/A', 'Ngân hàng Á Châu', 'Hà Nội', 'VND', 1, 1, '6422', '0000-00-00 00:00:00', 0, 0),
-('11212', 3, 'VCB', '', 'Vietcombank', 'Hà Nội', 'VND', 0, 2, '6422', '0000-00-00 00:00:00', 0, 0);
+('11212', '0', 'ACB', 'N/A', 'Ngân hàng Á Châu', 'Hà Nội', 'VND', '0', '1', '6422', '0000-00-00 00:00:00', '0', '0'),
+('11211', '3', 'VCB', 'N/A', 'Vietcombank', 'Hà Nội', 'VND', '1', '2', '6422', '0000-00-00 00:00:00', '0', '0');
 
 -- Structure of table `0_bank_trans` --
 
