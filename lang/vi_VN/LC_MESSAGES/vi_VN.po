@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FrontAccounting\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-05 05:13+0700\n"
-"PO-Revision-Date: 2021-12-23 02:22+0700\n"
+"PO-Revision-Date: 2021-12-28 10:04+0700\n"
 "Last-Translator: Translation Team <info@frontaccounting.net>\n"
 "Language-Team: Translators <info@frontaccounting.com>\n"
 "Language: vi\n"
@@ -34,7 +34,7 @@ msgstr "Thoát"
 
 #: access/login.php:14 access/password_reset.php:14
 msgid "Restricted access"
-msgstr "Truy cập hạn chế"
+msgstr "Truy cập bị hạn chế"
 
 #: access/login.php:27
 msgid "Login as user: demouser and password: password"
@@ -77,7 +77,7 @@ msgstr "Phiên bản"
 #: reporting/rep710.php:71 reporting/rep710.php:80
 #: reporting/reports_main.php:549
 msgid "User"
-msgstr "Lập"
+msgstr "Người lập"
 
 #: access/login.php:95
 msgid "User name:"
@@ -635,7 +635,7 @@ msgstr "Tạo sao lưu"
 #: admin/backups.php:190 sales/includes/ui/sales_order_ui.inc:537
 #: sales/includes/ui/sales_order_ui.inc:581
 msgid "Comments:"
-msgstr "Bình luận:"
+msgstr "Ghi chú:"
 
 #: admin/backups.php:191
 msgid "Compression:"
@@ -885,7 +885,7 @@ msgstr "BCC gửi email :"
 # c:/Apache/htdocs/account/admin/company_preferences.php:65
 #: admin/company_preferences.php:242
 msgid "Official Company Number:"
-msgstr "Trụ sở chính :"
+msgstr "Số chứng nhận ĐKKD:"
 
 # c:/Apache2/htdocs/account/sales/manage/customers.php:245
 #: admin/company_preferences.php:243 purchasing/manage/suppliers.php:182
@@ -1595,7 +1595,7 @@ msgstr "Kết thúc năm"
 #: reporting/rep115.php:150 reporting/rep201.php:161 reporting/rep206.php:104
 #: reporting/rep706.php:166
 msgid "Open Balance"
-msgstr "Số dư mở"
+msgstr "Dư đầu kỳ"
 
 #: admin/db/maintenance_db.inc:129
 #, php-format
@@ -3901,7 +3901,7 @@ msgstr "Xem phân bổ thanh toán"
 
 #: applications/customers.php:41
 msgid "Customer and Sales &Reports"
-msgstr "Khách hàng, bán hàng"
+msgstr "Báo cáo khách hàng, bán hàng"
 
 # c:/Apache/htdocs/account/applications/Customers.php:23
 # c:/Apache/htdocs/account/applications/GeneralLedger.php:22
@@ -4414,7 +4414,7 @@ msgstr "Xem các phân bổ cho NCC"
 
 #: applications/suppliers.php:34
 msgid "Supplier and Purchasing &Reports"
-msgstr "Nhà cung cấp và mua hàng"
+msgstr "Báo cáo mua hàng và nhà cung cấp"
 
 #: applications/suppliers.php:37
 msgid "&Suppliers"
@@ -5673,7 +5673,7 @@ msgstr "Trích trước các khoản thu chi"
 
 #: gl/accruals.php:47
 msgid "The amount can not be 0."
-msgstr "Số lượng phải khác 0."
+msgstr "Số tiền phải khác 0."
 
 #: gl/accruals.php:52
 msgid "The periods must be greater than 0."
@@ -5921,7 +5921,7 @@ msgstr "Ngày chuyển:"
 #: modules/FrontHrm/includes/ui/employee_bank_ui.inc:79
 #: sales/customer_payments.php:373
 msgid "Amount:"
-msgstr "Số lượng:"
+msgstr "Số tiền:"
 
 #: gl/bank_transfer.php:117 gl/bank_transfer.php:122
 #: purchasing/supplier_payment.php:289 sales/customer_payments.php:348
@@ -5930,7 +5930,7 @@ msgstr "Phí ngân hàng:"
 
 #: gl/bank_transfer.php:118
 msgid "Incoming Amount:"
-msgstr "Số lượng nhận:"
+msgstr "Số tiền nhận:"
 
 #: gl/bank_transfer.php:131
 msgid "Modify Transfer"
@@ -5944,12 +5944,12 @@ msgstr "Thực hiện chuyển"
 #: gl/bank_transfer.php:155 gl/bank_transfer.php:193 gl/bank_transfer.php:212
 #: purchasing/supplier_payment.php:128 purchasing/supplier_payment.php:134
 msgid "The entered amount is invalid or less than zero."
-msgstr "Số lượng nhập vào không hợp lệ hoặc nhỏ hơn 0."
+msgstr "Số tiền đã nhập không hợp lệ."
 
 #: gl/bank_transfer.php:160 gl/gl_bank.php:205
 #: modules/FrontHrm/manage/employee_bank_entry.php:250
 msgid "The total bank amount cannot be 0."
-msgstr "Số lượng chuyển phải khác 0."
+msgstr "Số tiền chuyển phải khác 0."
 
 #: gl/bank_transfer.php:174
 #, php-format
@@ -7641,7 +7641,7 @@ msgstr "Đã xoá khoản tạp phí"
 
 #: gl/manage/gl_quick_entries.php:155
 msgid "Base Amount"
-msgstr "Số lượng cơ sở"
+msgstr "Số tiền cơ sở"
 
 #: gl/manage/gl_quick_entries.php:173 gl/manage/gl_quick_entries.php:211
 msgid "Usage"
@@ -7653,15 +7653,15 @@ msgstr "Kiểu / Loại"
 
 #: gl/manage/gl_quick_entries.php:215
 msgid "Balance Based"
-msgstr "Số dư"
+msgstr "Cơ sở số dư"
 
 #: gl/manage/gl_quick_entries.php:225
 msgid "Base Amount Description"
-msgstr "Mô tả số lượng"
+msgstr "Mô tả số tiền cơ sở"
 
 #: gl/manage/gl_quick_entries.php:226
 msgid "Default Base Amount"
-msgstr "Số lượng mặc định"
+msgstr "Số tiền cơ sở mặc định"
 
 #: gl/manage/gl_quick_entries.php:233
 msgid "Quick Entry Lines"
@@ -8684,7 +8684,7 @@ msgstr " đổi thành "
 
 #: includes/db/inventory_db.inc:305
 msgid " for item "
-msgstr " cho mặt hang "
+msgstr " cho mặt hàng "
 
 #: includes/db/inventory_db.inc:359
 msgid "Zero/negative inventory handling"
@@ -8910,13 +8910,13 @@ msgstr "Hoá đơn bán"
 # c:/Apache/htdocs/account/includes/types.inc:11
 #: includes/sysnames.inc:26 sales/credit_note_entry.php:36
 msgid "Customer Credit Note"
-msgstr "Hoá đơn điều chỉnh cho khách hàng"
+msgstr "Hoá đơn điều chỉnh"
 
 # c:/Apache/htdocs/account/sales/view/view_receipt.php:21
 # c:/Apache/htdocs/account/includes/types.inc:12
 #: includes/sysnames.inc:27
 msgid "Customer Payment"
-msgstr "Khách hàng thanh toán"
+msgstr "KH thanh toán"
 
 #: includes/sysnames.inc:28
 msgid "Delivery Note"
@@ -8989,7 +8989,7 @@ msgstr "Thực thi lệnh SX"
 #: includes/sysnames.inc:39 sales/inquiry/sales_orders_view.php:119
 #: sales/inquiry/sales_orders_view.php:135 themes/canvas/renderer.php:75
 msgid "Sales Order"
-msgstr "Đơn hàng thu mua"
+msgstr "Đơn hàng bán"
 
 #: includes/sysnames.inc:40 sales/sales_order_entry.php:641
 msgid "Sales Quotation"
@@ -9713,7 +9713,7 @@ msgstr "Loại thử nghiệm"
 #: reporting/reports_main.php:534 reporting/reports_main.php:542
 #: reporting/reports_main.php:550 sales/view/view_sales_order.php:94
 msgid "Comments"
-msgstr "Bình luận"
+msgstr "Ghi chú"
 
 #: includes/system_tests.inc:418
 msgid "Ok"
@@ -10262,12 +10262,12 @@ msgstr "Biên nhận"
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1883
 #: includes/ui/ui_lists.inc:1952
 msgid "Automatically put balance on back order"
-msgstr "Tự động đặt số dư khi chậm đơn hàng"
+msgstr "Giữ số còn lại giao lần sau"
 
 # c:/Apache2/htdocs/account/includes/ui/ui_lists.inc:1884
 #: includes/ui/ui_lists.inc:1953
 msgid "Cancel any quantites not delivered"
-msgstr "Huỷ số lượng không được giao"
+msgstr "Huỷ số lượng chưa  được giao"
 
 # c:/Apache/htdocs/account/sales/customer_credit_invoice.php:321
 # c:/Apache/htdocs/account/sales/customer_credit_invoice.php:324
@@ -10284,7 +10284,7 @@ msgstr "Hàng trả lại nhập kho"
 # c:/Apache/htdocs/account/sales/includes/ui/sales_credit_ui.inc:244
 #: includes/ui/ui_lists.inc:1969
 msgid "Items Written Off"
-msgstr "Các mục đã xoá"
+msgstr "Xóa sổ các mặt hàng"
 
 #: includes/ui/ui_lists.inc:2125
 msgid "New role"
@@ -11996,7 +11996,7 @@ msgstr "Không có thiết lập giá cho mặt hàng này."
 # c:/Apache/htdocs/account/sales/includes/ui/sales_order_ui.inc:216
 #: inventory/prices.php:179
 msgid "Sales Type:"
-msgstr "Kiểu bán:"
+msgstr "Mức giá:"
 
 # c:/Apache/htdocs/account/inventory/prices.php:150
 # c:/Apache/htdocs/account/inventory/purchasing_data.php:190
@@ -12589,14 +12589,14 @@ msgstr "Đơn hàng số #:"
 # c:/Apache/htdocs/account/manufacturing/search_work_orders.php:31
 #: manufacturing/search_work_orders.php:70
 msgid "at Location:"
-msgstr "địa điểm:"
+msgstr "Địa điểm:"
 
 # c:/Apache/htdocs/account/manufacturing/search_work_orders.php:43
 # c:/Apache/htdocs/account/purchasing/inquiry/po_search_completed.php:28
 #: manufacturing/search_work_orders.php:82
 #: purchasing/inquiry/po_search_completed.php:98
 msgid "for item:"
-msgstr "cho mặt hàng:"
+msgstr "Cho mặt hàng:"
 
 #: manufacturing/search_work_orders.php:84 purchasing/inquiry/po_search.php:75
 #: purchasing/inquiry/po_search_completed.php:105
@@ -12868,7 +12868,7 @@ msgstr "Thêm chi phí phụ khác."
 
 #: manufacturing/work_order_costs.php:68
 msgid "The amount entered is not a valid number or less then zero."
-msgstr "Số lượng nhập vào không hợp lệ."
+msgstr "Số tiền nhập vào không hợp lệ."
 
 #: manufacturing/work_order_costs.php:84
 msgid ""
@@ -13758,7 +13758,7 @@ msgstr "Phải nhập họ nhân viên."
 
 #: modules/FrontHrm/manage/employee.php:125
 msgid "Employee last name must be entered."
-msgstr "Chưa nhập tên nhân vein."
+msgstr "Chưa nhập tên nhân viên."
 
 #: modules/FrontHrm/manage/employee.php:130
 msgid "Invalid email."
@@ -14547,7 +14547,7 @@ msgstr "Tên không được để trống."
 # c:/Apache/htdocs/account/inventory/transfers.php:112
 #: modules/FrontHrm/manage/position.php:34
 msgid "Amount field value must be a positive number."
-msgstr "Số lượng nhập vào phải lớn hơn 0."
+msgstr "Số tiền nhập vào phải lớn hơn 0."
 
 #: modules/FrontHrm/manage/position.php:69
 msgid "Selected job position has been updated"
@@ -14752,7 +14752,7 @@ msgstr "Thu nhập"
 
 #: modules/FrontHrm/reporting/rep_payslip.php:120
 msgid "Employee:"
-msgstr "Nhân vein:"
+msgstr "Nhân viên:"
 
 #: modules/FrontHrm/reporting/rep_payslip.php:122
 msgid "Payslip #:"
@@ -14949,7 +14949,7 @@ msgstr "Giao hàng đến"
 #: purchasing/includes/ui/grn_ui.inc:37 purchasing/includes/ui/grn_ui.inc:76
 #: purchasing/includes/ui/po_ui.inc:305 sales/view/view_sales_order.php:90
 msgid "Delivery Address"
-msgstr "Địa chỉ cung cấp"
+msgstr "Địa chỉ giao hàng"
 
 # c:/Apache2/htdocs/account/purchasing/includes/ui/grn_ui.inc:54
 # c:/Apache2/htdocs/account/purchasing/includes/ui/po_ui.inc:261
@@ -15309,7 +15309,7 @@ msgstr "Sau"
 #: sales/includes/ui/sales_order_ui.inc:566
 #: sales/includes/ui/sales_order_ui.inc:568
 msgid "Pre-Payment Required:"
-msgstr "Xem trả trước:"
+msgstr "Yêu cầu trả trước:"
 
 # c:/Apache/htdocs/account/purchasing/inquiry/po_search.php:7
 #: purchasing/inquiry/po_search.php:26
@@ -15437,7 +15437,7 @@ msgstr "Chọn nhà cung cấp:"
 
 #: purchasing/inquiry/suppliers_list.php:49 sales/inquiry/customers_list.php:49
 msgid "Tax ID"
-msgstr "Số thuế"
+msgstr "MS thuế"
 
 #: purchasing/inquiry/suppliers_list.php:49 sales/inquiry/customers_list.php:49
 msgid "Phone 2"
@@ -16017,7 +16017,7 @@ msgstr "Sửa đơn hàng # %d"
 # c:/Apache/htdocs/account/purchasing/supplier_credit.php:30
 #: purchasing/supplier_credit.php:76
 msgid "Supplier credit note has been processed."
-msgstr "Đã làm hoá đơn điều chỉnh nhà cung cấp."
+msgstr "Đã lập hoá đơn điều chỉnh nhà cung cấp."
 
 # c:/Apache/htdocs/account/purchasing/supplier_credit.php:31
 #: purchasing/supplier_credit.php:77
@@ -16481,7 +16481,7 @@ msgstr "Loại tiền"
 
 #: reporting/includes/doctext.inc:47 reporting/rep111.php:57
 msgid "SALES QUOTATION"
-msgstr "BÁO GIÁ HÀNG BÁN"
+msgstr "BÁO GIÁ"
 
 #: reporting/includes/doctext.inc:48
 msgid "Quotation No."
@@ -16510,7 +16510,7 @@ msgstr "Người bán"
 #: reporting/includes/doctext.inc:181 reporting/includes/doctext.inc:200
 #: reporting/includes/doctext.inc:237
 msgid "Your VAT no."
-msgstr "Số thuế."
+msgstr "Mã số thuế."
 
 #: reporting/includes/doctext.inc:56
 msgid "Our Quotation No"
@@ -16533,7 +16533,7 @@ msgstr "ĐƠN HÀNG TRẢ TRƯỚC"
 # c:/Apache2/htdocs/account/reporting/rep109.php:88
 #: reporting/includes/doctext.inc:62 reporting/rep109.php:72
 msgid "SALES ORDER"
-msgstr "ĐƠN HÀNG BÁN"
+msgstr "ĐƠN ĐẶT HÀNG"
 
 # c:/Apache2/htdocs/account/reporting/includes/doctext.inc:16
 #: reporting/includes/doctext.inc:63
@@ -16563,7 +16563,7 @@ msgstr "Số."
 
 #: reporting/includes/doctext.inc:94
 msgid "To Be Invoiced Before"
-msgstr "Đã lập hoá đơn"
+msgstr "Lập hóa đơn trước"
 
 # c:/Apache/htdocs/account/sales/view/view_credit.php:28
 #: reporting/includes/doctext.inc:99 reporting/rep113.php:60
@@ -16577,7 +16577,7 @@ msgstr "Số chứng từ."
 
 #: reporting/includes/doctext.inc:101
 msgid "Please quote Credit no. when paying. All amounts stated in"
-msgstr "Kiểm tra hoá đơn khi thanh toán. Loại tiền"
+msgstr "Vui lòng kiểm tra, đối chiếu khi thanh toán. Loại tiền"
 
 #: reporting/includes/doctext.inc:113
 msgid "PREPAYMENT INVOICE"
@@ -16602,7 +16602,7 @@ msgstr "Số."
 # c:/Apache2/htdocs/account/reporting/includes/doctext.inc:20
 #: reporting/includes/doctext.inc:117
 msgid "Please quote Invoice no. when paying. All amounts stated in"
-msgstr "Kiểm tra hoá đơn khi thanh toán. Loại tiền"
+msgstr "Vui lòng kiểm tra, đối chiếu khi thanh toán. Loại tiền"
 
 #: reporting/includes/doctext.inc:131
 msgid "Date of Payment"
@@ -16705,7 +16705,7 @@ msgstr "Vào sổ"
 #: reporting/includes/doctext.inc:254 reporting/rep601.php:86
 #: reporting/rep602.php:78
 msgid "Bank Account"
-msgstr "TK ngân hàng"
+msgstr "Số tài khoản"
 
 #: reporting/includes/doctext.inc:265 reporting/includes/pdf_report.inc:933
 msgid "You can pay through"
@@ -16713,7 +16713,7 @@ msgstr "Bạn có thể thanh toán qua"
 
 #: reporting/includes/doctext.inc:269
 msgid "* Subject to Realisation of the Cheque."
-msgstr "*Tiêu đề séc."
+msgstr " "
 
 #: reporting/includes/excel_report.inc:67 reporting/includes/pdf_report.inc:80
 msgid ""
@@ -16946,11 +16946,11 @@ msgstr "Không lọc người bán"
 
 #: reporting/includes/reports_classes.inc:447
 msgid "No Users Filter"
-msgstr "Không Lọc User"
+msgstr "Tất cả"
 
 #: reporting/includes/tcpdf.php:187
 msgid "Unsupported image file format."
-msgstr ""
+msgstr "Định dạng không được hỗ trợ."
 
 # c:/Apache2/htdocs/account/reporting/Rep101.php:58
 # c:/Apache2/htdocs/account/reporting/Rep102.php:122
@@ -17007,7 +17007,7 @@ msgstr "Tổng cộng"
 #: reporting/reports_main.php:236 reporting/reports_main.php:346
 #: reporting/reports_main.php:541
 msgid "Summary Only"
-msgstr "Chỉ chi tiết"
+msgstr "Chỉ tóm tắt"
 
 # c:/Apache2/htdocs/account/reporting/Rep102.php:118
 # c:/Apache2/htdocs/account/reporting/Rep202.php:123
@@ -17055,7 +17055,7 @@ msgstr "Đã phân bổ"
 # c:/Apache2/htdocs/account/reporting/reports_main.php:18
 #: reporting/rep102.php:127
 msgid "Aged Customer Analysis"
-msgstr "Chi tiết nợ khách hàng"
+msgstr "Tổng hợp công nợ khách hàng"
 
 # c:/Apache2/htdocs/account/reporting/Rep103.php:108
 #: reporting/rep103.php:121 reporting/rep115.php:127
@@ -17250,7 +17250,7 @@ msgstr "Danh sách người bán hàng"
 
 #: reporting/rep107.php:201
 msgid "Prepayments invoiced to this order up to day:"
-msgstr "Trả trước đã lập hoá đơn cho đơn hàng này đến ngày:"
+msgstr "Trả trước đã lập hoá đơn cho đơn hàng này:"
 
 #: reporting/rep107.php:208
 msgid "Invoice reference"
@@ -17342,15 +17342,15 @@ msgstr "TỔNG ĐIỀU CHỈNH"
 
 #: reporting/rep114.php:79
 msgid "Sales Summary Report"
-msgstr "Báo cáo chi tiết bán hàng"
+msgstr "Báo cáo tóm tắt bán hàng"
 
 #: reporting/rep114.php:83 reporting/reports_main.php:81
 msgid "Tax Id Only"
-msgstr "Chỉ ID thuế"
+msgstr "Chỉ MS thuế"
 
 #: reporting/rep114.php:87
 msgid "Tax Id"
-msgstr "Số thuế"
+msgstr "MS thuế"
 
 #: reporting/rep114.php:87
 msgid "Total ex. Tax"
@@ -17403,7 +17403,7 @@ msgstr "Qty Recd"
 
 #: reporting/rep204.php:77
 msgid "qty Inv"
-msgstr "sl hđ"
+msgstr "SL HĐ"
 
 #: reporting/rep204.php:78
 msgid "Act Price"
@@ -17585,7 +17585,7 @@ msgstr "Đánh dấu"
 
 #: reporting/rep309.php:99
 msgid "Item Sales Summary Report"
-msgstr "Chi tiết hàng bán"
+msgstr "Báo cáo tóm tắt hàng bán"
 
 #: reporting/rep309.php:135
 msgid "Gift"
@@ -17632,7 +17632,7 @@ msgstr "NAM"
 # c:/Apache/htdocs/account/reporting/reports_main.php:41
 #: reporting/rep501.php:85
 msgid "Dimension Summary"
-msgstr "Chi tiết khoản mục"
+msgstr "Tóm tắt khoản mục"
 
 # c:/Apache/htdocs/account/gl/inquiry/bank_inquiry.php:7
 #: reporting/rep601.php:66
@@ -17842,7 +17842,7 @@ msgstr "Xuất ra"
 
 #: reporting/reports_main.php:47
 msgid "&Aged Customer Analysis"
-msgstr "Chi tiết nợ khách hàng"
+msgstr "Tổng hợp công nợ khách hàng"
 
 # c:/Apache2/htdocs/account/reporting/reports_main.php:31
 # c:/Apache2/htdocs/account/reporting/reports_main.php:84
@@ -17875,7 +17875,7 @@ msgstr "Số tiền nhỏ hơn"
 
 #: reporting/reports_main.php:78
 msgid "Sales &Summary Report"
-msgstr "Chi tiết bán hàng"
+msgstr "Báo cáo tóm tắt bán hàng"
 
 #: reporting/reports_main.php:85
 msgid "&Price Listing"
@@ -17956,7 +17956,7 @@ msgstr "Emai khách hàng"
 
 #: reporting/reports_main.php:142
 msgid "&Print Sales Orders"
-msgstr "In đơn hàng bán"
+msgstr "In các đơn hàng"
 
 #: reporting/reports_main.php:147
 msgid "Print as Quote"
@@ -18052,7 +18052,7 @@ msgstr "Giá trị luân chuyển"
 
 #: reporting/reports_main.php:299
 msgid "Item &Sales Summary Report"
-msgstr "Chi tiết mặt hàng và bán hàng"
+msgstr "Tóm tắt mặt hàng và bán hàng"
 
 #: reporting/reports_main.php:306
 msgid "Inventory Purchasing - &Transaction Based"
@@ -18100,7 +18100,7 @@ msgstr "Địa điểm tài sản"
 
 #: reporting/reports_main.php:353
 msgid "Dimension &Summary"
-msgstr "Chi tiết khoản mục"
+msgstr "Tóm tắt khoản mục"
 
 # c:/Apache2/htdocs/account/reporting/reports_main.php:127
 #: reporting/reports_main.php:354
@@ -18989,7 +18989,7 @@ msgstr "Ngày nhập vào không hợp lệ. Hãy nhập ngày hợp lệ cho th
 # c:/Apache/htdocs/account/sales/customer_payments.php:69
 #: sales/customer_payments.php:170 sales/customer_payments.php:175
 msgid "The entered amount is invalid or negative and cannot be processed."
-msgstr "Số lượng nhập vào không hợp lệ và, không thể thực hiện."
+msgstr "Số tiền nhập vào không hợp lệ và, không thể thực hiện."
 
 # c:/Apache/htdocs/account/sales/customer_payments.php:77
 #: sales/customer_payments.php:191
@@ -19000,7 +19000,7 @@ msgstr "Chiết khấu nhập vào không hợp lệ."
 msgid ""
 "The balance of the amount and discount is zero or negative. Please enter "
 "valid amounts."
-msgstr "Số lượng không hợp lệ. Hãy nhập số tiền hợp lệ."
+msgstr "Số tiền không hợp lệ. Hãy nhập số tiền hợp lệ."
 
 #: sales/customer_payments.php:201
 msgid "The entered payment amount is zero or negative."
@@ -19416,7 +19416,7 @@ msgstr "Đã xoá tình trạng tín dụng"
 # c:/Apache/htdocs/account/sales/manage/credit_status.php:81
 #: sales/manage/credit_status.php:89
 msgid "Dissallow Invoices"
-msgstr "Cho phép xuất HĐ"
+msgstr "Không cho xuất HĐ"
 
 # c:/Apache/htdocs/account/sales/manage/credit_status.php:89
 #: sales/manage/credit_status.php:99
@@ -19431,7 +19431,7 @@ msgstr "Không xuất hoá đơn"
 # c:/Apache/htdocs/account/sales/manage/credit_status.php:123
 #: sales/manage/credit_status.php:132
 msgid "Dissallow invoicing ?"
-msgstr "Cho xuất hoá đơn ?"
+msgstr "Không xuất hoá đơn ?"
 
 # c:/Apache/htdocs/account/sales/manage/customer_branches.php:14
 #: sales/manage/customer_branches.php:30
@@ -19661,7 +19661,7 @@ msgstr "Tên, Địa chỉ"
 # c:/Apache/htdocs/account/sales/manage/customers.php:228
 #: sales/manage/customers.php:197
 msgid "Customer Name:"
-msgstr "Tên khách:"
+msgstr "Tên khách hàng (công ty):"
 
 #: sales/manage/customers.php:198
 msgid "Customer Short Name:"
@@ -19676,7 +19676,7 @@ msgstr "Tiền tệ :"
 # c:/Apache/htdocs/account/sales/manage/customers.php:246
 #: sales/manage/customers.php:210
 msgid "Sales Type/Price List:"
-msgstr "Kiểu bán/Giá:"
+msgstr "Giá mặc định:"
 
 #: sales/manage/customers.php:213
 msgid "Customer status:"
@@ -20050,7 +20050,7 @@ msgstr "Tên kiểu"
 
 #: sales/manage/sales_types.php:90
 msgid "Factor"
-msgstr "Hoa hồng"
+msgstr "Giá/Giá chuẩn"
 
 #: sales/manage/sales_types.php:90
 msgid "Tax Incl"
@@ -20064,8 +20064,7 @@ msgstr "Cơ sở"
 msgid ""
 "Marked sales type is the company base pricelist for prices calculations."
 msgstr ""
-"Kiểu được đánh dấu tô màu đỏ là bảng giá cơ bản của công ty trong việc tính "
-"giá."
+"Kiểu được đánh dấu màu đỏ là bảng giá cơ sở của công ty trong việc tính giá."
 
 #: sales/manage/sales_types.php:139
 msgid "Sales Type Name"
@@ -20073,7 +20072,7 @@ msgstr "Tên kiểu bán"
 
 #: sales/manage/sales_types.php:140
 msgid "Calculation factor"
-msgstr "Hoa hồng"
+msgstr "Giá/Giá chuẩn"
 
 #: sales/manage/sales_types.php:141
 msgid "Tax included"
@@ -20200,7 +20199,7 @@ msgstr "Khởi tạo giao hàng"
 #: sales/sales_order_entry.php:223
 #, php-format
 msgid "Invoice # %d has been entered."
-msgstr "Đã xoá hoá đơn #%d."
+msgstr "Đã xuất hoá đơn #%d."
 
 #: sales/sales_order_entry.php:227
 msgid "&Print Sales Invoice"
@@ -20565,7 +20564,7 @@ msgstr "Báo giá # %d"
 # c:/Apache/htdocs/account/sales/view/view_sales_order.php:8
 #: sales/view/view_sales_order.php:32
 msgid "View Sales Order"
-msgstr "Xem đơn hàng bán"
+msgstr "Xem các đơn hàng bán"
 
 #: sales/view/view_sales_order.php:33
 #, php-format
@@ -20580,7 +20579,7 @@ msgstr "Thông tin đơn hàng"
 # c:/Apache/htdocs/account/sales/view/view_sales_order.php:38
 #: sales/view/view_sales_order.php:56
 msgid "Customer Name"
-msgstr "Tên khách"
+msgstr "Khách hàng"
 
 # c:/Apache/htdocs/account/sales/view/view_sales_order.php:40
 #: sales/view/view_sales_order.php:60
