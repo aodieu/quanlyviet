@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FrontAccounting\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-05 05:13+0700\n"
-"PO-Revision-Date: 2021-12-28 10:04+0700\n"
+"PO-Revision-Date: 2021-12-31 08:35+0700\n"
 "Last-Translator: Translation Team <info@frontaccounting.net>\n"
 "Language-Team: Translators <info@frontaccounting.com>\n"
 "Language: vi\n"
@@ -9295,7 +9295,7 @@ msgstr "Sau một số ngày"
 
 #: includes/sysnames.inc:198
 msgid "Day In Following Month"
-msgstr "Ngày hàng tháng"
+msgstr "Ngày của tháng tiếp theo"
 
 #: includes/sysnames.inc:202
 msgid "Sum per line taxes"
@@ -14504,7 +14504,7 @@ msgid ""
 "the Employee's Job Position does not have a structure, please define Salary "
 "Structure"
 msgstr ""
-"chức vụ của nhân viên này không có cấu trúc lương, hay khởi tạo cấu trúc "
+"Chức vụ của nhân viên này không có cấu trúc lương, hãy khởi tạo cấu trúc "
 "lương"
 
 #: modules/FrontHrm/manage/payslip.php:251
@@ -18872,7 +18872,7 @@ msgstr "Các mặt hàng bán"
 # c:/Apache/htdocs/account/sales/customer_invoice.php:353
 #: sales/customer_invoice.php:488
 msgid "Invoice Items"
-msgstr "Các hoá đơn"
+msgstr "Các mặt hàng"
 
 #: sales/customer_invoice.php:496
 msgid "This Invoice"
@@ -20564,7 +20564,7 @@ msgstr "Báo giá # %d"
 # c:/Apache/htdocs/account/sales/view/view_sales_order.php:8
 #: sales/view/view_sales_order.php:32
 msgid "View Sales Order"
-msgstr "Xem các đơn hàng bán"
+msgstr "Xem đơn hàng bán"
 
 #: sales/view/view_sales_order.php:33
 #, php-format
@@ -20840,7 +20840,7 @@ msgstr "Hoá đơn trực tiếp"
 
 #: themes/canvas/renderer.php:78
 msgid "Sales Order Inquiry"
-msgstr "Xem đơn hàng bán"
+msgstr "Xem các đơn hàng bán"
 
 #: themes/canvas/renderer.php:94
 msgid "Inventory Adjustments"
