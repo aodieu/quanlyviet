@@ -765,7 +765,7 @@ CREATE TABLE `0_fiscal_year` (
 -- Data of table `0_fiscal_year` --
 
 INSERT INTO `0_fiscal_year` VALUES
-('1', '2021-01-01', '2021-12-31', '1');
+('1', '2022-01-01', '2022-12-31', '1');
 
 -- Structure of table `0_gl_trans` --
 
@@ -1964,7 +1964,7 @@ CREATE TABLE `0_users` (
 -- Data of table `0_users` --
 
 INSERT INTO `0_users` VALUES
-('1', 'admin', '5f4dcc3b5aa765d61d8327deb882cf99', 'Administrator', '2', '', 'adm@aodieu.com', 'vi_VN', '0', '0', '0', '0', 'default', 'Letter', '2', '2', '4', '1', '1', '0', '0', '2020-04-04 12:34:29', '10', '1', '1', '1', '1', '0', 'orders', '30', '0', '1', '0', '0', '0');
+('1', 'admin', '5f4dcc3b5aa765d61d8327deb882cf99', 'Administrator', '2', '', 'adm@aodieu.com', 'vi_VN', '0', '0', '0', '0', 'default', 'Letter', '2', '2', '4', '1', '1', '0', '0', '2021-12-31 12:34:29', '10', '1', '1', '1', '1', '0', 'orders', '30', '0', '1', '0', '0', '0');
 
 -- Structure of table `0_voided` --
 

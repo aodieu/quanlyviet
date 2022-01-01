@@ -1,3 +1,927 @@
+commit 96e3a56246512a6af57f14e7d2b9a70bb7bf4ec0
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Dec 31 08:37:23 2021 +0700
+
+    Update gettext template
+
+M	lang/vi_VN/LC_MESSAGES/vi_VN.mo
+M	lang/vi_VN/LC_MESSAGES/vi_VN.po
+
+commit 19a36df26a045f1206776c0083f1016ae5c7001a
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Dec 28 16:18:11 2021 +0700
+
+    added button colors in backup page
+
+M	themes/default/local_style/backups.css
+
+commit 2dacead8c308017da36a3c329593f30edbd977ea
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Dec 28 10:06:30 2021 +0700
+
+    Update gettext template
+
+M	lang/vi_VN/LC_MESSAGES/vi_VN.mo
+M	lang/vi_VN/LC_MESSAGES/vi_VN.po
+
+commit d9edaaedf9fdfe0f8217fdf6b649a313d5701a4e
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Dec 27 01:05:44 2021 +0700
+
+    rep114 rearange column width.
+
+M	reporting/rep114.php
+
+commit 736de9d8c5a4b0140986eede9cd2709c33cb2ff4
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Dec 23 10:50:57 2021 +0700
+
+    javascript error: Cannot read properties of null. Fixed.
+
+M	libraries/behaviour.js
+
+commit eb043ddc5c7297cfe625e8468b8029e8a0f0eb21
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Dec 23 02:24:00 2021 +0700
+
+    update getext template
+
+M	lang/vi_VN/LC_MESSAGES/vi_VN.mo
+M	lang/vi_VN/LC_MESSAGES/vi_VN.po
+
+commit c97b184bb312bc502fc9b3a98f39bf22d5c118b4
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Dec 23 01:59:55 2021 +0700
+
+    Wrong bank account dummy data. Fixed
+
+M	sql/vi_VN-tt133-new.sql
+
+commit 5a5aec3958678c131735d54d24868f635524388b
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Dec 22 11:08:12 2021 +0700
+
+    Remove unused parameters in function subledger_list_cells and code cleanup.
+
+M	gl/includes/ui/gl_journal_ui.inc
+M	includes/ui/ui_lists.inc
+
+commit c6561ec204212741a31f8171563f58f2808009f4
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Dec 22 07:53:53 2021 +0700
+
+    wrong bank account names in demo data, fixed.
+
+M	sql/vi_VN-tt133-demo.sql
+
+commit 6efb8fa57ce2bd62ee0fa79f1a8b1106723df596
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Dec 21 05:52:31 2021 +0700
+
+    login page pops up on every clicks. Fixed.
+
+M	includes/session.inc
+
+commit 089774c3ed219208ecc5dab74112738172c50d0f
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Dec 18 23:37:25 2021 +0700
+
+    Notes from template are not used in recurring invoices. Fixed.
+
+M	sales/create_recurrent_invoices.php
+
+commit d340d69affc001725b608dab0ec49d65724f9744
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Dec 10 13:01:59 2021 +0700
+
+    syntax error in print statements report. Fixed.
+
+M	reporting/rep108.php
+
+commit d809b7d0015ce3ed3a01d2bd08e954fc8e39d455
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Dec 7 22:42:17 2021 +0700
+
+    error undefined function delete_image(). Fixed.
+
+M	inventory/manage/items.php
+
+commit 73dfc2244fad89946b14030dc68945b2a499c850
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Dec 7 10:05:38 2021 +0700
+
+    php8 error fix.
+
+M	includes/ui/simple_crud_class.inc
+
+commit 3b6ae68269024ff1125d2e2efe4bd7126ffcafec
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Dec 6 13:22:57 2021 +0700
+
+    Updtae gettext template
+
+M	lang/new_language_template/LC_MESSAGES/empty.po
+
+commit 3be7d21aa32ef80cf045f2af40ac8ce76e5d68c5
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Dec 6 12:58:08 2021 +0700
+
+    php8 fixes, continue.
+
+M	includes/ui/simple_crud_class.inc
+
+commit a02e26df5ae49f0b9d2084c28b28a08db0b8419a
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Dec 4 08:18:22 2021 +0700
+
+    The secure flag was not set on session cookie. Fixed.
+
+M	includes/session.inc
+
+commit 0b1011a01fd28898379b21df87aad964d7d36e65
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Dec 1 16:59:58 2021 +0700
+
+    prevent user to edit voided customer credit note.
+
+M	sales/credit_note_entry.php
+M	sales/includes/db/cust_trans_db.inc
+M	sales/inquiry/customer_inquiry.php
+
+commit 6e4b98d2abd4dcb835f60fe0780d7a819e781f03
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Nov 30 06:45:32 2021 +0700
+
+    Sales invoice process issue. Fixed
+
+M	sales/includes/db/cust_trans_db.inc
+
+commit 58642f9490524bf3c0262903556cab6d124d77b5
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Nov 29 22:38:34 2021 +0700
+
+    cleaned unused code
+
+M	manufacturing/includes/db/work_order_costing_db.inc
+
+commit be8dfeaf38adf91e9263c84548a1e303e31e200a
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Nov 28 17:55:42 2021 +0700
+
+    code cleanup
+
+M	manufacturing/includes/db/work_order_costing_db.inc
+
+commit d2bb3c105a021cbc72323eaaf17754a530972f9a
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Nov 23 06:48:26 2021 +0700
+
+    php8 fix, blank page on po_receive_items.php
+
+M	purchasing/po_receive_items.php
+
+commit 0b934d91a58c1d0849ac2ce83d7d34f8096a98a4
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Nov 22 12:17:35 2021 +0700
+
+    Removed function db_fixed().
+
+M	admin/db/maintenance_db.inc
+M	admin/includes/fa_patch.class.inc
+M	includes/db/connect_db.inc
+M	includes/db/connect_db_mysql.inc
+M	includes/db/connect_db_mysqli.inc
+M	includes/session.inc
+
+commit 3025f78d1c15acb304f302f6bf6ac0aee81116d0
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Nov 21 23:03:07 2021 +0700
+
+    error restoring data and messed utf8 characters. Fixed
+
+M	admin/db/maintenance_db.inc
+M	includes/db/connect_db_mysqli.inc
+M	sql/vi_VN-tt132-demo.sql
+M	sql/vi_VN-tt132-new.sql
+M	sql/vi_VN-tt133-demo.sql
+M	sql/vi_VN-tt133-new.sql
+M	sql/vi_VN-tt200-demo.sql
+M	sql/vi_VN-tt200-new.sql
+
+commit 7769c1d0a80b7c8b817bb0141de90a93da9a4d55
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Nov 18 09:33:23 2021 +0700
+
+    config.default.inc error on startup, fixed.
+
+M	config.default.php
+
+commit 005e3fbdfa2f2408c2e7653b9bca0f44cb1e6b29
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Nov 17 23:58:35 2021 +0700
+
+    Journal entry impacts and tax in gl row supplier invoice. Fixed.
+
+M	gl/includes/db/gl_db_trans.inc
+M	includes/ui/items_cart.inc
+M	reporting/rep709.php
+
+commit 6aa478a85147f4c8b77c5f0a29c0c146ab20239f
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Nov 16 06:52:47 2021 +0700
+
+    Tax Type not displayed during initial setup if default Sales and/or Purchase Tax account deleted. Fixed
+
+M	taxes/db/tax_types_db.inc
+
+commit 79ffba2447454c74947742fcaa38e08100be97f9
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Nov 13 00:12:24 2021 +0700
+
+    Fix db_pager protect count($this->extra_where)
+
+M	includes/db_pager.inc
+
+commit 647e9c7554790fbe163a9e65f1f184795389639c
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Nov 11 13:24:25 2021 +0700
+
+    focus issue on inventory adjusment entry. Fixed.
+
+M	inventory/includes/item_adjustments_ui.inc
+
+commit 5ebc917942f39c318d3563cd39d0b73dc8c9ed54
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Nov 10 10:44:58 2021 +0700
+
+    Syntax error in customer inquiry. Fixed.
+
+M	sales/inquiry/customer_inquiry.php
+
+commit 10bbbf93e885d4be6547a104947ab71355826e7c
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Nov 10 09:18:39 2021 +0700
+
+    Wrong journal entries amount fix and code cleanup
+
+M	gl/includes/db/gl_db_trans.inc
+
+commit e61c028de2ccca70ece33b877904b75a3b97925e
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Nov 9 23:42:04 2021 +0700
+
+    Allowing multiple jounal entries on one trans_no.
+
+M	purchasing/supplier_payment.php
+M	sales/customer_payments.php
+M	sales/includes/db/cust_trans_db.inc
+
+commit 3ef400cb355394836a5f72c9032114ddbbf9bb02
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Nov 9 19:44:52 2021 +0700
+
+    continue of previous commits b9630b8 and b9dc736, and code cleanup.
+
+M	reporting/rep101.php
+M	reporting/rep108.php
+M	sales/includes/db/cust_trans_db.inc
+M	sales/includes/db/custalloc_db.inc
+
+commit 09c25f024a3ada8d777e49b498342f45b1847837
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Nov 9 06:01:18 2021 +0700
+
+    No alloc icon for journal entries in customer allocation inquiry. Fixed.
+
+M	sales/customer_payments.php
+M	sales/includes/db/cust_trans_db.inc
+M	sales/inquiry/customer_allocation_inquiry.php
+M	sales/inquiry/customer_inquiry.php
+
+commit 71124495055c5120c1b55cd0eed66ec2215b4578
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Nov 8 22:44:40 2021 +0700
+
+    Error calculating customer aging regarding journal entries. Fixed.
+
+M	sales/includes/db/customers_db.inc
+
+commit c3b6bebacc79af477c4ea69d63fa927f85ed6a99
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Nov 8 14:31:24 2021 +0700
+
+    Customer Statements show wrong balances for Journal Entries. Fixed.
+
+M	reporting/rep108.php
+
+commit 6796c7380bd2a52bed46bc69d7eb02f990e0ed8d
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Nov 8 10:59:15 2021 +0700
+
+    Rerun of last commit.
+
+M	sales/includes/db/cust_trans_db.inc
+M	sales/includes/db/custalloc_db.inc
+M	sales/inquiry/customer_inquiry.php
+
+commit dc08a73f8fab73d4fdcf564548cc4176793952e9
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Nov 8 05:55:15 2021 +0700
+
+    Customers with 0 left to allocate shown on Customer Allocations when using Journal Entry for paying. Fixed.
+
+M	sales/includes/db/custalloc_db.inc
+
+commit 841952d98a82a501a9cb0093b663d11785ee63ce
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Nov 4 09:02:38 2021 +0700
+
+    Argument cannot be passed by reference in rep301. Fixed.
+
+M	reporting/rep301.php
+
+commit 874cb7a577b1140fa9bd40eca213d5e5d983be5d
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Nov 3 08:44:09 2021 +0700
+
+    Items/Fixed Assets: Fixed item image adding/update.
+
+M	inventory/manage/items.php
+
+commit d5952cdb3832479cdf8f845acd3a13eb50126dd2
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Nov 2 23:10:48 2021 +0700
+
+    code cleanup after last commit.
+
+M	install/index.php
+
+commit 18420984e19790773d311035fa41d18f02f2ebd7
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Nov 2 23:07:35 2021 +0700
+
+    Installer: Fixed errors handling, fixed errors on db passwords containg special characters or longer than 20 chars. Allowed passwords up to 32 chars long.
+
+M	includes/ui/ui_input.inc
+M	install/index.php
+M	install/isession.inc
+
+commit dfe997f0f5de6eb43a556b38f673d81fa5079a55
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Nov 1 19:48:51 2021 +0700
+
+    no rep109 title found in print profile. Fixed.
+
+M	reporting/rep109.php
+
+commit 9b156038e0033fc587c1842df3b72e84bb8c5cb6
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Nov 1 07:03:47 2021 +0700
+
+    Curly braces {} in arrays replaced
+
+M	reporting/includes/Workbook.php
+
+commit 02f6b978f6ea8120ba5007f5dbcf594ab5db8dd9
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Oct 30 20:21:23 2021 +0700
+
+    Added item description for item search box suggestions
+
+M	includes/ui/ui_lists.inc
+
+commit 74ed048586d0a3ed98ac385884767b9e5845d929
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Oct 17 00:23:29 2021 +0700
+
+    Bill of Materials entry is not responding. Fixed.
+
+M	manufacturing/manage/bom_edit.php
+
+commit 19d19c74256d57faf78828cee02f02895eb799c2
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Oct 15 20:49:29 2021 +0700
+
+    A non well formed numeric value encountered in sales_credit_ui.inc. Fixed
+
+M	sales/includes/ui/sales_credit_ui.inc
+
+commit b7f74fc65a0f141b0320b44a4df558e4f680dc68
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Oct 12 14:13:38 2021 +0700
+
+    hook_db_prewrite is not used inside journal entry. Added.
+
+M	gl/includes/db/gl_journal.inc
+
+commit f3a116d82cb750238001e50eebf07144264b1750
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Oct 9 08:31:21 2021 +0700
+
+    Add unique key for table comments
+
+M	sql/vi_VN-tt132-demo.sql
+M	sql/vi_VN-tt132-new.sql
+M	sql/vi_VN-tt133-demo.sql
+M	sql/vi_VN-tt133-new.sql
+M	sql/vi_VN-tt200-demo.sql
+M	sql/vi_VN-tt200-new.sql
+
+commit 9770c4cc6e8b69b716d0331e90b478321a43285e
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Sep 25 20:49:19 2021 +0700
+
+    qty_done is not updated correctly when partial invoice is voided. Fixed
+
+M	sales/includes/db/sales_invoice_db.inc
+
+commit d207e7c02639cf3dbcd8ff8b3e1d404466ac1bc2
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Sep 13 07:53:16 2021 +0700
+
+    Code cleanup
+
+M	sales/customer_payments.php
+
+commit 58f5d0a6ffe6596e3b27fba0b63ead1412e36627
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Sep 9 00:28:21 2021 +0700
+
+    Changed default utf8 font to dejavusans.
+
+A	reporting/fonts/ae_tholoth.ctg.z
+A	reporting/fonts/ae_tholoth.php
+A	reporting/fonts/ae_tholoth.z
+D	reporting/fonts/dejavu.ctg.z
+D	reporting/fonts/dejavu.php
+D	reporting/fonts/dejavu.z
+A	reporting/fonts/dejavusans.ctg.z
+A	reporting/fonts/dejavusans.php
+A	reporting/fonts/dejavusans.z
+A	reporting/fonts/dejavusansb.ctg.z
+A	reporting/fonts/dejavusansb.php
+A	reporting/fonts/dejavusansb.z
+A	reporting/fonts/dejavusansbi.ctg.z
+A	reporting/fonts/dejavusansbi.php
+A	reporting/fonts/dejavusansbi.z
+A	reporting/fonts/dejavusansi.ctg.z
+A	reporting/fonts/dejavusansi.php
+A	reporting/fonts/dejavusansi.z
+M	reporting/includes/class.pdf.inc
+
+commit 3346d2d87b4783862ec97c469bab8628ef2b6d2e
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Sep 7 23:22:17 2021 +0700
+
+    Adapting with new layout of exchange rate option 2
+
+M	gl/includes/db/gl_db_rates.inc
+
+commit 9bb46e6848c3ddc12c1c71763a99467d41295a8f
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Aug 30 23:33:41 2021 +0700
+
+    Sales entry redesigned.
+
+M	sales/includes/ui/sales_order_ui.inc
+M	sales/sales_order_entry.php
+M	themes/default/default.css
+
+commit 58bd5fbffef237677509cdbb9bf352f9d6f6a715
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Aug 28 22:11:51 2021 +0700
+
+    Moved purchasing item control row to the top
+
+M	purchasing/includes/ui/po_ui.inc
+
+commit de8c53ef8a58f8fc84b0944e0c85dc37b6345ffd
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Aug 22 17:51:37 2021 +0700
+
+    missed text align for right to left languages, added.
+
+M	themes/default/default.css
+
+commit 5162779a8d1ce4affc6991860d31cb81da52cfab
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Aug 20 23:25:19 2021 +0700
+
+    Unable to void a sales invoice. Fixed.
+
+M	sales/includes/db/sales_invoice_db.inc
+M	sales/includes/db/sales_order_db.inc
+
+commit 0916ed1d05e1f3975ecc7d726a5d137e92f6106f
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Aug 20 23:07:52 2021 +0700
+
+    Unable to void Work Order. Fixed.
+
+M	manufacturing/includes/db/work_order_produce_items_db.inc
+
+commit 17b53ee8284e3ff8a424895b4e6a686ff5af32f8
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Aug 11 17:53:14 2021 +0700
+
+    New line bug in inventory location transfer. Fixed.
+
+M	inventory/transfers.php
+
+commit 9cadb6794a3646351e11516f64c759d5c21d51dc
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Aug 10 22:30:05 2021 +0700
+
+    Credit This Option for Supplier Invoice Doesn't Show Quantity Invoiced
+
+M	purchasing/includes/db/invoice_db.inc
+
+commit ddda177dcdb5ca7f0da410999f6d7022a318df20
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Aug 9 20:55:30 2021 +0700
+
+    Customer Credit Invoice: fixed invalid processing of invoice payments (triggering blank page on php8 too)
+
+M	reporting/includes/pdf_report.inc
+M	sales/includes/sales_db.inc
+
+commit 383a14ce231fc8f3797dce9aa45b32b7cbe2110c
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Aug 8 09:44:18 2021 +0700
+
+    function money_format is deprecated in above PHP 7.4. Replaced with price_format.
+
+M	includes/current_user.inc
+M	reporting/includes/pdf_report.inc
+
+commit def47394aee8113aa105220e8a88a93cba206d07
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Aug 7 21:00:19 2021 +0700
+
+    Direct supplier payment bug introduced by Dimension wise balance sheet items - AR/AP implemented
+
+M	purchasing/includes/purchasing_db.inc
+
+commit fc809cf53f64a03cb77ef1317bd16c0aa5d4d561
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Jul 15 07:40:26 2021 +0700
+
+    Default theme improvement in fixed asset entry
+
+M	themes/default/local_style/items.css
+
+commit 85859f9dc55f6e6f52f6b348f3e2766ed518bb2f
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Jul 15 07:22:28 2021 +0700
+
+    Duplicate Class ID found when updating fixed asset class. Fixed.
+
+M	fixed_assets/fixed_asset_classes.php
+
+commit 9206753c9f93827113991c380957024db88a1d0c
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jul 13 23:20:17 2021 +0700
+
+    php7.4 error trying to access array offset on value of type bool. Continue
+
+M	fixed_assets/includes/fixed_assets_db.inc
+M	reporting/rep451.php
+
+commit 10020f721d8c9b40141d59cc061f2c340d2ac0cf
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jul 13 09:17:17 2021 +0700
+
+    Added input validation for fixed asset class entry
+
+M	fixed_assets/fixed_asset_classes.php
+M	fixed_assets/includes/fa_classes_db.inc
+
+commit 94d8574c373d8dfb0324f8cdfff8684edca1eb20
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Jul 12 21:57:15 2021 +0700
+
+    php7.4 error trying to access array offset on value of type bool. Continue
+
+M	includes/db/inventory_db.inc
+
+commit 761ffb11d6b781e0a6e62b06bb174b57a3464e91
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Jul 12 18:30:54 2021 +0700
+
+    php7.4 error trying to access array offset on value of type bool. Fixed.
+
+M	reporting/rep451.php
+
+commit 9c977d82f05e649eb6c29c2060114434bc5d58fc
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Jul 12 08:05:53 2021 +0700
+
+    php 7.4 error Trying to access array offset on value of type bool. Fixed.
+
+M	admin/db/tags_db.inc
+
+commit d830d949ee1e2640e6ec77ad4d902f6678e30f61
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Jul 10 22:00:32 2021 +0700
+
+    code cleanup
+
+M	sales/includes/db/payment_db.inc
+
+commit 1608009affea840485afd57f71dd333dab55dbbd
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Jul 9 08:46:32 2021 +0700
+
+    php8 error Deprecated: Required parameter follows optional parameter. Fixed
+
+M	gl/inquiry/profit_loss.php
+
+commit be1dde5d462995a19f19fdd9c76585fe55686183
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Jul 8 22:50:49 2021 +0700
+
+    error undefined constant 'CL_NONE', fixed.
+
+M	includes/types.inc
+
+commit b0aaaccc811a3b1d773572c5b6f6f342e93fa720
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Jul 7 22:11:34 2021 +0700
+
+    error: Trying to access array offset on value of type bool. Fixed
+
+M	gl/bank_account_reconcile.php
+
+commit bf16ac096be671db254b7e908f618c5d1138c192
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jul 6 21:01:07 2021 +0700
+
+    php8 fixes. Deprecated: Required parameter follows optional parameter
+
+M	reporting/rep307.php
+M	reporting/rep308.php
+
+commit ba0c0f3fd84ec8de2e8c3f165684404400b12b0e
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Jul 5 14:31:42 2021 +0700
+
+    Wrong parameter passed to qty_cell. Fixed
+
+M	inventory/manage/sales_kits.php
+
+commit e850b33f73b4df60aebbd687bf09bf39e4b99943
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Jul 4 14:44:40 2021 +0700
+
+    Select item not working in purchase order and sales order entry. Fixed.
+
+M	includes/ui/ui_view.inc
+
+commit 41ebb91b3045a2aad081b9e4004f58967d3b43a7
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Jul 3 10:13:07 2021 +0700
+
+    Remove functions with the same task
+
+M	sales/customer_credit_invoice.php
+M	sales/includes/ui/sales_credit_ui.inc
+
+commit 3772c2836756127b8ad02f44831f326a17a7e18c
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Jul 1 22:10:05 2021 +0700
+
+    right to left languages display, continue.
+
+M	themes/canvas/default.css
+M	themes/default/default.css
+M	themes/dropdown/default.css
+
+commit 3cb21f289d7dd7c21e8e98ee9d0a4342602ff36d
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Jun 30 17:46:15 2021 +0700
+
+    right to left languages showing, continue
+
+M	themes/dropdown/default.css
+
+commit 25a40231a0a8ec9eaf7ff0a3216332c8e7cf4246
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jun 29 20:55:17 2021 +0700
+
+    right to left languages display improvement
+
+M	themes/canvas/default.css
+M	themes/default/default.css
+
+commit ee0668db810dc63abd45848b3edc3b88597f20a4
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jun 29 15:03:41 2021 +0700
+
+    datepicker showing messed in right to left languages, fixed.
+
+M	themes/default/default.css
+
+commit 282bcce6c0eeccced2c692a43d682385f6b0bf1c
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Jun 27 07:34:05 2021 +0700
+
+    user qty decimals handled incorrectly by code that calls get_item_edit_info. Fixed
+
+M	includes/db/inventory_db.inc
+
+commit b02441ef32f491ea7fc15390dc2fce5c867f62a8
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Jun 26 23:01:21 2021 +0700
+
+    Auto select item on Item Movement Iquiry page
+
+M	inventory/inquiry/stock_movements.php
+
+commit 8cadbab2535b09fbd23177772981f5a49baf5257
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Jun 26 17:21:54 2021 +0700
+
+    auto select item on inventory entries
+
+M	includes/ui/ui_lists.inc
+M	inventory/includes/item_adjustments_ui.inc
+M	inventory/inquiry/stock_movements.php
+M	inventory/inquiry/stock_status.php
+
+commit 52c2870071ce192b424242b2d3f2160cf1af2ddd
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Jun 26 08:48:43 2021 +0700
+
+    commit dadd11a, rolled back.
+
+M	includes/page/header.inc
+
+commit 323f78379db5b0cf057e6efe3b9ff34666c5640c
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Jun 25 23:54:00 2021 +0700
+
+    added css for stock status page
+
+A	themes/default/local_style/stock_status.css
+
+commit eef35f916288ffbbe710b4d2f56f7898f3cefeec
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Jun 25 13:08:59 2021 +0700
+
+    Auto select item on Manage Items entry
+
+M	inventory/manage/items.php
+
+commit 11084f17c300d33c3e2750663ec950952e3d6cbf
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Jun 25 09:19:56 2021 +0700
+
+    Missed static js file for searching closest match, added.
+
+A	libraries/string-similarity.min.js
+
+commit 9c5ce6d7343ba0db70ea75cdd73daf8f902d04f6
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Jun 25 08:28:42 2021 +0700
+
+    Auto select closest match result in search box
+
+M	includes/main.inc
+M	libraries/inserts.js
+
+commit dadd11a7b6c4f434c28ca244c285c24d50868d4a
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Jun 24 09:46:53 2021 +0700
+
+    Duplicate script tags, fixed.
+
+M	includes/page/header.inc
+
+commit d3cc4b9abc5ede8d041dc8ce0e78c203ac930821
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Jun 23 14:46:41 2021 +0700
+
+    Select item when search box value is selected
+
+M	libraries/inserts.js
+
+commit 7693aae81b100fdbcbe199deb7ac7df02e6838ca
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Jun 23 07:26:45 2021 +0700
+
+    ui improvement, responsive links in default theme
+
+M	themes/default/default.css
+M	themes/default/renderer.php
+
+commit 018b35e3862b08b30a7cfeb2c4c6dd36bfa21966
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jun 22 14:41:04 2021 +0700
+
+    Changed item control row in sales entry
+
+M	sales/includes/ui/sales_order_ui.inc
+
+commit 2411add5b6dc64ab509bbfe20a32f4423aee6800
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jun 22 09:18:02 2021 +0700
+
+    added data suggestion for item search box
+
+M	includes/ui/ui_lists.inc
+
+commit 2073ff69730e257e6e1d8046a7ef5e78fa7caa6b
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Jun 21 20:34:22 2021 +0700
+
+    Removed dummy login info
+
+M	access/login.php
+
+commit 963e2fbd560e37221e98b03bb33067a81ca6e4d0
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Jun 19 07:33:25 2021 +0700
+
+    Update language template empty.po
+
+M	lang/new_language_template/LC_MESSAGES/empty.po
+
+commit eba33b994dc6bfb3e45c6a3f1c5df7d4c1a9c671
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Jun 18 23:28:57 2021 +0700
+
+    Removed unused parameters
+
+M	includes/types.inc
+M	sales/customer_payments.php
+M	sales/includes/db/payment_db.inc
+M	sales/includes/db/sales_invoice_db.inc
+
+commit f8d4856068d6be89857f442499401c0e23ecc38b
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Jun 17 22:05:06 2021 +0700
+
+    missing passed variable in function get_allocatable_from_supp_transactions, continue.
+
+M	purchasing/includes/db/suppalloc_db.inc
+
+commit caf3da75660116694d05c164c17f98392aee5225
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Jun 17 09:45:01 2021 +0700
+
+    missing passed variable in function get_allocatable_from_supp_transactions
+
+M	purchasing/includes/db/suppalloc_db.inc
+
+commit 9aadd7d7d7680c8d4d9e19aea19273f03152920b
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Jun 17 08:37:24 2021 +0700
+
+    PHP8 Warning: Undefined array key. Fixed
+
+M	includes/errors.inc
+M	includes/session.inc
+
+commit 69a153ea23ab543795656c45ab76eded5abf4862
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Jun 16 22:58:57 2021 +0700
+
+    Missed semicolons from last commit
+
+M	sales/includes/db/custalloc_db.inc
+
+commit bb47e5427cfa5b77c509f009fdde90e2d1675b6a
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Jun 16 21:53:28 2021 +0700
+
+    Removed unused variables and more php8 fixes
+
+M	gl/includes/db/gl_db_banking.inc
+M	includes/current_user.inc
+M	includes/db/class.data_set.inc
+M	includes/ui/ui_lists.inc
+M	includes/ui/ui_view.inc
+M	inventory/includes/db/items_db.inc
+M	purchasing/includes/db/suppalloc_db.inc
+M	sales/includes/db/custalloc_db.inc
+
+commit dfa0c236e0865e7583e34e70ec0588b05c85396f
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Jun 16 16:01:00 2021 +0700
+
+    Inventory valuation report does not discard zero quantity items for items with decimal quantity units. Fixed.
+
+M	reporting/rep301.php
+
+commit 4c323919877214c499168f674168c50d1e3c5bf8
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Jun 16 13:33:44 2021 +0700
+
+    Release 0.5
+
+M	CHANGELOG.txt
+M	version.php
+
 commit de9e81325ec436cf63ead9836efd3e60d380e636
 Author: notrinos <trananhphuong83@gmail.com>
 Date:   Wed Jun 16 13:05:03 2021 +0700

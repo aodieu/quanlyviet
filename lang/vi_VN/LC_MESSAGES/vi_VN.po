@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FrontAccounting\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-05 05:13+0700\n"
-"PO-Revision-Date: 2021-12-31 08:35+0700\n"
+"PO-Revision-Date: 2021-12-31 14:52+0700\n"
 "Last-Translator: Translation Team <info@frontaccounting.net>\n"
 "Language-Team: Translators <info@frontaccounting.com>\n"
 "Language: vi\n"
@@ -17945,7 +17945,7 @@ msgstr "In phiếu giao hàng"
 
 #: reporting/reports_main.php:135
 msgid "Print &Statements"
-msgstr "In báo cáo"
+msgstr "In phiếu đề nghị thanh toán"
 
 # c:/Apache2/htdocs/account/reporting/reports_main.php:22
 # c:/Apache2/htdocs/account/reporting/reports_main.php:23
