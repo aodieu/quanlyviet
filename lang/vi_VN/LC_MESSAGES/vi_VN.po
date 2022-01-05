@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FrontAccounting\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-05 05:13+0700\n"
-"PO-Revision-Date: 2021-12-31 14:52+0700\n"
+"PO-Revision-Date: 2022-01-05 07:32+0700\n"
 "Last-Translator: Translation Team <info@frontaccounting.net>\n"
 "Language-Team: Translators <info@frontaccounting.com>\n"
 "Language: vi\n"
@@ -11614,7 +11614,7 @@ msgstr "Mã hàng:"
 
 #: inventory/manage/items.php:366
 msgid "Editable description:"
-msgstr "Chỉnh sửa mô tả:"
+msgstr "Cho sửa tên hàng:"
 
 #: inventory/manage/items.php:374
 msgid "Fixed Asset Class"
