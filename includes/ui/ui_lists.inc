@@ -2276,21 +2276,21 @@ function coa_list_row($label, $name, $value=null) {
 			if ($ext != null)
 				$descr = $ext['name'];
 			elseif($fname == 'vi_VN-tt200-new.sql')
-				$descr = _('Hệ thống tài khoản theo Thông tư 200 mới');
+				$descr = 'Hệ thống tài khoản theo Thông tư 200 mới';
 			elseif ($fname == 'vi_VN-tt200-demo.sql')
-				$descr = _('Hệ thống tài khoản theo Thông tư 200 có dữ liệu demo');
+				$descr = 'Hệ thống tài khoản theo Thông tư 200 có dữ liệu demo';
 			elseif($fname == 'vi_VN-tt133-new.sql')
-				$descr = _('Hệ thống tài khoản theo Thông tư 133 mới');
+				$descr = 'Hệ thống tài khoản theo Thông tư 133 mới';
 			elseif($fname == 'vi_VN-tt133-demo.sql')
-				$descr = _('Hệ thống tài khoản theo Thông tư 133 có dữ liệu demo');
+				$descr = 'Hệ thống tài khoản theo Thông tư 133 có dữ liệu demo';
 			elseif($fname == 'vi_VN-tt132-new.sql')
-				$descr = _('Hệ thống tài khoản theo Thông tư 132 mới');
+				$descr = 'Hệ thống tài khoản theo Thông tư 132 mới';
 			elseif($fname == 'vi_VN-tt132-demo.sql')
-				$descr = _('Hệ thống tài khoản theo Thông tư 132 có dữ liệu demo');
+				$descr = 'Hệ thống tài khoản theo Thông tư 132 có dữ liệu demo';
 			elseif ($fname == 'en_US-new.sql')
-				$descr = _('Standard new company American COA (4 digit)');
+				$descr = 'Standard new company American COA (4 digit)';
 			elseif ($fname == 'en_US-demo.sql')
-				$descr = _('Standard American COA (4 digit) with demo data');
+				$descr = 'Standard American COA (4 digit) with demo data';
 			else
 				$descr = $fname;
 
