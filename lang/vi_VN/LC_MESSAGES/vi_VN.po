@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: QuanlyViet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-06 21:52+0700\n"
-"PO-Revision-Date: 2022-01-07 19:58+0700\n"
+"PO-Revision-Date: 2022-01-07 20:40+0700\n"
 "Last-Translator: quanlyviet.com <trananhphuong83@gmail.com>\n"
 "Language-Team: Translators <hotro@quanlyviet.com>\n"
 "Language: vi\n"
@@ -15558,7 +15558,7 @@ msgstr "Danh sách chi tiết NCC"
 
 #: reporting/rep205.php:118
 msgid "Tax_Id"
-msgstr "ID thuế"
+msgstr "MS thuế"
 
 # c:/Apache/htdocs/account/reporting/reports_main.php:27
 #: reporting/rep206.php:114
@@ -15624,7 +15624,7 @@ msgstr "SL"
 
 #: reporting/rep304.php:119
 msgid "Contribution"
-msgstr "Đóng góp"
+msgstr "Lợi nhuận"
 
 #: reporting/rep304.php:130 reporting/reports_main.php:263
 msgid "Show Service Items"
@@ -15889,7 +15889,7 @@ msgstr "Ngày"
 
 #: reporting/rep710.php:71
 msgid "Trans Date"
-msgstr "Ngày giao dịch"
+msgstr "Ngày nhập"
 
 #: reporting/rep710.php:71
 msgid "Action"
