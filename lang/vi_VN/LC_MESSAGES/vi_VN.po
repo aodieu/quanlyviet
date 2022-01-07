@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: QuanlyViet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-06 21:52+0700\n"
-"PO-Revision-Date: 2022-01-06 21:53+0700\n"
+"PO-Revision-Date: 2022-01-07 19:58+0700\n"
 "Last-Translator: quanlyviet.com <trananhphuong83@gmail.com>\n"
 "Language-Team: Translators <hotro@quanlyviet.com>\n"
 "Language: vi\n"
@@ -1639,7 +1639,7 @@ msgstr "Loại giao dịch này không thể vô hiệu hoá."
 
 #: admin/db/voiding_db.inc:80
 msgid "This GRN cannot be voided because it was already invoiced."
-msgstr "Không thể vô hiệu hoá biên nhận hàng vì đã được lập hoá đơn."
+msgstr "Không thể vô hiệu hoá giao dịch nhận hàng vì đã được lập hoá đơn."
 
 #: admin/db/voiding_db.inc:82 admin/db/voiding_db.inc:91
 msgid "Error encountered when voiding transaction."
@@ -13774,7 +13774,7 @@ msgstr "Tạo đơn hàng thu mua"
 
 #: purchasing/po_entry_items.php:54
 msgid "Direct GRN Entry"
-msgstr "Tạo hoá đơn điều chỉnh mua hàng"
+msgstr "Nhận hang trực tiếp"
 
 #: purchasing/po_entry_items.php:64
 msgid "Fixed Asset Purchase Invoice Entry"
@@ -13822,11 +13822,11 @@ msgstr "Chọn đơn hàng thu mua còn tồn đọng"
 
 #: purchasing/po_entry_items.php:111
 msgid "Direct GRN has been entered"
-msgstr "Hoá đơn điều chỉnh trực tiếp đã được nhập"
+msgstr "Giao dịch nhận hàng trực tiếp đã được nhập"
 
 #: purchasing/po_entry_items.php:113
 msgid "&View this GRN"
-msgstr "Xem hoá đơn điều chỉnh này"
+msgstr "Xem lại giao dịch nhận hang này"
 
 #: purchasing/po_entry_items.php:117 purchasing/po_receive_items.php:41
 msgid "View the GL Journal Entries for this Delivery"
@@ -13838,7 +13838,7 @@ msgstr "Biên nhận giao hàng"
 
 #: purchasing/po_entry_items.php:123
 msgid "Enter &Another GRN"
-msgstr "Nhập hoá đơn điều chỉnh khác"
+msgstr "Nhập giao dịch nhận hang khác"
 
 #: purchasing/po_entry_items.php:133
 msgid "Direct Purchase Invoice has been entered"
@@ -14007,15 +14007,15 @@ msgstr "Huỷ đơn hàng"
 
 #: purchasing/po_entry_items.php:457
 msgid "Process GRN"
-msgstr "Thực hiện GRN"
+msgstr "Nhận hàng"
 
 #: purchasing/po_entry_items.php:458
 msgid "Update GRN"
-msgstr "Cập nhật GRN"
+msgstr "Cập nhật "
 
 #: purchasing/po_entry_items.php:459
 msgid "Cancel GRN"
-msgstr "Huỷ HĐĐC"
+msgstr "Huỷ nhận hàng"
 
 # c:/Apache/htdocs/account/sales/customer_invoice.php:467
 #: purchasing/po_entry_items.php:462 sales/customer_invoice.php:629
@@ -15652,7 +15652,7 @@ msgstr "Giá ĐH"
 
 #: reporting/rep305.php:105
 msgid "GRN Valuation Report"
-msgstr "Báo cáo đánh giá biên nhận"
+msgstr "Báo cáo giá trị hàng nhận"
 
 #: reporting/rep306.php:133 reporting/rep309.php:91 reporting/rep310.php:134
 msgid "Unit Price"
@@ -16198,7 +16198,7 @@ msgstr "Bán hàng, xuất kho"
 
 #: reporting/reports_main.php:267
 msgid "&GRN Valuation Report"
-msgstr "Báo cáo giá trị biên nhận"
+msgstr "Báo cáo giá trị hàng nhận"
 
 #: reporting/reports_main.php:273
 msgid "Inventory P&urchasing Report"
