@@ -11,7 +11,7 @@ Quản Lý Việt là một hệ thống quản trị doanh nghiệp tổng th�
 
 ## Yêu Cầu Hệ Thống
 - Máy chủ HTTP như Apache, Nginx, IIS
-- PHP phiên bản 5.0 trở lên đến 7.3 (khuyên dùng bản 5.6 hoặc 7.3)
+- PHP phiên bản 5.0 trở lên đến 8.1.1 (khuyên dùng bản 7.3)
 - Mysql phiên bản 4.1 trở lên với Innodb tables, hoặc MariaDB
 - Trình duyệt người dùng hỗ trợ HTML5 và đọc được file PDF để in báo cáo...
 
@@ -22,7 +22,7 @@ Quản Lý Việt là một hệ thống quản trị doanh nghiệp tổng th�
 3. Tải tất cả các files giải nén được từ bước 2 lên thư mục gốc web server của bạn, thông thường thư mục của web server sẽ là `public_html` hoặc `www` hoặc `html` hoặc `htdocs` (các thư mục này đã có sẵn trên server).
 4. Trên trình duyệt người dùng nhập đường dẫn đến web server, ví dụ http://tencongty.com (hoặc nếu bạn tải các tệp lên thư mục con ví dụ tên là ERP thì đường dẫn sẽ là http://tencongty.com/ERP)
 5. Làm theo các hướng dấn cài đặt xuất hiện trên trình duyệt web.
-6. Sau khi cài đặt hãy xóa thư mục `install` vì lý do an ninh, hệ thống sẽ không cần thư mục này nữa.
+6. Sau khi cài đặt hãy xóa thư mục `install` vì lý do bảo mật, hệ thống sẽ không cần thư mục này nữa.
 
 ## Giải Đáp Thắc Mắc
 Nếu bạn gặp vấn đề trong quá trình cài đặt, sử dụng hãy tham khảo [WIKI (English)](http://support.notrinos.com/ERP/index.php?n=Help.Help).
