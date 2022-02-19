@@ -17,7 +17,7 @@ include_once($path_to_root.'/includes/session.inc');
 include_once($path_to_root.'/includes/ui.inc');
 include_once($path_to_root.'/inventory/includes/db/items_db.inc');
 
-get_js_select_combo_item();
+$js = get_js_select_combo_item();
 
 page(_($help_context = 'Items'), true, false, '', $js);
 
