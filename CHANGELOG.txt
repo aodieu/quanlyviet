@@ -1,3 +1,330 @@
+commit 8577c2cb87c9833eed57d96ed90b3c08683f12bb
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Mar 7 14:55:27 2022 +0700
+
+    added secure flag on session cookie
+
+M	includes/session.inc
+
+commit 1b6b64c4d37a4201be5fb81f661afa28f06229c3
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Feb 19 16:14:42 2022 +0700
+
+    Removed search item list option in company setup. Rerun.
+
+M	inventory/inquiry/stock_list.php
+
+commit 5ed44f177aa9a34803a2f8269c1b581b1490fbe9
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Feb 19 16:11:57 2022 +0700
+
+    Removed search item list option in company setup.
+
+M	includes/ui/ui_lists.inc
+M	inventory/inquiry/stock_list.php
+M	sql/vi_VN-tt132-demo.sql
+M	sql/vi_VN-tt132-new.sql
+M	sql/vi_VN-tt133-demo.sql
+M	sql/vi_VN-tt133-new.sql
+M	sql/vi_VN-tt200-demo.sql
+M	sql/vi_VN-tt200-new.sql
+
+commit 81224a0ace2de0f4c9f482a0e4ea82e73007c9b4
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Feb 19 16:08:51 2022 +0700
+
+    Updated support php version, protect pem file from direct access.
+
+M	.htaccess
+M	README.md
+
+commit 00822b8e1e9ca6f36c895d4631e644abe49087f7
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Feb 6 19:50:58 2022 +0700
+
+    pgp8.1.1 error file_exists(): Passing null to parameter of type string is deprecated. Fixed.
+
+M	dashboard/includes/dashboard_classes.inc
+
+commit 9be1c7e4bf66371727a8efcfdbbf341c51fb8268
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Feb 6 19:39:23 2022 +0700
+
+    php8.1.1 error Implicit conversion from float to int loses precision. Fixed.
+
+M	reporting/includes/class.graphic.inc
+
+commit 0a5790e6d559d4a7cc5552a7863a0a6800e21880
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Feb 6 15:53:01 2022 +0700
+
+    php8.1.1 error Passing null to parameter of type string|int|float is deprecated. Fixed.
+
+M	reporting/includes/class.graphic.inc
+
+commit 3713387dd28c66555ea0627421b7b2d4da036db0
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Feb 6 01:13:27 2022 +0700
+
+    php8.1.1 error Implicit conversion from float-string to int loses precision. Fixed.
+
+M	reporting/includes/class.graphic.inc
+
+commit d16c085b548319ae54e18ee19df08bbcc2e2e7b4
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Feb 5 23:54:50 2022 +0700
+
+    php8.1.1 error continue and code cleanup.
+
+M	reporting/includes/class.graphic.inc
+
+commit 706588da6eab2de274740b0f956d5dbac200a77f
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Feb 5 22:55:47 2022 +0700
+
+    php8.1.1 error strlen(): Passing null to parameter #1 ($string) of type string is deprecated. Fixed.
+
+M	reporting/includes/class.graphic.inc
+
+commit e910ea0fd4d7a0ddff7dc88dcca57f118e79aab4
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Feb 4 16:16:47 2022 +0700
+
+    php8.1.1 error strlen(): Passing null to parameter #1 ($string) of type string is deprecated. Fixed.
+
+M	dashboard/includes/dashboard_classes.inc
+
+commit a5736b964eee0ce644c60803b159677e118bb1c9
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jan 25 22:07:24 2022 +0700
+
+    Add and Manage Customers, Suppliers: contact persons where not removed when deleting customer/supplier. Fixed.
+
+M	includes/db/crm_contacts_db.inc
+M	purchasing/includes/db/suppliers_db.inc
+
+commit 3fffdcd61c874756059786ef9dbebb176de1913d
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jan 18 20:28:36 2022 +0700
+
+    error: Trying to access array offset on value of type bool. Fixed.
+
+M	inventory/includes/stock_transfers_ui.inc
+
+commit 8ac8b4e2ba42525959388df244db264599bb9085
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jan 18 11:52:12 2022 +0700
+
+    php 8.1.1 error continue and code cleanup in bank_account_reconcile.php
+
+M	gl/bank_account_reconcile.php
+
+commit b6efc0d12982496f64ef1ef75623436c5922754d
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Jan 17 20:02:21 2022 +0700
+
+    php 8.1.1 error preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated. Fixed.
+
+M	admin/inst_theme.php
+
+commit d107ae2c97d922b04bd8d38b8c166458111f84c4
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Jan 17 13:47:22 2022 +0700
+
+    php 8.1.1 error preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated. Fixed.
+
+M	admin/inst_lang.php
+M	includes/packages.inc
+
+commit f8921dcddc1c1a36b49670bd89773e4c4089f742
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Jan 17 07:38:35 2022 +0700
+
+    updated exchange rates provider.
+
+M	config.default.php
+M	gl/includes/db/gl_db_rates.inc
+
+commit 9877b3c2da2c157604f023d77c8a026d999c127e
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Jan 16 13:15:41 2022 +0700
+
+    php8.1 error preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated. Fixed.
+
+M	admin/inst_module.php
+
+commit ed603159b8f43d153e1f9a4fdaf27d4aae7b58bb
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Jan 16 00:16:15 2022 +0700
+
+    php8.1 error str_replace(): Passing null to parameter #2 ($replace) of type array|string is deprecated. Fixed.
+
+M	includes/db/connect_db_mysqli.inc
+
+commit c52b06971bd6acf6b1c16ca9465b0c937f0b6b10
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Jan 12 21:22:37 2022 +0700
+
+    rep309.php, rep310.php code cleanup and rearrange columns width.
+
+M	reporting/rep309.php
+M	reporting/rep310.php
+
+commit 664773087a9952eabef1a333cb10072f5c5a30c9
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jan 11 18:43:30 2022 +0700
+
+    Search Item List option is deprecated, continue.
+
+M	includes/ui/ui_lists.inc
+
+commit 40535103ca853962d5ff1d715ed41c0a4c91c715
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jan 11 07:23:46 2022 +0700
+
+    rep203.php, rep204.php code cleanup and redesigned.
+
+M	reporting/rep203.php
+M	reporting/rep204.php
+
+commit 92cffbed00c40661e5a3865adab5774863fd7d44
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Tue Jan 11 05:32:24 2022 +0700
+
+    rep202.php code cleanup and redesigned.
+
+M	reporting/rep202.php
+
+commit 8d2186b8902c300dd71cc0e47a2449a839da1554
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Jan 10 21:46:59 2022 +0700
+
+    rep201.php code cleanup and redesigned.
+
+M	reporting/rep201.php
+
+commit 472d944eaf7928dd920f0787a23689de34f91f09
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Mon Jan 10 13:51:10 2022 +0700
+
+    stock list missing items after select an ediable description item. Fixed.
+
+M	includes/ui/ui_lists.inc
+
+commit e400a294b5dd978489f52bf94bc4818d5e91fef7
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Jan 9 20:52:17 2022 +0700
+
+    Search Item List option will be deprecated from 0.7
+
+M	admin/company_preferences.php
+M	includes/ui/ui_lists.inc
+M	inventory/manage/items.php
+
+commit 45c4ba997de62437611f44124de5eeca4e779bd2
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sun Jan 9 07:53:13 2022 +0700
+
+    error item list not selected in item movements and item status pages. Fixed.
+
+M	libraries/inserts.js
+
+commit 10db6c5daa7add4994dfaa7f09f9b08d3efdb863
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Jan 8 20:49:11 2022 +0700
+
+    rep103.php, rep115.php code cleanup and redesigned
+
+M	reporting/rep103.php
+M	reporting/rep115.php
+
+commit e646361251ae6c30bd07aca6158b11e3b67decaf
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Jan 8 10:13:04 2022 +0700
+
+    rep102.php code cleanup and redesigned.
+
+M	reporting/rep102.php
+
+commit 0fc87518935796d97cbb8e65a202af2492620188
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Jan 7 20:40:49 2022 +0700
+
+    Update gettext template, continue.
+
+M	lang/vi_VN/LC_MESSAGES/vi_VN.mo
+M	lang/vi_VN/LC_MESSAGES/vi_VN.po
+
+commit 67b5725e5d10622048330c057163b4b6217a8d65
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Jan 7 19:58:44 2022 +0700
+
+    Update gettext template
+
+M	lang/vi_VN/LC_MESSAGES/vi_VN.mo
+M	lang/vi_VN/LC_MESSAGES/vi_VN.po
+
+commit bea1037f0e0808d706d06f5c824021f84f26a51c
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Fri Jan 7 14:45:14 2022 +0700
+
+    rep101.php redesigned.
+
+M	reporting/rep101.php
+
+commit cb8ee3947ee379da7e90a519efc4f8aaa7a672e0
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Jan 6 21:54:30 2022 +0700
+
+    Update gettext template
+
+M	lang/vi_VN/LC_MESSAGES/vi_VN.mo
+M	lang/vi_VN/LC_MESSAGES/vi_VN.po
+
+commit e9122cd64e2db1b3b6f62c11eea92b3271822b78
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Jan 6 21:17:04 2022 +0700
+
+    gettext error: Non-ASCII string. Fixed.
+
+M	includes/ui/ui_lists.inc
+
+commit 5c6347bd55e0ac0af2f2251124178b795617fbad
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Thu Jan 6 19:43:49 2022 +0700
+
+    gettext alias missed in locations.php
+
+M	inventory/manage/locations.php
+
+commit 74e5fc3c8a6ab6ebde563fcf055742071ee2dac0
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Wed Jan 5 07:33:38 2022 +0700
+
+    update gettext template.
+
+M	lang/vi_VN/LC_MESSAGES/vi_VN.mo
+M	lang/vi_VN/LC_MESSAGES/vi_VN.po
+
+commit 30418c9e1ffe36f9fda112a8303c2abf6b3fefc6
+Author: notrinos <trananhphuong83@gmail.com>
+Date:   Sat Jan 1 15:46:12 2022 +0700
+
+    Release 0.6
+
+M	CHANGELOG.txt
+D	docs/index.php
+D	docs/license.txt
+M	lang/vi_VN/LC_MESSAGES/vi_VN.mo
+M	lang/vi_VN/LC_MESSAGES/vi_VN.po
+M	sql/vi_VN-tt132-demo.sql
+M	sql/vi_VN-tt132-new.sql
+M	sql/vi_VN-tt133-demo.sql
+M	sql/vi_VN-tt133-new.sql
+M	sql/vi_VN-tt200-demo.sql
+M	sql/vi_VN-tt200-new.sql
+M	version.php
+
 commit 96e3a56246512a6af57f14e7d2b9a70bb7bf4ec0
 Author: notrinos <trananhphuong83@gmail.com>
 Date:   Fri Dec 31 08:37:23 2021 +0700
