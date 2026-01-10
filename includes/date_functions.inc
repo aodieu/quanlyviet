@@ -127,9 +127,9 @@ function is_date($date_) {
 		else
 			return 0;
 	}
-	else /*Can't be in an appropriate DefaultDateFormat */
+	else // Can't be in an appropriate DefaultDateFormat
 		return 0;
-} //end of is_date function
+}
 
 function Today() {
 	global $SysPrefs;
@@ -150,9 +150,10 @@ function Now() {
 	else
 		return date('H:i');
 }
-//
-//	Retrieve and optionaly set default date for new document.
-//
+
+/*
+*	Retrieve and optionaly set default date for new document.
+*/
 function new_doc_date($date=null) {
 	if (isset($date) && $date != '')
 		$_SESSION['_default_date'] = $date;
@@ -175,7 +176,8 @@ function is_date_in_fiscalyear($date, $convert=false) {
 	if (is_date_closed($date2))
 		return 0;
 
-	if (user_check_access('SA_MULTIFISCALYEARS')) // allow all open years for this one
+	// allow all open years for this one
+	if (user_check_access('SA_MULTIFISCALYEARS'))
 		return is_date_in_fiscalyears($date2, false);
 
 	$myrow = get_current_fiscalyear();
@@ -294,13 +296,13 @@ function add_years($date, $years) {// accepts negative values as well
 	return __date($year, $month, $day);
 }
 
-//_______________________________________________________________
-
 function sql2date($date_) {
 	global $SysPrefs;
 
 	//for MySQL dates are in the format YYYY-mm-dd
 
+	if ($date_ == null)
+		return '';
 	if (strpos($date_, '/')) // In MySQL it could be either / or -
 		list($year, $month, $day) = explode('/', $date_);
 	elseif (strpos ($date_, '-'))
@@ -308,7 +310,7 @@ function sql2date($date_) {
 	if (!isset($day)) // data format error
 		return '';
 
-	if (strlen($day) > 4) /*chop off the time stuff */
+	if (strlen($day) > 4) //chop off the time stuff
 		$day = substr($day, 0, 2);
 	
 	if ($SysPrefs->date_system == 1)
@@ -316,7 +318,7 @@ function sql2date($date_) {
 	elseif ($SysPrefs->date_system == 2)
 		list($year, $month, $day) = gregorian_to_islamic($year, $month, $day);
 	return __date($year, $month, $day);	
-} // end function sql2date
+}
 
 
 function date2sql($date_) {
@@ -360,9 +362,9 @@ and converts to a yyyy/mm/dd format */
 			list($year, $month, $day) = islamic_to_gregorian($year, $month, $day); 
 	}
 	return sprintf('%04d-%02d-%02d', $year, $month, $day);
-}// end of function
+}
 
-/**
+/*
  *	Compare dates in sql format.
  *	Return +1 if sql date1>date2, -1 if date1<date2,
  *  or 0 if dates are equal.
@@ -382,6 +384,7 @@ function sql_date_comp($date1, $date2) {
 	
 	return 0;
 }
+
 /*
 	Compare dates in user format.
 */
@@ -394,7 +397,7 @@ function date_comp($date1, $date2) {
 
 function date1_greater_date2 ($date1, $date2) {
 
-/* returns 1 true if date1 is greater than date_ 2 */
+	//returns 1 true if date1 is greater than date_ 2
 
 	$date1 = date2sql($date1);
 	$date2 = date2sql($date2);
@@ -419,9 +422,9 @@ function date1_greater_date2 ($date1, $date2) {
 
 function date_diff2 ($date1, $date2, $period) {
 
-/* expects dates in the format specified in $DefaultDateFormat - period can be one of 'd','w','y','m'
-months are assumed to be 30 days and years 365.25 days This only works
-provided that both dates are after 1970. Also only works for dates up to the year 2035 ish */
+	// expects dates in the format specified in $DefaultDateFormat - period can be one of 'd','w','y','m'
+	// months are assumed to be 30 days and years 365.25 days This only works
+	// provided that both dates are after 1970. Also only works for dates up to the year 2035 ish
 
 	$date1 = date2sql($date1);
 	$date2 = date2sql($date2);
@@ -432,7 +435,7 @@ provided that both dates are after 1970. Also only works for dates up to the yea
 	$stamp2 = mktime(0,0,0, (int)$month2, (int)$day2, (int)$year2);
 	$difference = $stamp1 - $stamp2;
 
-/* difference is the number of seconds between each date negative if date_ 2 > date_ 1 */
+ 	// difference is the number of seconds between each date negative if date_ 2 > date_ 1 
 
 	switch ($period) {
 		case 'd':
@@ -462,10 +465,12 @@ function explode_date_to_dmy($date_) {
 function div($a, $b) {
 	return (int) ($a / $b);
 }
-/* Based on convertor to and from Gregorian and Jalali calendars.
-   Copyright (C) 2000  Roozbeh Pournader and Mohammad Toossi 
-   Released under GNU General Public License */
 
+/* 	
+	Based on convertor to and from Gregorian and Jalali calendars.
+	Copyright (C) 2000  Roozbeh Pournader and Mohammad Toossi 
+	Released under GNU General Public License
+*/
 function gregorian_to_jalali ($g_y, $g_m, $g_d) {
 	$g_days_in_month = array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 	$j_days_in_month = array(31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29);
@@ -479,15 +484,15 @@ function gregorian_to_jalali ($g_y, $g_m, $g_d) {
 	for ($i = 0; $i < $gm; ++$i)
 		$g_day_no += $g_days_in_month[$i];
 	if ($gm > 1 && (($gy % 4 == 0 && $gy % 100 != 0) || ($gy % 400 == 0)))
-		/* leap and after Feb */
+		// leap and after Feb 
 		$g_day_no++;
 	$g_day_no += $gd;
 	$j_day_no = $g_day_no - 79;
 
-	$j_np = div($j_day_no, 12053); /* 12053 = 365*33 + 32/4 */
+	$j_np = div($j_day_no, 12053);  //12053 = 365*33 + 32/4 
 	$j_day_no %= 12053;
 
-	$jy = 979 + 33 * $j_np + 4 * div($j_day_no, 1461); /* 1461 = 365*4 + 4/4 */
+	$jy = 979 + 33 * $j_np + 4 * div($j_day_no, 1461); // 1461 = 365*4 + 4/4
 
 	$j_day_no %= 1461;
 
@@ -520,13 +525,13 @@ function jalali_to_gregorian($j_y, $j_m, $j_d) {
 
 	$g_day_no = $j_day_no + 79;
 
-	$gy = 1600 + 400 * div($g_day_no, 146097); /* 146097 = 365*400 + 400/4 - 400/100 + 400/400 */
+	$gy = 1600 + 400 * div($g_day_no, 146097); // 146097 = 365*400 + 400/4 - 400/100 + 400/400
 	$g_day_no %= 146097;
 
 	$leap = true;
-	if ($g_day_no >= 36525) {/* 36525 = 365*100 + 100/4 */
+	if ($g_day_no >= 36525) {// 36525 = 365*100 + 100/4 
 		$g_day_no--;
-		$gy += 100 * div($g_day_no,  36524); /* 36524 = 365*100 + 100/4 - 100/100 */
+		$gy += 100 * div($g_day_no,  36524); // 36524 = 365*100 + 100/4 - 100/100
 		$g_day_no %= 36524;
 
 		if ($g_day_no >= 365)
@@ -535,7 +540,7 @@ function jalali_to_gregorian($j_y, $j_m, $j_d) {
 			$leap = false;
 	}
 
-	$gy += 4 * div($g_day_no, 1461); /* 1461 = 365*4 + 4/4 */
+	$gy += 4 * div($g_day_no, 1461); // 1461 = 365*4 + 4/4
 	$g_day_no %= 1461;
 
 	if ($g_day_no >= 366) {
@@ -553,8 +558,11 @@ function jalali_to_gregorian($j_y, $j_m, $j_d) {
 
 	return array($gy, $gm, $gd);
 }
-/* Based on Hidri Date Script 
-   Released under GNU General Public License */
+
+/* 
+	Based on Hidri Date Script 
+	Released under GNU General Public License
+*/
 function gregorian_to_islamic($g_y, $g_m, $g_d) {
 	$y = $g_y;
 	$m = $g_m;
