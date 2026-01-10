@@ -70,11 +70,11 @@ class current_user {
 
 		// Use external authentication source if any.
 		// Keep in mind you need to have user data set for $loginname
-		// in FA users table anyway to successfully log in.
+		// in Quanlyviet users table anyway to successfully log in.
 		$Auth_Result = hook_authenticate($loginname, $password);
 
 		if (!isset($Auth_Result))	// if not used: standard method
-			$Auth_Result = get_user_auth($loginname, md5($password));
+			$Auth_Result = authenticate_user($loginname, $password);
 		if ($SysPrefs->login_delay > 0)
 			write_login_filelog($loginname, $Auth_Result);
 		if ($Auth_Result) {
@@ -152,7 +152,7 @@ class current_user {
 		if ($user != false) {
 
 			$password = generate_password();
-			$hash = md5($password);
+			$hash = password_hash($password);
 
 			update_user_password($user['id'], $user['user_id'], $hash);
 			
