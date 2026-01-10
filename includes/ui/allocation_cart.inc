@@ -16,7 +16,7 @@
 */
 //-----------------------------------------------------------------------------------
 
-class allocation {
+class allocation extends \stdClass {
 
 	var $trans_no; 
 	var $type;

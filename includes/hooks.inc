@@ -19,7 +19,7 @@
 //
 // To find how various hooks are processed look into respective hook_* functions below.
 //
-class hooks {
+class hooks extends \stdClass {
 	var $module_name; // extension module name.
 
 	// 
