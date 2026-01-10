@@ -219,8 +219,10 @@ function install_hooks($lang_code=null) {
 	if (isset($installed_extensions) && !empty($installed_extensions)) {
 		foreach($installed_extensions as $ext) {
 			$hook_class = 'hooks_'.$ext['package'];
-			if ($ext['active'] && class_exists($hook_class))
+			if ($ext['active'] && class_exists($hook_class)) {
 				$Hooks[$ext['package']] = new $hook_class;
+				$Hooks[$ext['package']]->path = $ext['path'];
+			}
 		}	
 	}
 }
@@ -255,7 +257,7 @@ function hook_invoke($ext, $method, &$data, $opts=null) {
 
 	$ret = null;
 	if (isset($Hooks[$ext]) && method_exists($Hooks[$ext], $method)) {
-		set_ext_domain('modules/'.$ext);
+		set_ext_domain($Hooks[$ext]->path);
 		$ret = $Hooks[$ext]->$method($data, $opts);
 		set_ext_domain();
 	} 
@@ -273,7 +275,7 @@ function hook_invoke_all($method, &$data, $opts=null) {
 	if (isset($Hooks)) {
 		foreach($Hooks as $ext => $hook)
 			if (method_exists($hook, $method)) {
-				set_ext_domain('modules/'.$ext);
+				set_ext_domain($hook->path);
 				$result = $hook->$method($data, $opts);
 				if (isset($result) && is_array($result))
 					$return = array_merge_recursive($return, $result);
@@ -295,7 +297,7 @@ function hook_invoke_first($method, &$data, $opts=null) {
 	$result = null;
 	foreach($Hooks as $ext => $hook) {
 		if (method_exists($hook, $method)) {
-			set_ext_domain('modules/'.$ext);
+			set_ext_domain($hook->path);
 			$result = $hook->$method($data, $opts);
 			set_ext_domain();
 			if (isset($result))
@@ -316,7 +318,7 @@ function hook_invoke_last($method, &$data, $opts=null) {
 	$Reverse = array_reverse($Hooks);
 	foreach($Reverse as $ext => $hook) {
 		if (method_exists($hook, $method)) {
-			set_ext_domain('modules/'.$ext);
+			set_ext_domain($hook->path);
 			$result = $hook->$method($data, $opts);
 			set_ext_domain();
 			if (isset($result))
