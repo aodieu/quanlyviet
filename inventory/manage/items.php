@@ -431,7 +431,6 @@ function item_settings(&$stock_id, $new_item) {
 		}
 		hidden('depreciation_date');
 	}
-	table_section(2);
 
 	$dim = get_company_pref('use_dimension');
 	if ($dim >= 1) {
@@ -445,6 +444,8 @@ function item_settings(&$stock_id, $new_item) {
 		hidden('dimension_id', 0);
 	if ($dim < 2)
 		hidden('dimension2_id', 0);
+
+	table_section(2);
 
 	table_section_title(_('GL Accounts'));
 
