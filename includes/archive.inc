@@ -15,6 +15,13 @@
  +--------------------------------------------------*/
 
 class archive {
+	public $options = array();
+	public $files = array();
+	public $exclude = array();
+	public $storeonly = array();
+	public $error = array();
+	public $archive = null;
+	
 	function __construct($name) {
 		$this->options = array (
 			'basedir' => '.',
