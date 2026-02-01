@@ -101,8 +101,8 @@ function get_extern_rate($curr_b, $provider, $date) {
 	$proto = 'http://';
 	$curr_a = get_company_pref('curr_default');
 	if ($provider == 'VIETCOMBANK') {
-		$filename = "/ExchangeRates/ExrateXML.aspx";
-		$site     = "www.vietcombank.com.vn";
+		$filename = "/Usercontrols/TVPortal.TyGia/pXML.aspx";
+		$site     = "portal.vietcombank.com.vn";
 		$proto = 'https://';
 		$site_ip = '103.11.172.38';
 		$contents=file_get_contents($proto.$site.$filename);
