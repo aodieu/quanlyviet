@@ -131,7 +131,7 @@ function get_extern_rate($curr_b, $provider, $date) {
 		$contents=file_get_contents($proto.$site.$filename);
 	}
 	elseif ($provider == 'EXCHANGE-RATES.ORG') {
-		$filename = "/converter/{$curr_b}/{$curr_a}/1";
+		$filename = "/converter/{$curr_b}-{$curr_a}";
 		$site = "exchange-rates.org";
 		$proto = 'https://';
 		$contents=file_get_contents($proto.$site.$filename);
@@ -185,8 +185,10 @@ function get_extern_rate($curr_b, $provider, $date) {
 		$val = getInnerStr($contents, 'data-last-price="', '" data');
 	elseif ($provider == 'XE.COM')
 		$val = getInnerStr($contents, "<p>1 $curr_b = ", $curr_a);
-	elseif ($provider == 'EXCHANGE-RATES.ORG')
+	elseif ($provider == 'EXCHANGE-RATES.ORG') {
 		$val = getInnerStr($contents, "1 $curr_b = ", $curr_a);
+		$val = str_replace (',', '', $val);
+	}
 	elseif ($provider == 'VIETCOMBANK') {
 		$contents = str_replace ('<Exrate CurrencyCode="AUD"', '<Exrate CurrencyCode="VND" CurrencyName="VIETNAM DONG" Buy="1" Transfer="1" Sell="1"/>
 		<Exrate CurrencyCode="AUD"', $contents);
